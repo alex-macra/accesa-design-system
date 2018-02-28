@@ -6,6 +6,10 @@
   "scripts": {
     "sass:compile": "node-sass --include-path sass sass/main.scss main.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexandrumacra/accesa-ui-startUp"
+  },
   "author": "alex macra",
   "license": "OSL-3.0",
   "devDependencies": {
