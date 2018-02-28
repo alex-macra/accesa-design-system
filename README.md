@@ -8,51 +8,48 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
+In order to customize, select the tools / components to import in your project, you will need to install beforehand:
 
 ```
+Node.js
 SASS
 ```
+
+If not, just use the generated [main.css] (https://github.com/alexandrumacra/accesa-ui-startUp/blob/master/main.css) file.
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
+First
 ```
-You will need to install <a href="https://sass-lang.com/install">SASS</a>. Either by app or command line.
+Install [Ruby] (https://rubyinstaller.org/)
+After, install [Sass] (https://sass-lang.com/install). Either by app or command line.
+Make sure you also have [Node.js] (https://nodejs.org/en/download/) installed on your development machine.
+```
+
+Afterwards
 ```
 run npm install
 ```
+
+Rebuilding / compiling the Sass files
+```
+sass:compile
+```
+
+## Tests
+
 todo
-```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Coding style tests
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+todo
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+todo
 
 ## Built With
 
@@ -64,15 +61,14 @@ Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
+todo
 ## Authors
 
-todo
+Alexandru Macra
 
 ## License
 
-todo
+Open Software License v.3.0 - [OSL-3.0] (https://opensource.org/licenses/OSL-3.0)
 
 ## Acknowledgments
 
