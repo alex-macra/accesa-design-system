@@ -23,8 +23,7 @@ Say what the step will be
 ```
 You will need to install <a href="https://sass-lang.com/install">SASS</a>. Either by app or command line.
 ```
-
-todo
+run npm install
 ```
 todo
 ```
