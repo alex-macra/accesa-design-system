@@ -1,7 +1,7 @@
 {
-  "name": "accesa-ui-startup",
-  "version": "0.0.2",
-  "description": "starter pack for web-based projects",
+  "name": "accesa-ui-starter",
+  "version": "0.0.6",
+  "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
     "sass:compile": "node-sass --include-path sass sass/main.scss main.css"

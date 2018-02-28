@@ -1,0 +1,145 @@
+/* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
+
+/* table */
+
+.temp-table {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+  min-width: 50%;
+}
+
+.temp-table thead {
+  padding: 5px;
+}
+
+.temp-table tbody {
+  padding: 5px;
+}
+
+.temp-table tr {
+  padding: 5px;
+}
+
+.temp-table td,
+.temp-table th {
+  padding: 5px;
+}
+
+/* button */
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  height: 2.5em;
+  line-height: 2.5;
+  margin: 0.25em;
+  padding: 0 1em;
+  width: 14em;
+}
+
+/* typography */
+
+@mixin fontSize( $size: 16 ) {
+  font-size: $size + px;
+  font-size: ($size / 16) + rem;
+  line-height: 1.3;
+}
+
+h1,h2,h3,h4,h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body {
+  margin: 30px auto;
+  min-width: 360px;
+  width: 50%;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1 {
+  @include fontSize(30);
+}
+
+h2 {
+  @include fontSize(27);
+}
+
+h3 {
+  @include fontSize(24);
+}
+
+p {
+  @include fontSize(18);
+}
+
+/* transition mixin */
+
+@mixin transition($arguments) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -ms-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
+
+/* opacity */
+
+@mixin opacity($argument) {
+  opacity: $argument;
+  $opacity-ie: $argument * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8 fallback
+}
+
+a {
+  color: black;
+  @include transition(color .3s ease);
+
+  &:hover {
+    color: gray;
+    @include opacity(0.9);
+  }
+}
+
+/* clearfix TODO TEST */
+
+%clear-float {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clear-float {
+  @extend %clear-float;
+}
+
+/* hide items without display: none, just visually */
+
+%visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
