@@ -46,6 +46,6 @@ p {
 
 /* visually hidden */
 
-.visually-hidden {
+.#{$prefix}-visually-hidden {
   @extend %visually-hidden;
 }
