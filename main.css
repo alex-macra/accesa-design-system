@@ -194,6 +194,28 @@ textarea {
   line-height: 1.15;
   margin: 0; }
 
+/* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
+/* table */
+.temp-table {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+  min-width: 50%; }
+
+.temp-table thead {
+  padding: 5px; }
+
+.temp-table tbody {
+  padding: 5px; }
+
+.temp-table tr {
+  padding: 5px; }
+
+.temp-table td,
+.temp-table th {
+  padding: 5px; }
+
+/* button */
 [role="button"],
 input[type="submit"],
 input[type="reset"],
@@ -208,4 +230,35 @@ button {
   padding: 0 1em;
   width: 14em; }
 
-/*# sourceMappingURL=main.css.map */
+/* typography */
+h1, h2, h3, h4, h5 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+body {
+  margin: 30px auto;
+  min-width: 360px;
+  width: 50%; }
+
+p {
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.3; }
+
+h2 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.3; }
+
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3; }
