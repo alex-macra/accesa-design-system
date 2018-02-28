@@ -1,0 +1,14 @@
+{
+  "name": "accesa-ui-startup",
+  "version": "0.0.1",
+  "description": "starter pack for web-based projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alex macra",
+  "license": "OSL-3.0",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
