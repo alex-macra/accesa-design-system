@@ -194,6 +194,27 @@ textarea {
   line-height: 1.15;
   margin: 0; }
 
+/* Float clearing mixin */
+.acc-clear-float {
+  *zoom: 1; }
+  .acc-clear-float:before, .acc-clear-float:after {
+    content: " ";
+    display: table; }
+  .acc-clear-float:after {
+    clear: both; }
+
+/* Opacity mixin */
+/* Transition mixin */
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
+
 /* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
 /* table */
 .temp-table {
@@ -243,28 +264,30 @@ body {
 p {
   margin-bottom: 10px; }
 
-h1 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.3; }
+/* examples for components/ mixins, functions, etc */
+/* Float clearing mixin */
+.acc-clear-float {
+  *zoom: 1; }
+  .acc-clear-float:before, .acc-clear-float:after {
+    content: " ";
+    display: table; }
+  .acc-clear-float:after {
+    clear: both; }
 
-h2 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 1.3; }
+/* Opacity mixin */
+/* Transition mixin */
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
 
-h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.3; }
-
-p {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.3; }
-
-/* transition mixin */
-/* opacity */
+/* float clear example */
+/* opacity and transition example */
 a {
   color: black;
   -webkit-transition: color 0.3s ease;
@@ -277,22 +300,25 @@ a {
     opacity: 0.9;
     filter: alpha(opacity=90); }
 
-/* clearfix TODO TEST */
-.clear-float {
-  *zoom: 1; }
-  .clear-float:before, .clear-float:after {
-    content: " ";
-    display: table; }
-  .clear-float:after {
-    clear: both; }
+/* font size */
+h1 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.275; }
 
-/* hide items without display: none, just visually */
-.visually-hidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute; }
+h2 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 2.0875; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.9; }
+
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.525; }
+
+/* visually hidden */

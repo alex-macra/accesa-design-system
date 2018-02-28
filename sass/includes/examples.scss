@@ -1,0 +1,51 @@
+/* examples for components/ mixins, functions, etc */
+
+@import 'utilities/mixins/float-clear';
+@import 'utilities/mixins/font-size';
+@import 'utilities/mixins/opacity';
+@import 'utilities/mixins/transition';
+@import 'utilities/mixins/visually-hidden';
+
+@import 'utilities/variables';
+
+/* float clear example */
+
+.#{$prefix}-clear-float {
+  @extend %clear-float;
+}
+
+/* opacity and transition example */
+
+a {
+  color: black;
+  @include transition(color .3s ease);
+
+  &:hover {
+    color: gray;
+    @include opacity(0.9);
+  }
+}
+
+/* font size */
+
+h1 {
+  @include fontSize(30);
+}
+
+h2 {
+  @include fontSize(27);
+}
+
+h3 {
+  @include fontSize(24);
+}
+
+p {
+  @include fontSize(18);
+}
+
+/* visually hidden */
+
+.visually-hidden {
+  @extend %visually-hidden;
+}

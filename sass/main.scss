@@ -1,7 +1,20 @@
 //Our base SA style sheet file
 
+//Set up a prefix for the css classes / id's
+
 //Core style sheets
 @import 'includes/core/reset';
 
+//Import variables
+@import 'includes/utilities/variables';
+
+//Import mixins
+@import 'includes/utilities/mixins/float-clear';
+@import 'includes/utilities/mixins/font-size';
+@import 'includes/utilities/mixins/opacity';
+@import 'includes/utilities/mixins/transition';
+@import 'includes/utilities/mixins/visually-hidden';
+
 //Temp style sheet
 @import 'temp';
+@import 'includes/examples';

@@ -1,0 +1,7 @@
+/* Opacity mixin */
+
+@mixin opacity($argument) {
+  opacity: $argument;
+  $opacity-ie: $argument * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8 fallback
+}
