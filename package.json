@@ -1,10 +1,14 @@
 {
   "name": "accesa-ui-startup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "starter pack for web-based projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:compile": "node-sass --include-path sass sass/main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexandrumacra/accesa-ui-startUp"
   },
   "author": "alex macra",
   "license": "OSL-3.0",
