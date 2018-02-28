@@ -4,7 +4,7 @@
   "description": "starter pack for web-based projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:compile": "node-sass --include-path sass sass/main.scss main.css"
   },
   "author": "alex macra",
   "license": "OSL-3.0",
