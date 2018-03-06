@@ -205,7 +205,7 @@ textarea {
 
 /* Opacity mixin */
 /* Transition mixin */
-.visually-hidden {
+.acc-visually-hidden {
   margin: -1px;
   padding: 0;
   width: 1px;
@@ -215,6 +215,8 @@ textarea {
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
+/* Triangle mixin */
+/* Flexbox mixins */
 /* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
 /* table */
 .temp-table {
@@ -276,7 +278,7 @@ p {
 
 /* Opacity mixin */
 /* Transition mixin */
-.visually-hidden {
+.acc-visually-hidden {
   margin: -1px;
   padding: 0;
   width: 1px;
@@ -286,6 +288,8 @@ p {
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
+/* Triangle mixin */
+/* Flexbox mixins */
 /* float clear example */
 /* opacity and transition example */
 a {
@@ -322,3 +326,11 @@ p {
   line-height: 1.525; }
 
 /* visually hidden */
+/* triangles */
+.acc-top {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  -moz-transform: scale(0.9999);
+  border-width: 0 30px 30px 30px;
+  border-color: transparent transparent #cc0000 transparent; }

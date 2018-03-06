@@ -1,0 +1,11 @@
+/* Flexbox mixins */
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+//todo: add mixins for all flexbox properties
