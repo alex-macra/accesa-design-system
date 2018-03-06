@@ -66,37 +66,32 @@ p {
   padding-top: 50%;
 }
 
-//for grid
 
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-html {
-  position: relative;
-}
-
-body {
-  position: relative;
-  background: url("http://a.rgbimg.com/cache1ois5u/users/e/er/ervinbacik/300/mrTD17s.jpg") no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
-  color: #fff;
-  padding: 40px;
-}
-
-.grid + .grid {
-  margin-top: 10px;
-}
-
-.inner-wrap {
+//grid
+.body {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { padding: 1rem; font-family: sans-serif; line-height: 1.4; }
+article { margin-bottom: 2rem;
+  h1, h2 { color:#666; font-weight: 100; }
+  h1 { margin-bottom: 1rem; font-size: 3rem;
+    & + p { font-weight: bold; }
+  }
+  h2 { margin: 2rem 0 1rem; font-size: 1.6rem; }
+  p { margin-bottom: 1rem; }
+  ul { margin-left: 1rem; }
+  code { display: inline-block; margin-bottom: 0.2rem; padding: 0.1rem 0.5rem; border-radius: 3px; background-color:#666; color: white; }
+}
+.example { padding: 1rem; position: relative; border: 2px solid #666; font-size: 11px;
+  &::before { content: "@include grid(container)"; display: block; position: absolute; bottom: calc(100% - 4px); background-color: white; }
+  & > div { padding: 1rem; box-shadow: 0 0 0 2px white inset; background-color: lighten(#666, 52%); color: rgba(black, 0.4);
+    &::after { display: block; color: black; white-space:pre; }
+    &:nth-child(n+8):nth-child(-n+9)::after { content: "@include grid(third);\A@include grid-offset(left, 2 of 12);\A@include grid-offset(right, 6 of 12);"; }
+  }
 }
