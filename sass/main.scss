@@ -13,12 +13,19 @@
 @import 'includes/utilities/mixins/font-size';
 @import 'includes/utilities/mixins/opacity';
 @import 'includes/utilities/mixins/transition';
+@import 'includes/utilities/mixins/loaders';
 @import 'includes/utilities/mixins/visually-hidden';
 @import 'includes/utilities/mixins/triangle';
 @import 'includes/utilities/mixins/flexbox';
 
+//Import utilities
+@import 'includes/utilities/animations';
+@import 'includes/utilities/utils';
+@import 'includes/utilities/fallbacks';
+
 //Import media layouts
 @import 'includes/layout/print';
+@import 'includes/layout/grid';
 
 //Import utils
 @import 'includes/utilities/utils';

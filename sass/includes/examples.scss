@@ -1,5 +1,4 @@
 /* examples for components/ mixins, functions, etc */
-
 @import 'utilities/variables';
 
 @import 'utilities/mixins/float-clear';
@@ -12,10 +11,13 @@
 @import 'utilities/utils';
 @import 'utilities/fallbacks';
 
+@import 'layout/grid';
+@import 'layout/print';
+
 /* float clear example */
 
 .#{$prefix}-clear-float {
-  @extend %clear-float;
+  @extend %float-clear;
 }
 
 /* opacity and transition example */
