@@ -17,6 +17,15 @@
 @import 'includes/utilities/mixins/triangle';
 @import 'includes/utilities/mixins/flexbox';
 
+//Import media layouts
+@import 'includes/layout/print';
+
+//Import utils
+@import 'includes/utilities/utils';
+
+//Import fallbacks
+@import 'includes/utilities/fallbacks';
+
 //Temp style sheet
 @import 'temp';
 @import 'includes/examples';

@@ -1,5 +1,7 @@
 /* examples for components/ mixins, functions, etc */
 
+@import 'utilities/variables';
+
 @import 'utilities/mixins/float-clear';
 @import 'utilities/mixins/font-size';
 @import 'utilities/mixins/opacity';
@@ -7,8 +9,8 @@
 @import 'utilities/mixins/visually-hidden';
 @import 'utilities/mixins/triangle';
 @import 'utilities/mixins/flexbox';
-
-@import 'utilities/variables';
+@import 'utilities/utils';
+@import 'utilities/fallbacks';
 
 /* float clear example */
 

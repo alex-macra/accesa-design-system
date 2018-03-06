@@ -1,0 +1,90 @@
+//Utils
+
+@import 'variables';
+
+//Center horizontal inline
+@mixin ch-text {
+  text-align: center;
+}
+
+//Center horizontal single block
+@mixin ch-s-block {
+  text-align: center;
+}
+
+//Center horizontal multiple blocks in a row
+@mixin ch-mr-block {
+  display: inline-block;
+}
+
+//Center horizontal multiple blocks vertically
+@mixin ch-mv-block {
+  margin: 0 auto;
+}
+
+//Center vertically block known height
+@mixin cv-h-block {
+    position: relative;
+
+    >div: {
+      position: absolute;
+      top: 50%;
+      height: 60px;
+      margin-top: -30px;
+   }
+}
+
+//Center vertically block unknown height
+@mixin cv-uk-block {
+  position: relative;
+
+  >div: {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+//Center vertically block unknown height, using flex
+@mixin cv-uk-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+//Center both horizontally and vertically, using grid
+@mixin chv-uk-grid {
+  display: grid;
+
+  >div {
+    margin: auto;
+  }
+}
+
+//Center both horizontally and vertically, support for older browsers
+@mixin chv-uk-grid {
+  position: relative;
+
+  >div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+//Center both horizontally and vertically, fixed height, support for older browsers
+@mixin chv-h-grid {
+  position: relative;
+
+  >div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 60px;
+    margin-left: -200px;
+    margin-top: -30px;
+  }
+}
