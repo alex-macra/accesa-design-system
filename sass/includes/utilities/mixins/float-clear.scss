@@ -1,6 +1,6 @@
 //Float clearing mixin */
 
-%clear-float { //todo change to mixin
+%float-clear { //todo change to mixin
   *zoom: 1;
   &:before, &:after {
     content: " ";

@@ -1,0 +1,119 @@
+// Grid layout
+
+$column: 12;
+
+@mixin grid-container {
+  display: flex; //todo
+  flex-flow: row wrap;
+  width: 100%;
+
+  & > * {
+    flex: 1 0 100%; //todo
+  }
+}
+
+@function grid($size) {
+
+  $grid-base: $column;
+  $divide: null;
+  $total: null;
+
+  @if length($size) == 1 and type_of($size) != number {
+    
+    @if $size == whole or $size == full or $size == block {
+      $divide: 1;
+      $total: 1;
+    }
+      
+    @else if $size == half {
+      $divide: 1;
+      $total: 2;
+    }
+      
+    @else if $size == third {
+      $divide: 1;
+      $total: 3;
+    }
+      
+    @else if $size == quarter {
+      $divide: 1;
+      $total: 4;
+    }
+      
+    @else if $size == fifth {
+      $divide: 1;
+      $total: 5;
+    }
+  }
+    
+  @else {
+    
+    @if length($size) > 1 {
+      $divide: nth($size, 1);
+      $total: nth($size, length($size));
+    }
+      
+    @else {
+      $divide: $size;
+      $total: $grid-base;
+    }
+  }
+
+  @if type_of($divide) == number and type_of($total) == number {
+    @return percentage($divide/$total);
+  }
+
+  @else {
+    @return null;
+  }
+}
+
+@mixin grid($size) {
+  
+  @if $size == container or $size == wrapper {
+    @include grid-container;
+  }
+    
+  @else {
+    $percentage: grid($size);
+
+    @if $percentage != null {
+      max-width: $percentage;
+    }
+  }
+}
+
+// GRID OFFSET (mixin)
+@mixin grid-gutter($side, $size) {
+  $percentage: grid($size);
+
+  @if $percentage != null and ($side == right or $side == left) {
+    margin-#{$side}: $percentage;
+  }
+}
+
+//test
+.example { @include grid(container); }
+
+.example > div {
+  &:nth-child(1) {
+    @include grid(2);
+  }
+  &:nth-child(2) {
+    @include grid(10 of 12);
+  }
+  &:nth-child(n+4):nth-child(-n+7) {
+    @include grid(half);
+  }
+  &:nth-child(n+8):nth-child(-n+9) {
+    @include grid(third);
+    @include grid-gutter(left, 2 of 12);
+    @include grid-gutter(right, 6 of 12);
+  }
+  &:nth-child(10) {
+    @include grid(6);
+  }
+  &:nth-child(n+11):nth-child(-n+12) {
+    @include grid(quarter);
+  }
+}
