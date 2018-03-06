@@ -1,7 +1,6 @@
-/* Loaders mixin */
+//Loaders mixin
 
 @import '../animations';
-
 
 @mixin bouncing-loader($alignment, $sizeV, $sizeH, $color) {
   @include flexbox;
