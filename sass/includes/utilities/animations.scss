@@ -1,0 +1,13 @@
+/* Animations */
+
+
+@keyframes loader {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
+}

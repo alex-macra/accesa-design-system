@@ -1,0 +1,50 @@
+/* Triangle mixin */
+
+$square: 30px;
+
+@mixin triangle($alignment, $sizeV, $sizeH, $color) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  -moz-transform: scale(.9999);
+
+  @if $alignment == top {
+    border-width: 0 $sizeV $sizeH $sizeV;
+    border-color: transparent transparent $color transparent;
+  }
+
+  @if $alignment == bottom {
+    border-width: $sizeV $sizeH 0 $sizeV;
+    border-color: $color transparent transparent transparent;
+  }
+
+  @if $alignment == right {
+    border-width: $sizeV 0 $sizeV $sizeH;
+    border-color: transparent transparent transparent $color;
+  }
+
+  @if $alignment == left {
+    border-width: $sizeV $sizeH $sizeV 0;
+    border-color: transparent $color transparent transparent;
+  }
+
+  @if $alignment == topright {
+    border-width: 0 $sizeH $sizeV 0;
+    border-color: transparent $color transparent transparent;
+  }
+
+  @if $alignment == bottomright {
+    border-width: 0 0 $sizeH $sizeV;
+    border-color: transparent transparent $color transparent;
+  }
+
+  @if $alignment == bottomleft {
+    border-width: $sizeH 0 0 $sizeV;
+    border-color: transparent transparent transparent $color;
+  }
+
+  @if $alignment == topleft {
+    border-width: $sizeH $sizeV 0 0;
+    border-color: $color transparent transparent transparent;
+  }
+}
