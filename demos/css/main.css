@@ -233,7 +233,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-xs-12 {
       max-width: 100%; } }
-  @media (min-width: 37.5em) {
+  @media (min-width: 37.5em) and (max-width: 56.1875em) {
     .acc-grid-container .acc-col-sm-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-sm-half {
@@ -268,7 +268,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-sm-12 {
       max-width: 100%; } }
-  @media (min-width: 56.25em) {
+  @media (min-width: 56.25em) and (max-width: 74.9375em) {
     .acc-grid-container .acc-col-md-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-md-half {
@@ -303,7 +303,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-md-12 {
       max-width: 100%; } }
-  @media (min-width: 75em) {
+  @media (min-width: 75em) and (max-width: 112.4375em) {
     .acc-grid-container .acc-col-lg-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-lg-half {
