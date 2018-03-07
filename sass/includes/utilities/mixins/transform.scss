@@ -4,4 +4,10 @@
   @include general-prefix('transition', $arguments);
 }
 
-//@include transition(ease .3s color);
+@mixin transform-origin($params) {
+  @include general-prefix('transform-origin', $params);
+}
+
+@mixin transform-style($style: preserve-3d) {
+  @include general-prefix('transform-style', $style);
+}
