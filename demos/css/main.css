@@ -414,7 +414,7 @@ body {
 
 /* --- END GRID.CSS --- */
 /* --- BEGIN PRINT.CSS --- */
-.acc.print-me {
+.acc-print-me {
   display: none !important; }
 
 @media print {
@@ -431,7 +431,7 @@ body {
       font-weight: normal; }
   .acc-no-print {
     display: none !important; }
-  .acc.print-me {
+  .acc-print-me {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
@@ -527,5 +527,13 @@ p {
   background: #666;
   width: 50%;
   padding-top: 50%; }
+
+.test {
+  position: relative; }
+  .test > div {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    margin-top: -15px; }
 
 /* --- END TEMP.CSS --- */

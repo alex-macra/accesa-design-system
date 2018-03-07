@@ -1,35 +1,29 @@
 //Utils
 
-//Begin centering
-
-@mixin center-horizontally-text {
+@mixin center-horizontally-text() {
   text-align: center;
 }
 
-@mixin center-horizontally-single-block {
-  text-align: center;
-}
-
-@mixin center-horizontally {
+@mixin center-horizontally() {
   margin: 0 auto;
 }
 
-@mixin center-horizontally-multiple-rows-block {
+@mixin center-horizontally-multiple-rows-block() {
   display: inline-block;
 }
 
-@mixin center-vertically-known-height-block {
+@mixin center-vertically-known-height-block($height) {
   position: relative;
 
   >div {
     position: absolute;
     top: 50%;
-    height: 60px;
-    margin-top: -30px;
+    height: $height;
+    margin-top: -($height/2);
   }
 }
 
-@mixin center-vertically-unknown-height-block {
+@mixin center-vertically-unknown-height-block() {
   position: relative;
 
   >div {
@@ -39,13 +33,13 @@
   }
 }
 
-@mixin center-vertically-unknown-height-flex {
-  @include flexbox;
+@mixin center-vertically-unknown-height-flex() {
+  @include flexbox();
   @include flex-justify-content(center);
   @include flex-direction(column);
 }
 
-@mixin center-horizontally-vertically-unknown-height-grid {
+@mixin center-horizontally-vertically-unknown-height-grid() {
   display: grid;
 
   >div {
@@ -53,7 +47,7 @@
   }
 }
 
-@mixin center-horizontally-vertically-unknown-height-grid {
+@mixin center-horizontally-vertically-unknown-height-grid() {
   position: relative;
 
   >div {
@@ -64,18 +58,16 @@
   }
 }
 
-@mixin center-horizontally-vertically-known-height-grid {
+@mixin center-horizontally-vertically-known-height-grid($height, $width) {
   position: relative;
 
   >div {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
-    height: 60px;
-    margin-left: -200px;
-    margin-top: -30px;
+    width: $width;
+    height: $height;
+    margin-left: -($width/2);
+    margin-top: -($height/2);
   }
 }
-
-//End centering

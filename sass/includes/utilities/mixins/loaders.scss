@@ -1,14 +1,14 @@
 //Loaders mixin
 
 @mixin bouncing-loader($alignment, $sizeV, $sizeH, $color) {
-  @include flexbox;
-  justify-content: center;
+  @include flexbox();
+  @include flex-justify-content(center);
 
   > div {
     width: 1rem;
     height: 1rem;
     margin: 3rem 0.2rem;
-    background: #8385aa; //update this
+    background: $color;
     border-radius: 50%;
     animation: bouncing-loader 0.6s infinite alternate;
 
