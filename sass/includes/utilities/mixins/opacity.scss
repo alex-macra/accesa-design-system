@@ -1,7 +1,8 @@
 //Opacity mixin
 
 @mixin opacity($argument) {
-  opacity: $argument;
-  $opacity-ie: $argument * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8 fallback
+  $argument-ie: ($argument * 100);
+  filter: alpha(opacity=$argument-ie);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $argument-ie + ")";
+  @include general-prefix('opacity', $argument);
 }

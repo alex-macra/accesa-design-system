@@ -444,8 +444,14 @@ a {
   transition: color 0.3s ease; }
   a:hover {
     color: gray;
-    opacity: 0.9;
     filter: alpha(opacity=90);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    -webkit-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    -moz-opacity: 0.9;
+    -ms-opacity: 0.9;
+    -o-opacity: 0.9;
+    opacity: 0.9;
     -webkit-transform: scale(1.5);
     -khtml-transform: scale(1.5);
     -moz-transform: scale(1.5);
