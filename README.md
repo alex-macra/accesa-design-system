@@ -20,9 +20,9 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
 
 ## The road so far...
 
-###Status: Almost stable version of the package!!!
+### Status: Almost stable version of the package!!!
 
-###So, going forward...
+### So, going forward...
 ⋅⋅* Right now, we have finished with early stages of the starter project set-up.
 ⋅⋅* The core SASS files contain a base stylesheet set-up and reset for to ensure compatibility across as many devices and browsers as possible.
 ⋅⋅* Good progress with the core SCSS. We use BEM(Block Element Modifier), and for the common classes that will be use in current / future components, also provided a {prefix} for an easy install / update.
@@ -31,7 +31,7 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
 ⋅⋅* Print stylesheet was started.
 
 
-###Still Todo, Improve / Add
+### Still Todo, Improve / Add
 ⋅⋅* More functions, mixin to improve and optimize writing / editing / larger scaling of CSS.
 ⋅⋅* Ensure responsiveness among new components.
 ⋅⋅* Form customizing across browser and devices / also keep a default version.
@@ -39,7 +39,7 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
 ⋅⋅* Improve / add more examples or know-hows / corner cases (for example, we have a utils.scss file that right now contains lots of options for centering a html element, including both horizontal and vertically. Both by knowing it's size, or without.
 ⋅⋅* Improve current grid (at first, by finishing with the gutter)
 
-###Next up
+### Next up
 ⋅⋅* Implement experiment grid systems, such as masonry layout or grid layout.
 ⋅⋅* Extend the list of mixins, functions or in general CSS shortcuts.
 ⋅⋅* Custom font support.
