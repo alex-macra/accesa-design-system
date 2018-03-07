@@ -1,6 +1,8 @@
-/* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
+// temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point
 
-/* table */
+/* --- BEGIN TEMP.CSS --- */
+
+//Table
 
 .temp-table {
   border: 1px solid #ccc;
@@ -26,7 +28,7 @@
   padding: 5px;
 }
 
-/* button */
+//Button
 
 [role="button"],
 input[type="submit"],
@@ -43,7 +45,7 @@ button {
   width: 14em;
 }
 
-/* typography */
+//Typography
 
 h1,h2,h3,h4,h5 {
   margin-top: 15px;
@@ -65,3 +67,5 @@ p {
   width: 50%;
   padding-top: 50%;
 }
+
+/* --- END TEMP.CSS --- */
