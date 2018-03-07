@@ -4,6 +4,7 @@
 @import 'utilities/mixins/opacity';
 @import 'utilities/mixins/transition';
 @import 'utilities/mixins/triangle';
+@import 'utilities/mixins/spacing';
 
 /* --- BEGIN EXAMPLES.CSS --- */
 
@@ -16,6 +17,7 @@ a {
   &:hover {
     color: gray;
     @include opacity(0.9);
+    @include transform(scale(1.5));
   }
 }
 
@@ -40,6 +42,10 @@ p {
 //Triangles
 .#{$prefix}-top {
   @include triangle(top,$square,$square,#cc0000);
+}
+
+.box {
+  @include spacing( 10px, 1px solid black, 15px )
 }
 
 /* --- END EXAMPLES.CSS --- */

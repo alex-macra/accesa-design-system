@@ -1,0 +1,5 @@
+//Spacing mixin
+
+@mixin box-sizing($type: border-box) {
+  @include general-prefix('box-sizing', $type);
+}

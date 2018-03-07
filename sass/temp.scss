@@ -68,4 +68,8 @@ p {
   padding-top: 50%;
 }
 
+.test {
+  @include center-vertically-known-height-block(30px);
+}
+
 /* --- END TEMP.CSS --- */

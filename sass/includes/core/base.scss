@@ -1,5 +1,7 @@
 /* --- BEGIN BASE.CSS --- */
 
+$minimal-classes: false; //todo add @if (minimnal classes, and minify the classes);
+
 html {
   font-size: 62.5%;
 }

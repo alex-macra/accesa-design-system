@@ -1,0 +1,7 @@
+//Transform mixin
+
+@mixin transition($arguments) {
+  @include general-prefix('transition', $arguments);
+}
+
+//@include transition(ease .3s color);

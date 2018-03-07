@@ -1,7 +1,7 @@
 //Grid - Grid container - Grid gutter
 
 @mixin grid-container() {
-  @include flexbox;
+  @include flexbox();
   @include flex-flow(row wrap);
 
   width: 100%;

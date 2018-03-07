@@ -1,0 +1,7 @@
+//Spacing mixin
+
+@mixin spacing ($margin, $border, $padding) {
+  margin: $margin;
+  border: $border;
+  padding: $padding;
+}

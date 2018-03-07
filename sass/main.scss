@@ -3,7 +3,7 @@
 //Reset style sheet
 @import 'includes/core/reset';
 
-//Import variables
+//Import global variables
 @import 'includes/utilities/variables';
 
 //Import mixins
@@ -13,10 +13,12 @@
 @import 'includes/utilities/mixins/flexbox';
 @import 'includes/utilities/mixins/float-clear';
 @import 'includes/utilities/mixins/font-size';
+@import 'includes/utilities/mixins/general-prefix';
 @import 'includes/utilities/mixins/grid';
 @import 'includes/utilities/mixins/loaders';
 @import 'includes/utilities/mixins/opacity';
 @import 'includes/utilities/mixins/responsive-breakpoints';
+@import 'includes/utilities/mixins/transform';
 @import 'includes/utilities/mixins/transition';
 @import 'includes/utilities/mixins/triangle';
 @import 'includes/utilities/mixins/visually-hidden';

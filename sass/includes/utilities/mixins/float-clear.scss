@@ -2,10 +2,13 @@
 
 @mixin float-clear() {
   *zoom: 1;
-  &:before, &:after {
+
+  &:before,
+  &:after {
     content: " ";
     display: table;
   }
+
   &:after {
     clear: both;
   }

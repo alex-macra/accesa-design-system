@@ -2,7 +2,7 @@
 
 /* --- BEGIN PRINT.CSS --- */
 
-.#{$prefix}.print-me {
+.#{$prefix}-print-me {
   display: none!important;
 }
 
@@ -31,7 +31,7 @@
     display: none!important;
   }
 
-  .#{$prefix}.print-me {
+  .#{$prefix}-print-me {
     display: block!important;
   }
 }

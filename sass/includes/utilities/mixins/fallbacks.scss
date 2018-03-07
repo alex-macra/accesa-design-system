@@ -3,8 +3,6 @@
 //Broken Image fallback
 
 @mixin image-with-fallback() { //temp
-  font-family: 'Helvetica';
-  font-weight: 300;
   line-height: 2;
   text-align: center;
   min-height: 50px;
@@ -32,7 +30,7 @@
     display: block;
     font-size: 16px;
     font-style: normal;
-    font-family: FontAwesome;
+    font-family: FontAwesome; //??
     color: rgb(100, 100, 100);
 
     position: absolute;
