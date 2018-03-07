@@ -22,19 +22,19 @@ a {
 //Font size
 
 h1 {
-  @include fontSize(30);
+  @include font-size(30);
 }
 
 h2 {
-  @include fontSize(27);
+  @include font-size(27);
 }
 
 h3 {
-  @include fontSize(24);
+  @include font-size(24);
 }
 
 p {
-  @include fontSize(18);
+  @include font-size(18);
 }
 
 //Triangles

@@ -2,16 +2,6 @@
 
 $column: 12;
 
-@mixin grid-container {
-  @include flexbox;
-  flex-flow: row wrap;
-  width: 100%;
-
-  & > * {
-    flex: 1 0 100%; //todo
-  }
-}
-
 @function grid($size) {
 
   $grid-base: $column;
@@ -65,30 +55,6 @@ $column: 12;
 
   @else {
     @return null;
-  }
-}
-
-@mixin grid($size) {
-  
-  @if $size == container or $size == wrapper {
-    @include grid-container;
-  }
-    
-  @else {
-    $percentage: grid($size);
-
-    @if $percentage != null {
-      max-width: $percentage;
-    }
-  }
-}
-
-// GRID OFFSET (mixin)
-@mixin grid-push($side, $size) {
-  $percentage: grid($size);
-
-  @if $percentage != null and ($side == right or $side == left) {
-    margin-#{$side}: $percentage;
   }
 }
 
