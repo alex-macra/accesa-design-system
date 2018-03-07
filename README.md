@@ -37,7 +37,7 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
   * Form customizing across browser and devices / also keep a default version.
   * Create a {minimal classes} version. Right now, when using BEM, we use longer names, to be as easy as possible to understand how the SCSS classes and mixins / variables / functions are working.
   * Improve / add more examples or know-hows / corner cases (for example, we have a utils.scss file that right now contains a lot of options for centering an HTML element, including either both horizontal and vertically. Both by knowing it's size, or without know it's height).
-  * Improve current grid (at first, by finishing with the gutter)
+  * Improve current grid (at first, by finishing with the gutter).
 
 ### Going forward
   * Implement experimental grid systems, such as masonry layout or CSS4 grid layout.
@@ -47,8 +47,9 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
   * Add more CSS components (modal, custom dropdowns, accordions, etc).
   * Start with the HTML / JS / CSS documentation.
   * Create an HTML element flowchart.
-  * Add a flat option for the designed components
-  * Font-awesome integration
+  * Add a flat option for the designed components.
+  * Font-awesome integration.
+  * Need to find a way to improve more the current CSS output (alternative to global selectors, make sure we output just the elements that are on the document.
 
 ### Installing
 
