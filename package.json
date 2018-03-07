@@ -1,6 +1,6 @@
 {
   "name": "accesa-ui-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "author": "alex macra",
   "license": "OSL-3.0",
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.7.2"
   }
 }

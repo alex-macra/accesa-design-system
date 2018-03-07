@@ -1,6 +1,6 @@
 // Print layout
 
-@import "../utilities/variables";
+/* --- BEGIN PRINT.CSS --- */
 
 .#{$prefix}.print-me {
   display: none!important;
@@ -35,3 +35,5 @@
     display: block!important;
   }
 }
+
+/* --- END PRINT.CSS --- */

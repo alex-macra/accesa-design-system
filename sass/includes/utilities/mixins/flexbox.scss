@@ -1,6 +1,6 @@
 //Flexbox mixins
 
-@mixin flexbox {
+@mixin flexbox() {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

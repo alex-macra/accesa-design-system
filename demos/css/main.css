@@ -1,86 +1,18 @@
 @charset "UTF-8";
-/* --- RESET.CSS --- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* --- BEGIN RESET.CSS --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -88,17 +20,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption,
+figure, footer, header, hgroup,
+menu, nav, section {
   display: block; }
 
 body {
@@ -195,13 +119,22 @@ textarea {
   line-height: 1.15;
   margin: 0; }
 
-.acc-clear-float {
-  *zoom: 1; }
-  .acc-clear-float:before, .acc-clear-float:after {
-    content: " ";
-    display: table; }
-  .acc-clear-float:after {
-    clear: both; }
+/* --- END RESET.CSS --- */
+/* --- BEGIN BASE.CSS --- */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 160%; }
+
+/* --- END BASE.CSS --- */
+@keyframes loader {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem); } }
 
 @keyframes loader {
   from {
@@ -210,6 +143,15 @@ textarea {
   to {
     opacity: 0.1;
     transform: translateY(-1rem); } }
+
+/* --- BEGIN LAYOUT BASE.CSS --- */
+.acc-clear-float {
+  *zoom: 1; }
+  .acc-clear-float:before, .acc-clear-float:after {
+    content: " ";
+    display: table; }
+  .acc-clear-float:after {
+    clear: both; }
 
 .acc-visually-hidden {
   margin: -1px;
@@ -221,15 +163,7 @@ textarea {
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
-@keyframes loader {
-  from {
-    opacity: 1;
-    transform: translateY(0); }
-  to {
-    opacity: 0.1;
-    transform: translateY(-1rem); } }
-
-img {
+.acc-img {
   font-family: 'Helvetica';
   font-weight: 300;
   line-height: 2;
@@ -239,7 +173,7 @@ img {
   height: auto;
   display: block;
   position: relative; }
-  img:before {
+  .acc-img:before {
     content: " ";
     display: block;
     position: absolute;
@@ -250,7 +184,7 @@ img {
     background-color: #e6e6e6;
     border: 2px dotted #c8c8c8;
     border-radius: 5px; }
-  img:after {
+  .acc-img:after {
     content: "" " Broken Image of " attr(alt);
     display: block;
     font-size: 16px;
@@ -263,27 +197,12 @@ img {
     width: 100%;
     text-align: center; }
 
-.acc.print-me {
-  display: none !important; }
-
-@media print {
-  body {
-    filter: Gray();
-    filter: url("#grayscale");
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
-    body main a:after,
-    body section a:after,
-    body aside a:after {
-      content: " (" attr(href) ") ";
-      font-size: 0.8em;
-      font-weight: normal; }
-  .acc-no-print {
-    display: none !important; }
-  .acc.print-me {
-    display: block !important; } }
-
+/* --- BEGIN LAYOUT BASE.CSS --- */
 .example {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-flow: row wrap;
   width: 100%; }
@@ -310,40 +229,106 @@ img {
 .example > div:nth-child(n+11):nth-child(-n+12) {
   max-width: 25%; }
 
-img {
-  font-family: 'Helvetica';
-  font-weight: 300;
-  line-height: 2;
-  text-align: center;
-  min-height: 50px;
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative; }
-  img:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    height: calc(100% + 10px);
-    width: 100%;
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px; }
-  img:after {
-    content: "" " Broken Image of " attr(alt);
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    font-family: FontAwesome;
-    color: #646464;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    text-align: center; }
+/* --- BEGIN GRID.CSS --- */
+.acc-grid-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%; }
+  .acc-grid-container > * {
+    flex: 1 0 100%; }
+  @media (max-width: 37.4375em) {
+    .acc-grid-container .acc-col-xs-full {
+      max-width: 100%; }
+    .acc-grid-container .acc-col-xs-half {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-xs-third {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-xs-quarter {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-xs-fifth {
+      max-width: 20%; } }
+  @media (min-width: 37.5em) {
+    .acc-grid-container .acc-col-sm-full {
+      max-width: 100%; }
+    .acc-grid-container .acc-col-sm-half {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-sm-third {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-sm-quarter {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-sm-fifth {
+      max-width: 20%; } }
+  @media (min-width: 56.25em) {
+    .acc-grid-container .acc-col-md-full {
+      max-width: 100%; }
+    .acc-grid-container .acc-col-md-half {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-md-third {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-md-quarter {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-md-fifth {
+      max-width: 20%; } }
+  @media (min-width: 75em) {
+    .acc-grid-container .acc-col-lg-full {
+      max-width: 100%; }
+    .acc-grid-container .acc-col-lg-half {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-lg-third {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-lg-quarter {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-lg-fifth {
+      max-width: 20%; } }
+  @media (min-width: 112.5em) {
+    .acc-grid-container .acc-col-big-full {
+      max-width: 100%; }
+    .acc-grid-container .acc-col-big-half {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-big-third {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-big-quarter {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-big-fifth {
+      max-width: 20%; } }
+  .acc-grid-container .acc-col-full {
+    max-width: 100%; }
+  .acc-grid-container .acc-col-half {
+    max-width: 50%; }
+  .acc-grid-container .acc-col-third {
+    max-width: 33.33333%; }
+  .acc-grid-container .acc-col-quarter {
+    max-width: 25%; }
+  .acc-grid-container .acc-col-fifth {
+    max-width: 20%; }
 
+/* --- END GRID.CSS --- */
+/* --- BEGIN PRINT.CSS --- */
+.acc.print-me {
+  display: none !important; }
+
+@media print {
+  body {
+    filter: Gray();
+    filter: url("#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    body main a:after,
+    body section a:after,
+    body aside a:after {
+      content: " (" attr(href) ") ";
+      font-size: 0.8em;
+      font-weight: normal; }
+  .acc-no-print {
+    display: none !important; }
+  .acc.print-me {
+    display: block !important; } }
+
+/* --- END PRINT.CSS --- */
 /* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
 /* table */
 .temp-table {
@@ -398,172 +383,7 @@ p {
   width: 50%;
   padding-top: 50%; }
 
-.body {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  padding: 1rem;
-  font-family: sans-serif;
-  line-height: 1.4; }
-
-article {
-  margin-bottom: 2rem; }
-  article h1, article h2 {
-    color: #666;
-    font-weight: 100; }
-  article h1 {
-    margin-bottom: 1rem;
-    font-size: 3rem; }
-    article h1 + p {
-      font-weight: bold; }
-  article h2 {
-    margin: 2rem 0 1rem;
-    font-size: 1.6rem; }
-  article p {
-    margin-bottom: 1rem; }
-  article ul {
-    margin-left: 1rem; }
-  article code {
-    display: inline-block;
-    margin-bottom: 0.2rem;
-    padding: 0.1rem 0.5rem;
-    border-radius: 3px;
-    background-color: #666;
-    color: white; }
-
-.example {
-  padding: 1rem;
-  position: relative;
-  border: 2px solid #666;
-  font-size: 11px; }
-  .example::before {
-    content: "@include grid(container)";
-    display: block;
-    position: absolute;
-    bottom: calc(100% - 4px);
-    background-color: white; }
-  .example > div {
-    padding: 1rem;
-    box-shadow: 0 0 0 2px white inset;
-    background-color: #ebebeb;
-    color: rgba(0, 0, 0, 0.4); }
-    .example > div::after {
-      display: block;
-      color: black;
-      white-space: pre; }
-    .example > div:nth-child(n+8):nth-child(-n+9)::after {
-      content: "@include grid(third);\A@include grid-offset(left, 2 of 12);\A@include grid-offset(right, 6 of 12);"; }
-
 /* examples for components/ mixins, functions, etc */
-.acc-clear-float {
-  *zoom: 1; }
-  .acc-clear-float:before, .acc-clear-float:after {
-    content: " ";
-    display: table; }
-  .acc-clear-float:after {
-    clear: both; }
-
-.acc-visually-hidden {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute; }
-
-img {
-  font-family: 'Helvetica';
-  font-weight: 300;
-  line-height: 2;
-  text-align: center;
-  min-height: 50px;
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative; }
-  img:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    height: calc(100% + 10px);
-    width: 100%;
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px; }
-  img:after {
-    content: "" " Broken Image of " attr(alt);
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    font-family: FontAwesome;
-    color: #646464;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    text-align: center; }
-
-.example {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%; }
-  .example > * {
-    flex: 1 0 100%; }
-
-.example > div:nth-child(1) {
-  max-width: 16.66667%; }
-
-.example > div:nth-child(2) {
-  max-width: 83.33333%; }
-
-.example > div:nth-child(n+4):nth-child(-n+7) {
-  max-width: 50%; }
-
-.example > div:nth-child(n+8):nth-child(-n+9) {
-  max-width: 33.33333%;
-  margin-left: 16.66667%;
-  margin-right: 50%; }
-
-.example > div:nth-child(10) {
-  max-width: 50%; }
-
-.example > div:nth-child(n+11):nth-child(-n+12) {
-  max-width: 25%; }
-
-.acc.print-me {
-  display: none !important; }
-
-@media print {
-  body {
-    filter: Gray();
-    filter: url("#grayscale");
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
-    body main a:after,
-    body section a:after,
-    body aside a:after {
-      content: " (" attr(href) ") ";
-      font-size: 0.8em;
-      font-weight: normal; }
-  .acc-no-print {
-    display: none !important; }
-  .acc.print-me {
-    display: block !important; } }
-
-/* float clear example */
 /* opacity and transition example */
 a {
   color: black;
@@ -598,7 +418,6 @@ p {
   font-size: 1.125rem;
   line-height: 1.525; }
 
-/* visually hidden */
 /* triangles */
 .acc-top {
   width: 0;

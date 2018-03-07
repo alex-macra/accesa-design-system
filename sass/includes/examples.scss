@@ -1,26 +1,13 @@
-/* examples for components/ mixins, functions, etc */
-@import 'utilities/variables';
+// Examples for components/ mixins, functions, etc
 
-@import 'utilities/mixins/float-clear';
 @import 'utilities/mixins/font-size';
 @import 'utilities/mixins/opacity';
 @import 'utilities/mixins/transition';
-@import 'utilities/mixins/visually-hidden';
 @import 'utilities/mixins/triangle';
-@import 'utilities/mixins/flexbox';
-@import 'utilities/utils';
-@import 'utilities/fallbacks';
 
-@import 'layout/grid';
-@import 'layout/print';
+/* --- BEGIN EXAMPLES.CSS --- */
 
-/* float clear example */
-
-.#{$prefix}-clear-float {
-  @extend %float-clear;
-}
-
-/* opacity and transition example */
+//Opacity and transition example
 
 a {
   color: black;
@@ -32,7 +19,7 @@ a {
   }
 }
 
-/* font size */
+//Font size
 
 h1 {
   @include fontSize(30);
@@ -50,13 +37,9 @@ p {
   @include fontSize(18);
 }
 
-/* visually hidden */
-
-.#{$prefix}-visually-hidden {
-  @extend %visually-hidden;
-}
-
-/* triangles */
+//Triangles
 .#{$prefix}-top {
   @include triangle(top,$square,$square,#cc0000);
 }
+
+/* --- END EXAMPLES.CSS --- */

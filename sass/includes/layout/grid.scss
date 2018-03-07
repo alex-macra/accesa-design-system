@@ -3,7 +3,7 @@
 $column: 12;
 
 @mixin grid-container {
-  display: flex; //todo
+  @include flexbox;
   flex-flow: row wrap;
   width: 100%;
 
@@ -20,7 +20,7 @@ $column: 12;
 
   @if length($size) == 1 and type_of($size) != number {
     
-    @if $size == whole or $size == full or $size == block {
+    @if $size == full or $size == block {
       $divide: 1;
       $total: 1;
     }
@@ -93,6 +93,7 @@ $column: 12;
 }
 
 //test
+
 .example { @include grid(container); }
 
 .example > div {
@@ -117,3 +118,154 @@ $column: 12;
     @include grid(quarter);
   }
 }
+
+/* --- BEGIN GRID.CSS --- */
+
+//Set default grid container classes
+
+.#{$prefix}-grid-container {
+  @include grid(container);
+
+  //Targeting mostly smartphone portrait devices
+  @include for-size(phone-only) {
+
+    .#{$prefix}-col-xs-full {
+      @include grid(full);
+    }
+
+    .#{$prefix}-col-xs-half {
+      @include grid(half );
+    }
+
+    .#{$prefix}-col-xs-third {
+      @include grid(third);
+    }
+
+    .#{$prefix}-col-xs-quarter {
+      @include grid(quarter);
+    }
+
+    .#{$prefix}-col-xs-fifth {
+      @include grid(fifth);
+    }
+  }
+
+  //Targeting mostly table portrait and smartphone landscape and up
+  @include for-size(tablet-portrait-up) {
+
+    .#{$prefix}-col-sm-full {
+      @include grid(full);
+    }
+
+    .#{$prefix}-col-sm-half {
+      @include grid(half );
+    }
+
+    .#{$prefix}-col-sm-third {
+      @include grid(third);
+    }
+
+    .#{$prefix}-col-sm-quarter {
+      @include grid(quarter);
+    }
+
+    .#{$prefix}-col-sm-fifth {
+      @include grid(fifth);
+    }
+  }
+
+  //Targeting mostly table landscape, some really small desktop monitors and up
+  @include for-size(tablet-landscape-up) {
+
+    .#{$prefix}-col-md-full {
+      @include grid(full);
+    }
+
+    .#{$prefix}-col-md-half {
+      @include grid(half );
+    }
+
+    .#{$prefix}-col-md-third {
+      @include grid(third);
+    }
+
+    .#{$prefix}-col-md-quarter {
+      @include grid(quarter);
+    }
+
+    .#{$prefix}-col-md-fifth {
+      @include grid(fifth);
+    }
+  }
+
+  //Targeting desktop monitors and up
+  @include for-size(desktop-up) {
+
+    .#{$prefix}-col-lg-full {
+      @include grid(full);
+    }
+
+    .#{$prefix}-col-lg-half {
+      @include grid(half );
+    }
+
+    .#{$prefix}-col-lg-third {
+      @include grid(third);
+    }
+
+    .#{$prefix}-col-lg-quarter {
+      @include grid(quarter);
+    }
+
+    .#{$prefix}-col-lg-fifth {
+      @include grid(fifth);
+    }
+  }
+
+  //Targeting big desktop monitors and up
+  @include for-size(big-desktop-up) {
+
+    .#{$prefix}-col-big-full {
+      @include grid(full);
+    }
+
+    .#{$prefix}-col-big-half {
+      @include grid(half );
+    }
+
+    .#{$prefix}-col-big-third {
+      @include grid(third);
+    }
+
+    .#{$prefix}-col-big-quarter {
+      @include grid(quarter);
+    }
+
+    .#{$prefix}-col-big-fifth {
+      @include grid(fifth);
+    }
+  }
+
+  //Grid classes that apply at all times
+  .#{$prefix}-col-full {
+    @include grid(full);
+  }
+
+  .#{$prefix}-col-half {
+    @include grid(half );
+  }
+
+  .#{$prefix}-col-third {
+    @include grid(third);
+  }
+
+  .#{$prefix}-col-quarter {
+    @include grid(quarter);
+  }
+
+  .#{$prefix}-col-fifth {
+    @include grid(fifth);
+  }
+}
+
+/* --- END GRID.CSS --- */

@@ -4,9 +4,14 @@
 
 //Core style sheets
 @import 'includes/core/reset';
+@import 'includes/core/base';
 
 //Import variables
 @import 'includes/utilities/variables';
+
+//Import utilities
+@import 'includes/utilities/animations';
+@import 'includes/utilities/utils';
 
 //Import mixins
 @import 'includes/utilities/mixins/float-clear';
@@ -17,21 +22,16 @@
 @import 'includes/utilities/mixins/visually-hidden';
 @import 'includes/utilities/mixins/triangle';
 @import 'includes/utilities/mixins/flexbox';
+@import 'includes/utilities/mixins/fallbacks';
+@import 'includes/utilities/mixins/responsive-breakpoints';
 
-//Import utilities
-@import 'includes/utilities/animations';
-@import 'includes/utilities/utils';
-@import 'includes/utilities/fallbacks';
-
-//Import media layouts
-@import 'includes/layout/print';
+//Import layouts
+@import 'includes/layout/base';
 @import 'includes/layout/grid';
+@import 'includes/layout/print';
 
-//Import utils
-@import 'includes/utilities/utils';
-
-//Import fallbacks
-@import 'includes/utilities/fallbacks';
+//Import plugins (3rd party)
+//@import 'includes/plugins/font-awesome';
 
 //Temp style sheet
 @import 'temp';
