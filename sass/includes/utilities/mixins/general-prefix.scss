@@ -1,6 +1,6 @@
 //General CSS3 Prefix mixin
 
-@mixin css3-prefix($property, $value) {
+@mixin general-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
   -khtml-#{$property}: #{$value};
   -moz-#{$property}: #{$value};
