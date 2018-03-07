@@ -205,9 +205,16 @@ body {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   width: 100%; }
-  .acc-grid-container > * {
+  .acc-grid-container > div {
+    -webkit-box-flex: 1 0 100%;
+    -moz-box-flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
     flex: 1 0 100%; }
   @media (max-width: 37.4375em) {
     .acc-grid-container .acc-col-xs-full {

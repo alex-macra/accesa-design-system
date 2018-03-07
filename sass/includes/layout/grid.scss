@@ -4,11 +4,12 @@ $column: 12;
 
 @mixin grid-container {
   @include flexbox;
-  flex-flow: row wrap;
+  @include flex-flow(row wrap);
+
   width: 100%;
 
-  & > * {
-    flex: 1 0 100%; //todo
+  & >div {
+    @include flex(1 0 100%);
   }
 }
 

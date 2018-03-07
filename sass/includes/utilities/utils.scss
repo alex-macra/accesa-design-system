@@ -1,39 +1,35 @@
 //Utils
 
-//Center horizontal inline
-@mixin ch-text {
+//Begin centering
+
+@mixin center-horizontally-text {
   text-align: center;
 }
 
-//Center horizontal single block
-@mixin ch-s-block {
+@mixin center-horizontally-single-block {
   text-align: center;
 }
 
-//Center horizontal multiple blocks in a row
-@mixin ch-mr-block {
-  display: inline-block;
-}
-
-//Center horizontal multiple blocks vertically
-@mixin ch-mv-block {
+@mixin center-horizontally {
   margin: 0 auto;
 }
 
-//Center vertically block known height
-@mixin cv-h-block {
-    position: relative;
-
-    >div {
-      position: absolute;
-      top: 50%;
-      height: 60px;
-      margin-top: -30px;
-   }
+@mixin center-horizontally-multiple-rows-block {
+  display: inline-block;
 }
 
-//Center vertically block unknown height
-@mixin cv-uk-block {
+@mixin center-vertically-known-height-block {
+  position: relative;
+
+  >div {
+    position: absolute;
+    top: 50%;
+    height: 60px;
+    margin-top: -30px;
+  }
+}
+
+@mixin center-vertically-unknown-height-block {
   position: relative;
 
   >div {
@@ -43,15 +39,13 @@
   }
 }
 
-//Center vertically block unknown height, using flex
-@mixin cv-uk-flex {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+@mixin center-vertically-unknown-height-flex {
+  @include flexbox;
+  @include flex-justify-content(center);
+  @include flex-direction(column);
 }
 
-//Center both horizontally and vertically, using grid
-@mixin chv-uk-grid {
+@mixin center-horizontally-vertically-unknown-height-grid {
   display: grid;
 
   >div {
@@ -59,8 +53,7 @@
   }
 }
 
-//Center both horizontally and vertically, support for older browsers
-@mixin chv-uk-grid {
+@mixin center-horizontally-vertically-unknown-height-grid {
   position: relative;
 
   >div {
@@ -71,9 +64,7 @@
   }
 }
 
-
-//Center both horizontally and vertically, fixed height, support for older browsers
-@mixin chv-h-grid {
+@mixin center-horizontally-vertically-known-height-grid {
   position: relative;
 
   >div {
@@ -86,3 +77,5 @@
     margin-top: -30px;
   }
 }
+
+//End centering
