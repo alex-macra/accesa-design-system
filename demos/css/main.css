@@ -481,6 +481,11 @@ p {
   border-width: 0 30px 30px 30px;
   border-color: transparent transparent #cc0000 transparent; }
 
+.box {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 15px; }
+
 /* --- END EXAMPLES.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
 .temp-table {
