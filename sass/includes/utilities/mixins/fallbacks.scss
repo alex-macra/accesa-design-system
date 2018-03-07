@@ -2,7 +2,7 @@
 
 //Broken Image fallback
 
-img { //temp
+@mixin image-with-fallback() { //temp
   font-family: 'Helvetica';
   font-weight: 300;
   line-height: 2;

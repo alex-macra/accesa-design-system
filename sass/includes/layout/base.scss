@@ -1,0 +1,15 @@
+/* --- BEGIN LAYOUT BASE.CSS --- */
+
+.#{$prefix}-clear-float {
+  @include float-clear;
+}
+
+.#{$prefix}-visually-hidden {
+  @include visually-hidden;
+}
+
+.#{$prefix}-img {
+  @include image-with-fallback;
+}
+
+/* --- BEGIN LAYOUT BASE.CSS --- */
