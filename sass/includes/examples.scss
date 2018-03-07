@@ -16,6 +16,7 @@ a {
   &:hover {
     color: gray;
     @include opacity(0.9);
+    @include transform(scale(1.5));
   }
 }
 

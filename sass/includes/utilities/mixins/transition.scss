@@ -1,7 +1,7 @@
 //Transition mixin
 
-@mixin transition($arguments) {
-  @include css3-prefix('transition', $arguments);
+@mixin transform($arguments) {
+  @include css3-prefix('transform', $arguments);
 }
 
-//@include transition(ease .3s color);
+//@include transform(scale(1.5));
