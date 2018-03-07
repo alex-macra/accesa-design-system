@@ -148,8 +148,6 @@ body {
   position: absolute; }
 
 .acc-img {
-  font-family: 'Helvetica';
-  font-weight: 300;
   line-height: 2;
   text-align: center;
   min-height: 50px;
@@ -439,6 +437,7 @@ body {
 a {
   color: black;
   -webkit-transition: color 0.3s ease;
+  -khtml-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   -ms-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
