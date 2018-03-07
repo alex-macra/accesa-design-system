@@ -144,7 +144,7 @@ body {
     opacity: 0.1;
     transform: translateY(-1rem); } }
 
-/* --- BEGIN LAYOUT BASE.CSS --- */
+/* --- BEGIN LAYOUT FEATURES.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
   .acc-clear-float:before, .acc-clear-float:after {
@@ -197,38 +197,7 @@ body {
     width: 100%;
     text-align: center; }
 
-/* --- BEGIN LAYOUT BASE.CSS --- */
-.example {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%; }
-  .example > * {
-    flex: 1 0 100%; }
-
-.example > div:nth-child(1) {
-  max-width: 16.66667%; }
-
-.example > div:nth-child(2) {
-  max-width: 83.33333%; }
-
-.example > div:nth-child(n+4):nth-child(-n+7) {
-  max-width: 50%; }
-
-.example > div:nth-child(n+8):nth-child(-n+9) {
-  max-width: 33.33333%;
-  margin-left: 16.66667%;
-  margin-right: 50%; }
-
-.example > div:nth-child(10) {
-  max-width: 50%; }
-
-.example > div:nth-child(n+11):nth-child(-n+12) {
-  max-width: 25%; }
-
+/* --- END LAYOUT FEATURES.CSS  --- */
 /* --- BEGIN GRID.CSS --- */
 .acc-grid-container {
   display: -webkit-box;
@@ -250,7 +219,31 @@ body {
     .acc-grid-container .acc-col-xs-quarter {
       max-width: 25%; }
     .acc-grid-container .acc-col-xs-fifth {
-      max-width: 20%; } }
+      max-width: 20%; }
+    .acc-grid-container .acc-col-xs-1 {
+      max-width: 8.33333%; }
+    .acc-grid-container .acc-col-xs-2 {
+      max-width: 16.66667%; }
+    .acc-grid-container .acc-col-xs-3 {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-xs-4 {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-xs-5 {
+      max-width: 41.66667%; }
+    .acc-grid-container .acc-col-xs-6 {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-xs-7 {
+      max-width: 58.33333%; }
+    .acc-grid-container .acc-col-xs-8 {
+      max-width: 66.66667%; }
+    .acc-grid-container .acc-col-xs-9 {
+      max-width: 75%; }
+    .acc-grid-container .acc-col-xs-10 {
+      max-width: 83.33333%; }
+    .acc-grid-container .acc-col-xs-11 {
+      max-width: 91.66667%; }
+    .acc-grid-container .acc-col-xs-12 {
+      max-width: 100%; } }
   @media (min-width: 37.5em) {
     .acc-grid-container .acc-col-sm-full {
       max-width: 100%; }
@@ -261,7 +254,31 @@ body {
     .acc-grid-container .acc-col-sm-quarter {
       max-width: 25%; }
     .acc-grid-container .acc-col-sm-fifth {
-      max-width: 20%; } }
+      max-width: 20%; }
+    .acc-grid-container .acc-col-sm-1 {
+      max-width: 8.33333%; }
+    .acc-grid-container .acc-col-sm-2 {
+      max-width: 16.66667%; }
+    .acc-grid-container .acc-col-sm-3 {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-sm-4 {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-sm-5 {
+      max-width: 41.66667%; }
+    .acc-grid-container .acc-col-sm-6 {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-sm-7 {
+      max-width: 58.33333%; }
+    .acc-grid-container .acc-col-sm-8 {
+      max-width: 66.66667%; }
+    .acc-grid-container .acc-col-sm-9 {
+      max-width: 75%; }
+    .acc-grid-container .acc-col-sm-10 {
+      max-width: 83.33333%; }
+    .acc-grid-container .acc-col-sm-11 {
+      max-width: 91.66667%; }
+    .acc-grid-container .acc-col-sm-12 {
+      max-width: 100%; } }
   @media (min-width: 56.25em) {
     .acc-grid-container .acc-col-md-full {
       max-width: 100%; }
@@ -272,7 +289,31 @@ body {
     .acc-grid-container .acc-col-md-quarter {
       max-width: 25%; }
     .acc-grid-container .acc-col-md-fifth {
-      max-width: 20%; } }
+      max-width: 20%; }
+    .acc-grid-container .acc-col-md-1 {
+      max-width: 8.33333%; }
+    .acc-grid-container .acc-col-md-2 {
+      max-width: 16.66667%; }
+    .acc-grid-container .acc-col-md-3 {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-md-4 {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-md-5 {
+      max-width: 41.66667%; }
+    .acc-grid-container .acc-col-md-6 {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-md-7 {
+      max-width: 58.33333%; }
+    .acc-grid-container .acc-col-md-8 {
+      max-width: 66.66667%; }
+    .acc-grid-container .acc-col-md-9 {
+      max-width: 75%; }
+    .acc-grid-container .acc-col-md-10 {
+      max-width: 83.33333%; }
+    .acc-grid-container .acc-col-md-11 {
+      max-width: 91.66667%; }
+    .acc-grid-container .acc-col-md-12 {
+      max-width: 100%; } }
   @media (min-width: 75em) {
     .acc-grid-container .acc-col-lg-full {
       max-width: 100%; }
@@ -283,7 +324,31 @@ body {
     .acc-grid-container .acc-col-lg-quarter {
       max-width: 25%; }
     .acc-grid-container .acc-col-lg-fifth {
-      max-width: 20%; } }
+      max-width: 20%; }
+    .acc-grid-container .acc-col-lg-1 {
+      max-width: 8.33333%; }
+    .acc-grid-container .acc-col-lg-2 {
+      max-width: 16.66667%; }
+    .acc-grid-container .acc-col-lg-3 {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-lg-4 {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-lg-5 {
+      max-width: 41.66667%; }
+    .acc-grid-container .acc-col-lg-6 {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-lg-7 {
+      max-width: 58.33333%; }
+    .acc-grid-container .acc-col-lg-8 {
+      max-width: 66.66667%; }
+    .acc-grid-container .acc-col-lg-9 {
+      max-width: 75%; }
+    .acc-grid-container .acc-col-lg-10 {
+      max-width: 83.33333%; }
+    .acc-grid-container .acc-col-lg-11 {
+      max-width: 91.66667%; }
+    .acc-grid-container .acc-col-lg-12 {
+      max-width: 100%; } }
   @media (min-width: 112.5em) {
     .acc-grid-container .acc-col-big-full {
       max-width: 100%; }
@@ -294,7 +359,31 @@ body {
     .acc-grid-container .acc-col-big-quarter {
       max-width: 25%; }
     .acc-grid-container .acc-col-big-fifth {
-      max-width: 20%; } }
+      max-width: 20%; }
+    .acc-grid-container .acc-col-big-1 {
+      max-width: 8.33333%; }
+    .acc-grid-container .acc-col-big-2 {
+      max-width: 16.66667%; }
+    .acc-grid-container .acc-col-big-3 {
+      max-width: 25%; }
+    .acc-grid-container .acc-col-big-4 {
+      max-width: 33.33333%; }
+    .acc-grid-container .acc-col-big-5 {
+      max-width: 41.66667%; }
+    .acc-grid-container .acc-col-big-6 {
+      max-width: 50%; }
+    .acc-grid-container .acc-col-big-7 {
+      max-width: 58.33333%; }
+    .acc-grid-container .acc-col-big-8 {
+      max-width: 66.66667%; }
+    .acc-grid-container .acc-col-big-9 {
+      max-width: 75%; }
+    .acc-grid-container .acc-col-big-10 {
+      max-width: 83.33333%; }
+    .acc-grid-container .acc-col-big-11 {
+      max-width: 91.66667%; }
+    .acc-grid-container .acc-col-big-12 {
+      max-width: 100%; } }
   .acc-grid-container .acc-col-full {
     max-width: 100%; }
   .acc-grid-container .acc-col-half {
@@ -305,6 +394,32 @@ body {
     max-width: 25%; }
   .acc-grid-container .acc-col-fifth {
     max-width: 20%; }
+  .acc-grid-container .acc-col-1 {
+    max-width: 8.33333%; }
+  .acc-grid-container .acc-col-2 {
+    max-width: 16.66667%; }
+  .acc-grid-container .acc-col-3 {
+    max-width: 25%; }
+  .acc-grid-container .acc-col-4 {
+    max-width: 33.33333%; }
+  .acc-grid-container .acc-col-5 {
+    max-width: 41.66667%; }
+  .acc-grid-container .acc-col-6 {
+    max-width: 50%; }
+  .acc-grid-container .acc-col-7 {
+    max-width: 58.33333%; }
+  .acc-grid-container .acc-col-8 {
+    max-width: 66.66667%; }
+  .acc-grid-container .acc-col-9 {
+    max-width: 75%; }
+  .acc-grid-container .acc-col-10 {
+    max-width: 83.33333%; }
+  .acc-grid-container .acc-col-11 {
+    max-width: 91.66667%; }
+  .acc-grid-container .acc-col-12 {
+    max-width: 100%; }
+  .acc-grid-container .acc-col-push-left-1 {
+    margin-left: 8.33333%; }
 
 /* --- END GRID.CSS --- */
 /* --- BEGIN PRINT.CSS --- */
@@ -329,8 +444,7 @@ body {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
-/* temporary stuff, dev purpose, things I am not sure about yet, experimental... you get the point */
-/* table */
+/* --- BEGIN TEMP.CSS --- */
 .temp-table {
   border: 1px solid #ccc;
   padding: 5px;
@@ -350,7 +464,6 @@ body {
 .temp-table th {
   padding: 5px; }
 
-/* button */
 [role="button"],
 input[type="submit"],
 input[type="reset"],
@@ -365,7 +478,6 @@ button {
   padding: 0 1em;
   width: 14em; }
 
-/* typography */
 h1, h2, h3, h4, h5 {
   margin-top: 15px;
   margin-bottom: 15px; }
@@ -383,8 +495,8 @@ p {
   width: 50%;
   padding-top: 50%; }
 
-/* examples for components/ mixins, functions, etc */
-/* opacity and transition example */
+/* --- END TEMP.CSS --- */
+/* --- BEGIN EXAMPLES.CSS --- */
 a {
   color: black;
   -webkit-transition: color 0.3s ease;
@@ -397,7 +509,6 @@ a {
     opacity: 0.9;
     filter: alpha(opacity=90); }
 
-/* font size */
 h1 {
   font-size: 30px;
   font-size: 1.875rem;
@@ -418,7 +529,6 @@ p {
   font-size: 1.125rem;
   line-height: 1.525; }
 
-/* triangles */
 .acc-top {
   width: 0;
   height: 0;
@@ -426,3 +536,5 @@ p {
   -moz-transform: scale(0.9999);
   border-width: 0 30px 30px 30px;
   border-color: transparent transparent #cc0000 transparent; }
+
+/* --- END EXAMPLES.CSS --- */
