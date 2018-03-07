@@ -4,6 +4,14 @@ $minimal-classes: false; //todo add @if (minimnal classes, and minify the classe
 
 html {
   font-size: 62.5%;
+
+  @include box-sizing();
+
+  *,
+  *:before,
+  *:after {
+    @include box-sizing();
+  }
 }
 
 body {

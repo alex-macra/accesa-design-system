@@ -8,6 +8,7 @@
 
 //Import mixins
 @import 'includes/utilities/mixins/animation';
+@import 'includes/utilities/mixins/box-sizing';
 @import 'includes/utilities/mixins/calc';
 @import 'includes/utilities/mixins/fallbacks';
 @import 'includes/utilities/mixins/flexbox';
@@ -18,6 +19,7 @@
 @import 'includes/utilities/mixins/loaders';
 @import 'includes/utilities/mixins/opacity';
 @import 'includes/utilities/mixins/responsive-breakpoints';
+@import 'includes/utilities/mixins/spacing';
 @import 'includes/utilities/mixins/transform';
 @import 'includes/utilities/mixins/transition';
 @import 'includes/utilities/mixins/triangle';
