@@ -1,7 +1,5 @@
 //Loaders mixin
 
-@import '../animations';
-
 @mixin bouncing-loader($alignment, $sizeV, $sizeH, $color) {
   @include flexbox;
   justify-content: center;
@@ -20,6 +18,17 @@
 
     &:nth-of-type(3){
       animation-delay: 0.4s;
+    }
+  }
+
+  @keyframes loader { //todo mixin
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0.1;
+      transform: translateY(-1rem);
     }
   }
 }

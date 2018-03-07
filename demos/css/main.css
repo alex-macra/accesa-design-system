@@ -128,22 +128,6 @@ body {
   font-size: 160%; }
 
 /* --- END BASE.CSS --- */
-@keyframes loader {
-  from {
-    opacity: 1;
-    transform: translateY(0); }
-  to {
-    opacity: 0.1;
-    transform: translateY(-1rem); } }
-
-@keyframes loader {
-  from {
-    opacity: 1;
-    transform: translateY(0); }
-  to {
-    opacity: 0.1;
-    transform: translateY(-1rem); } }
-
 /* --- BEGIN LAYOUT FEATURES.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -451,6 +435,48 @@ body {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
+/* --- BEGIN EXAMPLES.CSS --- */
+a {
+  color: black;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  a:hover {
+    color: gray;
+    opacity: 0.9;
+    filter: alpha(opacity=90); }
+
+h1 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.275; }
+
+h2 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 2.0875; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.9; }
+
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.525; }
+
+.acc-top {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  -moz-transform: scale(0.9999);
+  border-width: 0 30px 30px 30px;
+  border-color: transparent transparent #cc0000 transparent; }
+
+/* --- END EXAMPLES.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
 .temp-table {
   border: 1px solid #ccc;
@@ -503,45 +529,3 @@ p {
   padding-top: 50%; }
 
 /* --- END TEMP.CSS --- */
-/* --- BEGIN EXAMPLES.CSS --- */
-a {
-  color: black;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease; }
-  a:hover {
-    color: gray;
-    opacity: 0.9;
-    filter: alpha(opacity=90); }
-
-h1 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 2.275; }
-
-h2 {
-  font-size: 27px;
-  font-size: 1.6875rem;
-  line-height: 2.0875; }
-
-h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.9; }
-
-p {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.525; }
-
-.acc-top {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  -moz-transform: scale(0.9999);
-  border-width: 0 30px 30px 30px;
-  border-color: transparent transparent #cc0000 transparent; }
-
-/* --- END EXAMPLES.CSS --- */

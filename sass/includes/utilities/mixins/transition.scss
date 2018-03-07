@@ -7,3 +7,5 @@
   -o-transition: $arguments;
   transition: $arguments;
 }
+
+//@include transition(ease .3s color);

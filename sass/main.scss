@@ -1,29 +1,31 @@
 //Our base SA style sheet file
 
-//Set up a prefix for the css classes / id's
-
-//Core style sheets
+//Reset style sheet
 @import 'includes/core/reset';
-@import 'includes/core/base';
 
 //Import variables
 @import 'includes/utilities/variables';
 
-//Import utilities
-@import 'includes/utilities/animations';
-@import 'includes/utilities/utils';
-
 //Import mixins
+@import 'includes/utilities/mixins/animation';
+@import 'includes/utilities/mixins/calc';
+@import 'includes/utilities/mixins/fallbacks';
+@import 'includes/utilities/mixins/flexbox';
 @import 'includes/utilities/mixins/float-clear';
 @import 'includes/utilities/mixins/font-size';
-@import 'includes/utilities/mixins/opacity';
-@import 'includes/utilities/mixins/transition';
+@import 'includes/utilities/mixins/grid';
 @import 'includes/utilities/mixins/loaders';
-@import 'includes/utilities/mixins/visually-hidden';
-@import 'includes/utilities/mixins/triangle';
-@import 'includes/utilities/mixins/flexbox';
-@import 'includes/utilities/mixins/fallbacks';
+@import 'includes/utilities/mixins/opacity';
 @import 'includes/utilities/mixins/responsive-breakpoints';
+@import 'includes/utilities/mixins/transition';
+@import 'includes/utilities/mixins/triangle';
+@import 'includes/utilities/mixins/visually-hidden';
+
+//Import utilities
+@import 'includes/utilities/utils';
+
+//Base style sheets
+@import 'includes/core/base';
 
 //Import layouts
 @import 'includes/layout/features';
@@ -33,6 +35,8 @@
 //Import plugins (3rd party)
 //@import 'includes/plugins/font-awesome';
 
+//Import examples
+@import 'includes/examples';
+
 //Temp style sheet
 @import 'temp';
-@import 'includes/examples';
