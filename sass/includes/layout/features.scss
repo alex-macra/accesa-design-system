@@ -4,8 +4,12 @@
   @include float-clear;
 }
 
-.#{$prefix}-visually-hidden {
-  @include visually-hidden;
+.#{$prefix}-hide {
+  @include hide();
+}
+
+.#{$prefix}-hide-visually {
+  @include hide(visually);
 }
 
 .#{$prefix}-img {

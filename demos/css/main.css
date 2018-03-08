@@ -152,7 +152,10 @@ body {
   .acc-clear-float:after {
     clear: both; }
 
-.acc-visually-hidden {
+.acc-hide {
+  display: none; }
+
+.acc-hide-visually {
   margin: -1px;
   padding: 0;
   width: 1px;

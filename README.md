@@ -71,11 +71,7 @@ Rebuilding / compiling the Sass files
 sass:compile
 ```
 
-## Deployment
-
-todo
-
-## Built With
+## Built using
 
 * [SASS](https://sass-lang.com) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 * [NODE.js](https://nodejs.org) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
