@@ -2,7 +2,6 @@
 //http://meyerweb.com/eric/tools/css/reset/
 
 /* --- BEGIN RESET.CSS --- */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,16 +15,15 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 
 //HTML5 display-role reset for older browsers
-
 article, aside, details, figcaption,
 figure, footer, header, hgroup,
 menu, nav, section {
@@ -78,12 +76,11 @@ table {
 }
 
 //Button
-
 button {
   background-color: transparent;
-  outline: none;
   border: 0;
   cursor: pointer;
+  outline: none;
 }
 
 [role="button"],
@@ -121,8 +118,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-//Elements made to look / act like a button */
-
+//Elements made to look like a button */
 [role="button"] {
   color: inherit;
   cursor: default;
@@ -133,6 +129,7 @@ button::-moz-focus-inner,
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
 }
 
 [type="checkbox"],
@@ -141,8 +138,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-//Input, select, textarea
-
+//Input, select, text area
 input,
 optgroup,
 select,

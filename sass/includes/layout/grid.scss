@@ -494,9 +494,99 @@ $column: 12;
     @include grid(12);
   }
 
-  //Gutter - todo - add more
+  //Gutter
   .#{$prefix}-col-push-left-1 {
     @include grid-push(left, 1 of 12);
+  }
+
+  .#{$prefix}-col-push-left-2 {
+    @include grid-push(left, 2 of 12);
+  }
+  .#{$prefix}-col-push-left-3 {
+    @include grid-push(left, 3 of 12);
+  }
+
+  .#{$prefix}-col-push-left-4 {
+    @include grid-push(left, 4 of 12);
+  }
+
+  .#{$prefix}-col-push-left-5 {
+    @include grid-push(left, 5 of 12);
+  }
+
+  .#{$prefix}-col-push-left-6 {
+    @include grid-push(left, 6 of 12);
+  }
+
+  .#{$prefix}-col-push-left-7 {
+    @include grid-push(left, 7 of 12);
+  }
+
+  .#{$prefix}-col-push-left-8 {
+    @include grid-push(left, 8 of 12);
+  }
+
+  .#{$prefix}-col-push-left-9 {
+    @include grid-push(left, 9 of 12);
+  }
+
+  .#{$prefix}-col-push-left-10 {
+    @include grid-push(left, 10 of 12);
+  }
+
+  .#{$prefix}-col-push-left-11 {
+    @include grid-push(left, 11 of 12);
+  }
+
+  .#{$prefix}-col-push-left-12 {
+    @include grid-push(left, 12 of 12);
+  }
+
+  .#{$prefix}-col-push-right-1 {
+    @include grid-push(right, 1 of 12);
+  }
+
+  .#{$prefix}-col-push-right-2 {
+    @include grid-push(right, 2 of 12);
+  }
+  .#{$prefix}-col-push-right-3 {
+    @include grid-push(right, 3 of 12);
+  }
+
+  .#{$prefix}-col-push-right-4 {
+    @include grid-push(right, 4 of 12);
+  }
+
+  .#{$prefix}-col-push-right-5 {
+    @include grid-push(right, 5 of 12);
+  }
+
+  .#{$prefix}-col-push-right-6 {
+    @include grid-push(right, 6 of 12);
+  }
+
+  .#{$prefix}-col-push-right-7 {
+    @include grid-push(right, 7 of 12);
+  }
+
+  .#{$prefix}-col-push-right-8 {
+    @include grid-push(right, 8 of 12);
+  }
+
+  .#{$prefix}-col-push-right-9 {
+    @include grid-push(right, 9 of 12);
+  }
+
+  .#{$prefix}-col-push-right-10 {
+    @include grid-push(right, 10 of 12);
+  }
+
+  .#{$prefix}-col-push-right-11 {
+    @include grid-push(right, 11 of 12);
+  }
+
+  .#{$prefix}-col-push-right-12 {
+    @include grid-push(right, 12 of 12);
   }
 }
 

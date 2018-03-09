@@ -3,9 +3,9 @@
 $square: 30px;
 
 @mixin triangle($alignment, $sizeV, $sizeH, $color) {
-  width: 0;
-  height: 0;
   border-style: solid;
+  height: 0;
+  width: 0;
   -moz-transform: scale(.9999);
 
   @if $alignment == top {
