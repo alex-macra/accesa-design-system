@@ -9,19 +9,19 @@
   }
 
   @else if $size == tablet-portrait-up {
-    @media (min-width: 37.5em) and (max-width: 56.1875em){
+    @media (min-width: 37.5em){
       @content;
     }
   }
 
   @else if $size == tablet-landscape-up {
-    @media (min-width: 56.25em) and (max-width: 74.9375em){
+    @media (min-width: 56.25em){
       @content;
     }
   }
 
   @else if $size == desktop-up {
-    @media (min-width: 75em) and (max-width: 112.4375em){
+    @media (min-width: 75em) {
       @content;
     }
   }
