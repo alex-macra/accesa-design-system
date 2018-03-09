@@ -1,3 +1,4 @@
+/* --- BEGIN BASE.CSS --- */
 /* --- BEGIN RESET.CSS --- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -119,59 +120,6 @@ textarea {
   margin: 0; }
 
 /* --- END RESET.CSS --- */
-/* --- BEGIN BASE.CSS --- */
-/* --- BEGIN LAYOUT FEATURES.CSS --- */
-.acc-clear-float {
-  *zoom: 1; }
-  .acc-clear-float::before, .acc-clear-float::after {
-    content: ' ';
-    display: table; }
-  .acc-clear-float::after {
-    clear: both; }
-
-.acc-hide {
-  display: none; }
-
-.acc-hide-visually {
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.acc-img {
-  display: block;
-  height: auto;
-  line-height: 2;
-  min-height: 50px;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-  .acc-img::before {
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px;
-    content: '';
-    display: block;
-    height: calc(100% + 10px);
-    left: 0;
-    position: absolute;
-    top: -10px;
-    width: 100%; }
-  .acc-img::after {
-    color: #646464;
-    content: attr(alt);
-    display: block;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 5px;
-    width: 100%; }
-
-/* --- END LAYOUT FEATURES.CSS  --- */
 /* --- BEGIN GRID.CSS --- */
 .acc-grid-container {
   display: -moz-flex;
@@ -446,6 +394,58 @@ textarea {
     margin-right: 100%; }
 
 /* --- END GRID.CSS --- */
+/* --- BEGIN LAYOUT FEATURES.CSS --- */
+.acc-clear-float {
+  *zoom: 1; }
+  .acc-clear-float::before, .acc-clear-float::after {
+    content: ' ';
+    display: table; }
+  .acc-clear-float::after {
+    clear: both; }
+
+.acc-hide {
+  display: none; }
+
+.acc-hide-visually {
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.acc-img {
+  display: block;
+  height: auto;
+  line-height: 2;
+  min-height: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+  .acc-img::before {
+    background-color: #e6e6e6;
+    border: 2px dotted #c8c8c8;
+    border-radius: 5px;
+    content: '';
+    display: block;
+    height: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%; }
+  .acc-img::after {
+    color: #646464;
+    content: attr(alt);
+    display: block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 100%; }
+
+/* --- END LAYOUT FEATURES.CSS  --- */
 html {
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;
@@ -511,7 +511,7 @@ a {
     -ms-opacity: 0.9;
     -o-opacity: 0.9;
     opacity: 0.9;
-    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $argument-ie + ")';
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
     filter: alpha(opacity=90);
     -webkit-transform: scale(1.5);
     -khtml-transform: scale(1.5);
