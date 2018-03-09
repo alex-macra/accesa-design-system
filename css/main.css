@@ -491,6 +491,10 @@ body {
 
 /* --- END PRINT.CSS --- */
 /* --- BEGIN EXAMPLES.CSS --- */
+.red {
+  color: blue;
+  background: red; }
+
 a {
   -webkit-transition: color 0.3s ease;
   -khtml-transition: color 0.3s ease;
@@ -608,5 +612,8 @@ p {
     margin-top: -15px;
     position: absolute;
     top: 50%; }
+
+.red-text {
+  color: red; }
 
 /* --- END TEMP.CSS --- */
