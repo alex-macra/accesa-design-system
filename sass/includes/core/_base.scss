@@ -2,6 +2,10 @@
 
 $minimal-classes: false; //todo add @if (minimnal classes, and minify the classes);
 
+@import "mixins";
+@import "utils";
+@import "variables";
+
 html {
 	@include box-sizing();
 	font-size: 62.5%;

@@ -1,37 +1,19 @@
 //Our base SA style sheet file
+
 //Reset style sheet
 @import 'includes/core/reset';
-//Import global variables
-@import 'includes/utilities/variables';
-//Import mixins
-@import 'includes/utilities/mixins/animation';
-@import 'includes/utilities/mixins/box-sizing';
-@import 'includes/utilities/mixins/calc';
-@import 'includes/utilities/mixins/fallbacks';
-@import 'includes/utilities/mixins/flexbox';
-@import 'includes/utilities/mixins/float-clear';
-@import 'includes/utilities/mixins/font-size';
-@import 'includes/utilities/mixins/general-prefix';
-@import 'includes/utilities/mixins/grid';
-@import 'includes/utilities/mixins/loaders';
-@import 'includes/utilities/mixins/opacity';
-@import 'includes/utilities/mixins/responsive-breakpoints';
-@import 'includes/utilities/mixins/spacing';
-@import 'includes/utilities/mixins/transform';
-@import 'includes/utilities/mixins/transition';
-@import 'includes/utilities/mixins/triangle';
-@import 'includes/utilities/mixins/visually-hidden';
-//Import utilities
-@import 'includes/utilities/utils';
+
 //Base style sheets
 @import 'includes/core/base';
+
 //Import layouts
 @import 'includes/layout/features';
 @import 'includes/layout/grid';
 @import 'includes/layout/print';
-//Import plugins (3rd party)
-//@import 'includes/plugins/font-awesome';
-//Import examples
+
+//Third party plugins
+@import 'includes/plugins/font-awesome';
+
+//Examples
 @import 'includes/examples';
-//Temp style sheet
 @import 'temp';

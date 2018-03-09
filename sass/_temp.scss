@@ -71,4 +71,9 @@ p {
 .test {
 	@include center-vertically-known-height-block(30px);
 }
+
+.red-text {
+	color: red;
+}
+
 /* --- END TEMP.CSS --- */

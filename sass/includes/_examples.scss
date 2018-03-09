@@ -1,14 +1,9 @@
 // Examples for components/ mixins, functions, etc
-@import 'utilities/mixins/font-size';
-@import 'utilities/mixins/opacity';
-@import 'utilities/mixins/transition';
-@import 'utilities/mixins/triangle';
-@import 'utilities/mixins/spacing';
 
 /* --- BEGIN EXAMPLES.CSS --- */
 
 //Opacity and transition example
-
+.red {color: blue;background: red;}
 a {
 	@include transition(color .3s ease);
 	color: #000;
