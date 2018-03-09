@@ -1,0 +1,6 @@
+/* --- BEGIN IMAGE.CSS --- */
+
+.#{$prefix}-img {
+	@include image-with-fallback;
+}
+/* --- END IMAGE.CSS --- */
