@@ -13,11 +13,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline; }
 
 article, aside, details, figcaption,
@@ -58,9 +58,9 @@ table {
 
 button {
   background-color: transparent;
-  outline: none;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 [role="button"],
 input[type="submit"],
@@ -103,7 +103,8 @@ button::-moz-focus-inner,
   white-space: pre;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  user-select: none; }
 
 [type="checkbox"],
 [type="radio"] {
@@ -156,46 +157,46 @@ body {
   display: none; }
 
 .acc-hide-visually {
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
   clip: rect(0 0 0 0);
   clip: rect(0, 0, 0, 0);
-  position: absolute; }
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 .acc-img {
-  line-height: 2;
-  text-align: center;
-  min-height: 50px;
-  width: 100%;
-  height: auto;
   display: block;
-  position: relative; }
+  height: auto;
+  line-height: 2;
+  min-height: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%; }
   .acc-img:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    height: calc(100% + 10px);
-    width: 100%;
     background-color: #e6e6e6;
     border: 2px dotted #c8c8c8;
-    border-radius: 5px; }
+    border-radius: 5px;
+    content: " ";
+    display: block;
+    height: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%; }
   .acc-img:after {
     content: "" " Broken Image of " attr(alt);
+    color: #646464;
     display: block;
     font-size: 16px;
     font-style: normal;
     font-family: FontAwesome;
-    color: #646464;
+    left: 0;
     position: absolute;
     top: 5px;
-    left: 0;
-    width: 100%;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
 /* --- END LAYOUT FEATURES.CSS  --- */
 /* --- BEGIN GRID.CSS --- */
@@ -251,7 +252,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-xs-12 {
       max-width: 100%; } }
-  @media (min-width: 37.5em) and (max-width: 56.1875em) {
+  @media (min-width: 37.5em) {
     .acc-grid-container .acc-col-sm-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-sm-half {
@@ -286,7 +287,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-sm-12 {
       max-width: 100%; } }
-  @media (min-width: 56.25em) and (max-width: 74.9375em) {
+  @media (min-width: 56.25em) {
     .acc-grid-container .acc-col-md-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-md-half {
@@ -321,7 +322,7 @@ body {
       max-width: 91.66667%; }
     .acc-grid-container .acc-col-md-12 {
       max-width: 100%; } }
-  @media (min-width: 75em) and (max-width: 112.4375em) {
+  @media (min-width: 75em) {
     .acc-grid-container .acc-col-lg-full {
       max-width: 100%; }
     .acc-grid-container .acc-col-lg-half {
@@ -427,6 +428,52 @@ body {
     max-width: 100%; }
   .acc-grid-container .acc-col-push-left-1 {
     margin-left: 8.33333%; }
+  .acc-grid-container .acc-col-push-left-2 {
+    margin-left: 16.66667%; }
+  .acc-grid-container .acc-col-push-left-3 {
+    margin-left: 25%; }
+  .acc-grid-container .acc-col-push-left-4 {
+    margin-left: 33.33333%; }
+  .acc-grid-container .acc-col-push-left-5 {
+    margin-left: 41.66667%; }
+  .acc-grid-container .acc-col-push-left-6 {
+    margin-left: 50%; }
+  .acc-grid-container .acc-col-push-left-7 {
+    margin-left: 58.33333%; }
+  .acc-grid-container .acc-col-push-left-8 {
+    margin-left: 66.66667%; }
+  .acc-grid-container .acc-col-push-left-9 {
+    margin-left: 75%; }
+  .acc-grid-container .acc-col-push-left-10 {
+    margin-left: 83.33333%; }
+  .acc-grid-container .acc-col-push-left-11 {
+    margin-left: 91.66667%; }
+  .acc-grid-container .acc-col-push-left-12 {
+    margin-left: 100%; }
+  .acc-grid-container .acc-col-push-right-1 {
+    margin-right: 8.33333%; }
+  .acc-grid-container .acc-col-push-right-2 {
+    margin-right: 16.66667%; }
+  .acc-grid-container .acc-col-push-right-3 {
+    margin-right: 25%; }
+  .acc-grid-container .acc-col-push-right-4 {
+    margin-right: 33.33333%; }
+  .acc-grid-container .acc-col-push-right-5 {
+    margin-right: 41.66667%; }
+  .acc-grid-container .acc-col-push-right-6 {
+    margin-right: 50%; }
+  .acc-grid-container .acc-col-push-right-7 {
+    margin-right: 58.33333%; }
+  .acc-grid-container .acc-col-push-right-8 {
+    margin-right: 66.66667%; }
+  .acc-grid-container .acc-col-push-right-9 {
+    margin-right: 75%; }
+  .acc-grid-container .acc-col-push-right-10 {
+    margin-right: 83.33333%; }
+  .acc-grid-container .acc-col-push-right-11 {
+    margin-right: 91.66667%; }
+  .acc-grid-container .acc-col-push-right-12 {
+    margin-right: 100%; }
 
 /* --- END GRID.CSS --- */
 /* --- BEGIN PRINT.CSS --- */
@@ -498,16 +545,16 @@ p {
   line-height: 1.525; }
 
 .acc-top {
-  width: 0;
-  height: 0;
   border-style: solid;
+  height: 0;
+  width: 0;
   -moz-transform: scale(0.9999);
   border-width: 0 30px 30px 30px;
   border-color: transparent transparent #cc0000 transparent; }
 
 .box {
-  margin: 10px;
   border: 1px solid black;
+  margin: 10px;
   padding: 15px; }
 
 /* --- END EXAMPLES.CSS --- */
@@ -565,9 +612,9 @@ p {
 .test {
   position: relative; }
   .test > div {
-    position: absolute;
-    top: 50%;
     height: 30px;
-    margin-top: -15px; }
+    margin-top: -15px;
+    position: absolute;
+    top: 50%; }
 
 /* --- END TEMP.CSS --- */
