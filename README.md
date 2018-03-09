@@ -84,8 +84,8 @@ npm run css:watch
 
 To lint the CSS / SASS files
 ```
-css:lint
-sass:lint
+npm run css:lint
+npm run sass:lint
 ```
 
 ## Contributing
