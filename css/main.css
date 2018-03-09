@@ -120,28 +120,6 @@ textarea {
 
 /* --- END RESET.CSS --- */
 /* --- BEGIN BASE.CSS --- */
-html {
-  -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  html *,
-  html *::before,
-  html *::after {
-    -webkit-box-sizing: border-box;
-    -khtml-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box; }
-
-body {
-  font-size: 160%; }
-
-/* --- END BASE.CSS --- */
 /* --- BEGIN LAYOUT FEATURES.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -468,6 +446,28 @@ body {
     margin-right: 100%; }
 
 /* --- END GRID.CSS --- */
+html {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  html *,
+  html *::before,
+  html *::after {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+  font-size: 160%; }
+
+/* --- END BASE.CSS --- */
 /* --- BEGIN PRINT.CSS --- */
 .acc-print-me {
   display: none !important; }
@@ -490,6 +490,7 @@ body {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
+/* --- BEGIN TEMP.CSS --- */
 /* --- BEGIN EXAMPLES.CSS --- */
 .red {
   color: blue;
@@ -554,7 +555,6 @@ p {
   padding: 15px; }
 
 /* --- END EXAMPLES.CSS --- */
-/* --- BEGIN TEMP.CSS --- */
 .temp-table {
   border: 1px solid #ccc;
   min-width: 50%;
