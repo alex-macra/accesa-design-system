@@ -1,6 +1,6 @@
 /* --- BEGIN BASE.CSS --- */
 
-$minimal-classes: false; //todo add @if (minimnal classes, and minify the classes);
+//Here we import the core features, mixins and variables
 
 @import "mixins";
 @import "utils";
