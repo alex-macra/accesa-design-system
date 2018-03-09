@@ -1,34 +1,32 @@
 //Grid - Grid container - Grid gutter
 
 @mixin grid-container() {
-  @include flexbox();
-  @include flex-flow(row wrap);
+	@include flexbox();
+	@include flex-flow(row wrap);
 
-  width: 100%;
+	width: 100%;
 
-  & >div {
-    @include flex(1 0 100%);
-  }
+	> div {
+		@include flex(1 0 100%);
+	}
 }
 
 @mixin grid($size) {
-  @if $size == container or $size == wrapper {
-    @include grid-container;
-  }
+	@if $size == container or $size == wrapper {
+		@include grid-container;
+	} @else {
+		$percentage: grid($size);
 
-  @else {
-    $percentage: grid($size);
-
-    @if $percentage != null {
-      max-width: $percentage;
-    }
-  }
+		@if $percentage != null {
+			max-width: $percentage;
+		}
+	}
 }
 
 @mixin grid-push($side, $size) {
-  $percentage: grid($size);
+	$percentage: grid($size);
 
-  @if $percentage != null and ($side == right or $side == left) {
-    margin-#{$side}: $percentage;
-  }
+	@if $percentage != null and ($side == right or $side == left) {
+		margin-#{$side}: $percentage;
+	}
 }

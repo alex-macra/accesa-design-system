@@ -15,127 +15,127 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  font-size: 100%;
-  font: inherit;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
 //HTML5 display-role reset for older browsers
 article, aside, details, figcaption,
 figure, footer, header, hgroup,
 menu, nav, section {
-  display: block;
+	display: block;
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul,
 li {
-  list-style: none;
-  //No not forget to add some bullets styles if needed
+	list-style: none;
+	//No not forget to add some bullets styles if needed
 }
 
 blockquote,
 q {
-  quotes: none;
-  //No not forget to styles for the quotes if needed
+	quotes: none;
+	//No not forget to styles for the quotes if needed
 }
 
 blockquote {
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
+	&::before,
+	&::after {
+		content: '';
+		content: none;
+	}
 }
 
 a {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 b,
 strong {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 q {
-  &:before,
-  &:after {
-    content: '';
-    content: none; } }
+	&::before,
+	&::after {
+		content: '';
+		content: none;
+	}
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 //Button
 button {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: none;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: none;
 }
 
-[role="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+[type='submit'],
+[type='reset'],
+[type='button'],
 button {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  background: none;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  -webkit-appearance: button;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+	-webkit-appearance: button;
+	background: none;
+	border: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
 }
 
 //Elements made to look like a button */
-[role="button"] {
-  color: inherit;
-  cursor: default;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  white-space: pre;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+[role='button'] {
+	-webkit-appearance: button;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: inherit;
+	cursor: default;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: pre;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	padding: 0;
 }
 
 //Input, select, text area
@@ -143,10 +143,9 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
 }
-
 /* --- END RESET.CSS --- */

@@ -3,38 +3,35 @@
 //Broken Image fallback
 
 @mixin image-with-fallback() { //temp
-  display: block;
-  height: auto;
-  line-height: 2;
-  min-height: 50px;
-  position: relative;
-  text-align: center;
-  width: 100%;
+	display: block;
+	height: auto;
+	line-height: 2;
+	min-height: 50px;
+	position: relative;
+	text-align: center;
+	width: 100%;
 
-  &:before {
-    background-color: rgb(230, 230, 230);
-    border: 2px dotted rgb(200, 200, 200);
-    border-radius: 5px;
-    content: " ";
-    display: block;
-    height: calc(100% + 10px);
-    left: 0;
-    position: absolute;
-    top: -10px;
-    width: 100%;
-  }
+	&::before {
+		background-color: rgb(230, 230, 230);
+		border: 2px dotted rgb(200, 200, 200);
+		border-radius: 5px;
+		content: '';
+		display: block;
+		height: calc(100% + 10px);
+		left: 0;
+		position: absolute;
+		top: -10px;
+		width: 100%;
+	}
 
-  &:after {
-    content: "\f127" " Broken Image of " attr(alt);
-    color: rgb(100, 100, 100);
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    font-family: FontAwesome; //??
-    left: 0;
-    position: absolute;
-    top: 5px;
-    text-align: center;
-    width: 100%
-  }
+	&::after {
+		color: rgb(100, 100, 100);
+		content: attr(alt);
+		display: block;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 5px;
+		width: 100%;
+	}
 }
