@@ -5,71 +5,70 @@
 //Table
 
 .temp-table {
-  border: 1px solid #ccc;
-  padding: 5px;
-  text-align: left;
-  min-width: 50%;
+	border: 1px solid #ccc;
+	min-width: 50%;
+	padding: 5px;
+	text-align: left;
 }
 
 .temp-table thead {
-  padding: 5px;
+	padding: 5px;
 }
 
 .temp-table tbody {
-  padding: 5px;
+	padding: 5px;
 }
 
 .temp-table tr {
-  padding: 5px;
+	padding: 5px;
 }
 
 .temp-table td,
 .temp-table th {
-  padding: 5px;
+	padding: 5px;
 }
 
 //Button
 
-[role="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+[role='button'],
+[type='submit'],
+[type='reset'],
+[type='button'],
 button {
-  border: 1px solid rgb(0, 0, 0);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.25em;
-  height: 2.5em;
-  line-height: 2.5;
-  margin: 0.25em;
-  padding: 0 1em;
-  width: 14em;
+	border: 1px solid rgb(0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.25em;
+	height: 2.5em;
+	line-height: 2.5;
+	margin: 0.25em;
+	padding: 0 1em;
+	width: 14em;
 }
 
 //Typography
 
-h1,h2,h3,h4,h5 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+h1, h2, h3, h4, h5 {
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 body {
-  margin: 30px auto;
-  min-width: 360px;
-  width: 50%;
+	margin: 30px auto;
+	min-width: 360px;
+	width: 50%;
 }
 
 p {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-.equal-width-to-height-ratio {//todo
-  background: #666;
-  width: 50%;
-  padding-top: 50%;
+.equal-width-to-height-ratio { //todo
+	background: #666;
+	padding-top: 50%;
+	width: 50%;
 }
 
 .test {
-  @include center-vertically-known-height-block(30px);
+	@include center-vertically-known-height-block(30px);
 }
-
 /* --- END TEMP.CSS --- */

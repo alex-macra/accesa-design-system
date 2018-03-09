@@ -1,0 +1,9 @@
+{
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+        "indentation": "tab",
+        "number-leading-zero": null,
+        "selector-list-comma-newline-after": null,
+        "property-no-vendor-prefix": null
+    }
+}

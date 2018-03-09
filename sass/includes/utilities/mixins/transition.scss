@@ -1,7 +1,6 @@
 //Transition mixin
 
 @mixin transform($arguments) {
-  @include general-prefix('transform', $arguments);
+	@include general-prefix('transform', $arguments);
 }
-
 //@include transform(scale(1.5));

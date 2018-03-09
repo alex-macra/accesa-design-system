@@ -1,5 +1,4 @@
 // Examples for components/ mixins, functions, etc
-
 @import 'utilities/mixins/font-size';
 @import 'utilities/mixins/opacity';
 @import 'utilities/mixins/transition';
@@ -11,41 +10,40 @@
 //Opacity and transition example
 
 a {
-  color: black;
-  @include transition(color .3s ease);
+	@include transition(color .3s ease);
+	color: #000;
 
-  &:hover {
-    color: gray;
-    @include opacity(0.9);
-    @include transform(scale(1.5));
-  }
+	&:hover {
+		@include opacity(0.9);
+		@include transform(scale(1.5));
+		color: #666;
+	}
 }
 
 //Font size
 
 h1 {
-  @include font-size(30);
+	@include font-size(30);
 }
 
 h2 {
-  @include font-size(27);
+	@include font-size(27);
 }
 
 h3 {
-  @include font-size(24);
+	@include font-size(24);
 }
 
 p {
-  @include font-size(18);
+	@include font-size(18);
 }
 
 //Triangles
 .#{$prefix}-top {
-  @include triangle(top,$square,$square,#cc0000);
+	@include triangle(top, $square, $square, #cc0000);
 }
 
 .box {
-  @include spacing( 10px, 1px solid black, 15px )
+	@include spacing(10px, 1px solid black, 15px);
 }
-
 /* --- END EXAMPLES.CSS --- */

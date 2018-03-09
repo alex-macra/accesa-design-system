@@ -1,19 +1,18 @@
 /* --- BEGIN LAYOUT FEATURES.CSS --- */
 
 .#{$prefix}-clear-float {
-  @include float-clear;
+	@include float-clear;
 }
 
 .#{$prefix}-hide {
-  @include hide();
+	@include hide();
 }
 
 .#{$prefix}-hide-visually {
-  @include hide(visually);
+	@include hide(visually);
 }
 
 .#{$prefix}-img {
-  @include image-with-fallback;
+	@include image-with-fallback;
 }
-
 /* --- END LAYOUT FEATURES.CSS  --- */
