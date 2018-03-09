@@ -1,12 +1,16 @@
 /* --- BEGIN BASE.CSS --- */
 
+//Reset style sheet
+@import 'reset';
+
 //Here we import the core features, mixins and variables
 
 @import "variables";
-
+@import "functions";
 @import "mixins";
-@import "plugins";
+@import "components";
 @import "utils";
+@import "plugins";
 
 html {
 	@include box-sizing();

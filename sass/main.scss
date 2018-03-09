@@ -1,10 +1,7 @@
 //Our base SA style sheet file
 
-//Reset style sheet
-@import 'includes/core/reset';
-
 //Base style sheets
-@import 'includes/core/base';
+@import 'includes/base/core';
 
 //Import layouts
 @import 'includes/layout/print';
