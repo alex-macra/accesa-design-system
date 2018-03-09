@@ -5,12 +5,12 @@
   @include flex-justify-content(center);
 
   > div {
-    width: 1rem;
-    height: 1rem;
-    margin: 3rem 0.2rem;
+    animation: bouncing-loader 0.6s infinite alternate;
     background: $color;
     border-radius: 50%;
-    animation: bouncing-loader 0.6s infinite alternate;
+    height: 1rem;
+    margin: 3rem 0.2rem;
+    width: 1rem;
 
     &:nth-of-type(2){
       animation-delay: 0.2s;
