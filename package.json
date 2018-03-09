@@ -4,7 +4,9 @@
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
-    "sass:compile": "node-sass --include-path sass sass/main.scss demos/css/main.css"
+    "sass:compile": "node-sass --include-path sass sass/main.scss demos/css/main.css",
+    "sass:lint": "stylelint sass/**/**/**/*.scss > sass/lintOutput.txt",
+    "css:lint": "stylelint css/main.css > css/lintOutput.txt"
   },
   "repository": {
     "type": "git",
