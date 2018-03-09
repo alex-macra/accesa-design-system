@@ -12,8 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them.
 In order to customize, select the tools / components to import in your project, you will need to install beforehand:
 
-  * Node.js
-  * SASS
+* [SASS](https://sass-lang.com) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+* [NODE.js](https://nodejs.org) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
 
 If not, just use the generated [main.css] (https://github.com/alexandrumacra/accesa-ui-starter/blob/master/demos/css/main.css) file.
 
@@ -87,11 +87,6 @@ To lint the CSS / SASS files
 css:lint
 sass:lint
 ```
-
-## Built using
-
-* [SASS](https://sass-lang.com) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-* [NODE.js](https://nodejs.org) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
 
 ## Contributing
 
