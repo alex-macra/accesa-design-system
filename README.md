@@ -72,9 +72,20 @@ Afterwards
 run npm install
 ```
 
-Rebuilding / compiling the Sass files
+Rebuilding / compiling the SASS files
 ```
-sass:compile
+npm run css:build
+```
+
+Watching the SASS files
+```
+npm run css:watch
+```
+
+To lint the CSS / SASS files
+```
+"css:lint": "stylelint css/main.css > css/lintOutput.txt",
+"sass:lint": "stylelint sass/**/**/**/*.scss > sass/lintOutput.txt"
 ```
 
 ## Built using
