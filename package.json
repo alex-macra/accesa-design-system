@@ -6,7 +6,7 @@
   "scripts": {
     "css:build": "node-sass -r sass sass/main.scss -o css",
     "css:build-compressed": "node-sass -r --output-style compressed sass sass/main.scss -o css",
-    "css:build-minified": "uglifycss css/main.css > css/main.min.css";
+    "css:build-minified": "uglifycss css/main.css > css/main.min.css",
     "css:build-nested": "node-sass -r --output-style nested sass sass/main.scss -o css",
     "css:watch": "npm run css:build && npm run css:build -- -w",
     "css:lint": "stylelint css/main.css > css/lintOutput.txt",
