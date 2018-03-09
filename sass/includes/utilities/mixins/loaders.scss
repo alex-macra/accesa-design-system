@@ -1,34 +1,35 @@
 //Loaders mixin
 
 @mixin bouncing-loader($alignment, $sizeV, $sizeH, $color) {
-  @include flexbox();
-  @include flex-justify-content(center);
+	@include flexbox();
+	@include flex-justify-content(center);
 
-  > div {
-    animation: bouncing-loader 0.6s infinite alternate;
-    background: $color;
-    border-radius: 50%;
-    height: 1rem;
-    margin: 3rem 0.2rem;
-    width: 1rem;
+	> div {
+		animation: bouncing-loader 0.6s infinite alternate;
+		background: $color;
+		border-radius: 50%;
+		height: 1rem;
+		margin: 3rem 0.2rem;
+		width: 1rem;
 
-    &:nth-of-type(2){
-      animation-delay: 0.2s;
-    }
+		&:nth-of-type(2) {
+			animation-delay: 0.2s;
+		}
 
-    &:nth-of-type(3){
-      animation-delay: 0.4s;
-    }
-  }
+		&:nth-of-type(3) {
+			animation-delay: 0.4s;
+		}
+	}
 
-  @keyframes loader { //todo mixin
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 0.1;
-      transform: translateY(-1rem);
-    }
-  }
+	@keyframes loader { //todo mixin
+		from {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		to {
+			opacity: 0.1;
+			transform: translateY(-1rem);
+		}
+	}
 }

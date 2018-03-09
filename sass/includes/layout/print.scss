@@ -3,37 +3,35 @@
 /* --- BEGIN PRINT.CSS --- */
 
 .#{$prefix}-print-me {
-  display: none!important;
+	display: none !important;
 }
 
 @media print {
+	body {
+		-webkit-filter: grayscale(100%);
+		filter: Gray();
+		filter: url('#grayscale'); //todo:test more
+		filter: grayscale(100%);
 
-  body {
-    filter: Gray();
-    filter: url('#grayscale'); //todo:test more
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+		main,
+		section,
+		aside {
+			a {
+				&::after { //targeted only in content areas, to avoid printing urls for unnecessary links.
+					content: ' (" attr(href) ") ';
+					font-size: 0.8em;
+					font-weight: normal;
+				}
+			}
+		}
+	}
 
-    main,
-    section,
-    aside {
-      a {
-        &:after { //targeted only in content areas, to avoid printing urls for unnecessary links.
-          content:" (" attr(href) ") ";
-          font-size:0.8em;
-          font-weight:normal;
-        }
-      }
-    }
-  }
+	.#{$prefix}-no-print {
+		display: none !important;
+	}
 
-  .#{$prefix}-no-print {
-    display: none!important;
-  }
-
-  .#{$prefix}-print-me {
-    display: block!important;
-  }
+	.#{$prefix}-print-me {
+		display: block !important;
+	}
 }
-
 /* --- END PRINT.CSS --- */

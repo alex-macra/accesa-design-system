@@ -1,7 +1,7 @@
 //Font-size mixin
 
 @mixin font-size( $size: 16 ) {
-  font-size: $size + px;
-  font-size: ($size / 16) + rem;
-  line-height: (($size / 16) + 0.4); //do some more tests with this
+	font-size: $size + px;
+	font-size: ($size / 16) + rem;
+	line-height: (($size / 16) + 0.4); //do some more tests with this
 }

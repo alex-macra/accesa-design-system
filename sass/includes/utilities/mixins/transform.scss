@@ -1,13 +1,13 @@
 //Transform mixin
 
 @mixin transition($arguments) {
-  @include general-prefix('transition', $arguments);
+	@include general-prefix('transition', $arguments);
 }
 
 @mixin transform-origin($params) {
-  @include general-prefix('transform-origin', $params);
+	@include general-prefix('transform-origin', $params);
 }
 
 @mixin transform-style($style: preserve-3d) {
-  @include general-prefix('transform-style', $style);
+	@include general-prefix('transform-style', $style);
 }

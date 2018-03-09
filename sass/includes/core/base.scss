@@ -3,19 +3,17 @@
 $minimal-classes: false; //todo add @if (minimnal classes, and minify the classes);
 
 html {
-  font-size: 62.5%;
+	@include box-sizing();
+	font-size: 62.5%;
 
-  @include box-sizing();
-
-  *,
-  *:before,
-  *:after {
-    @include box-sizing();
-  }
+	*,
+	*::before,
+	*::after {
+		@include box-sizing();
+	}
 }
 
 body {
-  font-size: 160%;
+	font-size: 160%;
 }
-
 /* --- END BASE.CSS --- */
