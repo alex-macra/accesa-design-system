@@ -1,6 +1,6 @@
 {
-  "name": "accesa-ui-starter",
-  "version": "0.1.4",
+  "name": "go-web",
+  "version": "0.1.5",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexandrumacra/accesa-ui-starter"
+    "url": "git://github.com/alexandrumacra/go-web"
   },
   "author": "alex macra",
   "license": "OSL-3.0",
