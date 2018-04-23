@@ -1,7 +1,7 @@
-# ACCESA UI Starter
+# GO-WEB
 
 Starter pack for web-based projects
-Version 0.1.0
+Stable version 0.1.5
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ In order to customize, select the tools / components to import in your project, 
 * [SASS](https://sass-lang.com) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 * [NODE.js](https://nodejs.org) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
 
-If not, just use the generated [main.css] (https://github.com/alexandrumacra/accesa-ui-starter/blob/master/demos/css/main.css) file.
+If not, just use the generated [main.css] (https://github.com/alexandrumacra/go-web/blob/master/css/main.css) file.
 
 ## The road so far...
 
@@ -90,7 +90,7 @@ npm run sass:lint
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/alexandrumacra/accesa-ui-starter/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/alexandrumacra/go-web/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
