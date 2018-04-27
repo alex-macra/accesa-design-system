@@ -1,0 +1,73 @@
+//Centering items
+
+@mixin center-horizontally-text() {
+  text-align: center;
+}
+
+@mixin center-horizontally() {
+  margin: 0 auto;
+}
+
+@mixin center-horizontally-multiple-rows-block() {
+  display: inline-block;
+}
+
+@mixin center-vertically-known-height-block($height) {
+  position: relative;
+
+  > div {
+    height: $height;
+    margin-top: -($height/2);
+    position: absolute;
+    top: 50%;
+  }
+}
+
+@mixin center-vertically-unknown-height-block() {
+  position: relative;
+
+  > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin center-vertically-unknown-height-flex() {
+  @include flexbox();
+  @include flex-justify-content(center);
+  @include flex-direction(column);
+}
+
+@mixin center-horizontally-vertically-unknown-height-grid() {
+  display: grid;
+
+  > div {
+    margin: auto;
+  }
+}
+
+@mixin center-horizontally-vertically-unknown-height-grid() {
+  position: relative;
+
+  > div {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin center-horizontally-vertically-known-height-grid($height, $width) {
+  position: relative;
+
+  > div {
+    height: $height;
+    left: 50%;
+    margin-left: -($width/2);
+    margin-top: -($height/2);
+    position: absolute;
+    top: 50%;
+    width: $width;
+  }
+}

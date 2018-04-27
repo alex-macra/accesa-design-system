@@ -1,0 +1,44 @@
+// Examples for components/ mixins, functions, etc
+
+/* --- BEGIN EXAMPLES.CSS --- */
+
+//Opacity and transition example
+.red {color: blue;background: red;}
+a {
+	@include transition(color .3s ease);
+	color: #000;
+
+	&:hover {
+		@include opacity(0.9);
+		@include transform(scale(1.5));
+		color: #666;
+	}
+}
+
+//Font size
+
+h1 {
+	@include font-size(30);
+}
+
+h2 {
+	@include font-size(27);
+}
+
+h3 {
+	@include font-size(24);
+}
+
+p {
+	@include font-size(18);
+}
+
+//Triangles
+.#{$prefix}-top {
+	//@include triangle(top, $square, $square, #cc0000);
+}
+
+/* --- END EXAMPLES.CSS --- */
+
+
+//todo -moved to their component page
