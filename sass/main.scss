@@ -1,10 +1,11 @@
-//Our base SA style sheet file
+//Our base SASS file
 
 //Base style sheets
-@import 'includes/base/core';
+@import "base";
+//@import 'components';
 
-//Import layouts
-@import 'includes/layout/print';
+//temp
+//@import 'project/examples';
+//@import 'project/temp';
 
-//Examples
-@import 'temp';
+//todo add third party stuff (fontawesoem eg)

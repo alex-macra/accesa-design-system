@@ -1,0 +1,6 @@
+/* --- BEGIN IMAGE.CSS --- */
+
+.#{$prefix}-img {
+  @include broken-image();
+}
+/* --- END IMAGE.CSS --- */

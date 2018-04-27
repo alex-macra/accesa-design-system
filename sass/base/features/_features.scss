@@ -1,0 +1,9 @@
+// General features
+
+// Specifics features are 'helpers' that can ease and provide shortcuts to existing CSS demand
+// Vendor features provide nothing new, just an easy and optimal way to write / import existing CSS
+// Note: vendor features are mandatory to import as they provide fallbacks for older browsers, and extens throught the app. Specifics can be ingored / removed if needed.
+
+@import 'vendor/index';
+
+//@import 'specifics/index';

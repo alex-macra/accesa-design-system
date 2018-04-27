@@ -1,7 +1,0 @@
-//Calc property mixin
-
-@mixin calc($property, $expression) {
-	#{$property}: -webkit-calc(#{$expression});
-	#{$property}: calc(#{$expression});
-}
-//@include calc(width, “100% - 550px”);

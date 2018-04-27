@@ -1,0 +1,47 @@
+//Responsive breakpoints mixin
+
+@mixin for-size($size) {
+
+  @if $size == phone-only {
+    @media (max-width: 37.4375em) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 56.25em) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 75em) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == smallScreen {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}

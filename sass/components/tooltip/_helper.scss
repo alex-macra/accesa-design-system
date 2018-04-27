@@ -1,0 +1,24 @@
+
+//todo move
+.tooltip-holder {
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
+}
+h1 { color: #2c3e50; }
+.info-icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px 10px 0;
+  line-height: 50px;
+  font-size: 1.5em;
+  font-style: normal;
+  text-align: center;
+  border-radius: 50%;
+  background:  #2785C0;
+  color: #fff;
+  &.ne { @include tooltip(ne, #2c3e50); }
+  &.nw { @include tooltip(nw, #2c3e50); }
+  &.se { @include tooltip(se, #2c3e50); }
+  &.sw { @include tooltip(sw, #2c3e50); }
+}

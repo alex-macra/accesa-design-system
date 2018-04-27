@@ -119,26 +119,3 @@ textarea {
   margin: 0; }
 
 /* --- END RESET.CSS --- */
-/* --- BEGIN BASE.CSS --- */
-html {
-  -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  html *,
-  html *::before,
-  html *::after {
-    -webkit-box-sizing: border-box;
-    -khtml-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box; }
-
-body {
-  font-size: 160%; }
-
-/* --- END BASE.CSS --- */
