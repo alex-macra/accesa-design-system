@@ -1,11 +1,15 @@
 //Our base SASS file
 
 //Base style sheets
-@import "base";
-//@import 'components';
+@import 'base/core';
+
+@import 'features/index';
+@import 'components/index';
+
+@import 'utils/_print';
 
 //temp
-//@import 'project/examples';
-//@import 'project/temp';
+@import 'project/examples';
+@import 'project/temp';
 
 //todo add third party stuff (fontawesoem eg)

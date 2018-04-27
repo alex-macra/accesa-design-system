@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack -p",
-    "css:build": "node-sass -r sass sass/main.scss -o css",
+    "css:build": "node-sass -r sass sass/main.scss -o css --trace",
     "css:build-compressed": "node-sass -r --output-style compressed sass sass/main.scss -o css",
     "css:build-minified": "uglifycss css/main.css > css/main.min.css",
     "css:build-nested": "node-sass -r --output-style nested sass sass/main.scss -o css",
@@ -36,5 +36,8 @@
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "sass-globbing": "^1.0.0-alpha1"
   }
 }

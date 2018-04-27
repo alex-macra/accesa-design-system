@@ -5,5 +5,4 @@
 // Note: vendor features are mandatory to import as they provide fallbacks for older browsers, and extens throught the app. Specifics can be ingored / removed if needed.
 
 @import 'vendor/index';
-
-//@import 'specifics/index';
+@import 'specifics/index';
