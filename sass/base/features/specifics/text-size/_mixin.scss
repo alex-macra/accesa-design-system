@@ -1,0 +1,16 @@
+//Font-size mixin
+
+@mixin text-size($font-size: 18, $line-height:0) {
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  @if ($font-size & (length($line-height) > 0)) {
+    font-size: $font-size  + px;
+    font-size: px-to-rem($font-size);
+    line-height: $line-height  + px;
+    line-height: px-to-rem($line-height);
+  }
+
+  @if length($line-height) < 1 {
+    line-height: (1 + (px-to-rem-line($font-size)))
+  }
+}
