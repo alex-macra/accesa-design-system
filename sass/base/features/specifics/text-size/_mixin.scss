@@ -1,8 +1,6 @@
 //Font-size mixin
 
-$font-size: 18 !default;
-
-@mixin text-size($font-size, $line-height) {
+@mixin text-size($font-size: 18, $line-height:0) {
   -webkit-font-smoothing: subpixel-antialiased;
 
   @if ($font-size & (length($line-height) > 0)) {
