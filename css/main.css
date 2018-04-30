@@ -193,6 +193,56 @@ body {
   width: 1px; }
 
 /* --- END HIDE.CSS --- */
+.acc-flat-form input[type=text], .acc-flat-form input[type=password], .acc-flat-form input[type=submit] {
+  font-family: 'Roboto'; }
+
+.acc-flat-form input[type=text], .acc-flat-form input[type=password] {
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  color: #999;
+  outline: none; }
+
+.acc-flat-form input::-webkit-input-placeholder {
+  color: #999; }
+
+.acc-flat-form input:-moz-placeholder {
+  color: #999; }
+
+.acc-flat-form input::-moz-placeholder {
+  color: #999; }
+
+.acc-flat-form input:-ms-input-placeholder {
+  color: #999; }
+
+.acc-flat-form input.button {
+  border: none;
+  display: block;
+  background: #999999;
+  height: 40px;
+  width: 80px;
+  color: #ffffff;
+  text-align: center; }
+  .acc-flat-form input.button:hover {
+    background: #1e75aa; }
+  .acc-flat-form input.button:active {
+    background: #136899; }
+
+.acc-flat-form [role='button'],
+.acc-flat-form [type='submit'],
+.acc-flat-form [type='reset'],
+.acc-flat-form [type='button'],
+.acc-flat-form button {
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  height: 2.5em;
+  line-height: 2.5;
+  padding: 0 1em;
+  width: 14em; }
+
 /* --- BEGIN GRID.CSS --- */
 .acc-grid-container {
   display: -moz-flex;
@@ -467,7 +517,7 @@ body {
     margin-right: 100%; }
 
 /* --- END GRID.CSS --- */
-.spinner {
+.acc-spinner {
   text-indent: 999em;
   width: 20px;
   height: 20px;
@@ -478,7 +528,7 @@ body {
   background-color: #888;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3) inset;
   border-radius: 50%; }
-  .spinner:after {
+  .acc-spinner:after {
     content: '';
     position: absolute;
     top: 8px;
@@ -859,51 +909,6 @@ p {
   line-height: 1.525; }
 
 /* --- END EXAMPLES.CSS --- */
-.temp-table {
-  border: 1px solid #ccc;
-  min-width: 50%;
-  padding: 5px;
-  text-align: left; }
-
-.temp-table thead {
-  padding: 5px; }
-
-.temp-table tbody {
-  padding: 5px; }
-
-.temp-table tr {
-  padding: 5px; }
-
-.temp-table td,
-.temp-table th {
-  padding: 5px; }
-
-[role='button'],
-[type='submit'],
-[type='reset'],
-[type='button'],
-button {
-  border: 1px solid black;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.25em;
-  height: 2.5em;
-  line-height: 2.5;
-  margin: 0.25em;
-  padding: 0 1em;
-  width: 14em; }
-
-h1, h2, h3, h4, h5 {
-  margin-bottom: 15px;
-  margin-top: 15px; }
-
-body {
-  margin: 30px auto;
-  min-width: 360px;
-  width: 50%; }
-
-p {
-  margin-bottom: 10px; }
-
 .equal-width-to-height-ratio {
   background: #666;
   padding-top: 50%;
@@ -917,229 +922,11 @@ p {
     position: absolute;
     top: 50%; }
 
-.red-text {
-  color: red; }
-
-/* flat stuff */
-.flat-form {
-  background: #e74c3c;
-  color: white;
-  margin: 25px auto;
-  width: 390px;
-  height: 340px;
-  position: relative;
-  font-family: 'Roboto'; }
-  .flat-form .tabs {
-    display: block;
-    background: #c0392b;
-    width: 100%;
-    height: 40px;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-    position: relative;
-    list-style-type: none; }
-    .flat-form .tabs li {
-      display: block;
-      margin: 0;
-      padding: 0;
-      float: left; }
-      .flat-form .tabs li a {
-        display: block;
-        background: #c0392b;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        float: left;
-        padding: 12px 22px; }
-        .flat-form .tabs li a.active {
-          background: #e74c3c;
-          border-right: none;
-          -webkit-transition: all 0.5s linear;
-          -khtml-transition: all 0.5s linear;
-          -moz-transition: all 0.5s linear;
-          -ms-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          transition: all 0.5s linear; }
-        .flat-form .tabs li a:hover {
-          background: #d65548;
-          -webkit-transition: all 0.5s linear;
-          -khtml-transition: all 0.5s linear;
-          -moz-transition: all 0.5s linear;
-          -ms-transition: all 0.5s linear;
-          -o-transition: all 0.5s linear;
-          transition: all 0.5s linear; }
-      .flat-form .tabs li:last-child a {
-        text-align: center;
-        width: 174px;
-        padding-left: 0;
-        padding-right: 0;
-        border-right: none; }
-  .flat-form .form-action {
-    padding: 0 20px;
-    position: relative; }
-  .flat-form h1 {
-    font-size: 42px;
-    padding-bottom: 10px; }
-  .flat-form p {
-    font-size: 12px;
-    padding-bottom: 10px;
-    line-height: 25px; }
-  .flat-form a {
-    color: yellow;
-    text-decoration: none; }
-    .flat-form a:hover {
-      text-decoration: underline; }
-  .flat-form form {
-    padding-right: 20px !important; }
-    .flat-form form input[type=text], .flat-form form input[type=password], .flat-form form input[type=submit] {
-      font-family: 'Roboto'; }
-    .flat-form form input[type=text], .flat-form form input[type=password] {
-      width: 100%;
-      height: 40px;
-      margin-bottom: 10px;
-      padding-left: 15px;
-      background: #fff;
-      border: none;
-      color: #e74c3c;
-      outline: none; }
-    .flat-form form input.button {
-      border: none;
-      display: block;
-      background: #136899;
-      height: 40px;
-      width: 80px;
-      color: #ffffff;
-      text-align: center; }
-      .flat-form form input.button:hover {
-        background: #1e75aa; }
-      .flat-form form input.button:active {
-        background: #136899; }
-    .flat-form form input::-webkit-input-placeholder {
-      color: #e74c3c; }
-    .flat-form form input:-moz-placeholder {
-      color: #e74c3c; }
-    .flat-form form input::-moz-placeholder {
-      color: #e74c3c; }
-    .flat-form form input:-ms-input-placeholder {
-      color: #e74c3c; }
-  .flat-form .show {
-    display: block; }
-  .flat-form .hide {
-    display: none; }
-
-body section h1 {
-  margin-bottom: 40px;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100; }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  line-height: 1.7;
-  background: #eee; }
-
-/**
- *   test ui kit
- **/
 /* UI Color Scheme */
 /* UI Font Styles */
 /* UI Main Element Styles */
 /* Wrap and Components */
 /* Function: px to em, px to rem  */
-.row {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  *zoom: 1; }
-
-.row:before,
-.row:after {
-  display: table;
-  content: " "; }
-
-.row:after {
-  clear: both; }
-
-.column,
-.flex-element,
-.flex-container,
-.flex {
-  position: relative;
-  width: 100%;
-  float: left;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  min-height: 1px; }
-
-.col-1 {
-  width: 8.333333333333332%; }
-
-.col-2 {
-  width: 16.666666666666664%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33333333333333%; }
-
-.col-5 {
-  width: 41.66666666666667%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.333333333333336%; }
-
-.col-8 {
-  width: 66.66666666666666%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33333333333334%; }
-
-.col-11 {
-  width: 91.66666666666666%; }
-
-.col-12 {
-  width: 100%; }
-
-.container-view {
-  width: 100%;
-  width: 1160px;
-  min-height: 300px;
-  margin: 0 auto;
-  margin-top: 100px; }
-
-.box-outer {
-  width: 30%;
-  margin-right: 2%; }
-
-.box-right {
-  width: 30%;
-  margin-left: 2%; }
-
-@media screen and (max-width: 624px) {
-  .container-view {
-    width: 100%; }
-  .box-outer {
-    width: 100%;
-    margin-right: 0%;
-    margin: 0 0%; } }
-
 /**
  *   Start: UI Kit SCSS:
  **/
@@ -1270,43 +1057,6 @@ h2.ui {
 
 .ui.button-secondary:active {
   background: #6e74a1; }
-
-/******  UI Inputs and Textareas   ******/
-input, textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  -moz-appearance: none;
-  background-image: none;
-  outline: 0 none; }
-
-textarea, input {
-  color: #444; }
-
-textarea {
-  height: 200px;
-  max-width: 600px;
-  width: 100%;
-  padding: 0.7em;
-  resize: vertical;
-  border: 1px solid #e0e0e0;
-  border-radius: 0.25rem;
-  background: #f6f6f6; }
-
-textarea:focus {
-  border-color: lightgray; }
-
-input {
-  width: 100%;
-  max-width: 600px;
-  padding: 0.7em;
-  position: relative;
-  height: 100%;
-  border: 1px solid #e0e0e0;
-  border-radius: 0.25rem;
-  background: #f6f6f6; }
-
-input:focus {
-  border-color: lightgray; }
 
 /*  Search Input  */
 .ui.icon-input, .ui.search-input, .ui.search-input-primary, .ui.search-input-secondary, .ui.mail-input, .ui.password-input {
