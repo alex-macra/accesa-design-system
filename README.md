@@ -26,11 +26,11 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
   * The core SASS files contain both a base stylesheet set-up and a reset to ensure compatibility across as many devices and browsers as possible.
   * Good progress with the core SCSS structure of the project. We use BEM(Block Element Modifier), and for the common classes that will be used in current / future components also provided a {prefix} for an easy install / update.
   * Great progress with optimizing the use of SCSS to get a good output of CSS. We have a long list of useful shortcuts that allow for easy write / modify CSS, providing a great way to scale up (we use mixins in every place possible).
-  * We have implemented a grid, using flexbox. Right now it's responsive and scalable (default is 12 columns, sky is the limit).
+  * We have implemented a grid and several UI components. Right now it's responsive and scalable.
   * Print stylesheet was started.
 
-
 ### Improvements to come
+  * Provide easy integration with Javascript frameworks or components.
   * More functions, mixins to improve and optimize writing / editing / larger scaling of CSS.
   * Ensure responsiveness among new components.
   * Form customizing across browser and devices / also keep a default version.
