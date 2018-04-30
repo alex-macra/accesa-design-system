@@ -3,5 +3,5 @@
 }
 
 @function px-to-rem-line($size) {
-  @return ($size / 100);
+  @return ($size / 50);
 }
