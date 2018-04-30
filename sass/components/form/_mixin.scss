@@ -7,7 +7,7 @@ $placeholder-color: #999;
     &[type=text],
     &[type=password],
     &[type=submit] {
-      font-family: 'Roboto'; //???
+      font-family: 'Roboto'; //??? input email maybe? ???
     }
 
     &[type=text],
@@ -17,7 +17,7 @@ $placeholder-color: #999;
       margin-bottom: 10px;
       padding-left: 15px;
       background: #fff;
-      border: none;
+      border: 1px solid #999;
       color: $placeholder-color;
       outline: none;
     }
@@ -61,5 +61,17 @@ $placeholder-color: #999;
   }
   &:active {
     background-color: $color;
+  }
+}
+
+@mixin select {
+  select {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 14px;
+    position: relative;
+    color: #505050;
+    border: 1px solid #999999;
   }
 }

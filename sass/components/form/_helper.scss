@@ -1,6 +1,17 @@
 .#{$prefix}-flat-form {
   @include input();
   @include input-button();
+  @include select();
+}
+
+/* temp *?
+body
+ */
+
+body {
+  @include input();
+  @include input-button();
+  @include select();
 }
 
 [class*='button--'] {
@@ -13,7 +24,7 @@
   font-weight: 200;
   text-decoration: none;
   color: white;
-  border-radius: $border-radius;
+  border-radius: $border-radius; // todo shadow if material design
   transition: all .25s;
   transform: translate(0, -2px);
   &:hover, &:focus {

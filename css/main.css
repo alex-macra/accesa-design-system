@@ -201,7 +201,7 @@ body {
   margin-bottom: 10px;
   padding-left: 15px;
   background: #fff;
-  border: none;
+  border: 1px solid #999;
   color: #999;
   outline: none; }
 
@@ -229,6 +229,64 @@ body {
     background: #1e75aa; }
   .acc-flat-form input.button:active {
     background: #136899; }
+
+.acc-flat-form select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 14px;
+  position: relative;
+  color: #505050;
+  border: 1px solid #999999; }
+
+/* temp *?
+body
+ */
+body input[type=text], body input[type=password], body input[type=submit] {
+  font-family: 'Roboto'; }
+
+body input[type=text], body input[type=password] {
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: 1px solid #999;
+  color: #999;
+  outline: none; }
+
+body input::-webkit-input-placeholder {
+  color: #999; }
+
+body input:-moz-placeholder {
+  color: #999; }
+
+body input::-moz-placeholder {
+  color: #999; }
+
+body input:-ms-input-placeholder {
+  color: #999; }
+
+body input.button {
+  border: none;
+  display: block;
+  background: #999999;
+  height: 40px;
+  width: 80px;
+  color: #ffffff;
+  text-align: center; }
+  body input.button:hover {
+    background: #1e75aa; }
+  body input.button:active {
+    background: #136899; }
+
+body select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 14px;
+  position: relative;
+  color: #505050;
+  border: 1px solid #999999; }
 
 [class*='button--'] {
   position: relative;
