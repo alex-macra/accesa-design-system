@@ -1,0 +1,5 @@
+.#{$prefix}-flat-form {
+  @include input();
+  @include input-button();
+  @include button();
+}
