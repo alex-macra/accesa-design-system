@@ -1,5 +1,113 @@
 .#{$prefix}-flat-form {
   @include input();
   @include input-button();
-  @include button();
+  @include select();
+}
+
+/* temp *?
+body
+ */
+
+body {
+  @include input();
+  @include input-button();
+  @include select();
+}
+
+[class*='button--'] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 20px 0; /* REM fallback */
+  margin: 0 1rem calc(1rem + 4px) 0; /* Account for extra height from box shadow */
+  padding: 1em 2em;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  border-radius: $border-radius; // todo shadow if material design
+  transition: all .25s;
+  transform: translate(0, -2px);
+  &:hover, &:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    transform: translate(0, 0);
+  }
+  @include button($default);
+}
+
+.#{$prefix}-button--red     { @include button($red); }
+.#{$prefix}-button--orange  { @include button($orange); }
+.#{$prefix}-button--yellow  { @include button($yellow); }
+.#{$prefix}-button--lime    { @include button($lime); }
+.#{$prefix}-button--green   { @include button($green); }
+.#{$prefix}-button--olive   { @include button($olive); }
+.#{$prefix}-button--teal    { @include button($teal); }
+.#{$prefix}-button--aqua    { @include button($aqua); }
+.#{$prefix}-button--blue    { @include button($blue); }
+.#{$prefix}-button--purple  { @include button($purple); }
+.#{$prefix}-button--fuchsia { @include button($fuchsia); }
+.#{$prefix}-button--maroon  { @include button($maroon); }
+.#{$prefix}-button--navy    { @include button($navy); }
+.#{$prefix}-button--black   { @include button($black); }
+.#{$prefix}-button--gray    { @include button($gray); }
+.#{$prefix}-button--white   { @include button($white); }
+
+
+.#{$prefix}-button--yellow,
+.#{$prefix}-button--lime,
+.#{$prefix}-button--aqua,
+.#{$prefix}-button--white {
+  color: rgba(black, 0.5);
+  &:hover {
+    color: rgba(black, 0.5);
+  }
+}
+
+/* Sizes */
+
+.#{$prefix}-button--large {
+  font-size: 32px;
+  font-size: 2rem;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.#{$prefix}-button--small {
+  font-size: 13px;
+  font-size: .8rem;
+  padding: .5em 1.5em;
+}
+
+/* Alignment */
+
+.#{$prefix}-button--align-top { vertical-align: top; }
+.#{$prefix}-button--align-bottom { vertical-align: bottom; }
+
+/* icons */
+
+.#{$prefix}-button--icon {
+  padding-left: 4em;
+  padding-right: 1em;
+  > i {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    margin-top: -.5em;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3em;
+    border-radius: $border-radius 0 0 $border-radius;
+    box-shadow: 0 2px 0 rgba(black, .25);
+    background-color: rgba(black, .25);
+    transition: all .25s;
+  }
+  &:hover:before {
+    box-shadow: none;
+  }
 }

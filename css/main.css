@@ -201,7 +201,7 @@ body {
   margin-bottom: 10px;
   padding-left: 15px;
   background: #fff;
-  border: none;
+  border: 1px solid #999;
   color: #999;
   outline: none; }
 
@@ -230,18 +230,271 @@ body {
   .acc-flat-form input.button:active {
     background: #136899; }
 
-.acc-flat-form [role='button'],
-.acc-flat-form [type='submit'],
-.acc-flat-form [type='reset'],
-.acc-flat-form [type='button'],
-.acc-flat-form button {
-  border: 1px solid black;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.25em;
-  height: 2.5em;
-  line-height: 2.5;
-  padding: 0 1em;
-  width: 14em; }
+.acc-flat-form select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 14px;
+  position: relative;
+  color: #505050;
+  border: 1px solid #999999; }
+
+/* temp *?
+body
+ */
+body input[type=text], body input[type=password], body input[type=submit] {
+  font-family: 'Roboto'; }
+
+body input[type=text], body input[type=password] {
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: 1px solid #999;
+  color: #999;
+  outline: none; }
+
+body input::-webkit-input-placeholder {
+  color: #999; }
+
+body input:-moz-placeholder {
+  color: #999; }
+
+body input::-moz-placeholder {
+  color: #999; }
+
+body input:-ms-input-placeholder {
+  color: #999; }
+
+body input.button {
+  border: none;
+  display: block;
+  background: #999999;
+  height: 40px;
+  width: 80px;
+  color: #ffffff;
+  text-align: center; }
+  body input.button:hover {
+    background: #1e75aa; }
+  body input.button:active {
+    background: #136899; }
+
+body select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 14px;
+  position: relative;
+  color: #505050;
+  border: 1px solid #999999; }
+
+[class*='button--'] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 20px 0;
+  /* REM fallback */
+  margin: 0 1rem calc(1rem + 4px) 0;
+  /* Account for extra height from box shadow */
+  padding: 1em 2em;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  border-radius: 0;
+  transition: all .25s;
+  transform: translate(0, -2px);
+  background-color: #bada55;
+  box-shadow: 0 2px 0 shade(#bada55, 15%); }
+  [class*='button--']:hover, [class*='button--']:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    transform: translate(0, 0); }
+  [class*='button--']:hover, [class*='button--']:focus {
+    background-color: tint(#bada55, 25%); }
+  [class*='button--']:active {
+    background-color: #bada55; }
+
+.acc-button--red {
+  background-color: #FF4136;
+  box-shadow: 0 2px 0 shade(#FF4136, 15%); }
+  .acc-button--red:hover, .acc-button--red:focus {
+    background-color: tint(#FF4136, 25%); }
+  .acc-button--red:active {
+    background-color: #FF4136; }
+
+.acc-button--orange {
+  background-color: #FF851B;
+  box-shadow: 0 2px 0 shade(#FF851B, 15%); }
+  .acc-button--orange:hover, .acc-button--orange:focus {
+    background-color: tint(#FF851B, 25%); }
+  .acc-button--orange:active {
+    background-color: #FF851B; }
+
+.acc-button--yellow {
+  background-color: #FFDC00;
+  box-shadow: 0 2px 0 shade(#FFDC00, 15%); }
+  .acc-button--yellow:hover, .acc-button--yellow:focus {
+    background-color: tint(#FFDC00, 25%); }
+  .acc-button--yellow:active {
+    background-color: #FFDC00; }
+
+.acc-button--lime {
+  background-color: #01FF70;
+  box-shadow: 0 2px 0 shade(#01FF70, 15%); }
+  .acc-button--lime:hover, .acc-button--lime:focus {
+    background-color: tint(#01FF70, 25%); }
+  .acc-button--lime:active {
+    background-color: #01FF70; }
+
+.acc-button--green {
+  background-color: #2ECC40;
+  box-shadow: 0 2px 0 shade(#2ECC40, 15%); }
+  .acc-button--green:hover, .acc-button--green:focus {
+    background-color: tint(#2ECC40, 25%); }
+  .acc-button--green:active {
+    background-color: #2ECC40; }
+
+.acc-button--olive {
+  background-color: #3D9970;
+  box-shadow: 0 2px 0 shade(#3D9970, 15%); }
+  .acc-button--olive:hover, .acc-button--olive:focus {
+    background-color: tint(#3D9970, 25%); }
+  .acc-button--olive:active {
+    background-color: #3D9970; }
+
+.acc-button--teal {
+  background-color: #39CCCC;
+  box-shadow: 0 2px 0 shade(#39CCCC, 15%); }
+  .acc-button--teal:hover, .acc-button--teal:focus {
+    background-color: tint(#39CCCC, 25%); }
+  .acc-button--teal:active {
+    background-color: #39CCCC; }
+
+.acc-button--aqua {
+  background-color: #7FDBFF;
+  box-shadow: 0 2px 0 shade(#7FDBFF, 15%); }
+  .acc-button--aqua:hover, .acc-button--aqua:focus {
+    background-color: tint(#7FDBFF, 25%); }
+  .acc-button--aqua:active {
+    background-color: #7FDBFF; }
+
+.acc-button--blue {
+  background-color: #0074D9;
+  box-shadow: 0 2px 0 shade(#0074D9, 15%); }
+  .acc-button--blue:hover, .acc-button--blue:focus {
+    background-color: tint(#0074D9, 25%); }
+  .acc-button--blue:active {
+    background-color: #0074D9; }
+
+.acc-button--purple {
+  background-color: #B10DC9;
+  box-shadow: 0 2px 0 shade(#B10DC9, 15%); }
+  .acc-button--purple:hover, .acc-button--purple:focus {
+    background-color: tint(#B10DC9, 25%); }
+  .acc-button--purple:active {
+    background-color: #B10DC9; }
+
+.acc-button--fuchsia {
+  background-color: #F012BE;
+  box-shadow: 0 2px 0 shade(#F012BE, 15%); }
+  .acc-button--fuchsia:hover, .acc-button--fuchsia:focus {
+    background-color: tint(#F012BE, 25%); }
+  .acc-button--fuchsia:active {
+    background-color: #F012BE; }
+
+.acc-button--maroon {
+  background-color: #85144B;
+  box-shadow: 0 2px 0 shade(#85144B, 15%); }
+  .acc-button--maroon:hover, .acc-button--maroon:focus {
+    background-color: tint(#85144B, 25%); }
+  .acc-button--maroon:active {
+    background-color: #85144B; }
+
+.acc-button--navy {
+  background-color: #001F3F;
+  box-shadow: 0 2px 0 shade(#001F3F, 15%); }
+  .acc-button--navy:hover, .acc-button--navy:focus {
+    background-color: tint(#001F3F, 25%); }
+  .acc-button--navy:active {
+    background-color: #001F3F; }
+
+.acc-button--black {
+  background-color: #333;
+  box-shadow: 0 2px 0 shade(#333, 15%); }
+  .acc-button--black:hover, .acc-button--black:focus {
+    background-color: tint(#333, 25%); }
+  .acc-button--black:active {
+    background-color: #333; }
+
+.acc-button--gray {
+  background-color: #888;
+  box-shadow: 0 2px 0 shade(#888, 15%); }
+  .acc-button--gray:hover, .acc-button--gray:focus {
+    background-color: tint(#888, 25%); }
+  .acc-button--gray:active {
+    background-color: #888; }
+
+.acc-button--white {
+  background-color: #eee;
+  box-shadow: 0 2px 0 shade(#eee, 15%); }
+  .acc-button--white:hover, .acc-button--white:focus {
+    background-color: tint(#eee, 25%); }
+  .acc-button--white:active {
+    background-color: #eee; }
+
+.acc-button--yellow,
+.acc-button--lime,
+.acc-button--aqua,
+.acc-button--white {
+  color: rgba(0, 0, 0, 0.5); }
+  .acc-button--yellow:hover,
+  .acc-button--lime:hover,
+  .acc-button--aqua:hover,
+  .acc-button--white:hover {
+    color: rgba(0, 0, 0, 0.5); }
+
+/* Sizes */
+.acc-button--large {
+  font-size: 32px;
+  font-size: 2rem;
+  padding-top: .5em;
+  padding-bottom: .5em; }
+
+.acc-button--small {
+  font-size: 13px;
+  font-size: .8rem;
+  padding: .5em 1.5em; }
+
+/* Alignment */
+.acc-button--align-top {
+  vertical-align: top; }
+
+.acc-button--align-bottom {
+  vertical-align: bottom; }
+
+/* icons */
+.acc-button--icon {
+  padding-left: 4em;
+  padding-right: 1em; }
+  .acc-button--icon > i {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    margin-top: -.5em; }
+  .acc-button--icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3em;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: all .25s; }
+  .acc-button--icon:hover:before {
+    box-shadow: none; }
 
 /* --- BEGIN GRID.CSS --- */
 .acc-grid-container {
@@ -921,6 +1174,10 @@ p {
     margin-top: -15px;
     position: absolute;
     top: 50%; }
+
+body {
+  margin: 10em auto;
+  max-width: 700px; }
 
 /* UI Color Scheme */
 /* UI Font Styles */
