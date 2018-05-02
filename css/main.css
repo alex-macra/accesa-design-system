@@ -122,16 +122,16 @@ textarea {
 /* --- END RESET.CSS --- */
 /* --- BEGIN BASE.CSS --- */
 html {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%; }
   html *,
   html *::before,
   html *::after {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box; }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   html body {
     font-size: 1.5em;
     line-height: 1.6; }
@@ -842,7 +842,7 @@ body select {
   left: 50%;
   margin: -10px;
   position: relative;
-  text-indent: 999em;
+  //text-indent: 999em;
   top: 50%;
   width: 20px; }
   .acc-spinner:after {
@@ -1211,9 +1211,11 @@ a {
 
 body > div.container {
   margin: 30px auto;
-  width: 70%;
+  width: 75%;
   max-width: calc(100% - 400px);
-  min-width: 400px; }
+  min-width: 400px;
+  padding: 15px 20px;
+  background: #ffffff; }
 
 .acc-row {
   margin: 2px 0; }
@@ -1275,8 +1277,17 @@ section.header {
     top: 5px; }
 
 body {
-  background: whitesmoke;
+  background: #39cccc;
   padding-top: 100px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif; }
+
+.container > div > h2, .container > div h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px; }
 
 /* --- END EXAMPLES.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
@@ -1312,9 +1323,11 @@ a {
 
 body > div.container {
   margin: 30px auto;
-  width: 70%;
+  width: 75%;
   max-width: calc(100% - 400px);
-  min-width: 400px; }
+  min-width: 400px;
+  padding: 15px 20px;
+  background: #ffffff; }
 
 .acc-row {
   margin: 2px 0; }
@@ -1376,8 +1389,17 @@ section.header {
     top: 5px; }
 
 body {
-  background: whitesmoke;
+  background: #39cccc;
   padding-top: 100px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif; }
+
+.container > div > h2, .container > div h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px; }
 
 /* --- END EXAMPLES.CSS --- */
 .equal-width-to-height-ratio {
