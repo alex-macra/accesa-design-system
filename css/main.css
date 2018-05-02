@@ -567,7 +567,7 @@ body select {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   width: 100%; }
-  .acc-grid-container > div {
+  .acc-grid-container [class*="-col-"] {
     -webkit-box-flex: 1 0 100%;
     -moz-box-flex: 1 0 100%;
     -webkit-flex: 1 0 100%;
@@ -830,6 +830,12 @@ body select {
     margin-right: 91.66667%; }
   .acc-grid-container .acc-col-push-right-12 {
     margin-right: 100%; }
+  .acc-grid-container .acc-row {
+    display: -moz-flex;
+    display: flex; }
+
+.acc-row {
+  width: 100%; }
 
 /* --- END GRID.CSS --- */
 .acc-spinner {
@@ -1211,6 +1217,15 @@ body {
   margin: 30px auto;
   max-width: 1280px; }
 
+.acc-row {
+  margin: 2px 0; }
+  .acc-row > div {
+    padding: 3px 10px;
+    color: #fff;
+    background-color: #999; }
+    .acc-row > div:nth-child(2n) {
+      background-color: #888888; }
+
 /* --- END EXAMPLES.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
 /* --- BEGIN EXAMPLES.CSS --- */
@@ -1246,6 +1261,15 @@ a {
 body {
   margin: 30px auto;
   max-width: 1280px; }
+
+.acc-row {
+  margin: 2px 0; }
+  .acc-row > div {
+    padding: 3px 10px;
+    color: #fff;
+    background-color: #999; }
+    .acc-row > div:nth-child(2n) {
+      background-color: #888888; }
 
 /* --- END EXAMPLES.CSS --- */
 .equal-width-to-height-ratio {

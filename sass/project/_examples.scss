@@ -21,6 +21,20 @@ body {
 	max-width: 1280px;
 }
 
+.acc-row {
+	margin: 2px 0;
+
+	> div {
+		padding: 3px 10px;
+		color: #fff;
+		background-color: #999;
+
+		&:nth-child(2n) {
+			background-color: #888888;
+		}
+	}
+}
+
 //Font size
 
 //Triangles

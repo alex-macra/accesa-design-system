@@ -43,52 +43,50 @@
     <!-- Grid -->
     <div id="grid">
         <h3>The grid</h3>
-        <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes
-            coding responsive much easier. Go ahead, resize the browser. </p>
-        <div>
-            <div class="row">
-                <div class="one column" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">One</div>
-                <div class="eleven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eleven</div>
+        <div class="acc-grid-container">
+            <div class="acc-row"> <!-- //???-->
+                <div class="acc-col-1">One</div>
+                <div class="acc-col-11">Eleven</div>
             </div>
-            <div class="row">
-                <div class="two columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Two</div>
-                <div class="ten columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Ten</div>
+            <div class="acc-row">
+                <div class="acc-col-2">Two</div>
+                <div class="acc-col-10">Ten</div>
             </div>
-            <div class="row">
-                <div class="three columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Three</div>
-                <div class="nine columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Nine</div>
+            <div class="acc-row">
+                <div class="acc-col-3">Three</div>
+                <div class="acc-col-9">Nine</div>
             </div>
-            <div class="row">
-                <div class="four columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Four</div>
-                <div class="eight columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eight</div>
+            <div class="acc-row">
+                <div class="acc-col-4">Four</div>
+                <div class="acc-col-8">Eight</div>
             </div>
-            <div class="row">
-                <div class="five columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Five</div>
-                <div class="seven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Seven</div>
+            <div class="acc-row">
+                <div class="acc-col-5">Five</div>
+                <div class="acc-col-7">Seven</div>
             </div>
-            <div class="row">
-                <div class="six columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Six</div>
-                <div class="six columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Six</div>
+            <div class="acc-row">
+                <div class="acc-col-6">Six</div>
+                <div class="acc-col-6">Six</div>
             </div>
-            <div class="row">
-                <div class="seven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Seven</div>
-                <div class="five columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Five</div>
+            <div class="acc-row">
+                <div class="acc-col-7">Seven</div>
+                <div class="acc-col-5">Five</div>
             </div>
-            <div class="row">
-                <div class="eight columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eight</div>
-                <div class="four  columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Four</div>
+            <div class="acc-row">
+                <div class="acc-col-8">Eight</div>
+                <div class="acc-col-4">Four</div>
             </div>
-            <div class="row">
-                <div class="nine columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Nine</div>
-                <div class="three columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Three</div>
+            <div class="acc-row">
+                <div class="acc-col-9">Nine</div>
+                <div class="acc-col-3">Three</div>
             </div>
-            <div class="row">
-                <div class="ten columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Ten</div>
-                <div class="two columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Two</div>
+            <div class="acc-row">
+                <div class="acc-col-10">Ten</div>
+                <div class="acc-col-2">Two</div>
             </div>
-            <div class="row">
-                <div class="eleven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eleven</div>
-                <div class="one column" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">One</div>
+            <div class="acc-row">
+                <div class="acc-col-11">Eleven</div>
+                <div class="acc-col-1">One</div>
             </div>
         </div>
     </div>
@@ -172,12 +170,12 @@
         <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
         <div class="docs-example docs-example-forms">
             <form>
-                <div class="row">
-                    <div class="six columns">
+                <div class="acc-row">
+                    <div class="six ">
                         <label for="exampleEmailInput">Your email</label>
                         <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
                     </div>
-                    <div class="six columns">
+                    <div class="six ">
                         <label for="exampleRecipientInput">Reason for contacting</label>
                         <select class="u-full-width" id="exampleRecipientInput">
                             <option value="Option 1">Questions</option>
@@ -212,7 +210,7 @@
     <div id="lists">
         <h3>Lists</h3>
         <div class="row docs-example">
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li>Unordered lists have basic styles</li>
                     <li>
@@ -225,7 +223,7 @@
                     <li>Just more list items mama san</li>
                 </ul>
             </div>
-            <div class="six columns">
+            <div class="six ">
                 <ol>
                     <li>Ordered lists also have basic styles</li>
                     <li>
@@ -291,14 +289,14 @@
             grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The
             sizes for the queries are:</p>
         <div class="docs-example row">
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li><strong>Desktop HD</strong>: 1200px</li>
                     <li><strong>Desktop</strong>: 1000px</li>
                     <li><strong>Tablet</strong>: 750px</li>
                 </ul>
             </div>
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li><strong>Phablet</strong>: 550px</li>
                     <li><strong>Mobile</strong>: 400px</li>
