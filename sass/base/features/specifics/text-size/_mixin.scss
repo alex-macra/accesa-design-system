@@ -1,16 +1,16 @@
 //Font-size mixin
 
 @mixin text-size($font-size: 18, $line-height: false) {
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-size: $font-size  + px;
-  font-size: px-to-rem($font-size);
+	font-size: $font-size  + px;
+	font-size: px-to-rem($font-size);
+	-webkit-font-smoothing: subpixel-antialiased;
 
-  @if $line-height {
-    line-height: $line-height  + px;
-    line-height: px-to-rem($line-height);
-  }
+	@if $line-height {
+		line-height: $line-height  + px;
+		line-height: px-to-rem($line-height);
+	}
 
-  @else {
-    line-height: (1 + (px-to-rem-line($font-size)))
-  }
+	@else {
+		line-height: (1 + (px-to-rem-line($font-size)))
+	}
 }

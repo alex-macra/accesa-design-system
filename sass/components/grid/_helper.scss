@@ -3,527 +3,527 @@
 //Set default grid container classes
 
 .#{$prefix}-grid-container {
-  @include grid(container);
-
-  //Targeting mostly smartphone portrait devices
-  @include for-size(phone-only) {
-    .#{$prefix}-col-xs-full {
-      @include grid(full);
-    }
-
-    .#{$prefix}-col-xs-half {
-      @include grid(half);
-    }
-
-    .#{$prefix}-col-xs-third {
-      @include grid(third);
-    }
-
-    .#{$prefix}-col-xs-quarter {
-      @include grid(quarter);
-    }
-
-    .#{$prefix}-col-xs-fifth {
-      @include grid(fifth);
-    }
-
-    .#{$prefix}-col-xs-1 {
-      @include grid(1);
-    }
-
-    .#{$prefix}-col-xs-2 {
-      @include grid(2);
-    }
-
-    .#{$prefix}-col-xs-3 {
-      @include grid(3);
-    }
-
-    .#{$prefix}-col-xs-4 {
-      @include grid(4);
-    }
-
-    .#{$prefix}-col-xs-5 {
-      @include grid(5);
-    }
-
-    .#{$prefix}-col-xs-6 {
-      @include grid(6);
-    }
-
-    .#{$prefix}-col-xs-7 {
-      @include grid(7);
-    }
-
-    .#{$prefix}-col-xs-8 {
-      @include grid(8);
-    }
-
-    .#{$prefix}-col-xs-9 {
-      @include grid(9);
-    }
-
-    .#{$prefix}-col-xs-10 {
-      @include grid(10);
-    }
-
-    .#{$prefix}-col-xs-11 {
-      @include grid(11);
-    }
-
-    .#{$prefix}-col-xs-12 {
-      @include grid(12);
-    }
-  }
-
-  //Targeting mostly table portrait and smartphone landscape and up
-  @include for-size(tablet-portrait-up) {
-    .#{$prefix}-col-sm-full {
-      @include grid(full);
-    }
-
-    .#{$prefix}-col-sm-half {
-      @include grid(half);
-    }
-
-    .#{$prefix}-col-sm-third {
-      @include grid(third);
-    }
-
-    .#{$prefix}-col-sm-quarter {
-      @include grid(quarter);
-    }
-
-    .#{$prefix}-col-sm-fifth {
-      @include grid(fifth);
-    }
-
-    .#{$prefix}-col-sm-1 {
-      @include grid(1);
-    }
-
-    .#{$prefix}-col-sm-2 {
-      @include grid(2);
-    }
-
-    .#{$prefix}-col-sm-3 {
-      @include grid(3);
-    }
-
-    .#{$prefix}-col-sm-4 {
-      @include grid(4);
-    }
-
-    .#{$prefix}-col-sm-5 {
-      @include grid(5);
-    }
-
-    .#{$prefix}-col-sm-6 {
-      @include grid(6);
-    }
-
-    .#{$prefix}-col-sm-7 {
-      @include grid(7);
-    }
-
-    .#{$prefix}-col-sm-8 {
-      @include grid(8);
-    }
-
-    .#{$prefix}-col-sm-9 {
-      @include grid(9);
-    }
-
-    .#{$prefix}-col-sm-10 {
-      @include grid(10);
-    }
-
-    .#{$prefix}-col-sm-11 {
-      @include grid(11);
-    }
-
-    .#{$prefix}-col-sm-12 {
-      @include grid(12);
-    }
-  }
-
-  //Targeting mostly table landscape, some really small desktop monitors and up
-  @include for-size(tablet-landscape-up) {
-    .#{$prefix}-col-md-full {
-      @include grid(full);
-    }
-
-    .#{$prefix}-col-md-half {
-      @include grid(half);
-    }
-
-    .#{$prefix}-col-md-third {
-      @include grid(third);
-    }
-
-    .#{$prefix}-col-md-quarter {
-      @include grid(quarter);
-    }
-
-    .#{$prefix}-col-md-fifth {
-      @include grid(fifth);
-    }
-
-    .#{$prefix}-col-md-1 {
-      @include grid(1);
-    }
-
-    .#{$prefix}-col-md-2 {
-      @include grid(2);
-    }
-
-    .#{$prefix}-col-md-3 {
-      @include grid(3);
-    }
-
-    .#{$prefix}-col-md-4 {
-      @include grid(4);
-    }
-
-    .#{$prefix}-col-md-5 {
-      @include grid(5);
-    }
-
-    .#{$prefix}-col-md-6 {
-      @include grid(6);
-    }
-
-    .#{$prefix}-col-md-7 {
-      @include grid(7);
-    }
-
-    .#{$prefix}-col-md-8 {
-      @include grid(8);
-    }
-
-    .#{$prefix}-col-md-9 {
-      @include grid(9);
-    }
-
-    .#{$prefix}-col-md-10 {
-      @include grid(10);
-    }
-
-    .#{$prefix}-col-md-11 {
-      @include grid(11);
-    }
-
-    .#{$prefix}-col-md-12 {
-      @include grid(12);
-    }
-  }
-
-  //Targeting desktop monitors and up
-  @include for-size(desktop-up) {
-    .#{$prefix}-col-lg-full {
-      @include grid(full);
-    }
-
-    .#{$prefix}-col-lg-half {
-      @include grid(half);
-    }
-
-    .#{$prefix}-col-lg-third {
-      @include grid(third);
-    }
-
-    .#{$prefix}-col-lg-quarter {
-      @include grid(quarter);
-    }
-
-    .#{$prefix}-col-lg-fifth {
-      @include grid(fifth);
-    }
-
-    .#{$prefix}-col-lg-1 {
-      @include grid(1);
-    }
-
-    .#{$prefix}-col-lg-2 {
-      @include grid(2);
-    }
-
-    .#{$prefix}-col-lg-3 {
-      @include grid(3);
-    }
-
-    .#{$prefix}-col-lg-4 {
-      @include grid(4);
-    }
-
-    .#{$prefix}-col-lg-5 {
-      @include grid(5);
-    }
-
-    .#{$prefix}-col-lg-6 {
-      @include grid(6);
-    }
-
-    .#{$prefix}-col-lg-7 {
-      @include grid(7);
-    }
-
-    .#{$prefix}-col-lg-8 {
-      @include grid(8);
-    }
-
-    .#{$prefix}-col-lg-9 {
-      @include grid(9);
-    }
-
-    .#{$prefix}-col-lg-10 {
-      @include grid(10);
-    }
-
-    .#{$prefix}-col-lg-11 {
-      @include grid(11);
-    }
-
-    .#{$prefix}-col-lg-12 {
-      @include grid(12);
-    }
-  }
-
-  //Targeting big desktop monitors and up
-  @include for-size(big-desktop-up) {
-    .#{$prefix}-col-big-full {
-      @include grid(full);
-    }
-
-    .#{$prefix}-col-big-half {
-      @include grid(half);
-    }
-
-    .#{$prefix}-col-big-third {
-      @include grid(third);
-    }
-
-    .#{$prefix}-col-big-quarter {
-      @include grid(quarter);
-    }
-
-    .#{$prefix}-col-big-fifth {
-      @include grid(fifth);
-    }
-
-    .#{$prefix}-col-big-1 {
-      @include grid(1);
-    }
-
-    .#{$prefix}-col-big-2 {
-      @include grid(2);
-    }
-
-    .#{$prefix}-col-big-3 {
-      @include grid(3);
-    }
-
-    .#{$prefix}-col-big-4 {
-      @include grid(4);
-    }
-
-    .#{$prefix}-col-big-5 {
-      @include grid(5);
-    }
-
-    .#{$prefix}-col-big-6 {
-      @include grid(6);
-    }
-
-    .#{$prefix}-col-big-7 {
-      @include grid(7);
-    }
-
-    .#{$prefix}-col-big-8 {
-      @include grid(8);
-    }
-
-    .#{$prefix}-col-big-9 {
-      @include grid(9);
-    }
-
-    .#{$prefix}-col-big-10 {
-      @include grid(10);
-    }
-
-    .#{$prefix}-col-big-11 {
-      @include grid(11);
-    }
-
-    .#{$prefix}-col-big-12 {
-      @include grid(12);
-    }
-  }
-
-  //Grid classes that apply at all times
-  .#{$prefix}-col-full {
-    @include grid(full);
-  }
-
-  .#{$prefix}-col-half {
-    @include grid(half);
-  }
-
-  .#{$prefix}-col-third {
-    @include grid(third);
-  }
-
-  .#{$prefix}-col-quarter {
-    @include grid(quarter);
-  }
-
-  .#{$prefix}-col-fifth {
-    @include grid(fifth);
-  }
-
-  .#{$prefix}-col-1 {
-    @include grid(1);
-  }
-
-  .#{$prefix}-col-2 {
-    @include grid(2);
-  }
-
-  .#{$prefix}-col-3 {
-    @include grid(3);
-  }
-
-  .#{$prefix}-col-4 {
-    @include grid(4);
-  }
-
-  .#{$prefix}-col-5 {
-    @include grid(5);
-  }
-
-  .#{$prefix}-col-6 {
-    @include grid(6);
-  }
-
-  .#{$prefix}-col-7 {
-    @include grid(7);
-  }
-
-  .#{$prefix}-col-8 {
-    @include grid(8);
-  }
-
-  .#{$prefix}-col-9 {
-    @include grid(9);
-  }
-
-  .#{$prefix}-col-10 {
-    @include grid(10);
-  }
-
-  .#{$prefix}-col-11 {
-    @include grid(11);
-  }
-
-  .#{$prefix}-col-12 {
-    @include grid(12);
-  }
-
-  //Gutter
-  .#{$prefix}-col-push-left-1 {
-    @include grid-push(left, 1 of 12);
-  }
-
-  .#{$prefix}-col-push-left-2 {
-    @include grid-push(left, 2 of 12);
-  }
-
-  .#{$prefix}-col-push-left-3 {
-    @include grid-push(left, 3 of 12);
-  }
-
-  .#{$prefix}-col-push-left-4 {
-    @include grid-push(left, 4 of 12);
-  }
-
-  .#{$prefix}-col-push-left-5 {
-    @include grid-push(left, 5 of 12);
-  }
-
-  .#{$prefix}-col-push-left-6 {
-    @include grid-push(left, 6 of 12);
-  }
-
-  .#{$prefix}-col-push-left-7 {
-    @include grid-push(left, 7 of 12);
-  }
-
-  .#{$prefix}-col-push-left-8 {
-    @include grid-push(left, 8 of 12);
-  }
-
-  .#{$prefix}-col-push-left-9 {
-    @include grid-push(left, 9 of 12);
-  }
-
-  .#{$prefix}-col-push-left-10 {
-    @include grid-push(left, 10 of 12);
-  }
-
-  .#{$prefix}-col-push-left-11 {
-    @include grid-push(left, 11 of 12);
-  }
-
-  .#{$prefix}-col-push-left-12 {
-    @include grid-push(left, 12 of 12);
-  }
-
-  .#{$prefix}-col-push-right-1 {
-    @include grid-push(right, 1 of 12);
-  }
-
-  .#{$prefix}-col-push-right-2 {
-    @include grid-push(right, 2 of 12);
-  }
-
-  .#{$prefix}-col-push-right-3 {
-    @include grid-push(right, 3 of 12);
-  }
-
-  .#{$prefix}-col-push-right-4 {
-    @include grid-push(right, 4 of 12);
-  }
-
-  .#{$prefix}-col-push-right-5 {
-    @include grid-push(right, 5 of 12);
-  }
-
-  .#{$prefix}-col-push-right-6 {
-    @include grid-push(right, 6 of 12);
-  }
-
-  .#{$prefix}-col-push-right-7 {
-    @include grid-push(right, 7 of 12);
-  }
-
-  .#{$prefix}-col-push-right-8 {
-    @include grid-push(right, 8 of 12);
-  }
-
-  .#{$prefix}-col-push-right-9 {
-    @include grid-push(right, 9 of 12);
-  }
-
-  .#{$prefix}-col-push-right-10 {
-    @include grid-push(right, 10 of 12);
-  }
-
-  .#{$prefix}-col-push-right-11 {
-    @include grid-push(right, 11 of 12);
-  }
-
-  .#{$prefix}-col-push-right-12 {
-    @include grid-push(right, 12 of 12);
-  }
+	@include grid(container);
+
+	//Targeting mostly smartphone portrait devices
+	@include for-size(phone-only) {
+		.#{$prefix}-col-xs-full {
+			@include grid(full);
+		}
+
+		.#{$prefix}-col-xs-half {
+			@include grid(half);
+		}
+
+		.#{$prefix}-col-xs-third {
+			@include grid(third);
+		}
+
+		.#{$prefix}-col-xs-quarter {
+			@include grid(quarter);
+		}
+
+		.#{$prefix}-col-xs-fifth {
+			@include grid(fifth);
+		}
+
+		.#{$prefix}-col-xs-1 {
+			@include grid(1);
+		}
+
+		.#{$prefix}-col-xs-2 {
+			@include grid(2);
+		}
+
+		.#{$prefix}-col-xs-3 {
+			@include grid(3);
+		}
+
+		.#{$prefix}-col-xs-4 {
+			@include grid(4);
+		}
+
+		.#{$prefix}-col-xs-5 {
+			@include grid(5);
+		}
+
+		.#{$prefix}-col-xs-6 {
+			@include grid(6);
+		}
+
+		.#{$prefix}-col-xs-7 {
+			@include grid(7);
+		}
+
+		.#{$prefix}-col-xs-8 {
+			@include grid(8);
+		}
+
+		.#{$prefix}-col-xs-9 {
+			@include grid(9);
+		}
+
+		.#{$prefix}-col-xs-10 {
+			@include grid(10);
+		}
+
+		.#{$prefix}-col-xs-11 {
+			@include grid(11);
+		}
+
+		.#{$prefix}-col-xs-12 {
+			@include grid(12);
+		}
+	}
+
+	//Targeting mostly table portrait and smartphone landscape and up
+	@include for-size(tablet-portrait-up) {
+		.#{$prefix}-col-sm-full {
+			@include grid(full);
+		}
+
+		.#{$prefix}-col-sm-half {
+			@include grid(half);
+		}
+
+		.#{$prefix}-col-sm-third {
+			@include grid(third);
+		}
+
+		.#{$prefix}-col-sm-quarter {
+			@include grid(quarter);
+		}
+
+		.#{$prefix}-col-sm-fifth {
+			@include grid(fifth);
+		}
+
+		.#{$prefix}-col-sm-1 {
+			@include grid(1);
+		}
+
+		.#{$prefix}-col-sm-2 {
+			@include grid(2);
+		}
+
+		.#{$prefix}-col-sm-3 {
+			@include grid(3);
+		}
+
+		.#{$prefix}-col-sm-4 {
+			@include grid(4);
+		}
+
+		.#{$prefix}-col-sm-5 {
+			@include grid(5);
+		}
+
+		.#{$prefix}-col-sm-6 {
+			@include grid(6);
+		}
+
+		.#{$prefix}-col-sm-7 {
+			@include grid(7);
+		}
+
+		.#{$prefix}-col-sm-8 {
+			@include grid(8);
+		}
+
+		.#{$prefix}-col-sm-9 {
+			@include grid(9);
+		}
+
+		.#{$prefix}-col-sm-10 {
+			@include grid(10);
+		}
+
+		.#{$prefix}-col-sm-11 {
+			@include grid(11);
+		}
+
+		.#{$prefix}-col-sm-12 {
+			@include grid(12);
+		}
+	}
+
+	//Targeting mostly table landscape, some really small desktop monitors and up
+	@include for-size(tablet-landscape-up) {
+		.#{$prefix}-col-md-full {
+			@include grid(full);
+		}
+
+		.#{$prefix}-col-md-half {
+			@include grid(half);
+		}
+
+		.#{$prefix}-col-md-third {
+			@include grid(third);
+		}
+
+		.#{$prefix}-col-md-quarter {
+			@include grid(quarter);
+		}
+
+		.#{$prefix}-col-md-fifth {
+			@include grid(fifth);
+		}
+
+		.#{$prefix}-col-md-1 {
+			@include grid(1);
+		}
+
+		.#{$prefix}-col-md-2 {
+			@include grid(2);
+		}
+
+		.#{$prefix}-col-md-3 {
+			@include grid(3);
+		}
+
+		.#{$prefix}-col-md-4 {
+			@include grid(4);
+		}
+
+		.#{$prefix}-col-md-5 {
+			@include grid(5);
+		}
+
+		.#{$prefix}-col-md-6 {
+			@include grid(6);
+		}
+
+		.#{$prefix}-col-md-7 {
+			@include grid(7);
+		}
+
+		.#{$prefix}-col-md-8 {
+			@include grid(8);
+		}
+
+		.#{$prefix}-col-md-9 {
+			@include grid(9);
+		}
+
+		.#{$prefix}-col-md-10 {
+			@include grid(10);
+		}
+
+		.#{$prefix}-col-md-11 {
+			@include grid(11);
+		}
+
+		.#{$prefix}-col-md-12 {
+			@include grid(12);
+		}
+	}
+
+	//Targeting desktop monitors and up
+	@include for-size(desktop-up) {
+		.#{$prefix}-col-lg-full {
+			@include grid(full);
+		}
+
+		.#{$prefix}-col-lg-half {
+			@include grid(half);
+		}
+
+		.#{$prefix}-col-lg-third {
+			@include grid(third);
+		}
+
+		.#{$prefix}-col-lg-quarter {
+			@include grid(quarter);
+		}
+
+		.#{$prefix}-col-lg-fifth {
+			@include grid(fifth);
+		}
+
+		.#{$prefix}-col-lg-1 {
+			@include grid(1);
+		}
+
+		.#{$prefix}-col-lg-2 {
+			@include grid(2);
+		}
+
+		.#{$prefix}-col-lg-3 {
+			@include grid(3);
+		}
+
+		.#{$prefix}-col-lg-4 {
+			@include grid(4);
+		}
+
+		.#{$prefix}-col-lg-5 {
+			@include grid(5);
+		}
+
+		.#{$prefix}-col-lg-6 {
+			@include grid(6);
+		}
+
+		.#{$prefix}-col-lg-7 {
+			@include grid(7);
+		}
+
+		.#{$prefix}-col-lg-8 {
+			@include grid(8);
+		}
+
+		.#{$prefix}-col-lg-9 {
+			@include grid(9);
+		}
+
+		.#{$prefix}-col-lg-10 {
+			@include grid(10);
+		}
+
+		.#{$prefix}-col-lg-11 {
+			@include grid(11);
+		}
+
+		.#{$prefix}-col-lg-12 {
+			@include grid(12);
+		}
+	}
+
+	//Targeting big desktop monitors and up
+	@include for-size(big-desktop-up) {
+		.#{$prefix}-col-big-full {
+			@include grid(full);
+		}
+
+		.#{$prefix}-col-big-half {
+			@include grid(half);
+		}
+
+		.#{$prefix}-col-big-third {
+			@include grid(third);
+		}
+
+		.#{$prefix}-col-big-quarter {
+			@include grid(quarter);
+		}
+
+		.#{$prefix}-col-big-fifth {
+			@include grid(fifth);
+		}
+
+		.#{$prefix}-col-big-1 {
+			@include grid(1);
+		}
+
+		.#{$prefix}-col-big-2 {
+			@include grid(2);
+		}
+
+		.#{$prefix}-col-big-3 {
+			@include grid(3);
+		}
+
+		.#{$prefix}-col-big-4 {
+			@include grid(4);
+		}
+
+		.#{$prefix}-col-big-5 {
+			@include grid(5);
+		}
+
+		.#{$prefix}-col-big-6 {
+			@include grid(6);
+		}
+
+		.#{$prefix}-col-big-7 {
+			@include grid(7);
+		}
+
+		.#{$prefix}-col-big-8 {
+			@include grid(8);
+		}
+
+		.#{$prefix}-col-big-9 {
+			@include grid(9);
+		}
+
+		.#{$prefix}-col-big-10 {
+			@include grid(10);
+		}
+
+		.#{$prefix}-col-big-11 {
+			@include grid(11);
+		}
+
+		.#{$prefix}-col-big-12 {
+			@include grid(12);
+		}
+	}
+
+	//Grid classes that apply at all times
+	.#{$prefix}-col-full {
+		@include grid(full);
+	}
+
+	.#{$prefix}-col-half {
+		@include grid(half);
+	}
+
+	.#{$prefix}-col-third {
+		@include grid(third);
+	}
+
+	.#{$prefix}-col-quarter {
+		@include grid(quarter);
+	}
+
+	.#{$prefix}-col-fifth {
+		@include grid(fifth);
+	}
+
+	.#{$prefix}-col-1 {
+		@include grid(1);
+	}
+
+	.#{$prefix}-col-2 {
+		@include grid(2);
+	}
+
+	.#{$prefix}-col-3 {
+		@include grid(3);
+	}
+
+	.#{$prefix}-col-4 {
+		@include grid(4);
+	}
+
+	.#{$prefix}-col-5 {
+		@include grid(5);
+	}
+
+	.#{$prefix}-col-6 {
+		@include grid(6);
+	}
+
+	.#{$prefix}-col-7 {
+		@include grid(7);
+	}
+
+	.#{$prefix}-col-8 {
+		@include grid(8);
+	}
+
+	.#{$prefix}-col-9 {
+		@include grid(9);
+	}
+
+	.#{$prefix}-col-10 {
+		@include grid(10);
+	}
+
+	.#{$prefix}-col-11 {
+		@include grid(11);
+	}
+
+	.#{$prefix}-col-12 {
+		@include grid(12);
+	}
+
+	//Gutter
+	.#{$prefix}-col-push-left-1 {
+		@include grid-push(left, 1 of 12);
+	}
+
+	.#{$prefix}-col-push-left-2 {
+		@include grid-push(left, 2 of 12);
+	}
+
+	.#{$prefix}-col-push-left-3 {
+		@include grid-push(left, 3 of 12);
+	}
+
+	.#{$prefix}-col-push-left-4 {
+		@include grid-push(left, 4 of 12);
+	}
+
+	.#{$prefix}-col-push-left-5 {
+		@include grid-push(left, 5 of 12);
+	}
+
+	.#{$prefix}-col-push-left-6 {
+		@include grid-push(left, 6 of 12);
+	}
+
+	.#{$prefix}-col-push-left-7 {
+		@include grid-push(left, 7 of 12);
+	}
+
+	.#{$prefix}-col-push-left-8 {
+		@include grid-push(left, 8 of 12);
+	}
+
+	.#{$prefix}-col-push-left-9 {
+		@include grid-push(left, 9 of 12);
+	}
+
+	.#{$prefix}-col-push-left-10 {
+		@include grid-push(left, 10 of 12);
+	}
+
+	.#{$prefix}-col-push-left-11 {
+		@include grid-push(left, 11 of 12);
+	}
+
+	.#{$prefix}-col-push-left-12 {
+		@include grid-push(left, 12 of 12);
+	}
+
+	.#{$prefix}-col-push-right-1 {
+		@include grid-push(right, 1 of 12);
+	}
+
+	.#{$prefix}-col-push-right-2 {
+		@include grid-push(right, 2 of 12);
+	}
+
+	.#{$prefix}-col-push-right-3 {
+		@include grid-push(right, 3 of 12);
+	}
+
+	.#{$prefix}-col-push-right-4 {
+		@include grid-push(right, 4 of 12);
+	}
+
+	.#{$prefix}-col-push-right-5 {
+		@include grid-push(right, 5 of 12);
+	}
+
+	.#{$prefix}-col-push-right-6 {
+		@include grid-push(right, 6 of 12);
+	}
+
+	.#{$prefix}-col-push-right-7 {
+		@include grid-push(right, 7 of 12);
+	}
+
+	.#{$prefix}-col-push-right-8 {
+		@include grid-push(right, 8 of 12);
+	}
+
+	.#{$prefix}-col-push-right-9 {
+		@include grid-push(right, 9 of 12);
+	}
+
+	.#{$prefix}-col-push-right-10 {
+		@include grid-push(right, 10 of 12);
+	}
+
+	.#{$prefix}-col-push-right-11 {
+		@include grid-push(right, 11 of 12);
+	}
+
+	.#{$prefix}-col-push-right-12 {
+		@include grid-push(right, 12 of 12);
+	}
 }
 /* --- END GRID.CSS --- */

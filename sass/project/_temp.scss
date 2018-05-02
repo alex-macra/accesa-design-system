@@ -26,11 +26,11 @@
 
 $ui-base-color: #e0e0e0;
 
-$ui-primary-color: #3BAFDA ;
+$ui-primary-color: #3bafda;
 
-$ui-secondary-color: #777DA7;
+$ui-secondary-color: #777da7;
 
-$ui-third-color: #62929E;
+$ui-third-color: #62929e;
 
 
 $ui-input-color: #f6f6f6;
@@ -88,12 +88,12 @@ $base-font-size: 16px;
 
 @function em($target, $context: $base-font-size) {
 	@if $target == 0 { @return 0 }
-	@return $target / $context + 0em;
+	@return $target / $context + 00;
 }
 
 @function rem($target, $context: $base-font-size) {
 	@if $target == 0 { @return 0 }
-	@return $target / $context + 0rem;
+	@return $target / $context + 00;
 }
 
 
@@ -105,13 +105,13 @@ $base-font-size: 16px;
 
 /******  UI Font-Family   ******/
 .ui {
-	font-family: $ui-font-family;
 	color: $ui-text-color;
+	font-family: $ui-font-family;
 }
 
 .ui a {
-	text-decoration: none;
 	color: $ui-text-color;
+	text-decoration: none;
 }
 
 .ui a:hover {
@@ -132,7 +132,7 @@ $base-font-size: 16px;
 
 .ui h1, .ui h2, .ui h3, .ui h4 {
 
-	margin: 0em 0;
+	margin: 0;
 }
 
 
@@ -159,14 +159,14 @@ h2.ui {
 /******  UI Panels & Boxes   ******/
 
 .ui.panel, .ui.box {
-	border-radius: rem($ui-border-radius);
 
 	background: #fff;
-	width: 100%;
-	min-height: 330px;
+	border-radius: rem($ui-border-radius);
 
 
 	margin: 0 0 em(30px);
+	min-height: 330px;
+	width: 100%;
 
 
 }
@@ -178,12 +178,12 @@ h2.ui {
 	background: $ui-primary-color;
 	border-radius: rem($ui-border-radius) rem($ui-border-radius) 0 0;
 	color: $ui-text-light-color;
-	text-transform: $ui-text-transform;
+	line-height: 2.6;
 
 
 	margin: 0;
-	line-height: 2.6;
 	text-align: center;
+	text-transform: $ui-text-transform;
 
 }
 
@@ -208,25 +208,24 @@ h2.ui {
 
 
 .ui.box > .ui.inner {
-	margin: em($ui-inner-margin);
-	position: relative;
 
 	display: block;
+	margin: em($ui-inner-margin);
+	position: relative;
 }
 
 
 /******  UI Buttons   ******/
 
 .ui.button, .ui.button-primary, .ui.button-secondary {
-	font-size: rem($ui-font-size);
-	text-transform: $ui-text-transform;
-	font-weight: 700;
+	cursor: pointer;
 
 	display: inline-block;
+	font-size: rem($ui-font-size);
+	font-weight: 700;
 	line-height: 1;
-	vertical-align: baseline;
 	text-align: center;
-	cursor: pointer;
+	text-transform: $ui-text-transform;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
@@ -234,17 +233,18 @@ h2.ui {
 
 	-o-user-select: none;
 	user-select: none;
+	vertical-align: baseline;
 }
 
 
 
 .ui.button {
 
-	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
-	border-radius: rem($ui-border-radius);
-
 	background: $ui-base-color;
+	border-radius: rem($ui-border-radius);
 	color: $ui-text-color;
+
+	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
 
 	transition: all $ui-hover-transition-duration $ui-hover-easing 0s;
 }
@@ -252,11 +252,11 @@ h2.ui {
 
 .ui.button-primary {
 
-	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
-	border-radius: rem($ui-border-radius);
-
 	background: $ui-primary-color;
+	border-radius: rem($ui-border-radius);
 	color: $ui-text-light-color;
+
+	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
 
 	transition: all $ui-hover-transition-duration $ui-hover-easing 0s; /*   Hover Transition */
 
@@ -267,11 +267,11 @@ h2.ui {
 
 .ui.button-secondary {
 
-	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
-	border-radius: rem($ui-border-radius);
-
 	background: $ui-secondary-color;
+	border-radius: rem($ui-border-radius);
 	color: $ui-text-light-color;
+
+	padding: em($ui-padding-vertical) em($ui-padding-horizontal);
 
 	transition: all $ui-hover-transition-duration $ui-hover-easing 0s; /*   Hover Transition */
 }
@@ -283,8 +283,8 @@ h2.ui {
 
 
 .ui.button.fluid, .ui.button-primary.fluid, .ui.button-secondary.fluid {
-	width: 100%;
 	max-width: 600px;
+	width: 100%;
 }
 
 /* Icon Button   */
@@ -335,8 +335,8 @@ h2.ui {
 .ui.icon-input, .ui.search-input, .ui.search-input-primary, .ui.search-input-secondary, .ui.mail-input, .ui.password-input {
 	display: block;
 	height: rem($ui-element-height);
-	position: relative;
 	max-width: 600px;
+	position: relative;
 }
 
 
@@ -344,21 +344,21 @@ h2.ui {
 
 
 .ui.search-input-primary > i, .ui.search-input-secondary > i  {
-	font-size:  rem($base-font-size)*1.14;
-
-	padding: 0.7em;
-
-	color: $ui-text-light-color;
 
 
 	border-radius: 0 rem($ui-border-radius) rem($ui-border-radius) 0;
 
-	position: absolute;
-	padding: 0.7em;
+	color: $ui-text-light-color;
+	font-size:  rem($base-font-size)*1.14;
 	height: 100%;
-	top: 0;
+
+	padding: 0.7em;
+	padding: 0.7em;
+
+	position: absolute;
 	right: 0;
 	text-align: center;
+	top: 0;
 
 }
 
@@ -375,21 +375,21 @@ h2.ui {
 
 
 .ui.icon-input > i, .ui.mail-input > i, .ui.password-input > i  {
-	font-size:  rem($base-font-size)*1.14;
 
 	background: darken( $ui-base-color, 4% );
-	color: $ui-text-light-color;
 
 	border-radius: rem($ui-border-radius) 0 0 rem($ui-border-radius);
+	color: $ui-text-light-color;
+	font-size:  rem($base-font-size)*1.14;
+	height: 100%;
+	left: 0;
+	padding: 0.8em 0.7em;
 
 
 
 	position: absolute;
-	padding: 0.8em 0.7em;
-	height: 100%;
-	top:0;
-	left: 0;
 	text-align: center;
+	top:0;
 
 }
 
@@ -413,38 +413,38 @@ h2.ui {
 }
 
 .ui.list li a, .ui.list-primary li a, .ui.list-secondary li a {
-	text-decoration: none;
-	width: 100%;
-	display: block;
-	position: relative;
 
 	color: 	#444;
+	display: block;
 
 
 	padding: em(10px) em(30px);
+	position: relative;
+	text-decoration: none;
 
 	transition: all $ui-hover-transition-duration $ui-hover-easing 0s; /*   Hover Transition */
+	width: 100%;
 }
 
 .ui.list li a > i, .ui.list-primary li a > i, .ui.list-secondary li a > i {
 
-
-	font-size:  rem($base-font-size)*1.14;
+	border-radius: 0 rem($ui-border-radius) rem($ui-border-radius) 0 ;
 
 
 	color: $ui-text-color;
 
-	border-radius: 0 rem($ui-border-radius) rem($ui-border-radius) 0 ;
+
+	font-size:  rem($base-font-size)*1.14;
+
+	height: 100%;
+	padding: 0.8em  em(22px);
 
 
 
 	position: absolute;
-	padding: 0.8em  em(22px);
-
-	height: 100%;
-	top:0;
 	right: 0;
 	text-align: center;
+	top:0;
 
 
 }
@@ -500,19 +500,19 @@ h2.ui {
 	background: $ui-primary-color;
 	border-radius: rem($ui-border-radius);
 
-	text-align: center;
-	padding: em(16px);
-
 	color: $ui-text-light-color;
 
 	min-height: 330px;
+	padding: em(16px);
+
+	text-align: center;
 
 }
 
 
 .ui.profile img{
-	border-radius: 50%;
 	border: 1px solid white;
+	border-radius: 50%;
 	padding: 6px;
 }
 

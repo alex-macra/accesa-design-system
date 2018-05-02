@@ -1,7 +1,7 @@
 @function px-to-rem($size) {
-  @return ($size / 10) + rem;
+	@return ($size / 10) + rem;
 }
 
 @function px-to-rem-line($size) {
-  @return ($size / 50);
+	@return ($size / 50);
 }
