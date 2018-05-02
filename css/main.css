@@ -1303,12 +1303,14 @@ body > div.container {
   /* testing */
   background-color: #39cccc; }
   .popover-list > li {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 20px;
+    font-size: 2rem;
     -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.45; }
+    line-height: 38px;
+    line-height: 3.8rem; }
     .popover-list > li > a {
-      color: #ffffff; }
+      color: #ffffff;
+      text-transform: uppercase; }
 
 section.header {
   position: fixed;
@@ -1419,12 +1421,14 @@ body > div.container {
   /* testing */
   background-color: #39cccc; }
   .popover-list > li {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 20px;
+    font-size: 2rem;
     -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.45; }
+    line-height: 38px;
+    line-height: 3.8rem; }
     .popover-list > li > a {
-      color: #ffffff; }
+      color: #ffffff;
+      text-transform: uppercase; }
 
 section.header {
   position: fixed;

@@ -63,10 +63,11 @@ body > div.container {
 	background-color: #39cccc;
 
 	>li {
-		@include text-size(18);
+		@include text-size(20,38);
 
 		>a {
 			color: #ffffff;
+			text-transform: uppercase;
 		}
 	}
 }
