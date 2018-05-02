@@ -47,14 +47,7 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
 
 A step by step series of examples that tell you have to get a development env running
 
-First
-
-Install [Ruby] (https://rubyinstaller.org/)
-After, install [Sass] (https://sass-lang.com/install). Either by app or command line.
-Make sure you also have [Node.js] (https://nodejs.org/en/download/) installed on your development machine.
-
-
-Afterwards
+Start
 ```
 run npm install
 ```
