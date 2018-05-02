@@ -16,8 +16,6 @@ In order to customize, select the tools / components to import in your project, 
 * [SASS](https://sass-lang.com) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 * [NODE.js](https://nodejs.org) - As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
 
-If not, just use the generated [main.css] (https://github.com/alexandrumacra/accesa-ui-starter/blob/master/css/main.css) file.
-
 ## The road so far...
 
 ### Happy to announce that
@@ -43,13 +41,15 @@ If not, just use the generated [main.css] (https://github.com/alexandrumacra/acc
   * Create an HTML element flowchart.
   * Add a material option for the flat design components.
 
-### Installing
+## Ok, I want to use it
 
-A step by step series of examples that tell you have to get a development env running
+Good, now a step by step series of examples that tell you have to get the package running
+
+*(But before, please make sure you have SASS and Node.js installed on your machine)*
 
 Start
 ```
-run npm install
+npm install
 ```
 
 Rebuilding / compiling the SASS files
