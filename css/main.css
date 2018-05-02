@@ -842,7 +842,8 @@ body select {
   left: 50%;
   margin: -10px;
   position: relative;
-  //text-indent: 999em;
+  user-select: none;
+  color: transparent;
   top: 50%;
   width: 20px; }
   .acc-spinner:after {
@@ -1237,9 +1238,9 @@ body > div.container {
   -o-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  top: 20px;
+  top: -15px;
   width: 200px;
-  padding: 20px 25px;
+  padding: 0px 25px;
   left: -200px;
   margin-left: -40px;
   /* testing */
@@ -1349,9 +1350,9 @@ body > div.container {
   -o-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  top: 20px;
+  top: -15px;
   width: 200px;
-  padding: 20px 25px;
+  padding: 0px 25px;
   left: -200px;
   margin-left: -40px;
   /* testing */

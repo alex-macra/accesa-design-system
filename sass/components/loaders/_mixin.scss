@@ -51,7 +51,8 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 	height: $circleDiam; left: 50%;
 	margin: -$circleDiam/2;
 	position: relative;
-	text-indent: 999em;
+	user-select: none;
+	color: transparent;
 	top: 50%;
 	width: $circleDiam;
 
