@@ -1,25 +1,23 @@
 @mixin default-table() {
-	.temp-table {
 		border: 1px solid #ccc;
 		min-width: 50%;
 		padding: 5px;
 		text-align: left;
-	}
 
-	.temp-table thead {
+	thead {
 		padding: 5px;
 	}
 
-	.temp-table tbody {
+	tbody {
 		padding: 5px;
 	}
 
-	.temp-table tr {
+	tr {
 		padding: 5px;
 	}
 
-	.temp-table td,
-	.temp-table th {
+	td,
+	th {
 		padding: 5px;
 	}
 }

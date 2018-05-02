@@ -351,9 +351,30 @@ The cat was playing in the garden.
         <h3>Code</h3>
         <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
         <div class="docs-example">
-      <pre><code>.some-class {
-  background-color: red;
+
+            <pre class='code code-html'><label>HTML</label><code>&lt;button&gt;Press Me!&lt;/button&gt;</code></pre>
+
+            <pre class='code code-css'><label>CSS</label><code>button {
+  width:20px;
+  height:28px;
+  color:#fff;
+  font-size:28px;
+  padding:11px 15px;
+  border-radius:5px;
+  background:#14ADE5;
 }</code></pre>
+
+            <pre class='code code-javascript'><label>JS</label><code>&lt;button onclick="myFunction()"&gt;Post&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+    document.write(5 + 6);
+}
+&lt;/script&gt;</code></pre>
+
+            <pre class='code code-jquery'><label>Jquery</label><code>$(document).ready(function{
+ jQuery.cssRule(".post", "display", "block");
+});</code></pre>
         </div>
     </div>
 
@@ -362,7 +383,7 @@ The cat was playing in the garden.
         <h3>Tables</h3>
         <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
         <div class="docs-example">
-            <table class="u-full-width">
+            <table class="acc-default-table">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -395,20 +416,17 @@ The cat was playing in the garden.
         <p>Dash uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Dash's
             grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The
             sizes for the queries are:</p>
-        <div class="docs-example row">
-            <div class="six ">
+        <div class="docs-example">
                 <ul>
-                    <li><strong>Desktop HD</strong>: 1200px</li>
-                    <li><strong>Desktop</strong>: 1000px</li>
-                    <li><strong>Tablet</strong>: 750px</li>
+                    <li><strong>Large desktop screens</strong>: 112.5em</li>
+                    <li><strong>desktop screens</strong>: 75em</li>
+                    <li><strong>tablet lanscape</strong>: 56.25em</li>
                 </ul>
-            </div>
-            <div class="six ">
+
                 <ul>
-                    <li><strong>Phablet</strong>: 550px</li>
-                    <li><strong>Mobile</strong>: 400px</li>
+                    <li><strong>tablet portrait - up</strong>: 37.5em</li>
+                    <li><strong>phone</strong>: ~up untill 37.4375em</li>
                 </ul>
-            </div>
         </div>
     </div>
 
@@ -422,12 +440,11 @@ The cat was playing in the garden.
     <div id="tooltip">
         <h3>Tooltips</h3>
         <div class="tooltip-holder">
-            <h1>SCSS Tooltips</h1>
-            <i class="info-icon nw" data-tooltip="Me too!">nw</i>
-            <i class="info-icon ne" data-tooltip="Hey I'm made with pure CSS">ne</i>
+            <i class="info-icon nw" data-tooltip="this is tooltip">nw</i>
+            <i class="info-icon ne" data-tooltip="this is tooltip this is tooltip">ne</i>
             <br>
-            <i class="info-icon sw" data-tooltip="They're bloating your code">sw</i>
-            <i class="info-icon se" data-tooltip="Now stop using Javascript tooltips">se</i>
+            <i class="info-icon sw" data-tooltip="this is tooltip this is tooltip this is tooltip">sw</i>
+            <i class="info-icon se" data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">se</i>
         </div>
 
     </div>
