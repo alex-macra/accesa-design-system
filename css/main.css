@@ -360,7 +360,6 @@ body select {
   padding: 1em 2em;
   position: relative;
   text-decoration: none;
-  transform: translate(0, -2px);
   transition: all .25s;
   vertical-align: middle; }
   [class*='button--']:hover, [class*='button--']:focus {
@@ -1223,7 +1222,7 @@ body > div.container {
   .acc-row > div {
     padding: 3px 10px;
     color: #fff;
-    background-color: #999; }
+    background-color: #333333; }
     .acc-row > div:nth-child(2n) {
       background-color: #888888; }
 
@@ -1284,11 +1283,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
 
-.container > div > h2, .container > div h3 {
+.container > div > h2, .container > div > h3 {
   text-transform: uppercase;
   margin-top: 20px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 40px; }
+
+.docs-example h4 {
+  margin-top: 20px;
+  margin-bottom: 30px; }
 
 /* --- END EXAMPLES.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
@@ -1335,7 +1338,7 @@ body > div.container {
   .acc-row > div {
     padding: 3px 10px;
     color: #fff;
-    background-color: #999; }
+    background-color: #333333; }
     .acc-row > div:nth-child(2n) {
       background-color: #888888; }
 
@@ -1396,11 +1399,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
 
-.container > div > h2, .container > div h3 {
+.container > div > h2, .container > div > h3 {
   text-transform: uppercase;
   margin-top: 20px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 40px; }
+
+.docs-example h4 {
+  margin-top: 20px;
+  margin-bottom: 30px; }
 
 /* --- END EXAMPLES.CSS --- */
 .equal-width-to-height-ratio {
