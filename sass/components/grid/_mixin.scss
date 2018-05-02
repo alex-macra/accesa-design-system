@@ -6,7 +6,7 @@
 
 	width: 100%;
 
-	> div {
+	[class*="-col-"] {
 		@include flex(1 0 100%);
 	}
 }

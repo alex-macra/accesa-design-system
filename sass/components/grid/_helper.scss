@@ -525,5 +525,14 @@
 	.#{$prefix}-col-push-right-12 {
 		@include grid-push(right, 12 of 12);
 	}
+
+
+	.#{$prefix}-row {
+		@include flexbox();
+	}
+}
+
+.#{$prefix}-row {
+	width: 100%;
 }
 /* --- END GRID.CSS --- */

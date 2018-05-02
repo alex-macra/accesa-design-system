@@ -7,88 +7,96 @@
 </head>
 <body>
 
-<!-- Primary Page Layout
+<!-- Styleguide example Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
+
+    <div class="popover-wrap"> <!-- this is good, make a component!-->
+        <ul class="popover-list">
+            <li>
+                <a href="#grid">Grid</a>
+            </li>
+            <li>
+                <a href="#typography">Typography</a>
+            </li>
+            <li>
+                <a href="#buttons">Buttons</a>
+            </li>
+            <li>
+                <a href="#forms">Forms</a>
+            </li>
+            <li>
+                <a href="#lists">Lists</a>
+            </li>
+            <li>
+                <a href="#code">Code</a>
+            </li>
+            <li>
+                <a href="#tables">Tables</a>
+            </li>
+            <li>
+                <a href="#spinner">Spinners</a>
+            </li>
+            <li>
+                <a href="#tooltip">Tooltips</a>
+            </li>
+        </ul>
+    </div>
+
     <section class="header">
-
-
-        <h3>Styles</h3>
+        <a href="http://acccesa.eu">
+            <img src="https://www.accesa.eu/wp-content/uploads/2016/04/accesa_logo_bg.png" alt="accesa logo"/>
+         </a>
+        <h1>Styleguide</h1>
     </section>
-
-    <ul class="popover-list">
-        <li>
-            <a href="#grid">Grid</a>
-        </li>
-        <li>
-            <a href="#typography">Typography</a>
-        </li>
-        <li>
-            <a href="#buttons">Buttons</a>
-        </li>
-        <li>
-            <a href="#forms">Forms</a>
-        </li>
-        <li>
-            <a href="#lists">Lists</a>
-        </li>
-        <li>
-            <a href="#code">Code</a>
-        </li>
-        <li>
-            <a href="#tables">Tables</a>
-        </li>
-    </ul>
 
     <!-- Grid -->
     <div id="grid">
         <h3>The grid</h3>
-        <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes
-            coding responsive much easier. Go ahead, resize the browser. </p>
-        <div>
-            <div class="row">
-                <div class="one column" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">One</div>
-                <div class="eleven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eleven</div>
+        <div class="acc-grid-container">
+            <div class="acc-row"> <!-- //???-->
+                <div class="acc-col-1">One</div>
+                <div class="acc-col-11">Eleven</div>
             </div>
-            <div class="row">
-                <div class="two columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Two</div>
-                <div class="ten columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Ten</div>
+            <div class="acc-row">
+                <div class="acc-col-2">Two</div>
+                <div class="acc-col-10">Ten</div>
             </div>
-            <div class="row">
-                <div class="three columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Three</div>
-                <div class="nine columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Nine</div>
+            <div class="acc-row">
+                <div class="acc-col-3">Three</div>
+                <div class="acc-col-9">Nine</div>
             </div>
-            <div class="row">
-                <div class="four columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Four</div>
-                <div class="eight columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eight</div>
+            <div class="acc-row">
+                <div class="acc-col-4">Four</div>
+                <div class="acc-col-8">Eight</div>
             </div>
-            <div class="row">
-                <div class="five columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Five</div>
-                <div class="seven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Seven</div>
+            <div class="acc-row">
+                <div class="acc-col-5">Five</div>
+                <div class="acc-col-7">Seven</div>
             </div>
-            <div class="row">
-                <div class="six columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Six</div>
-                <div class="six columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Six</div>
+            <div class="acc-row">
+                <div class="acc-col-6">Six</div>
+                <div class="acc-col-6">Six</div>
             </div>
-            <div class="row">
-                <div class="seven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Seven</div>
-                <div class="five columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Five</div>
+            <div class="acc-row">
+                <div class="acc-col-7">Seven</div>
+                <div class="acc-col-5">Five</div>
             </div>
-            <div class="row">
-                <div class="eight columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eight</div>
-                <div class="four  columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Four</div>
+            <div class="acc-row">
+                <div class="acc-col-8">Eight</div>
+                <div class="acc-col-4">Four</div>
             </div>
-            <div class="row">
-                <div class="nine columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Nine</div>
-                <div class="three columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Three</div>
+            <div class="acc-row">
+                <div class="acc-col-9">Nine</div>
+                <div class="acc-col-3">Three</div>
             </div>
-            <div class="row">
-                <div class="ten columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Ten</div>
-                <div class="two columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Two</div>
+            <div class="acc-row">
+                <div class="acc-col-10">Ten</div>
+                <div class="acc-col-2">Two</div>
             </div>
-            <div class="row">
-                <div class="eleven columns" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">Eleven</div>
-                <div class="one column" style="text-align: center; border-radius: 4px; margin: 2px; background-color: lightgrey;">One</div>
+            <div class="acc-row">
+                <div class="acc-col-11">Eleven</div>
+                <div class="acc-col-1">One</div>
             </div>
         </div>
     </div>
@@ -143,6 +151,86 @@
                 <input class="button-primary" type="submit" value="submit input">
                 <input class="button-primary" type="button" value="button input">
             </div>
+
+            <h2>Normal</h2>
+
+            <a href="#" class="acc-button--red">Button</a>
+            <a href="#" class="acc-button--green">Button</a>
+            <a href="#" class="acc-button--blue">Button</a>
+            <a href="#" class="acc-button--navy">Button</a>
+            <a href="#" class="acc-button--orange">Button</a>
+            <a href="#" class="acc-button--olive">Button</a>
+            <a href="#" class="acc-button--purple">Button</a>
+            <a href="#" class="acc-button--black">Button</a>
+            <a href="#" class="acc-button--yellow">Button</a>
+            <a href="#" class="acc-button--teal">Button</a>
+            <a href="#" class="acc-button--fuchsia">Button</a>
+            <a href="#" class="acc-button--gray">Button</a>
+            <a href="#" class="acc-button--lime">Button</a>
+            <a href="#" class="acc-button--aqua">Button</a>
+            <a href="#" class="acc-button--maroon">Button</a>
+            <a href="#" class="acc-button--white">Button</a>
+
+            <h2>Sizes</h2>
+
+            <a href="#" class="acc-button--black acc-button--small">Small</a>
+            <a href="#" class="acc-button--gray button">Default</a>
+            <a href="#" class="acc-button--white acc-button--large">Large</a>
+
+            <h2>Alignment</h2>
+
+            <div>
+                <a href="#" class="acc-button--blue acc-button--large acc-button--align-bottom">Bottom</a>
+                <a href="#" class="acc-button--blue acc-button--align-bottom">Bottom</a>
+                <a href="#" class="acc-button--blue acc-button--small acc-button--align-bottom">Bottom</a>
+            </div>
+
+            <div>
+                <a href="#" class="acc-button--orange acc-button--small acc-button--align-top">Top</a>
+                <a href="#" class="acc-button--orange acc-button--align-top">Top</a>
+                <a href="#" class="acc-button--orange acc-button--large acc-button--align-top">Top</a>
+            </div>
+
+
+            <h2><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h2>
+
+            <a href="#" class="acc-button--icon acc-button--red">
+                <i class="fa fa-times"></i>
+                Error
+            </a>
+            <a href="#" class="acc-button--icon acc-button--orange">
+                <i class="fa fa-warning"></i>
+                Warning
+            </a>
+            <a href="#" class="acc-button--icon acc-button--green">
+                <i class="fa fa-check"></i>
+                Success!
+            </a>
+            <a href="#" class="acc-button--icon acc-button--blue">
+                <i class="fa fa-info-circle"></i>
+                Info
+            </a>
+            <h2>
+                <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons<br>
+                <small>(Without left area)</small>
+            </h2>
+
+            <a href="#" class="acc-button--red">
+                <i class="fa fa-times"></i>
+                Error
+            </a>
+            <a href="#" class="acc-button--orange">
+                <i class="fa fa-warning"></i>
+                Warning
+            </a>
+            <a href="#" class="acc-button--green">
+                <i class="fa fa-check"></i>
+                Success!
+            </a>
+            <a href="#" class="acc-button--blue">
+                <i class="fa fa-info-circle"></i>
+                Info
+            </a>
         </div>
     </div>
     
@@ -172,12 +260,12 @@
         <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
         <div class="docs-example docs-example-forms">
             <form>
-                <div class="row">
-                    <div class="six columns">
+                <div class="acc-row">
+                    <div class="six ">
                         <label for="exampleEmailInput">Your email</label>
                         <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
                     </div>
-                    <div class="six columns">
+                    <div class="six ">
                         <label for="exampleRecipientInput">Reason for contacting</label>
                         <select class="u-full-width" id="exampleRecipientInput">
                             <option value="Option 1">Questions</option>
@@ -193,6 +281,35 @@
                     <span class="label-body">Send a copy to yourself</span>
                 </label>
                 <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+
+            <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <form action="/action_page.php">
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </form>
+
+            <form action="/action_page.php"
+                  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range"  id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
             </form>
         </div>
     </div>
@@ -212,7 +329,7 @@
     <div id="lists">
         <h3>Lists</h3>
         <div class="row docs-example">
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li>Unordered lists have basic styles</li>
                     <li>
@@ -225,7 +342,7 @@
                     <li>Just more list items mama san</li>
                 </ul>
             </div>
-            <div class="six columns">
+            <div class="six ">
                 <ol>
                     <li>Ordered lists also have basic styles</li>
                     <li>
@@ -291,14 +408,14 @@
             grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The
             sizes for the queries are:</p>
         <div class="docs-example row">
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li><strong>Desktop HD</strong>: 1200px</li>
                     <li><strong>Desktop</strong>: 1000px</li>
                     <li><strong>Tablet</strong>: 750px</li>
                 </ul>
             </div>
-            <div class="six columns">
+            <div class="six ">
                 <ul>
                     <li><strong>Phablet</strong>: 550px</li>
                     <li><strong>Mobile</strong>: 400px</li>
@@ -307,199 +424,26 @@
         </div>
     </div>
 
-
-
-
-
-
-
-<h2>Index</h2>
-
-<!-- temp grid example-->
-
-<div class="acc-grid-container">
-    <div class="acc-col-xs-full">
-        grid full mobile
-    </div>
-    <div class="acc-col-xs-full acc-col-md-full acc-col-lg-half">
-        <input name="firstname" type="text">
-
+    <!-- Spinner -->
+    <div id="spinner">
+        <h3>Spinner</h3>
+        <div class="acc-spinner">Loading...</div>
     </div>
 
-    <div class="acc-col-xs-full acc-col-md-full acc-col-sm-third acc-col-lg-half">
-        <select name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-
-<select name="cars" size="4" multiple>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-
-<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
-
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-<form action="/action_page.php">
-  <input list="browsers">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist> 
-</form>
-
-<form action="/action_page.php"
-  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0
-  <input type="range"  id="a" name="a" value="50">
-  100 +
-  <input type="number" id="b" name="b" value="50">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-  <input type="submit">
-</form>
-    </div>
-
-    <div class="acc-col-xs-full acc-col-md-full">
-
-        <h2>Normal</h2>
-
-        <a href="#" class="acc-button--red">Button</a>
-        <a href="#" class="acc-button--green">Button</a>
-        <a href="#" class="acc-button--blue">Button</a>
-        <a href="#" class="acc-button--navy">Button</a>
-        <a href="#" class="acc-button--orange">Button</a>
-        <a href="#" class="acc-button--olive">Button</a>
-        <a href="#" class="acc-button--purple">Button</a>
-        <a href="#" class="acc-button--black">Button</a>
-        <a href="#" class="acc-button--yellow">Button</a>
-        <a href="#" class="acc-button--teal">Button</a>
-        <a href="#" class="acc-button--fuchsia">Button</a>
-        <a href="#" class="acc-button--gray">Button</a>
-        <a href="#" class="acc-button--lime">Button</a>
-        <a href="#" class="acc-button--aqua">Button</a>
-        <a href="#" class="acc-button--maroon">Button</a>
-        <a href="#" class="acc-button--white">Button</a>
-
-        <h2>Sizes</h2>
-
-        <a href="#" class="acc-button--black acc-button--small">Small</a>
-        <a href="#" class="acc-button--gray button">Default</a>
-        <a href="#" class="acc-button--white acc-button--large">Large</a>
-
-        <h2>Alignment</h2>
-
-        <div>
-            <a href="#" class="acc-button--blue acc-button--large acc-button--align-bottom">Bottom</a>
-            <a href="#" class="acc-button--blue acc-button--align-bottom">Bottom</a>
-            <a href="#" class="acc-button--blue acc-button--small acc-button--align-bottom">Bottom</a>
+    <!-- Tooltips -->
+    <div id="tooltip">
+        <h3>Tooltips</h3>
+        <div class="tooltip-holder">
+            <h1>SCSS Tooltips</h1>
+            <i class="info-icon nw" data-tooltip="Me too!">nw</i>
+            <i class="info-icon ne" data-tooltip="Hey I'm made with pure CSS">ne</i>
+            <br>
+            <i class="info-icon sw" data-tooltip="They're bloating your code">sw</i>
+            <i class="info-icon se" data-tooltip="Now stop using Javascript tooltips">se</i>
         </div>
 
-        <div>
-            <a href="#" class="acc-button--orange acc-button--small acc-button--align-top">Top</a>
-            <a href="#" class="acc-button--orange acc-button--align-top">Top</a>
-            <a href="#" class="acc-button--orange acc-button--large acc-button--align-top">Top</a>
-        </div>
-
-
-        <h2><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h2>
-
-        <a href="#" class="acc-button--icon acc-button--red">
-            <i class="fa fa-times"></i>
-            Error
-        </a>
-        <a href="#" class="acc-button--icon acc-button--orange">
-            <i class="fa fa-warning"></i>
-            Warning
-        </a>
-        <a href="#" class="acc-button--icon acc-button--green">
-            <i class="fa fa-check"></i>
-            Success!
-        </a>
-        <a href="#" class="acc-button--icon acc-button--blue">
-            <i class="fa fa-info-circle"></i>
-            Info
-        </a>
-        <h2>
-            <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons<br>
-            <small>(Without left area)</small>
-        </h2>
-
-        <a href="#" class="acc-button--red">
-            <i class="fa fa-times"></i>
-            Error
-        </a>
-        <a href="#" class="acc-button--orange">
-            <i class="fa fa-warning"></i>
-            Warning
-        </a>
-        <a href="#" class="acc-button--green">
-            <i class="fa fa-check"></i>
-            Success!
-        </a>
-        <a href="#" class="acc-button--blue">
-            <i class="fa fa-info-circle"></i>
-            Info
-        </a>
-    </div>
-
-
-
-    <div class="acc-flat-form">
-        <ul class="tabs">
-            <li>
-                <a href="#login" class="active">Login</a>
-            </li>
-            <li>
-                <a href="#register">Register</a>
-            </li>
-            <li>
-                <a href="#reset">Reset Password</a>
-            </li>
-        </ul>
-        <div id="login" class="form-action show">
-
-             <form>
-                <ul>
-                    <li>
-                        <input type="text" placeholder="Username" />
-                    </li>
-                    <li>
-                        <input type="password" placeholder="Password" />
-                    </li>
-                    <li>
-                        <input type="submit" value="Login" class="button" />
-                    </li>
-                </ul>
-            </form>
-        </div>
     </div>
 </div>
-
-
-<div class="tooltip-holder">
-    <h1>SCSS Tooltips</h1>
-    <i class="info-icon nw" data-tooltip="Me too!">nw</i>
-    <i class="info-icon ne" data-tooltip="Hey I'm made with pure CSS">ne</i>
-    <br>
-    <i class="info-icon sw" data-tooltip="They're bloating your code">sw</i>
-    <i class="info-icon se" data-tooltip="Now stop using Javascript tooltips">se</i>
-</div>
-
-<div class="spinner">Loading...</div>
-
-
-test <i class="fa fa-github"></i>
 
 </body>
 </html>
