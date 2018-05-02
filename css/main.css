@@ -1275,6 +1275,7 @@ section.header {
     top: 5px; }
 
 body {
+  background: whitesmoke;
   padding-top: 100px; }
 
 /* --- END EXAMPLES.CSS --- */
@@ -1375,6 +1376,7 @@ section.header {
     top: 5px; }
 
 body {
+  background: whitesmoke;
   padding-top: 100px; }
 
 /* --- END EXAMPLES.CSS --- */
