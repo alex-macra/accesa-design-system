@@ -1,6 +1,7 @@
 # ACCESA UI STARTER
 
 Starter pack for web-based projects
+
 Stable version 0.1.5
 
 ## Getting Started
@@ -18,8 +19,6 @@ In order to customize, select the tools / components to import in your project, 
 If not, just use the generated [main.css] (https://github.com/alexandrumacra/accesa-ui-starter/blob/master/css/main.css) file.
 
 ## The road so far...
-
-### Status: we're doing stuff and things
 
 ### Happy to announce that
   * We have implemented a SASS-based UI starter pack.
