@@ -992,15 +992,12 @@ body select {
   min-width: 50%;
   padding: 5px;
   text-align: left; }
-  .acc-default-table thead {
-    padding: 5px; }
-  .acc-default-table tbody {
-    padding: 5px; }
-  .acc-default-table tr {
-    padding: 5px; }
   .acc-default-table td,
   .acc-default-table th {
-    padding: 5px; }
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: 1px solid #ddd; }
 
 .tooltip-holder {
   font-family: arial, helvetica, sans-serif;
