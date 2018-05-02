@@ -1,5 +1,5 @@
 //Spacing mixin
 
 @mixin box-sizing($type: border-box) {
-  @include vendor-prefix('box-sizing', $type);
+	@include vendor-prefix('box-sizing', $type);
 }

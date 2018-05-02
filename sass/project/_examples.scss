@@ -3,7 +3,8 @@
 /* --- BEGIN EXAMPLES.CSS --- */
 
 //Opacity and transition example
-.red {color: blue;background: red;}
+.red {background: red;color: blue;}
+
 a {
 	@include transition(color .3s ease);
 	color: #000;
@@ -16,8 +17,8 @@ a {
 }
 
 body {
-	max-width: 1280px;
 	margin: 30px auto;
+	max-width: 1280px;
 }
 
 //Font size

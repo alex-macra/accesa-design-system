@@ -1,6 +1,6 @@
 //Transition mixin
 
 @mixin transition($arguments) {
-  @include vendor-prefix('transition', $arguments);
+	@include vendor-prefix('transition', $arguments);
 }
 //@include transform(scale(1.5));

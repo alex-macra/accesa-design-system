@@ -1,25 +1,25 @@
 @mixin default-table() {
-  .temp-table {
-    border: 1px solid #ccc;
-    min-width: 50%;
-    padding: 5px;
-    text-align: left;
-  }
+	.temp-table {
+		border: 1px solid #ccc;
+		min-width: 50%;
+		padding: 5px;
+		text-align: left;
+	}
 
-  .temp-table thead {
-    padding: 5px;
-  }
+	.temp-table thead {
+		padding: 5px;
+	}
 
-  .temp-table tbody {
-    padding: 5px;
-  }
+	.temp-table tbody {
+		padding: 5px;
+	}
 
-  .temp-table tr {
-    padding: 5px;
-  }
+	.temp-table tr {
+		padding: 5px;
+	}
 
-  .temp-table td,
-  .temp-table th {
-    padding: 5px;
-  }
+	.temp-table td,
+	.temp-table th {
+		padding: 5px;
+	}
 }

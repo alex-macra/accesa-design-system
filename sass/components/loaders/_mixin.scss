@@ -1,37 +1,37 @@
 //Loaders mixin
 
 @mixin bouncing-loader($alignment, $size-vertical, $size-horizontal, $color) {
-  @include flexbox();
-  @include flex-justify-content(center);
+	@include flexbox();
+	@include flex-justify-content(center);
 
-  > div {
-    animation: bouncing-loader 0.6s infinite alternate;
-    background: $color;
-    border-radius: 50%;
-    height: 1rem;
-    margin: 3rem 0.2rem;
-    width: 1rem;
+	> div {
+		animation: bouncing-loader 0.6s infinite alternate;
+		background: $color;
+		border-radius: 50%;
+		height: 1rem;
+		margin: 3rem 0.2rem;
+		width: 1rem;
 
-    &:nth-of-type(2) {
-      animation-delay: 0.2s;
-    }
+		&:nth-of-type(2) {
+			animation-delay: 0.2s;
+		}
 
-    &:nth-of-type(3) {
-      animation-delay: 0.4s;
-    }
-  }
+		&:nth-of-type(3) {
+			animation-delay: 0.4s;
+		}
+	}
 
-  @keyframes loader { //todo - add to animations
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
+	@keyframes loader { //todo - add to animations
+		from {
+			opacity: 1;
+			transform: translateY(0);
+		}
 
-    to {
-      opacity: 0.1;
-      transform: translateY(-1rem);
-    }
-  }
+		to {
+			opacity: 0.1;
+			transform: translateY(-1rem);
+		}
+	}
 }
 
 // Variables - todo move ? improve
@@ -45,30 +45,30 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 
 
 @mixin spinner() {
-  text-indent: 999em;
-  width: $circleDiam;
-  height: $circleDiam;
-  position: relative;
-  top: 50%; left: 50%;
-  margin: -$circleDiam/2;
-  background-color: #888;
-  box-shadow: 0 2px 1px rgba(0,0,0,.3) inset;
-  border-radius: 50%;
+	background-color: #888;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px rgba(0,0,0,.3) inset;
+	height: $circleDiam; left: 50%;
+	margin: -$circleDiam/2;
+	position: relative;
+	text-indent: 999em;
+	top: 50%;
+	width: $circleDiam;
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: $rotatingCirclePosTop;
-    left: $rotatingCirclePosLeft;
-    background-color: #fff;
-    height: $rotatingCircleDiam;
-    width: $rotatingCircleDiam;
-    animation: spin 1s linear infinite;
-    border-radius: 50%;
-    transform-origin: $innerCirclePos/2 + $rotatingCircleDiam;
-  }
+	&:after {
+		animation: spin 1s linear infinite;
+		background-color: #fff;
+		border-radius: 50%;
+		content: '';
+		height: $rotatingCircleDiam;
+		left: $rotatingCirclePosLeft;
+		position: absolute;
+		top: $rotatingCirclePosTop;
+		transform-origin: $innerCirclePos/2 + $rotatingCircleDiam;
+		width: $rotatingCircleDiam;
+	}
 
-  @keyframes spin {
-    100% { transform: rotate(360deg); }
-  }
+	@keyframes spin {
+		100% { transform: rotate(360deg); }
+	}
 }

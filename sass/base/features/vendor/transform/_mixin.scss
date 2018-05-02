@@ -1,13 +1,13 @@
 //Transform mixin
 
 @mixin transform($arguments) {
-  @include vendor-prefix('transform', $arguments);
+	@include vendor-prefix('transform', $arguments);
 }
 
 @mixin transform-origin($params) {
-  @include vendor-prefix('transform-origin', $params);
+	@include vendor-prefix('transform-origin', $params);
 }
 
 @mixin transform-style($style: preserve-3d) {
-  @include vendor-prefix('transform-style', $style);
+	@include vendor-prefix('transform-style', $style);
 }
