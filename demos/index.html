@@ -7,38 +7,39 @@
 </head>
 <body>
 
-<!-- Primary Page Layout
+<!-- Styleguide example Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
+
+    <div class="popover-wrap"> <!-- this is good, make a component!-->
+        <ul class="popover-list">
+            <li>
+                <a href="#grid">Grid</a>
+            </li>
+            <li>
+                <a href="#typography">Typography</a>
+            </li>
+            <li>
+                <a href="#buttons">Buttons</a>
+            </li>
+            <li>
+                <a href="#forms">Forms</a>
+            </li>
+            <li>
+                <a href="#lists">Lists</a>
+            </li>
+            <li>
+                <a href="#code">Code</a>
+            </li>
+            <li>
+                <a href="#tables">Tables</a>
+            </li>
+        </ul>
+    </div>
+
     <section class="header">
-
-
-        <h3>Styles</h3>
+        <h1>Styleguide</h1>
     </section>
-
-    <ul class="popover-list">
-        <li>
-            <a href="#grid">Grid</a>
-        </li>
-        <li>
-            <a href="#typography">Typography</a>
-        </li>
-        <li>
-            <a href="#buttons">Buttons</a>
-        </li>
-        <li>
-            <a href="#forms">Forms</a>
-        </li>
-        <li>
-            <a href="#lists">Lists</a>
-        </li>
-        <li>
-            <a href="#code">Code</a>
-        </li>
-        <li>
-            <a href="#tables">Tables</a>
-        </li>
-    </ul>
 
     <!-- Grid -->
     <div id="grid">
@@ -141,6 +142,86 @@
                 <input class="button-primary" type="submit" value="submit input">
                 <input class="button-primary" type="button" value="button input">
             </div>
+
+            <h2>Normal</h2>
+
+            <a href="#" class="acc-button--red">Button</a>
+            <a href="#" class="acc-button--green">Button</a>
+            <a href="#" class="acc-button--blue">Button</a>
+            <a href="#" class="acc-button--navy">Button</a>
+            <a href="#" class="acc-button--orange">Button</a>
+            <a href="#" class="acc-button--olive">Button</a>
+            <a href="#" class="acc-button--purple">Button</a>
+            <a href="#" class="acc-button--black">Button</a>
+            <a href="#" class="acc-button--yellow">Button</a>
+            <a href="#" class="acc-button--teal">Button</a>
+            <a href="#" class="acc-button--fuchsia">Button</a>
+            <a href="#" class="acc-button--gray">Button</a>
+            <a href="#" class="acc-button--lime">Button</a>
+            <a href="#" class="acc-button--aqua">Button</a>
+            <a href="#" class="acc-button--maroon">Button</a>
+            <a href="#" class="acc-button--white">Button</a>
+
+            <h2>Sizes</h2>
+
+            <a href="#" class="acc-button--black acc-button--small">Small</a>
+            <a href="#" class="acc-button--gray button">Default</a>
+            <a href="#" class="acc-button--white acc-button--large">Large</a>
+
+            <h2>Alignment</h2>
+
+            <div>
+                <a href="#" class="acc-button--blue acc-button--large acc-button--align-bottom">Bottom</a>
+                <a href="#" class="acc-button--blue acc-button--align-bottom">Bottom</a>
+                <a href="#" class="acc-button--blue acc-button--small acc-button--align-bottom">Bottom</a>
+            </div>
+
+            <div>
+                <a href="#" class="acc-button--orange acc-button--small acc-button--align-top">Top</a>
+                <a href="#" class="acc-button--orange acc-button--align-top">Top</a>
+                <a href="#" class="acc-button--orange acc-button--large acc-button--align-top">Top</a>
+            </div>
+
+
+            <h2><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h2>
+
+            <a href="#" class="acc-button--icon acc-button--red">
+                <i class="fa fa-times"></i>
+                Error
+            </a>
+            <a href="#" class="acc-button--icon acc-button--orange">
+                <i class="fa fa-warning"></i>
+                Warning
+            </a>
+            <a href="#" class="acc-button--icon acc-button--green">
+                <i class="fa fa-check"></i>
+                Success!
+            </a>
+            <a href="#" class="acc-button--icon acc-button--blue">
+                <i class="fa fa-info-circle"></i>
+                Info
+            </a>
+            <h2>
+                <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons<br>
+                <small>(Without left area)</small>
+            </h2>
+
+            <a href="#" class="acc-button--red">
+                <i class="fa fa-times"></i>
+                Error
+            </a>
+            <a href="#" class="acc-button--orange">
+                <i class="fa fa-warning"></i>
+                Warning
+            </a>
+            <a href="#" class="acc-button--green">
+                <i class="fa fa-check"></i>
+                Success!
+            </a>
+            <a href="#" class="acc-button--blue">
+                <i class="fa fa-info-circle"></i>
+                Info
+            </a>
         </div>
     </div>
     
@@ -191,6 +272,35 @@
                     <span class="label-body">Send a copy to yourself</span>
                 </label>
                 <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+
+            <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <form action="/action_page.php">
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </form>
+
+            <form action="/action_page.php"
+                  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range"  id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
             </form>
         </div>
     </div>
@@ -305,199 +415,26 @@
         </div>
     </div>
 
-
-
-
-
-
-
-<h2>Index</h2>
-
-<!-- temp grid example-->
-
-<div class="acc-grid-container">
-    <div class="acc-col-xs-full">
-        grid full mobile
-    </div>
-    <div class="acc-col-xs-full acc-col-md-full acc-col-lg-half">
-        <input name="firstname" type="text">
-
+    <!-- Spinner -->
+    <div id="spinner">
+        <h3>Spinner</h3>
+        <div class="acc-spinner">Loading...</div>
     </div>
 
-    <div class="acc-col-xs-full acc-col-md-full acc-col-sm-third acc-col-lg-half">
-        <select name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-
-<select name="cars" size="4" multiple>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-
-<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
-
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-<form action="/action_page.php">
-  <input list="browsers">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist> 
-</form>
-
-<form action="/action_page.php"
-  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0
-  <input type="range"  id="a" name="a" value="50">
-  100 +
-  <input type="number" id="b" name="b" value="50">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-  <input type="submit">
-</form>
-    </div>
-
-    <div class="acc-col-xs-full acc-col-md-full">
-
-        <h2>Normal</h2>
-
-        <a href="#" class="acc-button--red">Button</a>
-        <a href="#" class="acc-button--green">Button</a>
-        <a href="#" class="acc-button--blue">Button</a>
-        <a href="#" class="acc-button--navy">Button</a>
-        <a href="#" class="acc-button--orange">Button</a>
-        <a href="#" class="acc-button--olive">Button</a>
-        <a href="#" class="acc-button--purple">Button</a>
-        <a href="#" class="acc-button--black">Button</a>
-        <a href="#" class="acc-button--yellow">Button</a>
-        <a href="#" class="acc-button--teal">Button</a>
-        <a href="#" class="acc-button--fuchsia">Button</a>
-        <a href="#" class="acc-button--gray">Button</a>
-        <a href="#" class="acc-button--lime">Button</a>
-        <a href="#" class="acc-button--aqua">Button</a>
-        <a href="#" class="acc-button--maroon">Button</a>
-        <a href="#" class="acc-button--white">Button</a>
-
-        <h2>Sizes</h2>
-
-        <a href="#" class="acc-button--black acc-button--small">Small</a>
-        <a href="#" class="acc-button--gray button">Default</a>
-        <a href="#" class="acc-button--white acc-button--large">Large</a>
-
-        <h2>Alignment</h2>
-
-        <div>
-            <a href="#" class="acc-button--blue acc-button--large acc-button--align-bottom">Bottom</a>
-            <a href="#" class="acc-button--blue acc-button--align-bottom">Bottom</a>
-            <a href="#" class="acc-button--blue acc-button--small acc-button--align-bottom">Bottom</a>
+    <!-- Tooltips -->
+    <div id="tooltip">
+        <h3>Tooltips</h3>
+        <div class="tooltip-holder">
+            <h1>SCSS Tooltips</h1>
+            <i class="info-icon nw" data-tooltip="Me too!">nw</i>
+            <i class="info-icon ne" data-tooltip="Hey I'm made with pure CSS">ne</i>
+            <br>
+            <i class="info-icon sw" data-tooltip="They're bloating your code">sw</i>
+            <i class="info-icon se" data-tooltip="Now stop using Javascript tooltips">se</i>
         </div>
 
-        <div>
-            <a href="#" class="acc-button--orange acc-button--small acc-button--align-top">Top</a>
-            <a href="#" class="acc-button--orange acc-button--align-top">Top</a>
-            <a href="#" class="acc-button--orange acc-button--large acc-button--align-top">Top</a>
-        </div>
-
-
-        <h2><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h2>
-
-        <a href="#" class="acc-button--icon acc-button--red">
-            <i class="fa fa-times"></i>
-            Error
-        </a>
-        <a href="#" class="acc-button--icon acc-button--orange">
-            <i class="fa fa-warning"></i>
-            Warning
-        </a>
-        <a href="#" class="acc-button--icon acc-button--green">
-            <i class="fa fa-check"></i>
-            Success!
-        </a>
-        <a href="#" class="acc-button--icon acc-button--blue">
-            <i class="fa fa-info-circle"></i>
-            Info
-        </a>
-        <h2>
-            <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons<br>
-            <small>(Without left area)</small>
-        </h2>
-
-        <a href="#" class="acc-button--red">
-            <i class="fa fa-times"></i>
-            Error
-        </a>
-        <a href="#" class="acc-button--orange">
-            <i class="fa fa-warning"></i>
-            Warning
-        </a>
-        <a href="#" class="acc-button--green">
-            <i class="fa fa-check"></i>
-            Success!
-        </a>
-        <a href="#" class="acc-button--blue">
-            <i class="fa fa-info-circle"></i>
-            Info
-        </a>
-    </div>
-
-
-
-    <div class="acc-flat-form">
-        <ul class="tabs">
-            <li>
-                <a href="#login" class="active">Login</a>
-            </li>
-            <li>
-                <a href="#register">Register</a>
-            </li>
-            <li>
-                <a href="#reset">Reset Password</a>
-            </li>
-        </ul>
-        <div id="login" class="form-action show">
-
-             <form>
-                <ul>
-                    <li>
-                        <input type="text" placeholder="Username" />
-                    </li>
-                    <li>
-                        <input type="password" placeholder="Password" />
-                    </li>
-                    <li>
-                        <input type="submit" value="Login" class="button" />
-                    </li>
-                </ul>
-            </form>
-        </div>
     </div>
 </div>
-
-
-<div class="tooltip-holder">
-    <h1>SCSS Tooltips</h1>
-    <i class="info-icon nw" data-tooltip="Me too!">nw</i>
-    <i class="info-icon ne" data-tooltip="Hey I'm made with pure CSS">ne</i>
-    <br>
-    <i class="info-icon sw" data-tooltip="They're bloating your code">sw</i>
-    <i class="info-icon se" data-tooltip="Now stop using Javascript tooltips">se</i>
-</div>
-
-<div class="spinner">Loading...</div>
-
-
-test <i class="fa fa-github"></i>
 
 </body>
 </html>
