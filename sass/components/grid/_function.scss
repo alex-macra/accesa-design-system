@@ -19,12 +19,6 @@ $column: 12;
 		} @else if $size == third {
 			$divide: 1;
 			$total: 3;
-		} @else if $size == quarter {
-			$divide: 1;
-			$total: 4;
-		} @else if $size == fifth {
-			$divide: 1;
-			$total: 5;
 		}
 	} @else {
 

@@ -19,14 +19,6 @@
 			@include grid(third);
 		}
 
-		.#{$prefix}-col-xs-quarter {
-			@include grid(quarter);
-		}
-
-		.#{$prefix}-col-xs-fifth {
-			@include grid(fifth);
-		}
-
 		.#{$prefix}-col-xs-1 {
 			@include grid(1);
 		}
@@ -88,14 +80,6 @@
 
 		.#{$prefix}-col-sm-third {
 			@include grid(third);
-		}
-
-		.#{$prefix}-col-sm-quarter {
-			@include grid(quarter);
-		}
-
-		.#{$prefix}-col-sm-fifth {
-			@include grid(fifth);
 		}
 
 		.#{$prefix}-col-sm-1 {
@@ -161,14 +145,6 @@
 			@include grid(third);
 		}
 
-		.#{$prefix}-col-md-quarter {
-			@include grid(quarter);
-		}
-
-		.#{$prefix}-col-md-fifth {
-			@include grid(fifth);
-		}
-
 		.#{$prefix}-col-md-1 {
 			@include grid(1);
 		}
@@ -230,14 +206,6 @@
 
 		.#{$prefix}-col-lg-third {
 			@include grid(third);
-		}
-
-		.#{$prefix}-col-lg-quarter {
-			@include grid(quarter);
-		}
-
-		.#{$prefix}-col-lg-fifth {
-			@include grid(fifth);
 		}
 
 		.#{$prefix}-col-lg-1 {
@@ -303,14 +271,6 @@
 			@include grid(third);
 		}
 
-		.#{$prefix}-col-big-quarter {
-			@include grid(quarter);
-		}
-
-		.#{$prefix}-col-big-fifth {
-			@include grid(fifth);
-		}
-
 		.#{$prefix}-col-big-1 {
 			@include grid(1);
 		}
@@ -371,14 +331,6 @@
 
 	.#{$prefix}-col-third {
 		@include grid(third);
-	}
-
-	.#{$prefix}-col-quarter {
-		@include grid(quarter);
-	}
-
-	.#{$prefix}-col-fifth {
-		@include grid(fifth);
 	}
 
 	.#{$prefix}-col-1 {

@@ -645,10 +645,6 @@ body select {
       max-width: 50%; }
     .acc-grid-container .acc-col-xs-third {
       max-width: 33.33333%; }
-    .acc-grid-container .acc-col-xs-quarter {
-      max-width: 25%; }
-    .acc-grid-container .acc-col-xs-fifth {
-      max-width: 20%; }
     .acc-grid-container .acc-col-xs-1 {
       max-width: 8.33333%; }
     .acc-grid-container .acc-col-xs-2 {
@@ -680,10 +676,6 @@ body select {
       max-width: 50%; }
     .acc-grid-container .acc-col-sm-third {
       max-width: 33.33333%; }
-    .acc-grid-container .acc-col-sm-quarter {
-      max-width: 25%; }
-    .acc-grid-container .acc-col-sm-fifth {
-      max-width: 20%; }
     .acc-grid-container .acc-col-sm-1 {
       max-width: 8.33333%; }
     .acc-grid-container .acc-col-sm-2 {
@@ -715,10 +707,6 @@ body select {
       max-width: 50%; }
     .acc-grid-container .acc-col-md-third {
       max-width: 33.33333%; }
-    .acc-grid-container .acc-col-md-quarter {
-      max-width: 25%; }
-    .acc-grid-container .acc-col-md-fifth {
-      max-width: 20%; }
     .acc-grid-container .acc-col-md-1 {
       max-width: 8.33333%; }
     .acc-grid-container .acc-col-md-2 {
@@ -750,10 +738,6 @@ body select {
       max-width: 50%; }
     .acc-grid-container .acc-col-lg-third {
       max-width: 33.33333%; }
-    .acc-grid-container .acc-col-lg-quarter {
-      max-width: 25%; }
-    .acc-grid-container .acc-col-lg-fifth {
-      max-width: 20%; }
     .acc-grid-container .acc-col-lg-1 {
       max-width: 8.33333%; }
     .acc-grid-container .acc-col-lg-2 {
@@ -785,10 +769,6 @@ body select {
       max-width: 50%; }
     .acc-grid-container .acc-col-big-third {
       max-width: 33.33333%; }
-    .acc-grid-container .acc-col-big-quarter {
-      max-width: 25%; }
-    .acc-grid-container .acc-col-big-fifth {
-      max-width: 20%; }
     .acc-grid-container .acc-col-big-1 {
       max-width: 8.33333%; }
     .acc-grid-container .acc-col-big-2 {
@@ -819,10 +799,6 @@ body select {
     max-width: 50%; }
   .acc-grid-container .acc-col-third {
     max-width: 33.33333%; }
-  .acc-grid-container .acc-col-quarter {
-    max-width: 25%; }
-  .acc-grid-container .acc-col-fifth {
-    max-width: 20%; }
   .acc-grid-container .acc-col-1 {
     max-width: 8.33333%; }
   .acc-grid-container .acc-col-2 {
