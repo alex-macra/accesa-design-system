@@ -1,0 +1,15 @@
+@mixin select {
+	select {
+		padding: 0 10px;
+		min-width: 100px;
+		line-height: 1;
+		background: #fff;
+		border: 1px solid #ccc;
+		color: #273c42;
+		height: 38px;
+		margin-bottom: 10px;
+		outline: none;
+		padding-left: 15px;
+	}
+}
+
