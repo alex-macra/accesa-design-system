@@ -15,8 +15,7 @@ body {
 	@include textarea();
 }
 
-[class*='button--'] {
-	@include button($default);
+[class*='button--'] { //todo - handle hover colors
 	border-radius: $border-radius; // todo shadow if material design
 	color: white;
 	display: inline-block;
@@ -39,32 +38,32 @@ body {
 	}
 }
 
-.#{$prefix}-button--red     { @include button($red); }
-.#{$prefix}-button--orange  { @include button($orange); }
-.#{$prefix}-button--yellow  { @include button($yellow); }
-.#{$prefix}-button--lime    { @include button($lime); }
-.#{$prefix}-button--green   { @include button($green); }
-.#{$prefix}-button--olive   { @include button($olive); }
-.#{$prefix}-button--teal    { @include button($teal); }
-.#{$prefix}-button--aqua    { @include button($aqua); }
-.#{$prefix}-button--blue    { @include button($blue); }
-.#{$prefix}-button--purple  { @include button($purple); }
-.#{$prefix}-button--fuchsia { @include button($fuchsia); }
-.#{$prefix}-button--maroon  { @include button($maroon); }
-.#{$prefix}-button--navy    { @include button($navy); }
-.#{$prefix}-button--black   { @include button($black); }
-.#{$prefix}-button--gray    { @include button($gray); }
-.#{$prefix}-button--white   { @include button($white); }
+.#{$prefix}-button--primary { @include button (#2274a5);}
+.#{$prefix}-button--secondary { @include button (#273c42);}
+.#{$prefix}-button--error { @include button (#ff4136);}
+.#{$prefix}-button--proceed { @include button (#3d9970);}
+.#{$prefix}-button--cancel { @include button (#888888);}
+.#{$prefix}-button--alternative {
+	@include button (transparent);
+	color: #000;
 
+	&:hover,
+	&:active,
+	&:focus {
+		color: #333333;
+	}
+};
 
-.#{$prefix}-button--yellow,
-.#{$prefix}-button--lime,
-.#{$prefix}-button--aqua,
-.#{$prefix}-button--white {
-	color: rgba(black, 0.5);
+.#{$prefix}-button--disabled {
+	@include button (#eee);
+	cursor: not-allowed;
+	color: #b2b2b2;
+	@include opacity(.95);
 
-	&:hover {
-		color: rgba(black, 0.5);
+	&:hover,
+	&:active,
+	&:focus {
+		color: #b2b2b2;
 	}
 }
 
