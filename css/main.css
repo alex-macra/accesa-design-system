@@ -1,5 +1,7 @@
 /* --- BEGIN RESET.CSS --- */
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -423,15 +425,16 @@ body select {
   color: white;
   display: inline-block;
   font-weight: 200;
-  margin: 0 16px 20px 0;
-  /* REM fallback */
-  margin: 0 1rem calc(1rem + 4px) 0;
-  /* Account for extra height from box shadow */
-  padding: 1em 2em;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
   position: relative;
   text-decoration: none;
   transition: all .25s;
-  vertical-align: middle; }
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 20px;
+  text-align: center;
+  text-transform: uppercase; }
   [class*='button--']:hover, [class*='button--']:focus {
     background-color: tint(#bada55, 25%); }
   [class*='button--']:active {
@@ -439,8 +442,7 @@ body select {
   [class*='button--']:hover, [class*='button--']:focus {
     box-shadow: none;
     color: white;
-    outline: none;
-    transform: translate(0, 0); }
+    outline: none; }
 
 .acc-button--red {
   background-color: #ff4136;
@@ -640,7 +642,7 @@ body select {
     -ms-flex: 1 0 100%;
     flex: 1 0 100%;
     margin-left: 1%;
-    margin-bottom: 1%; }
+    margin-bottom: 0.5%; }
   @media (max-width: 37.4375em) {
     .acc-grid-container .acc-col-xs-full {
       max-width: 99%; }
@@ -1230,31 +1232,17 @@ h1 {
 
 /* --- END PRINT.CSS --- */
 /* --- BEGIN EXAMPLES.CSS --- */
+/*
 a {
-  -webkit-transition: color 0.3s ease;
-  -khtml-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: #000; }
-  a:hover {
-    -webkit-opacity: 0.9;
-    -khtml-opacity: 0.9;
-    -moz-opacity: 0.9;
-    -ms-opacity: 0.9;
-    -o-opacity: 0.9;
-    opacity: 0.9;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    filter: alpha(opacity=90);
-    -webkit-transform: scale(1.5);
-    -khtml-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-    color: #666; }
+	@include transition(color .3s ease);
+	color: #000;
 
+	&:hover {
+		@include opacity(0.9);
+		@include transform(scale(1.5));
+		color: #666;
+	}
+} */
 body > div.container {
   margin: 30px auto;
   width: 76%;
@@ -1341,7 +1329,10 @@ section.header {
 
 body {
   background: #2274A5;
-  padding-top: 100px; }
+  padding-top: 100px;
+  font-family: 'Open Sans', sans-serif; }
+  body * {
+    font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
