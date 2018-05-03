@@ -3,7 +3,8 @@
 /* --- BEGIN EXAMPLES.CSS --- */
 
 //Opacity and transition example
-.red {background: red;color: blue;}
+
+//@import 'temp';
 
 a {
 	@include transition(color .3s ease);
@@ -18,7 +19,7 @@ a {
 
 body > div.container {
 	margin: 30px auto;
-	width: 75%;
+	width: 76%;
 	max-width: calc(100% - 400px);
 	min-width: 400px;
 	padding: 15px 20px;
@@ -31,10 +32,22 @@ body > div.container {
 	> div {
 		padding: 3px 10px;
 		color: #fff;
-		background-color: #333333;
+		min-height: 50px;
+		background-color: rgba(34, 116, 165, 0.63);
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+		position: relative;
 
 		&:nth-child(2n) {
-			background-color: #888888;
+			background-color: #5D737E;
+		}
+
+		&:before {
+			position: absolute;
+			content: attr(class);
+			bottom: 0;
+			font-style: italic;
+			opacity: .7;
+			color: #f2f2f2;
 		}
 	}
 }
@@ -46,6 +59,8 @@ body > div.container {
 	//@include triangle(top, $square, $square, #cc0000);
 }
 
+/* styleguide page */
+
 .popover-wrap {
 	position: fixed;
 }
@@ -55,12 +70,12 @@ body > div.container {
 	position: absolute;
 	top: -15px;
 	width: 200px;
-	padding: 0px 25px;
+	padding: 0 25px;
 	left: -200px;
 	margin-left: -40px;
 
 	/* testing */
-	background-color: #39cccc;
+	background-color: #2274A5;
 
 	>li {
 		@include text-size(20,38);
@@ -70,6 +85,11 @@ body > div.container {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.anchor-gap {
+	padding-top: 80px;
+	margin-top: -80px;
 }
 
 section.header {
@@ -102,12 +122,13 @@ section.header {
 }
 
 body {
-	background: #39cccc;
+	background: #2274A5;
 	padding-top: 100px;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Lato', sans-serif;
+	color: #273c42;
 }
 
 .container > div {
@@ -125,6 +146,5 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* --- END EXAMPLES.CSS --- */
-
 
 //todo -moved to their component page
