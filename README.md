@@ -2,7 +2,7 @@
 
 Starter pack for web-based projects
 
-Stable version 0.3.5
+Stable version 0.4.0
 
 ## Getting Started
 
