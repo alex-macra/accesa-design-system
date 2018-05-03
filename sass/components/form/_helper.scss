@@ -12,6 +12,7 @@ body {
 	@include input();
 	@include input-button();
 	@include select();
+	@include textarea();
 }
 
 [class*='button--'] {
