@@ -16,7 +16,7 @@ $placeholder-color: #999;
 		&[type=number]{
 			background: #fff;
 			border: 1px solid #ccc;
-			color: $placeholder-color;
+			color: #273c42;
 			// width: 100%;
 			height: 38px;
 			margin-bottom: 10px;
@@ -72,6 +72,7 @@ $placeholder-color: #999;
 
 @mixin button($color) {
 	@include no-select();
+	color: #273c42;
 	background-color: $color;
 	box-shadow: 0 2px 0 shade($color, 15%);
 
@@ -91,7 +92,7 @@ $placeholder-color: #999;
 		line-height: 1;
 		background: #fff;
 		border: 1px solid #ccc;
-		color: $placeholder-color;
+		color: #273c42;
 		height: 38px;
 		margin-bottom: 10px;
 		outline: none;
