@@ -117,27 +117,20 @@ pre {
 	}
 
 	&.code-css {
-		background: #001f3f;
+		background: #173445;
 		code {
-			color: #91a7ff;
+			color: #8cd5ff;
 		}
 	}
 
 	&.code-html {
-		background: #1d3403;
+		background: #612919;
 		code {
-			color: #aed581;
+			color: #ffc6b6;
 		}
 	}
 
 	&.code-javascript {
-		background: #2c1d07;
-		code {
-			color: #ffa726;
-		}
-	}
-
-	&.code-jquery {
 		background: #07434b;
 		code {
 			color: #4dd0e1;
