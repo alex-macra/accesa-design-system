@@ -1,0 +1,66 @@
+@mixin default-list() {
+  ul {
+    li {
+      @include text-size(18,30);
+      position: relative;
+      padding-left: 1.75rem;
+
+      &:before {
+        content: '';
+        width: .375em;
+        height: .375em;
+        border-radius: 2em;
+        position: absolute;
+        left: 0;
+        top: .6em;
+        background: $color-main;
+      }
+    }
+  }
+}
+
+@mixin square-list() {
+  ul.square {
+    li {
+      &:before {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@mixin dash-list() {
+  ul.dash {
+    li {
+      &:before {
+        width: .5em;
+        height: .2em;
+        top: .73em;
+      }
+    }
+  }
+}
+
+@mixin ordered-list() {
+  ol {
+    > li {
+      @include text-size(18,30);
+      position: relative;
+      counter-increment: item;
+
+      &:before {
+        color: $color-main;
+        content: counter(item);
+        display: inline-block;
+        padding-right: 2px;
+        border-radius: 100%;
+        min-width: 2rem;
+        text-align: left;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+}

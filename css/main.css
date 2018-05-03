@@ -304,6 +304,52 @@ h6 {
   line-height: 1.55;
   margin-bottom: 10px; }
 
+ul li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  ul li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+ul.square li:before {
+  border-radius: 0; }
+
+ul.dash li:before {
+  width: .5em;
+  height: .2em;
+  top: .73em; }
+
+ol > li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  counter-increment: item; }
+  ol > li:before {
+    color: #2274a5;
+    content: counter(item);
+    display: inline-block;
+    padding-right: 2px;
+    border-radius: 100%;
+    min-width: 2rem;
+    text-align: left; }
+
+ol ul {
+  padding-left: 20px; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -1311,46 +1357,5 @@ h1 {
           font-style: italic;
           opacity: .7;
           color: #f2f2f2; }
-  .styleguide-body ul li {
-    font-size: 18px;
-    font-size: 1.8rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 30px;
-    line-height: 3rem;
-    position: relative;
-    padding-left: 1.75rem; }
-    .styleguide-body ul li:before {
-      content: '';
-      width: .375em;
-      height: .375em;
-      border-radius: 2em;
-      position: absolute;
-      left: 0;
-      top: .6em;
-      background: #2274a5; }
-  .styleguide-body ul.square li:before {
-    border-radius: 0; }
-  .styleguide-body ul.dash li:before {
-    width: .5em;
-    height: .2em;
-    top: .73em; }
-  .styleguide-body ol > li {
-    font-size: 18px;
-    font-size: 1.8rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 30px;
-    line-height: 3rem;
-    position: relative;
-    counter-increment: item; }
-    .styleguide-body ol > li:before {
-      color: #2274a5;
-      content: counter(item);
-      display: inline-block;
-      padding-right: 2px;
-      border-radius: 100%;
-      min-width: 2rem;
-      text-align: left; }
-  .styleguide-body ol ul {
-    padding-left: 20px; }
 
 /* --- END STYLEGUIDE.CSS --- */
