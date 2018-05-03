@@ -1,2 +1,19 @@
-@import 'mixin';
-@import 'helper';
+@import 'elements/index';
+
+
+
+a {
+  color: yellow;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+p {
+  // @include text-size(18, 24); we have a default size
+  @include text-size(18);
+  margin-bottom: 10px;
+}
