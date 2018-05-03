@@ -445,8 +445,8 @@ p {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #eee;
-  box-shadow: 0 2px 0 shade(#eee, 15%);
+  background-color: #eeeeee;
+  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
   cursor: not-allowed;
   color: #b2b2b2;
   -webkit-opacity: 0.95;
@@ -460,7 +460,7 @@ p {
   .acc-button--disabled:hover, .acc-button--disabled:focus {
     background-color: #c8c8c8; }
   .acc-button--disabled:active {
-    background-color: #eee; }
+    background-color: #eeeeee; }
   .acc-button--disabled:hover, .acc-button--disabled:active, .acc-button--disabled:focus {
     color: #b2b2b2; }
 
@@ -921,17 +921,20 @@ h1 {
   color: #2c3e50; }
 
 .info-icon {
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
   background: #2785c0;
   border-radius: 50%;
   color: #fff;
   display: inline-block;
-  font-size: 1.5em;
   font-style: normal;
-  height: 50px;
-  line-height: 50px;
-  margin: 0 10px 10px 0;
+  height: 30px;
+  margin: 0 10px 10px 10px;
   text-align: center;
-  width: 50px; }
+  width: 30px; }
   .info-icon.ne {
     position: relative; }
     .info-icon.ne:before, .info-icon.ne:after {
@@ -1232,7 +1235,7 @@ body > div.container {
   left: -200px;
   margin-left: -40px;
   /* testing */
-  background-color: #2274A5; }
+  background-color: #2274a5; }
   .popover-list > li {
     font-size: 20px;
     font-size: 2rem;
@@ -1273,7 +1276,7 @@ section.header {
     top: 5px; }
 
 body {
-  background: #2274A5;
+  background: #2274a5;
   padding-top: 100px;
   font-family: 'Open Sans', sans-serif; }
   body * {

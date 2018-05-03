@@ -1,23 +1,14 @@
 //maybe it's not the best place for a theme file
 
-//color scheme
-$default: #bada55;
-$red: #ff4136;
-$orange: #ff851b;
-$yellow: #ffdc00;
-$lime: #01ff70;
-$green: #2ecc40;
-$olive: #3d9970;
-$teal: #39cccc;
-$aqua: #7fdbff;
-$blue: #0074d9;
-$purple: #b10dc9;
-$fuchsia: #f012be;
-$maroon: #85144b;
-$navy: #001f3f;
-$black: #333;
-$gray: #888;
-$white: #eee;
+//color scheme 1
+$color-main: #2274a5;
+$color-secondary: #273c42;
+$color-error: #ff4136;
+$color-success: #3d9970;
+$color-disabled: #eeeeee;
+
+$color-headings: #273c42;
+$color-paragraphs: #273c42;
 
 $font-stack: 'Roboto', sans-serif;
 $border-radius: 0;

@@ -79,7 +79,7 @@ body > div.container {
 	margin-left: -40px;
 
 	/* testing */
-	background-color: #2274A5;
+	background-color: $color-main;
 
 	>li {
 		@include text-size(20,38);
@@ -115,7 +115,7 @@ section.header {
 	z-index: 10001;
 
 	h1 {
-		color: #273c42;
+		color: $color-secondary;
 	}
 
 	img {
@@ -127,7 +127,7 @@ section.header {
 }
 
 body {
-	background: #2274A5;
+	background: $color-main;
 	padding-top: 100px;
 	font-family: 'Open Sans', sans-serif;
 
@@ -139,8 +139,9 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Lato', sans-serif;
-	color: #273c42;
+	color: $color-secondary;
 }
+
 
 .container > div {
 	>h2, >h3 {
