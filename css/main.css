@@ -1,5 +1,4 @@
 /* --- BEGIN RESET.CSS --- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 html, body, div, span, applet, object, iframe,
@@ -518,9 +517,6 @@ body select {
   outline: none;
   padding-left: 15px; }
 
-body input[type=text], body input[type=password], body input[type=submit] {
-  font-family: 'Roboto'; }
-
 body input[type=text], body input[type=password], body input[type=email], body input[type=number] {
   background: #fff;
   border: 1px solid #ccc;
@@ -543,16 +539,15 @@ body input:-ms-input-placeholder {
   color: #999; }
 
 body textarea {
+  font-size: 15px;
+  font-size: 1.5rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.375;
   padding: 15px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
   box-sizing: border-box;
-  font-family: montserrat;
-  color: #2C3E50;
-  font-size: 15px;
-  font-size: 1.5rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.375; }
+  color: #2C3E50; }
 
 /* --- BEGIN GRID.CSS --- */
 .acc-grid-container {
@@ -941,9 +936,6 @@ h1 {
       opacity: 0;
       pointer-events: none;
       z-index: 98; }
-      @media (max-width: 480px) {
-        .info-icon.ne:before, .info-icon.ne:after {
-          display: none; } }
     .info-icon.ne:before {
       background-color: #2c3e50;
       border-radius: 3px;
@@ -996,9 +988,6 @@ h1 {
       opacity: 0;
       pointer-events: none;
       z-index: 98; }
-      @media (max-width: 480px) {
-        .info-icon.nw:before, .info-icon.nw:after {
-          display: none; } }
     .info-icon.nw:before {
       background-color: #2c3e50;
       border-radius: 3px;
@@ -1051,9 +1040,6 @@ h1 {
       opacity: 0;
       pointer-events: none;
       z-index: 98; }
-      @media (max-width: 480px) {
-        .info-icon.se:before, .info-icon.se:after {
-          display: none; } }
     .info-icon.se:before {
       background-color: #2c3e50;
       border-radius: 3px;
@@ -1106,9 +1092,6 @@ h1 {
       opacity: 0;
       pointer-events: none;
       z-index: 98; }
-      @media (max-width: 480px) {
-        .info-icon.sw:before, .info-icon.sw:after {
-          display: none; } }
     .info-icon.sw:before {
       background-color: #2c3e50;
       border-radius: 3px;
@@ -1178,122 +1161,119 @@ h1 {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
-/* --- BEGIN EXAMPLES.CSS --- */
-/*
-a {
-	@include transition(color .3s ease);
-	color: #000;
-
-	&:hover {
-		@include opacity(0.9);
-		@include transform(scale(1.5));
-		color: #666;
-	}
-} */
-body > div.container {
-  margin: 30px auto;
-  width: 76%;
-  max-width: calc(100% - 400px);
-  min-width: 400px;
-  padding: 15px 20px;
-  background: #ffffff; }
-
-.acc-row {
-  margin: 2px 0; }
-  .acc-row > div {
-    padding: 3px 10px;
-    color: #fff;
-    min-height: 50px;
-    background-color: #73a7c6;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-    position: relative; }
-    .acc-row > div:nth-child(2n) {
-      background-color: #5d737e; }
-    .acc-row > div:before {
-      position: absolute;
-      content: attr(class);
-      bottom: 0;
-      font-style: italic;
-      opacity: .7;
-      color: #f2f2f2; }
-
-/* styleguide page */
-.popover-wrap {
-  position: fixed; }
-
-.popover-list {
-  -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  position: absolute;
-  top: -15px;
-  width: 200px;
-  padding: 0 25px;
-  left: -200px;
-  margin-left: -40px;
-  /* testing */
-  background-color: #2274a5; }
-  .popover-list > li {
-    font-size: 20px;
-    font-size: 2rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 38px;
-    line-height: 3.8rem; }
-    .popover-list > li > a {
-      color: #ffffff;
-      text-transform: uppercase; }
-
-.anchor-gap {
-  padding-top: 80px;
-  margin-top: -80px;
-  min-height: 100vh; }
-
-section.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  background: #ffffff;
-  text-transform: uppercase;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  z-index: 10001; }
-  section.header h1 {
-    color: #273c42; }
-  section.header img {
-    width: 120px;
-    position: absolute;
-    left: 5%;
-    top: 5px; }
-
-body {
+/* --- BEGIN STYLEGUIDE.CSS --- */
+.styleguide-body {
   background: #2274a5;
   padding-top: 100px;
   font-family: 'Open Sans', sans-serif; }
-  body * {
-    font-family: 'Open Sans', sans-serif; }
+  .styleguide-body > div.styleguide-container {
+    margin: 30px auto;
+    width: 76%;
+    max-width: calc(100% - 400px);
+    min-width: 400px;
+    padding: 15px 20px;
+    background: #ffffff; }
+    .styleguide-body > div.styleguide-container a[href] {
+      -webkit-transition: color 0.3s ease;
+      -khtml-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease;
+      color: #000; }
+      .styleguide-body > div.styleguide-container a[href]:hover {
+        -webkit-opacity: 0.9;
+        -khtml-opacity: 0.9;
+        -moz-opacity: 0.9;
+        -ms-opacity: 0.9;
+        -o-opacity: 0.9;
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        filter: alpha(opacity=90);
+        color: #666; }
+    .styleguide-body > div.styleguide-container h1, .styleguide-body > div.styleguide-container h2, .styleguide-body > div.styleguide-container h3, .styleguide-body > div.styleguide-container h4, .styleguide-body > div.styleguide-container h5, .styleguide-body > div.styleguide-container h6 {
+      font-family: 'Lato', sans-serif;
+      color: #273c42; }
+    .styleguide-body > div.styleguide-container p,
+    .styleguide-body > div.styleguide-container span {
+      font-family: 'Open Sans', sans-serif; }
+    .styleguide-body > div.styleguide-container > div > h2, .styleguide-body > div.styleguide-container > div > h3 {
+      text-transform: uppercase;
+      margin-top: 20px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 40px; }
+    .styleguide-body > div.styleguide-container section.header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      background: #ffffff;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      z-index: 10001; }
+      .styleguide-body > div.styleguide-container section.header h1 {
+        color: #273c42; }
+      .styleguide-body > div.styleguide-container section.header img {
+        width: 120px;
+        position: absolute;
+        left: 5%;
+        top: 5px; }
+    .styleguide-body > div.styleguide-container .sidemenu-wrap {
+      position: fixed; }
+      .styleguide-body > div.styleguide-container .sidemenu-wrap .sidemenu-list {
+        -webkit-box-sizing: border-box;
+        -khtml-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        top: -15px;
+        width: 200px;
+        padding: 0 25px;
+        left: -200px;
+        margin-left: -40px;
+        background-color: #2274a5; }
+        .styleguide-body > div.styleguide-container .sidemenu-wrap .sidemenu-list > li {
+          font-size: 20px;
+          font-size: 2rem;
+          -webkit-font-smoothing: subpixel-antialiased;
+          line-height: 38px;
+          line-height: 3.8rem; }
+          .styleguide-body > div.styleguide-container .sidemenu-wrap .sidemenu-list > li > a {
+            color: #ffffff;
+            text-transform: uppercase; }
+    .styleguide-body > div.styleguide-container .docs-example h4 {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .styleguide-body > div.styleguide-container .anchor-gap {
+      padding-top: 80px;
+      margin-top: -80px;
+      min-height: 100vh; }
+    .styleguide-body > div.styleguide-container .colored-grid > div {
+      margin: 2px 0; }
+      .styleguide-body > div.styleguide-container .colored-grid > div > div {
+        padding: 3px 10px;
+        color: #fff;
+        min-height: 50px;
+        background-color: #73a7c6;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+        position: relative; }
+        .styleguide-body > div.styleguide-container .colored-grid > div > div:nth-child(2n) {
+          background-color: #5d737e; }
+        .styleguide-body > div.styleguide-container .colored-grid > div > div:before {
+          position: absolute;
+          content: attr(class);
+          bottom: 0;
+          font-style: italic;
+          opacity: .7;
+          color: #f2f2f2; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  color: #273c42; }
-
-.container > div > h2, .container > div > h3 {
-  text-transform: uppercase;
-  margin-top: 20px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 40px; }
-
-.docs-example h4 {
-  margin-top: 20px;
-  margin-bottom: 30px; }
-
-/* --- END EXAMPLES.CSS --- */
+/* --- END STYLEGUIDE.CSS --- */

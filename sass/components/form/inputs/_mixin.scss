@@ -1,15 +1,7 @@
 $placeholder-color: #999;
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
-
-// todo
+// todo -> more improvements maybe
 @mixin input(){
 	input {
-		&[type=text],
-		&[type=password],
-		&[type=submit] {
-			font-family: 'Roboto'; //??? input email maybe? ???
-		}
-
 		&[type=text],
 		&[type=password],
 		&[type=email],
@@ -32,12 +24,11 @@ $placeholder-color: #999;
 
 @mixin textarea() { //todo, improve
 	textarea {
+		@include text-size(15);
 		padding: 15px;
 		border: 1px solid #ccc;
 		margin-bottom: 10px;
 		box-sizing: border-box;
-		font-family: montserrat;
 		color: #2C3E50;
-		@include text-size(15);
 	}
 }
