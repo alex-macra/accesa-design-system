@@ -2,7 +2,7 @@
 
 $column: 12;
 $gutter: 1%;
-
+//error handling for  grid columhns and gutter
 @function grid($size) {
 	$grid-base: $column;
 	$divide: null;
