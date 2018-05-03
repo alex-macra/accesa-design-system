@@ -306,7 +306,6 @@ h6 {
   margin-bottom: 10px; }
 
 a {
-  color: yellow;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -1448,7 +1447,8 @@ body > div.container {
 
 .anchor-gap {
   padding-top: 80px;
-  margin-top: -80px; }
+  margin-top: -80px;
+  min-height: 100vh; }
 
 section.header {
   position: fixed;

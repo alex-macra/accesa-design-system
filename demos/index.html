@@ -10,35 +10,37 @@
 <!-- Styleguide example Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
-
     <div class="popover-wrap"> <!-- this is good, make a component!-->
         <ul class="popover-list">
             <li>
-                <a href="#grid">Grid</a>
+                <a class="js-scroll-1" href="#grid">Grid</a>
             </li>
             <li>
-                <a href="#typography">Typography</a>
+                <a class="js-scroll-2" href="#typography">Typography</a>
             </li>
             <li>
-                <a href="#buttons">Buttons</a>
+                <a class="js-scroll-3" href="#buttons">Buttons</a>
             </li>
             <li>
-                <a href="#forms">Forms</a>
+                <a class="js-scroll-4" href="#forms">Forms</a>
             </li>
             <li>
-                <a href="#lists">Lists</a>
+                <a class="js-scroll-5" href="#lists">Lists</a>
             </li>
             <li>
-                <a href="#code">Code</a>
+                <a class="js-scroll-6" href="#code">Code</a>
             </li>
             <li>
-                <a href="#tables">Tables</a>
+                <a class="js-scroll-7" href="#tables">Tables</a>
             </li>
             <li>
-                <a href="#spinner">Spinners</a>
+                <a class="js-scroll-8" href="#queries">Queries</a>
             </li>
             <li>
-                <a href="#tooltip">Tooltips</a>
+                <a class="js-scroll-9" href="#spinner">Spinner</a>
+            </li>
+            <li>
+                <a class="js-scroll-10" href="#tooltip">Tooltip</a>
             </li>
         </ul>
     </div>
@@ -51,7 +53,7 @@
     </section>
 
     <!-- Grid -->
-    <div id="grid" class="anchor-gap">
+    <div id="grid" class="js-scrollTo-1 anchor-gap">
         <h3>The grid</h3>
         <div class="acc-grid-container">
             <div class="acc-row"> <!-- //???-->
@@ -130,7 +132,7 @@
     </div>
 
     <!-- Typography -->
-    <div id="typography" class="anchor-gap">
+    <div id="typography" class="js-scrollTo-2 anchor-gap">
         <h3>Typography</h3>
         <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Dash never changes the <code>&lt;html&gt;</code> font-size,
             but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
@@ -162,14 +164,13 @@
     </div>
 
     <!-- Buttons -->
-    <div id="buttons" class="anchor-gap">
+    <div id="buttons" class="js-scrollTo-3 anchor-gap">
         <h3>Buttons</h3>
         <p>Buttons come in two basic flavors in Dash. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements,
             but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
         <div class="docs-example">
 
             <h4>Normal</h4> <!-- tips if use links instead of buttons -->
-
             <a href="#" class="acc-button--red">Button</a>
             <a href="#" class="acc-button--green">Button</a>
             <a href="#" class="acc-button--blue">Button</a>
@@ -253,7 +254,7 @@
     </div>
     
     <!-- Modal -->
-    <div class="acc-modal" class="anchor-gap">
+    <!--<div class="acc-modal" class="anchor-gap">
         <input class="modal-open" id="modal-one" type="checkbox" hidden>
         <div class="modal-wrap" aria-hidden="true" role="dialog">
             <label class="modal-overlay" for="modal-one"></label>
@@ -270,10 +271,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- /Modal One -->
     <!-- Forms -->
-    <div id="forms" class="anchor-gap">
+    <div id="forms" class="js-scrollTo-4 anchor-gap">
         <h3>Forms</h3>
         <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
         <div class="docs-example docs-example-forms">
@@ -343,7 +344,7 @@ The cat was playing in the garden.
     </div>
 
     <!-- Lists -->
-    <div id="lists" class="anchor-gap">
+    <div id="lists" class="js-scrollTo-5 anchor-gap">
         <h3>Lists</h3>
         <div class="row docs-example">
             <div class="six ">
@@ -376,7 +377,7 @@ The cat was playing in the garden.
     </div>
 
     <!-- Code -->
-    <div id="code" class="anchor-gap">
+    <div id="code" class="js-scrollTo-6 anchor-gap">
         <h3>Code</h3>
         <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
         <div class="docs-example">
@@ -404,7 +405,7 @@ function myFunction() {
     </div>
 
     <!-- Tables -->
-    <div id="tables" class="anchor-gap">
+    <div id="tables" class="js-scrollTo-7 anchor-gap">
         <h3>Tables</h3>
         <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
         <div class="docs-example">
@@ -436,7 +437,7 @@ function myFunction() {
     </div>
 
     <!-- Queries -->
-    <div id="queries" class="anchor-gap">
+    <div id="queries" class="js-scrollTo-8 anchor-gap">
         <h3>Media queries</h3>
         <p>Dash uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Dash's
             grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The
@@ -456,13 +457,13 @@ function myFunction() {
     </div>
 
     <!-- Spinner -->
-    <div id="spinner" class="anchor-gap">
+    <div id="spinner" class="js-scrollTo-9 anchor-gap">
         <h3>Spinner</h3>
         <div class="acc-spinner">Loading...</div>
     </div>
 
     <!-- Tooltips -->
-    <div id="tooltip" class="anchor-gap">
+    <div id="tooltip" class="js-scrollTo-10 anchor-gap">
         <h3>Tooltips</h3>
         <div class="tooltip-holder">
             <i class="info-icon nw" data-tooltip="this is tooltip">nw</i>
@@ -476,4 +477,177 @@ function myFunction() {
 </div>
 
 </body>
+
+<script>
+    //todo move js to a file. make it lighter pls!!!!
+
+    function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+
+        const easings = {
+            linear(t) {
+                return t;
+            },
+            easeInQuad(t) {
+                return t * t;
+            },
+            easeOutQuad(t) {
+                return t * (2 - t);
+            },
+            easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            },
+            easeInCubic(t) {
+                return t * t * t;
+            },
+            easeOutCubic(t) {
+                return (--t) * t * t + 1;
+            },
+            easeInOutCubic(t) {
+                return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+            },
+            easeInQuart(t) {
+                return t * t * t * t;
+            },
+            easeOutQuart(t) {
+                return 1 - (--t) * t * t * t;
+            },
+            easeInOutQuart(t) {
+                return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
+            },
+            easeInQuint(t) {
+                return t * t * t * t * t;
+            },
+            easeOutQuint(t) {
+                return 1 + (--t) * t * t * t * t;
+            },
+            easeInOutQuint(t) {
+                return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t;
+            }
+        };
+
+        const start = window.pageYOffset;
+        const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+        const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+        const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+        const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+        if ('requestAnimationFrame' in window === false) {
+            window.scroll(0, destinationOffsetToScroll);
+            if (callback) {
+                callback();
+            }
+            return;
+        }
+
+        function scroll() {
+            const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const time = Math.min(1, ((now - startTime) / duration));
+            const timeFunction = easings[easing](time);
+            window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
+
+            if (window.pageYOffset === destinationOffsetToScroll) {
+                if (callback) {
+                    callback();
+                }
+                return;
+            }
+
+            requestAnimationFrame(scroll);
+        }
+
+        scroll();
+    }
+
+    document.querySelector('.js-scroll-1').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-1'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+    document.querySelector('.js-scroll-2').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-2'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-3').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-3'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-4').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-4'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-5').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-5'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-6').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-6'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-7').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-7'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-8').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-8'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-9').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-9'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-10').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-10'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+</script>
+
 </html>
