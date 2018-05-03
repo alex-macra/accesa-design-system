@@ -196,7 +196,7 @@ html {
 
 /* --- END HIDE.CSS --- */
 pre {
-  background: #333;
+  background: #333333;
   white-space: pre;
   word-wrap: break-word;
   overflow: auto; }
@@ -248,7 +248,7 @@ pre {
       opacity: 0;
       visibility: visible; }
     pre.code.code-css {
-      background: #173445; }
+      background: #07434b; }
       pre.code.code-css code {
         color: #8cd5ff; }
     pre.code.code-html {
@@ -256,7 +256,7 @@ pre {
       pre.code.code-html code {
         color: #ffc6b6; }
     pre.code.code-javascript {
-      background: #07434b; }
+      background: #173445; }
       pre.code.code-javascript code {
         color: #4dd0e1; }
 
@@ -378,12 +378,12 @@ p {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #ff4136;
-  box-shadow: 0 2px 0 shade(#ff4136, 15%); }
+  background-color: #ff4236;
+  box-shadow: 0 2px 0 shade(#ff4236, 15%); }
   .acc-button--error:hover, .acc-button--error:focus {
     background-color: #e90d00; }
   .acc-button--error:active {
-    background-color: #ff4136; }
+    background-color: #ff4236; }
 
 .acc-button--proceed {
   -webkit-user-select: none;
@@ -1204,11 +1204,11 @@ body > div.container {
     padding: 3px 10px;
     color: #fff;
     min-height: 50px;
-    background-color: rgba(34, 116, 165, 0.63);
+    background-color: #73a7c6;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
     position: relative; }
     .acc-row > div:nth-child(2n) {
-      background-color: #5D737E; }
+      background-color: #5d737e; }
     .acc-row > div:before {
       position: absolute;
       content: attr(class);

@@ -16,7 +16,7 @@ $placeholder-color: #999;
 		&[type=number]{
 			background: #fff;
 			border: 1px solid #ccc;
-			color: #273c42;
+			color: $color-secondary;
 			// width: 100%;
 			height: 38px;
 			margin-bottom: 10px;

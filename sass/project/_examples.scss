@@ -37,12 +37,12 @@ body > div.container {
 		padding: 3px 10px;
 		color: #fff;
 		min-height: 50px;
-		background-color: rgba(34, 116, 165, 0.63);
+		background-color: $color-main-lighter;
 		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
 		position: relative;
 
 		&:nth-child(2n) {
-			background-color: #5D737E;
+			background-color: $color-main-gray;
 		}
 
 		&:before {
@@ -51,7 +51,7 @@ body > div.container {
 			bottom: 0;
 			font-style: italic;
 			opacity: .7;
-			color: #f2f2f2;
+			color: $color-main-white;
 		}
 	}
 }

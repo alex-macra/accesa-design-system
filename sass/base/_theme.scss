@@ -1,14 +1,24 @@
 //maybe it's not the best place for a theme file
 
 //color scheme 1
-$color-main: #2274a5;
-$color-secondary: #273c42;
-$color-error: #ff4136;
-$color-success: #3d9970;
-$color-disabled: #eeeeee;
+$color-main: #2274a5; //273c42 //3d9970 //ff4236
+$color-secondary: darken(desaturate(adjust-hue($color-main, -9), 40.11), 18.43); //#273c42
+$color-error: lighten(saturate(adjust-hue($color-main, -199), 34.17), 21.57);
+$color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
+$color-disabled: lighten(desaturate(adjust-hue($color-main, -202), 65.83), 54.31);
 
-$color-headings: #273c42;
-$color-paragraphs: #273c42;
+//todo -create various styles based on primary colors usingsatuation, desaturation, lighten, etccc...
+//temp
+$color-main-lighter: lighten(desaturate($color-main, 23.70), 22.35);
+$color-main-gray: lighten(desaturate(adjust-hue($color-main, -2), 50.76), 3.92);
+$color-main-white: lighten(desaturate(adjust-hue($color-main, -202), 65.83), 55.88);
+$color-main-gray-dark: darken(desaturate(adjust-hue($color-main, -202), 65.83), 19.02);
+$color-main-red-dark: darken(desaturate(adjust-hue($color-main, -189), 6.81), 15.10);
+$color-main-blue-dark: darken(desaturate($color-main, 15.83), 20.98);
+$color-main-green-dark: darken(saturate(adjust-hue($color-main, -15), 17.10), 22.94);
+
+$color-headings: $color-secondary;
+$color-paragraphs: $color-secondary;
 
 $font-stack: 'Roboto', sans-serif;
 $border-radius: 0;

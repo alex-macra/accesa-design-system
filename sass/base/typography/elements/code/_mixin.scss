@@ -1,5 +1,5 @@
 @mixin code-styling() {
-  background: #333;
+  background: $color-main-gray-dark;
   white-space: pre;
   word-wrap: break-word;
   overflow: auto;
@@ -62,21 +62,21 @@
     }
 
     &.code-css {
-      background: #173445;
+      background: $color-main-green-dark;
       code {
         color: #8cd5ff;
       }
     }
 
     &.code-html {
-      background: #612919;
+      background: $color-main-red-dark;
       code {
         color: #ffc6b6;
       }
     }
 
     &.code-javascript {
-      background: #07434b;
+      background: $color-main-blue-dark;
       code {
         color: #4dd0e1;
       }
