@@ -925,7 +925,7 @@ body textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 102; }
+  z-index: 100001; }
 
 .acc-modal .modal-exit {
   font-size: 25px;
@@ -956,7 +956,7 @@ body textarea {
   transition: transform .6s ease-in-out;
   width: 80%;
   max-width: 600px;
-  z-index: 100001; }
+  z-index: 100002; }
 
 .acc-modal .modal-body {
   padding: 20px; }
