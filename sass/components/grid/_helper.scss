@@ -15,10 +15,6 @@
 			@include grid(half);
 		}
 
-		.#{$prefix}-col-xs-third {
-			@include grid(third);
-		}
-
 		.#{$prefix}-col-xs-1 {
 			@include grid(1);
 		}
@@ -76,10 +72,6 @@
 
 		.#{$prefix}-col-sm-half {
 			@include grid(half);
-		}
-
-		.#{$prefix}-col-sm-third {
-			@include grid(third);
 		}
 
 		.#{$prefix}-col-sm-1 {
@@ -141,10 +133,6 @@
 			@include grid(half);
 		}
 
-		.#{$prefix}-col-md-third {
-			@include grid(third);
-		}
-
 		.#{$prefix}-col-md-1 {
 			@include grid(1);
 		}
@@ -202,10 +190,6 @@
 
 		.#{$prefix}-col-lg-half {
 			@include grid(half);
-		}
-
-		.#{$prefix}-col-lg-third {
-			@include grid(third);
 		}
 
 		.#{$prefix}-col-lg-1 {
@@ -267,10 +251,6 @@
 			@include grid(half);
 		}
 
-		.#{$prefix}-col-big-third {
-			@include grid(third);
-		}
-
 		.#{$prefix}-col-big-1 {
 			@include grid(1);
 		}
@@ -327,10 +307,6 @@
 
 	.#{$prefix}-col-half {
 		@include grid(half);
-	}
-
-	.#{$prefix}-col-third {
-		@include grid(third);
 	}
 
 	.#{$prefix}-col-1 {
@@ -477,14 +453,9 @@
 	.#{$prefix}-col-push-right-12 {
 		@include grid-push(right, 12 of 12);
 	}
-
-
-	.#{$prefix}-row {
-		@include flexbox();
-	}
 }
 
 .#{$prefix}-row {
-	width: 100%;
+	@include grid-row();
 }
 /* --- END GRID.CSS --- */

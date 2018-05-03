@@ -3,29 +3,36 @@
 @mixin grid-container() {
 	@include flexbox();
 	@include flex-flow(row wrap);
-
-	width: 100%;
-
+	margin-left: -$gutter;
+	padding: 0;
 	[class*="-col-"] {
 		@include flex(1 0 100%);
+		margin-left: $gutter;
+		margin-bottom: $gutter;
 	}
+}
+
+@mixin grid-row() {
+	@include flexbox();
+	margin-left: -$gutter;
+	padding: 0;
+	width: 100%;
 }
 
 @mixin grid($size) {
 	@if $size == container or $size == wrapper {
 		@include grid-container;
-	} @else {
+	}
+	@else {
 		$percentage: grid($size);
-
 		@if $percentage != null {
-			max-width: $percentage;
+			max-width: ($percentage - $gutter);
 		}
 	}
 }
 
 @mixin grid-push($side, $size) {
 	$percentage: grid($size);
-
 	@if $percentage != null and ($side == right or $side == left) {
 		margin-#{$side}: $percentage;
 	}
