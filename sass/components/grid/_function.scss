@@ -1,7 +1,7 @@
 // Grid function
 
 $column: 12;
-$gutter: 1%; //you can also use percentage
+$gutter: 1%;
 
 @function grid($size) {
 	$grid-base: $column;
