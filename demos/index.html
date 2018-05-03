@@ -37,10 +37,10 @@
                 <a class="js-scroll-8" href="#queries">Queries</a>
             </li>
             <li>
-                <a class="js-scroll-9" href="#spinner">Spinner</a>
+                <a class="js-scroll-10" href="#tooltip">Tooltip</a>
             </li>
             <li>
-                <a class="js-scroll-10" href="#tooltip">Tooltip</a>
+                <a class="js-scroll-9" href="#spinner">Spinner</a>
             </li>
         </ul>
     </div>
@@ -178,13 +178,20 @@
             but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
         <div class="docs-example">
             <h4>Styles</h4>
-            <button class="acc-button--primary"/>Primary</button>
-            <button class="acc-button--secondary"/>Secondary</button>
-            <button class="acc-button--alternative"/>Alternative</button>
-            <button class="acc-button--error"/>Error</button>
-            <button class="acc-button--proceed"/>Proceed</button>
-            <button class="acc-button--cancel"/>Cancel</button>
-            <button class="acc-button--disabled"/>Disabled</button>
+            <button class="acc-button--primary"/>
+            Primary</button>
+            <button class="acc-button--secondary"/>
+            Secondary</button>
+            <button class="acc-button--alternative"/>
+            Alternative</button>
+            <button class="acc-button--error"/>
+            Error</button>
+            <button class="acc-button--proceed"/>
+            Proceed</button>
+            <button class="acc-button--cancel"/>
+            Cancel</button>
+            <button class="acc-button--disabled"/>
+            Disabled</button>
 
             <h4>Sizes</h4>
 
@@ -493,22 +500,24 @@ function myFunction() {
         </div>
     </div>
 
-    <!-- Spinner -->
-    <div id="spinner" class="js-scrollTo-9 anchor-gap">
-        <h3>Spinner</h3>
-        <div class="acc-spinner">Loading...</div>
-    </div>
-
     <!-- Tooltips -->
     <div id="tooltip" class="js-scrollTo-10 anchor-gap">
         <h3>Tooltips</h3>
         <div class="tooltip-holder">
             <h5>Upper left tooltip <i class="info-icon nw" data-tooltip="this is tooltip">i</i></h5>
             <h5>Upper right tooltip <i class="info-icon ne" data-tooltip="this is tooltip this is tooltip">i</i></h5>
-            <h5>Upper right tooltip <i class="info-icon sw" data-tooltip="this is tooltip this is tooltip this is tooltip">i</i></h5>
-            <h5>Upper right tooltip <i class="info-icon se"  data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">i</i></h5>
+            <h5>Upper right tooltip <i class="info-icon sw"
+                                       data-tooltip="this is tooltip this is tooltip this is tooltip">i</i></h5>
+            <h5>Upper right tooltip <i class="info-icon se"
+                                       data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">i</i>
+            </h5>
         </div>
     </div>
+
+    <!-- Spinner -->
+    <div id="spinner" class="js-scrollTo-9 anchor-gap">
+        <h3>Spinner</h3>
+        <div class="acc-spinner">Loading...</div>
     </div>
 </div>
 
