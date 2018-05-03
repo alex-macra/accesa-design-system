@@ -6,6 +6,10 @@
 
 //@import 'temp';
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*
 a {
 	@include transition(color .3s ease);
 	color: #000;
@@ -15,7 +19,7 @@ a {
 		@include transform(scale(1.5));
 		color: #666;
 	}
-}
+} */
 
 body > div.container {
 	margin: 30px auto;
@@ -124,6 +128,12 @@ section.header {
 body {
 	background: #2274A5;
 	padding-top: 100px;
+	font-family: 'Open Sans', sans-serif;
+
+	* {
+		font-family: 'Open Sans', sans-serif;
+
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
