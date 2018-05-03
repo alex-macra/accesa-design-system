@@ -3,7 +3,7 @@
 //color scheme 1
 $color-main: #2274a5; //273c42 //3d9970 //ff4236 //2274a5
 $color-secondary: darken(desaturate(adjust-hue($color-main, -9), 40.11), 18.43); //#273c42
-$color-error: lighten(saturate(adjust-hue($color-main, -199), 34.17), 21.57);
+$color-error: #e90d00;
 $color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
 $color-disabled: lighten(desaturate(adjust-hue($color-main, -202), 65.83), 54.31);
 
