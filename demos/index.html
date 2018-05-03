@@ -36,10 +36,13 @@
                 <a class="js-scroll-8" href="#queries">Queries</a>
             </li>
             <li>
-                <a class="js-scroll-10" href="#tooltip">Tooltip</a>
+                <a class="js-scroll-9" href="#tooltip">Tooltip</a>
             </li>
             <li>
-                <a class="js-scroll-9" href="#spinner">Spinner</a>
+                <a class="js-scroll-10" href="#modal">Modal</a>
+            </li>
+            <li>
+                <a class="js-scroll-11" href="#spinner">Spinner</a>
             </li>
         </ul>
     </div>
@@ -256,30 +259,6 @@
                         -->
         </div>
     </div>
-
-    <!-- Modal -->
-   <div id="modal" class="js-scrollTo-44 anchor-gap">
-       <h3>Modal</h3>
-       <div class="acc-modal">
-           <input class="modal-open" id="modal-one" type="checkbox"> <label for="modal-one">click to enable the modal</label>
-           <div class="modal-wrap" aria-hidden="true" role="dialog">
-               <label class="modal-overlay" for="modal-one"></label>
-               <div class="modal-dialog">
-                   <div class="modal-header">
-                       <h2>Modal in just with CSS?</h2>
-                       <label class="modal-exit" for="modal-one" aria-hidden="true">×</label>
-                   </div>
-                   <div class="modal-body">
-                       <p>Yes! :D</p>
-                   </div>
-                   <div class="modal-footer">
-                       <label class="acc-button--alternative" for="modal-one">cancel</label>
-                       <label class="acc-button--proceed" for="modal-one">proceed</label>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
 
     <!-- Forms -->
     <div id="forms" class="js-scrollTo-4 anchor-gap">
@@ -538,7 +517,7 @@ function myFunction() {
     </div>
 
     <!-- Tooltips -->
-    <div id="tooltip" class="js-scrollTo-10 anchor-gap">
+    <div id="tooltip" class="js-scrollTo-9 anchor-gap">
         <h3>Tooltips</h3>
         <div class="tooltip-holder">
             <h5>Upper left tooltip <i class="info-icon nw" data-tooltip="this is tooltip">i</i></h5>
@@ -551,8 +530,32 @@ function myFunction() {
         </div>
     </div>
 
+    <!-- Modal -->
+    <div id="modal" class="js-scrollTo-10 anchor-gap">
+        <h3>Modal</h3>
+        <div class="acc-modal">
+            <input class="modal-open" id="modal-one" type="checkbox"> <label for="modal-one">click to enable the modal</label>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-one"></label>
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h2>Modal in just with CSS?</h2>
+                        <label class="modal-exit" for="modal-one" aria-hidden="true">×</label>
+                    </div>
+                    <div class="modal-body">
+                        <p>Yes! :D</p>
+                    </div>
+                    <div class="modal-footer">
+                        <label class="acc-button--alternative" for="modal-one">cancel</label>
+                        <label class="acc-button--proceed" for="modal-one">proceed</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Spinner -->
-    <div id="spinner" class="js-scrollTo-9 anchor-gap">
+    <div id="spinner" class="js-scrollTo-11 anchor-gap">
         <h3>Spinner</h3>
         <div class="acc-spinner">Loading...</div>
     </div>
@@ -689,6 +692,15 @@ function myFunction() {
     document.querySelector('.js-scroll-10').addEventListener('click', () => {
         scrollIt(
             document.querySelector('.js-scrollTo-10'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+    });
+
+    document.querySelector('.js-scroll-11').addEventListener('click', () => {
+        scrollIt(
+            document.querySelector('.js-scrollTo-11'),
             300,
             'easeOutQuad',
             () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
