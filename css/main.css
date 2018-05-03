@@ -423,12 +423,12 @@ p {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #ff4236;
-  box-shadow: 0 2px 0 shade(#ff4236, 15%); }
+  background-color: #e90d00;
+  box-shadow: 0 2px 0 shade(#e90d00, 15%); }
   .acc-button--error:hover, .acc-button--error:focus {
-    background-color: #e90d00; }
+    background-color: #9d0900; }
   .acc-button--error:active {
-    background-color: #ff4236; }
+    background-color: #e90d00; }
 
 .acc-button--proceed {
   -webkit-user-select: none;
