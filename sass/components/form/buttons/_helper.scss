@@ -1,20 +1,3 @@
-.#{$prefix}-flat-form {
-	@include input();
-	@include input-button();
-	@include select();
-}
-
-/* temp *?
-body
- */
-
-body {
-	@include input();
-	@include input-button();
-	@include select();
-	@include textarea();
-}
-
 [class*='button--'] { //todo - handle hover colors
 	border-radius: $border-radius; // todo shadow if material design
 	color: white;

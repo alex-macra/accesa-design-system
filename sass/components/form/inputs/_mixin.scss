@@ -1,0 +1,43 @@
+$placeholder-color: #999;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+// todo
+@mixin input(){
+	input {
+		&[type=text],
+		&[type=password],
+		&[type=submit] {
+			font-family: 'Roboto'; //??? input email maybe? ???
+		}
+
+		&[type=text],
+		&[type=password],
+		&[type=email],
+		&[type=number]{
+			background: #fff;
+			border: 1px solid #ccc;
+			color: #273c42;
+			// width: 100%;
+			height: 38px;
+			margin-bottom: 10px;
+			outline: none;
+			padding-left: 15px;
+		}
+		&::-webkit-input-placeholder {color: $placeholder-color;}
+		&:-moz-placeholder {color: $placeholder-color;}
+		&::-moz-placeholder {color: $placeholder-color;}
+		&:-ms-input-placeholder {color: $placeholder-color;}
+	}
+}
+
+@mixin textarea() { //todo, improve
+	textarea {
+		padding: 15px;
+		border: 1px solid #ccc;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		font-family: montserrat;
+		color: #2C3E50;
+		@include text-size(15);
+	}
+}
