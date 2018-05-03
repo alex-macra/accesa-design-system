@@ -1,6 +1,6 @@
 //Grid mixins - Grid container - Grid gutter
 
-@mixin grid-container() {
+@mixin grid-row() {
 	@include flexbox();
 	@include flex-flow(row wrap);
 	margin-left: -$gutter;
@@ -12,16 +12,9 @@
 	}
 }
 
-@mixin grid-row() {
-	@include flexbox();
-	margin-left: -$gutter;
-	padding: 0;
-	width: 100%;
-}
-
 @mixin grid($size) {
 	@if $size == container or $size == wrapper {
-		@include grid-container;
+		@include grid-row;
 	}
 	@else {
 		$percentage: grid($size);

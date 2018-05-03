@@ -2,9 +2,9 @@
 
 //Set default grid container classes
 
-.#{$prefix}-grid-container {
-	@include grid(container);
-
+.#{$prefix}-row {
+	@include grid-row();
+}
 	//Targeting mostly smartphone portrait devices
 	@include for-size(phone-only) {
 		.#{$prefix}-col-xs-full {
@@ -453,9 +453,5 @@
 	.#{$prefix}-col-push-right-12 {
 		@include grid-push(right, 12 of 12);
 	}
-}
 
-.#{$prefix}-row {
-	@include grid-row();
-}
 /* --- END GRID.CSS --- */
