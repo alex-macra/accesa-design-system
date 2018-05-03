@@ -403,27 +403,66 @@ function myFunction() {
         <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code>
             when building a <code>table</code>.</p>
         <div class="docs-example">
+            <h4>Default design</h4>
             <table class="acc-default-table">
                 <thead>
                 <tr>
                     <th>Name</th>
                     <th>Age</th>
-                    <th>Sex</th>
+                    <th>BAC</th>
                     <th>Location</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Dave Gamache</td>
-                    <td>26</td>
-                    <td>Male</td>
-                    <td>San Francisco</td>
+                    <td>Dorel Sopinceanu</td>
+                    <td>44</td>
+                    <td>.150</td>
+                    <td>Tecuci</td>
                 </tr>
                 <tr>
-                    <td>Dwayne Johnson</td>
+                    <td>Sopinceanu Dorel</td>
                     <td>42</td>
-                    <td>Male</td>
-                    <td>Hayward</td>
+                    <td>.120</td>
+                    <td>Tecuci</td>
+                </tr>
+                <tr>
+                    <td>Dorel Sopinceanu jr</td>
+                    <td>56</td>
+                    <td>.220</td>
+                    <td>Tecuci</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h4>Minimal design</h4>
+            <table class="acc-minimal-table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>BAC</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Dorel Sopinceanu</td>
+                    <td>44</td>
+                    <td>.150</td>
+                    <td>Tecuci</td>
+                </tr>
+                <tr>
+                    <td>Sopinceanu Dorel</td>
+                    <td>42</td>
+                    <td>.120</td>
+                    <td>Tecuci</td>
+                </tr>
+                <tr>
+                    <td>Dorel Sopinceanu jr</td>
+                    <td>56</td>
+                    <td>.220</td>
+                    <td>Tecuci</td>
                 </tr>
                 </tbody>
             </table>
@@ -464,14 +503,12 @@ function myFunction() {
     <div id="tooltip" class="js-scrollTo-10 anchor-gap">
         <h3>Tooltips</h3>
         <div class="tooltip-holder">
-            <i class="info-icon nw" data-tooltip="this is tooltip">nw</i>
-            <i class="info-icon ne" data-tooltip="this is tooltip this is tooltip">ne</i>
-            <br>
-            <i class="info-icon sw" data-tooltip="this is tooltip this is tooltip this is tooltip">sw</i>
-            <i class="info-icon se"
-               data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">se</i>
+            <h5>Upper left tooltip <i class="info-icon nw" data-tooltip="this is tooltip">i</i></h5>
+            <h5>Upper right tooltip <i class="info-icon ne" data-tooltip="this is tooltip this is tooltip">i</i></h5>
+            <h5>Upper right tooltip <i class="info-icon sw" data-tooltip="this is tooltip this is tooltip this is tooltip">i</i></h5>
+            <h5>Upper right tooltip <i class="info-icon se"  data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">i</i></h5>
         </div>
-
+    </div>
     </div>
 </div>
 

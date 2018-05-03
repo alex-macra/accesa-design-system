@@ -1,4 +1,4 @@
-@mixin button($color) {
+@mixin button($color) { //improve mixing with sizes
 	@include no-select();
 	background-color: $color;
 	box-shadow: 0 2px 0 shade($color, 15%);

@@ -21,10 +21,10 @@
 	}
 }
 
-.#{$prefix}-button--primary { @include button (#2274a5);}
-.#{$prefix}-button--secondary { @include button (#273c42);}
-.#{$prefix}-button--error { @include button (#ff4136);}
-.#{$prefix}-button--proceed { @include button (#3d9970);}
+.#{$prefix}-button--primary { @include button ($color-main);}
+.#{$prefix}-button--secondary { @include button ($color-secondary);}
+.#{$prefix}-button--error { @include button ($color-error);}
+.#{$prefix}-button--proceed { @include button ($color-success);}
 .#{$prefix}-button--cancel { @include button (#888888);}
 .#{$prefix}-button--alternative {
 	@include button (transparent);
@@ -38,7 +38,7 @@
 };
 
 .#{$prefix}-button--disabled {
-	@include button (#eee);
+	@include button ($color-disabled);
 	cursor: not-allowed;
 	color: #b2b2b2;
 	@include opacity(.95);
