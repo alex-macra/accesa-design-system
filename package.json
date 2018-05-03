@@ -1,6 +1,6 @@
 {
   "name": "accesa-ui-starter",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {

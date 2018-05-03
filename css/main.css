@@ -898,6 +898,21 @@ body textarea {
     vertical-align: top;
     border: 1px solid #ddd; }
 
+.acc-minimal-table {
+  border: 1px solid #ccc;
+  min-width: 50%;
+  padding: 5px;
+  text-align: left; }
+  .acc-minimal-table thead {
+    padding: 5px; }
+  .acc-minimal-table tbody {
+    padding: 5px; }
+  .acc-minimal-table tr {
+    padding: 5px; }
+  .acc-minimal-table td,
+  .acc-minimal-table th {
+    padding: 5px; }
+
 .tooltip-holder {
   font-family: arial, helvetica, sans-serif;
   text-align: left; }
