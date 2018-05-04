@@ -999,6 +999,115 @@ body textarea {
   .acc-minimal-table th {
     padding: 5px; }
 
+.tabs {
+  *zoom: 1;
+  width: 650px;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left; }
+  .tabs::before, .tabs::after {
+    content: ' ';
+    display: table; }
+  .tabs::after {
+    clear: both; }
+  .tabs li {
+    float: left;
+    display: block;
+    position: static;
+    padding: 0; }
+    .tabs li:before {
+      display: none; }
+  .tabs input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px; }
+  .tabs label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background: #ffffff;
+    top: 4px; }
+    .tabs label:hover {
+      background: #d8d8d8; }
+  .tabs .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    border: 1px solid #ccc; }
+  .tabs [id^="tab"]:checked + label {
+    top: 0;
+    padding-top: 17px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    z-index: 10; }
+  .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block; }
+
+.tabs-filled {
+  width: 650px;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left; }
+  .tabs-filled li {
+    float: left;
+    display: block;
+    position: static;
+    padding: 0; }
+    .tabs-filled li:before {
+      display: none; }
+  .tabs-filled input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px; }
+  .tabs-filled label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #2274a5;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 4px; }
+    .tabs-filled label:hover {
+      background: #19567b; }
+  .tabs-filled .tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;
+    position: absolute;
+    color: #ffffff;
+    top: 53px;
+    left: 0;
+    background: #73a7c6; }
+  .tabs-filled [id^="tab"]:checked + label {
+    top: 0;
+    padding-top: 17px;
+    background: #73a7c6; }
+  .tabs-filled [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block; }
+
 .tooltip-holder {
   font-family: arial, helvetica, sans-serif;
   text-align: left; }
