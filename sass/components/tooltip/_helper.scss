@@ -1,14 +1,6 @@
-
-//todo move
-.tooltip-holder {
-	font-family: arial, helvetica, sans-serif;
-	text-align: left;
-}
-h1 { color: #2c3e50; }
-
 .info-icon {
 	@include text-size(16, 30);
-	background:  #2785c0;
+	background: $color-main;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -17,8 +9,8 @@ h1 { color: #2c3e50; }
 	margin: 0 10px 10px 10px;
 	text-align: center;
 	width: 30px;
-	&.ne { @include tooltip(ne, #2c3e50); }
-	&.nw { @include tooltip(nw, #2c3e50); }
-	&.se { @include tooltip(se, #2c3e50); }
-	&.sw { @include tooltip(sw, #2c3e50); }
+	&.ne { @include tooltip(ne, $color-main-lighter); }
+	&.nw { @include tooltip(nw, $color-main-lighter); }
+	&.se { @include tooltip(se, $color-main-lighter); }
+	&.sw { @include tooltip(sw, $color-main-lighter); }
 }

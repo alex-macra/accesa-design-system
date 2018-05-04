@@ -106,7 +106,7 @@
 			margin-bottom: 30px;
 		}
 
-		//fix for scroll to issues when you have a fixed header
+		//fix for scroll to issues when you have a fixed header, todo: add component here
 		.anchor-gap {
 			padding-top: 80px;
 			margin-top: -80px;
@@ -116,7 +116,6 @@
 		//colored grid example
 		.colored-grid {
 			>div {
-				margin: 2px 0;
 
 				> div {
 					padding: 3px 10px;

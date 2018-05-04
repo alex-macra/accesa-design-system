@@ -13,8 +13,6 @@
 
 	[class*="-col-auto"] {
 		@include flex(1 0 auto);
-		margin-left: $gutter;
-		margin-bottom: ($gutter / 2);
 	}
 }
 
