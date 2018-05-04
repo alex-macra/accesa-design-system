@@ -1,50 +1,146 @@
 //todo - improve
 @mixin tabs() {
+
 	.tabs {
-		background: #c0392b;
-		display: block;
-		height: 40px;
-		list-style-type: none;
-		margin: 0;
-		margin-bottom: 20px;
-		padding: 0;
+		@include float-clear();
+		width: 650px;
+		list-style: none;
 		position: relative;
-		width: 100%;
+		margin: 80px 0 0 10px;
+		text-align: left;
 
 		li {
-			display: block;
 			float: left;
-			margin: 0;
+			display: block;
+			position: static;
 			padding: 0;
 
-			a {
-				background: #c0392b;
-				color: white;
-				display: block;
-				float: left;
-				font-size: 16px;
-				padding: 12px 22px;
-				text-decoration: none;
-
-				&.active {
-					@include transition( all 0.5s linear );
-					background: #e74c3c;
-					border-right: none;
-				}
-
-				&:hover {
-					@include transition( all 0.5s linear );
-					background: lighten( #c0392b, 10% );
-				}
+			&:before {
+				display: none;
 			}
+		}
 
-			&:last-child a {
-				border-right: none;
-				padding-left: 0;
-				padding-right: 0;
-				text-align: center;
-				width: 174px;
+		input[type="radio"] {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+
+		label {
+			display: block;
+			padding: 14px 21px;
+			border-radius: 2px 2px 0 0;
+			font-size: 20px;
+			font-weight: normal;
+			text-transform: uppercase;
+			cursor: pointer;
+			position: relative;
+			background: #ffffff;
+			top: 4px;
+			//@include transition(all 0.2s ease-in-out);
+
+			&:hover {
+				background: darken($color-main-white, 10);
 			}
+		}
+
+		.tab-content{
+			z-index: 2;
+			display: none;
+			overflow: hidden;
+			width: 100%;
+			font-size: 17px;
+			line-height: 25px;
+			padding: 25px;
+			position: absolute;
+			top: 61px;
+			left: 0;
+			border: 1px solid #ccc;
+		}
+
+		[id^="tab"]:checked + label {
+			top: 0;
+			padding-top: 17px;
+			border: 1px solid #ccc;
+			border-bottom: 0;
+			z-index: 10;
+		}
+
+		[id^="tab"]:checked ~ [id^="tab-content"] {
+			display: block;
+		}
+	}
+}
+
+@mixin tabs-filled() {
+
+	.tabs-filled {
+		width: 650px;
+		float: none;
+		list-style: none;
+		position: relative;
+		margin: 80px 0 0 10px;
+		text-align: left;
+
+		li {
+			float: left;
+			display: block;
+			position: static;
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		input[type="radio"] {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+
+		label {
+			display: block;
+			padding: 14px 21px;
+			border-radius: 2px 2px 0 0;
+			font-size: 20px;
+			font-weight: normal;
+			text-transform: uppercase;
+			background: $color-main;
+			color: #fff;
+			cursor: pointer;
+			position: relative;
+			top: 4px;
+			//@include transition(all 0.2s ease-in-out);
+
+			&:hover {
+				background: darken($color-main, 10);
+			}
+		}
+
+		.tab-content{
+			z-index: 2;
+			display: none;
+			overflow: hidden;
+			width: 100%;
+			font-size: 17px;
+			line-height: 25px;
+			padding: 25px;
+			position: absolute;
+			color: #ffffff;
+			top: 53px;
+			left: 0;
+			background: $color-main-lighter;
+		}
+
+		[id^="tab"]:checked + label {
+			top: 0;
+			padding-top: 17px;
+			background: $color-main-lighter;
+		}
+
+		[id^="tab"]:checked ~ [id^="tab-content"] {
+			display: block;
 		}
 	}
 }

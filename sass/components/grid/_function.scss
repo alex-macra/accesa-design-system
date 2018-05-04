@@ -3,6 +3,8 @@
 $column: 12;
 $gutter: 1%;
 //error handling for  grid columhns and gutter
+//todo => improve function
+//todo check nu
 @function grid($size) {
 	$grid-base: $column;
 	$divide: null;
