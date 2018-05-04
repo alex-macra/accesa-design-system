@@ -309,6 +309,10 @@
 		@include grid(half);
 	}
 
+.#{$prefix}-col-third {
+	@include grid(third);
+}
+
 	.#{$prefix}-col-1 {
 		@include grid(1);
 	}
