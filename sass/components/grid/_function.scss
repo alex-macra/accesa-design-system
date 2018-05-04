@@ -4,7 +4,8 @@ $column: 12;
 $gutter: 1%;
 //error handling for  grid columhns and gutter
 //todo => improve function
-//todo check nu
+//todo check number and validate if the percentage is HUUGE
+//find a way to add px gutter instead of percentage
 @function grid($size) {
 	$grid-base: $column;
 	$divide: null;
@@ -17,6 +18,10 @@ $gutter: 1%;
 		} @else if $size == half {
 			$divide: 1;
 			$total: 2;
+		}
+		@else if $size == third {
+			$divide: 1;
+			$total: 3;
 		}
 	} @else {
 		@if length($size) > 1 {
