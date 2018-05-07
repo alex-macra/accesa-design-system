@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<body class="styleguide-body">
+<body class="acc-style-guide--body">
 
-<!-- Styleguide example Layout -->
-<div class="styleguide-container">
+<!-- style-guide- example Layout -->
+<div class="acc-style-guide--container">
     <div class="sidemenu-wrap"> <!-- this is good, make a component!-->
         <ul class="sidemenu-list">
             <li>
@@ -54,7 +54,7 @@
         <a href="http://acccesa.eu">
             <img src="https://www.accesa.eu/wp-content/uploads/2016/04/accesa_logo_bg.png" alt="accesa logo"/>
         </a>
-        <h1>Ui Styleguide</h1>
+        <h1>Ui Styleguide </h1>
     </section>
 
     <!-- Grid -->
@@ -155,10 +155,7 @@
     <div id="typography" class="js-scrollTo-2 anchor-gap">
         <h3>Typography</h3>
         <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized
-            based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Dash never changes the
-            <code>&lt;html&gt;</code> font-size,
-            but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code>
-            with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+            based on a single <code>&lt;html&gt;</code> font-size property./p>
 
         <hr/>
 
@@ -192,7 +189,7 @@
     <!-- Buttons -->
     <div id="buttons" class="js-scrollTo-3 anchor-gap">
         <h3>Buttons</h3>
-        <p>Buttons come in two basic flavors in Dash. The standard <code>&lt;button&gt;</code> element is plain, whereas
+        <p>The standard <code>&lt;button&gt;</code> element is plain, whereas
             the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of
             appropriate form elements,
             but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
@@ -590,9 +587,8 @@ function myFunction() {
     <!-- Queries -->
     <div id="queries" class="js-scrollTo-9 anchor-gap">
         <h3>Media queries</h3>
-        <p>Dash uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling
-            your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>.
-            Mobile-first queries are how Dash's
+        <p>
+            Mobile-first queries are how the
             grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply
             to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to
             parse tons of unused CSS. The
