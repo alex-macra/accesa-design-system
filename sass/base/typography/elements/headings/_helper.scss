@@ -1,34 +1,48 @@
 //needs revision
-body section h1 { // ????
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
   font-family: 'Lato', sans-serif;
+  color: $color-secondary;
 }
 
 h1 {
   @include text-size(48);
-  margin-bottom: 10px;
 }
 
 h2 {
   @include text-size(38);
-  margin-bottom: 10px;
 }
 
 h3 {
   @include text-size(32);
-  margin-bottom: 10px;
 }
 
 h4 {
   @include text-size(28);
-  margin-bottom: 10px;
 }
 
 h5 {
   @include text-size(24);
-  margin-bottom: 10px;
 }
 
 h6 {
   @include text-size(22);
-  margin-bottom: 10px;
 }
+
+//$base-font-size: 18;
+//$heading-scale: 6; // amount of px headings grow from h6 to h1
+
+//@for $i from 1 through 6 {
+  //h#{$i} {
+//    font-size: $base-font-size + $heading-scale * (6 - $i);
+  //  @include text-size($base-font-size + $heading-scale * ($heading-scale - $i));
+
+    //font-size: $base-font-size + $heading-scale) * $heading-scale * ($heading-scale - $i);
+  //}/
+//}

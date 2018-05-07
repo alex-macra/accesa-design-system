@@ -1,36 +1,21 @@
-/* --- BEGIN STYLEGUIDE.CSS --- */
+/* --- BEGIN style-guide-.CSS --- */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-.styleguide-body {
+.#{$prefix}-style-guide--body {
 	background: $color-main;
 	padding-top: 100px;
 	font-family: 'Open Sans', sans-serif;
+}
 
-	> div.styleguide-container {
+.#{$prefix}-style-guide--container {
 		margin: 30px auto;
 		width: 76%;
 		max-width: calc(100% - 400px);
 		min-width: 400px;
 		padding: 15px 20px;
 		background: #ffffff;
-
-		//link styling -> improve pls
-		a[href] {
-			@include transition(color .3s ease);
-			color: #000;
-
-			&:hover {
-				@include opacity(0.9);
-				color: #666;
-			}
-		}
-
-		h1,h2,h3,h4,h5,h6 {
-			font-family: 'Lato', sans-serif;
-			color: $color-secondary;
-		}
 
 		p,
 		span {
@@ -143,6 +128,5 @@
 	}
 
 	//todo move in component
-}
 
-/* --- END STYLEGUIDE.CSS --- */
+/* --- END style-guide-.CSS --- */

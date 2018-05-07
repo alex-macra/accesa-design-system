@@ -40,6 +40,7 @@ In order to customize, select the tools / components to import in your project, 
   * Start with the HTML / JS / CSS documentation.
   * Create an HTML element flowchart.
   * Add a material option for the flat design components.
+  * Import / sync with Sketch or Figma.
 
 ## Ok, I want to use it
 
