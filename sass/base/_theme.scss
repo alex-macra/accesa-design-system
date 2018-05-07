@@ -1,7 +1,7 @@
 //maybe it's not the best place for a theme file
-
+//check if main color is too light, follow up colors will be wrong
 //color scheme 1
-$color-main: #2274a5; //273c42 //3d9970 //ff4236 //2274a5
+$color-main: #009DDC; //273c42 //3d9970 //ff4236 //2274a5 //009DDC
 $color-secondary: darken(desaturate(adjust-hue($color-main, -9), 40.11), 18.43); //#273c42
 $color-error: #e90d00;
 $color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
