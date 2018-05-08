@@ -17,8 +17,8 @@ $color-main-red-dark: darken(desaturate(adjust-hue($color-main, -189), 6.81), 15
 $color-main-blue-dark: darken(desaturate($color-main, 15.83), 20.98);
 $color-main-green-dark: darken(saturate(adjust-hue($color-main, -15), 17.10), 22.94);
 
-$color-headings: $color-secondary;
-$color-paragraphs: $color-secondary;
+$color-headings: #333335;
+$color-paragraphs: #333335;
 
 $font-stack: 'Roboto', sans-serif;
 $border-radius: 0;
