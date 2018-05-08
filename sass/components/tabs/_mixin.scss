@@ -35,7 +35,7 @@
 			text-transform: uppercase;
 			cursor: pointer;
 			position: relative;
-			background: #ffffff;
+			background: $color-white;
 			top: 4px;
 			//@include transition(all 0.2s ease-in-out);
 
@@ -107,7 +107,7 @@
 			font-weight: normal;
 			text-transform: uppercase;
 			background: $color-main;
-			color: #fff;
+			color: $color-white;
 			cursor: pointer;
 			position: relative;
 			top: 4px;
@@ -127,7 +127,7 @@
 			line-height: 25px;
 			padding: 25px;
 			position: absolute;
-			color: #ffffff;
+			color: $color-white;
 			top: 53px;
 			left: 0;
 			background: $color-main-lighter;

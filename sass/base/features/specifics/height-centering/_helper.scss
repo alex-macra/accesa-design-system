@@ -1,0 +1,13 @@
+/* --- BEGIN HEIGHT-CENTERING.CSS --- */
+
+.#{$prefix}-text-center {
+  @include center-horizontally-text();
+}
+
+.#{$prefix}-area-center-horizontal {
+  @include center-horizontally();
+}
+
+//todo: finish
+
+/* --- END HEIGHT-CENTERING.CSS --- */

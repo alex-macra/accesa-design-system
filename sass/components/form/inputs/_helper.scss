@@ -1,4 +1,11 @@
-body { //needs revision before beta
-	@include input();
-	@include textarea();
+/* --- BEGIN INPUT.CSS --- */
+
+textarea {
+  @include textarea();
 }
+
+input {
+  @include input();
+}
+
+/* --- END INPUT.CSS --- */

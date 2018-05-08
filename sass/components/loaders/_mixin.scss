@@ -1,12 +1,12 @@
 //Loaders mixin
 
-@mixin bouncing-loader($alignment, $size-vertical, $size-horizontal, $color) {
+@mixin bouncing-loader() {
 	@include flexbox();
 	@include flex-justify-content(center);
 
 	> div {
 		animation: bouncing-loader 0.6s infinite alternate;
-		background: $color;
+		background: #888;
 		border-radius: 50%;
 		height: 1rem;
 		margin: 3rem 0.2rem;
@@ -21,7 +21,7 @@
 		}
 	}
 
-	@keyframes loader { //todo - add to animations
+	@keyframes bouncing-loader { //todo - add to animations
 		from {
 			opacity: 1;
 			transform: translateY(0);
@@ -48,17 +48,18 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 	background-color: #888;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px rgba(0,0,0,.3) inset;
-	height: $circleDiam; left: 50%;
-	margin: -$circleDiam/2;
+	height: $circleDiam;
+  left: 50%;
+	//margin: -$circleDiam/2;
 	position: relative;
 	user-select: none;
 	color: transparent;
-	top: 50%;
+	//top: 50%;
 	width: $circleDiam;
 
 	&:after {
 		animation: spin 1s linear infinite;
-		background-color: #fff;
+		background-color: $color-white;
 		border-radius: 50%;
 		content: '';
 		height: $rotatingCircleDiam;

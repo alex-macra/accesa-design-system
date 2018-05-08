@@ -1,8 +1,10 @@
-.info-icon {
+/* --- BEGIN TOOL-TIPS.CSS --- */
+
+.info-icon { //todo: improve
 	@include text-size(16, 30);
 	background: $color-main;
 	border-radius: 50%;
-	color: #fff;
+	color: $color-white;
 	display: inline-block;
 	font-style: normal;
 	height: 30px;
@@ -14,3 +16,5 @@
 	&.se { @include tooltip(se, $color-main-lighter); }
 	&.sw { @include tooltip(sw, $color-main-lighter); }
 }
+
+/* --- END TOOL-TIPS.CSS --- */

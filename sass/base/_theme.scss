@@ -8,6 +8,10 @@ $color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
 $color-disabled: #eeeeee;
 $color-temp: #333335;
 
+$color-gray: #ccc;
+$color-white: #ffffff;
+$color-black: #000000;
+
 //todo -create various styles based on primary colors usingsatuation, desaturation, lighten, etccc...
 //temp
 $color-main-lighter: lighten(desaturate($color-main, 23.70), 22.35);

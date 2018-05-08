@@ -1,35 +1,38 @@
 $placeholder-color: #999;
-// todo -> more improvements maybe
-@mixin input(){
-	input {
-		&[type=text],
-		&[type=password],
-		&[type=email],
-		&[type=number]{
-			background: #fff;
-			border: 1px solid #ccc;
-			color: $color-secondary;
-			// width: 100%;
-			height: 38px;
-			margin-bottom: 10px;
-			outline: none;
-			padding-left: 15px;
-      display: block;
-		}
-		&::-webkit-input-placeholder {color: $placeholder-color;}
-		&:-moz-placeholder {color: $placeholder-color;}
-		&::-moz-placeholder {color: $placeholder-color;}
-		&:-ms-input-placeholder {color: $placeholder-color;}
-	}
+// todo -> revisions
+@mixin input() {
+  &[type=text],
+  &[type=password],
+  &[type=email],
+  &[type=number] {
+    background: $color-white;
+    border: 1px solid $color-gray;
+    color: $color-secondary;
+    height: 38px; //???
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 15px;
+    display: block;
+  }
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &:-moz-placeholder {
+    color: $placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder-color;
+  }
 }
 
-@mixin textarea() { //todo, improve
-	textarea {
-		@include text-size(15);
-		padding: 15px;
-		border: 1px solid #ccc;
-		margin-bottom: 10px;
-		box-sizing: border-box;
-		color: #2C3E50;
-	}
+@mixin textarea() {
+  @include text-size(15);
+  @include box-sizing();
+  padding: 15px;
+  border: 1px solid $color-gray;
+  margin-bottom: 10px;
+  color: $color-secondary;
 }
