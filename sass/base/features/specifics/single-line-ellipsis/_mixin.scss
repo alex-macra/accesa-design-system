@@ -1,0 +1,6 @@
+@mixin truncate-single-line($width: 100%) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: $width;
+}

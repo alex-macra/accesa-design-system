@@ -14,6 +14,7 @@ $placeholder-color: #999;
 			margin-bottom: 10px;
 			outline: none;
 			padding-left: 15px;
+      display: block;
 		}
 		&::-webkit-input-placeholder {color: $placeholder-color;}
 		&:-moz-placeholder {color: $placeholder-color;}
