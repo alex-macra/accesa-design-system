@@ -1,3 +1,5 @@
+/* --- BEGIN TABLE.CSS --- */
+
 .#{$prefix}-default-table {
   @include default-table();
 }
@@ -5,3 +7,5 @@
 .#{$prefix}-minimal-table {
   @include minimal-table();
 }
+
+/* --- END TABLE.CSS --- */

@@ -6,6 +6,8 @@
 	display: none !important;
 }
 
+//todo: test / improve
+
 @media print {
 	body {
 		-webkit-filter: grayscale(100%);

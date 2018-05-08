@@ -138,6 +138,37 @@ html {
     line-height: 1.6; }
 
 /* --- END BASE.CSS --- */
+/* --- BEGIN BROKEN-IMAGE.CSS --- */
+.acc-img {
+  display: block;
+  height: auto;
+  line-height: 2;
+  min-height: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+  .acc-img::before {
+    background-color: #e6e6e6;
+    border: 2px dotted #c8c8c8;
+    border-radius: 5px;
+    content: '';
+    display: block;
+    height: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%; }
+  .acc-img::after {
+    color: #646464;
+    content: attr(alt);
+    display: block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 100%; }
+
+/* --- END BROKEN-IMAGE.CSS --- */
 /* --- BEGIN CLEAR-FLOAT.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -148,6 +179,14 @@ html {
     clear: both; }
 
 /* --- END FLOAT-CLEAR.CSS --- */
+/* --- BEGIN HEIGHT-CENTERING.CSS --- */
+.acc-text-center {
+  text-align: center; }
+
+.acc-area-center-horizontal {
+  margin: 0 auto; }
+
+/* --- END HEIGHT-CENTERING.CSS --- */
 /* --- BEGIN HIDE.CSS --- */
 .acc-hide {
   display: none; }
@@ -171,6 +210,7 @@ html {
   width: 100%; }
 
 /* --- END HIDE.CSS --- */
+/* --- BEGIN CODE.CSS --- */
 pre {
   background: #333333;
   white-space: pre;
@@ -241,6 +281,8 @@ pre {
       color: #85b8d6;
       border-left: 1px solid #85b8d6; }
 
+/* --- END CODE.CSS --- */
+/* --- BEGIN HEADINGS.CSS --- */
 h1,
 h2,
 h3,
@@ -287,6 +329,8 @@ h6 {
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.55; }
 
+/* --- END HEADINGS.CSS --- */
+/* --- BEGIN LISTS.CSS --- */
 ul li {
   font-size: 18px;
   font-size: 1.8rem;
@@ -333,9 +377,10 @@ ol > li {
 ol ul {
   padding-left: 20px; }
 
+/* --- END LISTS.CSS --- */
 a {
   text-decoration: none;
-  color: #000; }
+  color: #000000; }
   a[href] {
     -webkit-transition: color 0.3s ease;
     -khtml-transition: color 0.3s ease;
@@ -343,7 +388,7 @@ a {
     -ms-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
-    color: #000;
+    color: #000000;
     text-decoration: underline; }
     a[href]:hover {
       -webkit-opacity: 0.9;
@@ -365,7 +410,8 @@ p {
   line-height: 1.45;
   margin-bottom: 10px; }
 
-[class*='button--'] {
+/* --- BEGIN BUTTONS.CSS --- */
+.acc-button {
   border-radius: 0;
   color: white;
   display: inline-block;
@@ -380,186 +426,176 @@ p {
   min-height: 20px;
   text-align: center;
   text-transform: uppercase; }
-  [class*='button--']:hover, [class*='button--']:focus {
+  .acc-button:hover, .acc-button:focus {
     box-shadow: none;
     color: white;
     outline: none; }
+  .acc-button.--primary {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #2274a5;
+    box-shadow: 0 2px 0 shade(#2274a5, 15%); }
+    .acc-button.--primary:hover, .acc-button.--primary:focus {
+      background-color: #154766; }
+    .acc-button.--primary:active {
+      background-color: #2274a5; }
+  .acc-button.--secondary {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #273c42;
+    box-shadow: 0 2px 0 shade(#273c42, 15%); }
+    .acc-button.--secondary:hover, .acc-button.--secondary:focus {
+      background-color: #0b1012; }
+    .acc-button.--secondary:active {
+      background-color: #273c42; }
+  .acc-button.--error {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #e90d00;
+    box-shadow: 0 2px 0 shade(#e90d00, 15%); }
+    .acc-button.--error:hover, .acc-button.--error:focus {
+      background-color: #9d0900; }
+    .acc-button.--error:active {
+      background-color: #e90d00; }
+  .acc-button.--proceed {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #3d9970;
+    box-shadow: 0 2px 0 shade(#3d9970, 15%); }
+    .acc-button.--proceed:hover, .acc-button.--proceed:focus {
+      background-color: #276248; }
+    .acc-button.--proceed:active {
+      background-color: #3d9970; }
+  .acc-button.--greyed {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #888888;
+    box-shadow: 0 2px 0 shade(#888888, 15%); }
+    .acc-button.--greyed:hover, .acc-button.--greyed:focus {
+      background-color: #626262; }
+    .acc-button.--greyed:active {
+      background-color: #888888; }
+  .acc-button.--alternative {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    box-shadow: 0 2px 0 shade(transparent, 15%);
+    color: #000000; }
+    .acc-button.--alternative:hover, .acc-button.--alternative:focus {
+      background-color: rgba(0, 0, 0, 0); }
+    .acc-button.--alternative:active {
+      background-color: transparent; }
+    .acc-button.--alternative:hover, .acc-button.--alternative:active, .acc-button.--alternative:focus {
+      color: #333333; }
+  .acc-button.--disabled {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #eeeeee;
+    box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    .acc-button.--disabled:hover, .acc-button.--disabled:focus {
+      background-color: #c8c8c8; }
+    .acc-button.--disabled:active {
+      background-color: #eeeeee; }
+    .acc-button.--disabled:hover, .acc-button.--disabled:active, .acc-button.--disabled:focus {
+      color: #b2b2b2; }
+  .acc-button.--large {
+    font-size: 28px;
+    font-size: 2.8rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 32px;
+    line-height: 3.2rem;
+    padding-bottom: .5em;
+    padding-top: .5em; }
+  .acc-button.--small {
+    font-size: 10px;
+    font-size: 1rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 13px;
+    line-height: 1.3rem;
+    padding: .5em 1.5em; }
+  .acc-button.--align-top {
+    vertical-align: top; }
+  .acc-button.--align-bottom {
+    vertical-align: bottom; }
+  .acc-button.--icon {
+    padding-left: 4em;
+    padding-right: 1em; }
+    .acc-button.--icon > i {
+      left: 1em;
+      margin-top: -.5em;
+      position: absolute;
+      top: 50%; }
+    .acc-button.--icon:before {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 0 0 0 0;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all .25s;
+      width: 3em; }
 
-.acc-button--primary {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #2274a5;
-  box-shadow: 0 2px 0 shade(#2274a5, 15%); }
-  .acc-button--primary:hover, .acc-button--primary:focus {
-    background-color: #154766; }
-  .acc-button--primary:active {
-    background-color: #2274a5; }
-
-.acc-button--secondary {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #273c42;
-  box-shadow: 0 2px 0 shade(#273c42, 15%); }
-  .acc-button--secondary:hover, .acc-button--secondary:focus {
-    background-color: #0b1012; }
-  .acc-button--secondary:active {
-    background-color: #273c42; }
-
-.acc-button--error {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #e90d00;
-  box-shadow: 0 2px 0 shade(#e90d00, 15%); }
-  .acc-button--error:hover, .acc-button--error:focus {
-    background-color: #9d0900; }
-  .acc-button--error:active {
-    background-color: #e90d00; }
-
-.acc-button--proceed {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #3d9970;
-  box-shadow: 0 2px 0 shade(#3d9970, 15%); }
-  .acc-button--proceed:hover, .acc-button--proceed:focus {
-    background-color: #276248; }
-  .acc-button--proceed:active {
-    background-color: #3d9970; }
-
-.acc-button--cancel {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #888888;
-  box-shadow: 0 2px 0 shade(#888888, 15%); }
-  .acc-button--cancel:hover, .acc-button--cancel:focus {
-    background-color: #626262; }
-  .acc-button--cancel:active {
-    background-color: #888888; }
-
-.acc-button--alternative {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: transparent;
-  box-shadow: 0 2px 0 shade(transparent, 15%);
-  color: #000; }
-  .acc-button--alternative:hover, .acc-button--alternative:focus {
-    background-color: rgba(0, 0, 0, 0); }
-  .acc-button--alternative:active {
-    background-color: transparent; }
-  .acc-button--alternative:hover, .acc-button--alternative:active, .acc-button--alternative:focus {
-    color: #333333; }
-
-.acc-button--disabled {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #eeeeee;
-  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
-  cursor: not-allowed;
-  color: #b2b2b2;
-  -webkit-opacity: 0.95;
-  -khtml-opacity: 0.95;
-  -moz-opacity: 0.95;
-  -ms-opacity: 0.95;
-  -o-opacity: 0.95;
-  opacity: 0.95;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-  filter: alpha(opacity=95); }
-  .acc-button--disabled:hover, .acc-button--disabled:focus {
-    background-color: #c8c8c8; }
-  .acc-button--disabled:active {
-    background-color: #eeeeee; }
-  .acc-button--disabled:hover, .acc-button--disabled:active, .acc-button--disabled:focus {
-    color: #b2b2b2; }
-
-/* Sizes */
-.acc-button--large {
-  font-size: 32px;
-  font-size: 2rem;
-  padding-bottom: .5em;
-  padding-top: .5em; }
-
-.acc-button--small {
-  font-size: 13px;
-  font-size: .8rem;
-  padding: .5em 1.5em; }
-
-/* Alignment */
-.acc-button--align-top {
-  vertical-align: top; }
-
-.acc-button--align-bottom {
-  vertical-align: bottom; }
-
-/* icons */
-.acc-button--icon {
-  padding-left: 4em;
-  padding-right: 1em; }
-  .acc-button--icon > i {
-    left: 1em;
-    margin-top: -.5em;
-    position: absolute;
-    top: 50%; }
-  .acc-button--icon:before {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 0 0;
-    bottom: 0;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
-    content: '';
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all .25s;
-    width: 3em; }
-  .acc-button--icon:hover:before {
-    box-shadow: none; }
-
-body select {
+/* --- END BUTTONS.CSS --- */
+/* --- BEGIN DROP-DOWNS.CSS --- */
+select {
   padding: 0 10px;
   display: block;
   min-width: 100px;
   line-height: 1;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #ccc;
   color: #273c42;
   height: 38px;
@@ -567,8 +603,26 @@ body select {
   outline: none;
   padding-left: 15px; }
 
-body input[type=text], body input[type=password], body input[type=email], body input[type=number] {
-  background: #fff;
+/* --- END DROP-DOWNS.CSS --- */
+/* --- BEGIN INPUT.CSS --- */
+textarea {
+  font-size: 15px;
+  font-size: 1.5rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.375;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  color: #273c42; }
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  background: #ffffff;
   border: 1px solid #ccc;
   color: #273c42;
   height: 38px;
@@ -577,29 +631,19 @@ body input[type=text], body input[type=password], body input[type=email], body i
   padding-left: 15px;
   display: block; }
 
-body input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #999; }
 
-body input:-moz-placeholder {
+input:-moz-placeholder {
   color: #999; }
 
-body input::-moz-placeholder {
+input::-moz-placeholder {
   color: #999; }
 
-body input:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #999; }
 
-body textarea {
-  font-size: 15px;
-  font-size: 1.5rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.375;
-  padding: 15px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  color: #2C3E50; }
-
+/* --- END INPUT.CSS --- */
 /* --- BEGIN GRID.CSS --- */
 .acc-row {
   display: -moz-flex;
@@ -893,21 +937,20 @@ body textarea {
   margin-right: 100%; }
 
 /* --- END GRID.CSS --- */
+/* --- BEGIN LOADERS.CSS --- */
 .acc-spinner {
   background-color: #888;
   border-radius: 50%;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3) inset;
   height: 20px;
   left: 50%;
-  margin: -10px;
   position: relative;
   user-select: none;
   color: transparent;
-  top: 50%;
   width: 20px; }
   .acc-spinner:after {
     animation: spin 1s linear infinite;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
     content: '';
     height: 4px;
@@ -921,6 +964,36 @@ body textarea {
   100% {
     transform: rotate(360deg); } }
 
+.acc-bouncing-loader {
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center; }
+  .acc-bouncing-loader > div {
+    animation: bouncing-loader 0.6s infinite alternate;
+    background: #888;
+    border-radius: 50%;
+    height: 1rem;
+    margin: 3rem 0.2rem;
+    width: 1rem; }
+    .acc-bouncing-loader > div:nth-of-type(2) {
+      animation-delay: 0.2s; }
+    .acc-bouncing-loader > div:nth-of-type(3) {
+      animation-delay: 0.4s; }
+
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem); } }
+
+/* --- END LOADERS.CSS --- */
+/* --- BEGIN MODAL.CSS --- */
 .acc-modal .modal-wrap:before {
   content: '';
   display: none;
@@ -986,6 +1059,8 @@ body textarea {
   border-top: #eaeaea solid 1px;
   text-align: right; }
 
+/* --- END MODAL.CSS --- */
+/* --- BEGIN TABLE.CSS --- */
 .acc-default-table {
   border: 1px solid #ccc;
   min-width: 50%;
@@ -1013,6 +1088,8 @@ body textarea {
   .acc-minimal-table th {
     padding: 5px; }
 
+/* --- END TABLE.CSS --- */
+/* --- BEGIN TABS.CSS --- */
 .tabs {
   *zoom: 1;
   width: 650px;
@@ -1096,7 +1173,7 @@ body textarea {
     font-weight: normal;
     text-transform: uppercase;
     background: #2274a5;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     position: relative;
     top: 4px; }
@@ -1122,6 +1199,8 @@ body textarea {
   .tabs-filled [id^="tab"]:checked ~ [id^="tab-content"] {
     display: block; }
 
+/* --- END TABS.CSS --- */
+/* --- BEGIN TOOL-TIPS.CSS --- */
 .info-icon {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1130,7 +1209,7 @@ body textarea {
   line-height: 3rem;
   background: #2274a5;
   border-radius: 50%;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-style: normal;
   height: 30px;
@@ -1346,6 +1425,7 @@ body textarea {
     .info-icon.sw:before {
       margin-right: -18px; }
 
+/* --- END TOOL-TIPS.CSS --- */
 /* --- BEGIN PRINT.CSS --- */
 .acc-print-me {
   display: none !important; }
@@ -1368,7 +1448,7 @@ body textarea {
     display: block !important; } }
 
 /* --- END PRINT.CSS --- */
-/* --- BEGIN style-guide-.CSS --- */
+/* --- BEGIN STYLE-GUIDE.CSS --- */
 .acc-style-guide--body {
   background: #2274a5;
   padding-top: 100px;
@@ -1447,7 +1527,7 @@ body textarea {
     min-height: 100vh; }
   .acc-style-guide--container .colored-grid > div > div {
     padding: 3px 10px;
-    color: #fff;
+    color: #ffffff;
     min-height: 50px;
     background-color: #73a7c6;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
@@ -1462,4 +1542,4 @@ body textarea {
       opacity: .7;
       color: #f2f2f2; }
 
-/* --- END style-guide-.CSS --- */
+/* --- END STYLE-GUIDE.CSS --- */

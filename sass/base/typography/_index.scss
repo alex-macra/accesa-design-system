@@ -3,11 +3,11 @@
 //todo -move
 a {
   text-decoration: none;
-  color: #000;
+  color: $color-black;
 
   &[href] {
       @include transition(color .3s ease);
-      color: #000;
+      color: $color-black;
       text-decoration: underline;
 
       &:hover {

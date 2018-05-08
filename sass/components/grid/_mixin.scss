@@ -5,6 +5,7 @@
 	@include flex-flow(row wrap);
 	margin-left: -$gutter;
 	padding: 0;
+
 	[class*="-col-"] {
 		@include flex(1 0 100%);
 		margin-left: $gutter;
@@ -20,8 +21,10 @@
 	@if $size == container or $size == wrapper {
 		@include grid-row;
 	}
+
 	@else {
 		$percentage: grid($size);
+
 		@if $percentage != null {
 			max-width: ($percentage - $gutter);
 		}
@@ -30,6 +33,7 @@
 
 @mixin grid-push($side, $size) {
 	$percentage: grid($size);
+
 	@if $percentage != null and ($side == right or $side == left) {
 		margin-#{$side}: $percentage;
 	}

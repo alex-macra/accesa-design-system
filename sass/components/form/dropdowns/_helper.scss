@@ -1,3 +1,6 @@
-body { //needs revision before beta
-	@include select();
+/* --- BEGIN DROP-DOWNS.CSS --- */
+
+select {
+  @include select();
 }
+/* --- END DROP-DOWNS.CSS --- */
