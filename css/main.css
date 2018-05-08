@@ -241,7 +241,7 @@ h5,
 h6 {
   margin-bottom: 10px;
   font-family: 'Lato', sans-serif;
-  color: #195a65; }
+  color: #333335; }
 
 h1 {
   font-size: 48px;
@@ -1426,7 +1426,8 @@ body textarea {
         line-height: 3.8rem; }
         .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li > a {
           color: #ffffff;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          text-decoration: none; }
   .acc-style-guide--container .docs-example h4 {
     margin-top: 20px;
     margin-bottom: 30px; }
