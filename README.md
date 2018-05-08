@@ -2,9 +2,10 @@
 
 Starter pack for web-based projects
 
-Stable version 0.4.0
+Pre-alpha version
 
-Upcoming beta - 0.5.0
+Upcoming alpha 0.5.0
+Upcoming beta - 0.7.5
 
 ## Getting Started
 
