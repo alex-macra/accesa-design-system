@@ -1534,8 +1534,11 @@ input:-ms-input-placeholder {
       position: absolute;
       top: -15px;
       width: 270px;
+      overflow: auto;
       padding: 0 10px;
       left: -290px;
+      height: calc(100vh - 135px);
+      min-height: 200px;
       background-color: #2274a5; }
       .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li {
         font-size: 20px;
