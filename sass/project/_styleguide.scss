@@ -84,9 +84,7 @@
 						cursor: pointer;
 					}
 
-					ul {
-						max-height: 0;
-						overflow: hidden;
+					ul {						
 						@include transition(max-height 1s ease-out);
 
 						li {				
@@ -101,20 +99,7 @@
 								}
 							}	
 						}										
-					}
-
-					&:first-child {
-						ul {						
-							@include show(visually);		
-						}
-					}
-
-					&:hover {
-						ul {					
-							max-height: 200em;
-							@include transition(max-height 2s ease-in);
-						}
-					}
+					}				
 				}
 
 				li:before {
