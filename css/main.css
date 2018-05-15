@@ -1550,8 +1550,6 @@ input:-ms-input-placeholder {
           text-decoration: none;
           cursor: pointer; }
         .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul {
-          max-height: 0;
-          overflow: hidden;
           -webkit-transition: max-height 1s ease-out;
           -khtml-transition: max-height 1s ease-out;
           -moz-transition: max-height 1s ease-out;
@@ -1565,23 +1563,6 @@ input:-ms-input-placeholder {
               text-decoration: none; }
               .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li a:hover {
                 text-decoration: underline; }
-        .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li:first-child ul {
-          clip: inherit;
-          height: inherit;
-          margin: inherit;
-          max-height: inherit;
-          overflow: inherit;
-          padding: inherit;
-          position: inherit;
-          width: inherit; }
-        .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li:hover ul {
-          max-height: 200em;
-          -webkit-transition: max-height 2s ease-in;
-          -khtml-transition: max-height 2s ease-in;
-          -moz-transition: max-height 2s ease-in;
-          -ms-transition: max-height 2s ease-in;
-          -o-transition: max-height 2s ease-in;
-          transition: max-height 2s ease-in; }
       .acc-style-guide--container .sidemenu-wrap .sidemenu-list li:before {
         display: none; }
   .acc-style-guide--container .docs-example h4 {
