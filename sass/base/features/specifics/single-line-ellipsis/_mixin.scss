@@ -1,3 +1,6 @@
+// Single line ellipsis
+// todo: provide experimental multiple line ellipsis
+
 @mixin single-line-ellipsis($width: 100%) {
   overflow: hidden;
   white-space: nowrap;

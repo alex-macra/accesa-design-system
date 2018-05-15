@@ -11,8 +11,7 @@
     "css:watch": "npm run css:build && npm run css:build -- -w",
     "css:lint": "stylelint css/main.css > css/lintOutput.txt",
     "sass:lint": "stylelint sass/**/**/**/*.scss > sass/lintOutput.txt",
-    "sassFix:lint": "stylelint /sass/**/**/**/*.scss --fix > sass/lintOutput.txt",
-    "stylelint": "stylelint '**/*.scss'"
+    "sass:lint-lint": "stylelint /sass/**/**/**/*.scss --fix > sass/lintOutput.txt"
   },
   "repository": {
     "type": "git",

@@ -148,8 +148,8 @@ html {
   text-align: center;
   width: 100%; }
   .acc-img::before {
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
+    background-color: #eeeeee;
+    border: 2px dotted #eeeeee;
     border-radius: 0;
     content: '';
     display: block;
@@ -159,7 +159,7 @@ html {
     top: -10px;
     width: 100%; }
   .acc-img::after {
-    color: #646464;
+    color: #333335;
     content: attr(alt);
     display: block;
     left: 0;
@@ -297,53 +297,88 @@ pre {
 
 /* --- END CODE.CSS --- */
 /* --- BEGIN HEADINGS.CSS --- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 10px;
-  font-family: 'Lato', sans-serif;
-  color: #333335; }
-
 h1 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 48px;
   font-size: 4.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 2.2; }
 
 h2 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 38px;
   font-size: 3.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.95; }
 
 h3 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 32px;
   font-size: 3.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.8; }
 
 h4 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 28px;
   font-size: 2.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.7; }
 
 h5 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 24px;
   font-size: 2.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.6; }
 
 h6 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 22px;
   font-size: 2.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.55; }
 
 /* --- END HEADINGS.CSS --- */
+/* --- BEGIN LINKS.CSS --- */
+a {
+  text-decoration: none;
+  color: #000000; }
+  a[href] {
+    -webkit-transition: color 0.3s ease;
+    -khtml-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #000000;
+    text-decoration: underline; }
+    a[href]:hover {
+      -webkit-opacity: 0.9;
+      -khtml-opacity: 0.9;
+      -moz-opacity: 0.9;
+      -ms-opacity: 0.9;
+      -o-opacity: 0.9;
+      opacity: 0.9;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+      filter: alpha(opacity=90);
+      color: #666; }
+  a:hover {
+    text-decoration: underline; }
+
+/* --- END LINKS.CSS --- */
 /* --- BEGIN LISTS.CSS --- */
 ul li {
   font-size: 18px;
@@ -392,38 +427,17 @@ ol ul {
   padding-left: 20px; }
 
 /* --- END LISTS.CSS --- */
-a {
-  text-decoration: none;
-  color: #000000; }
-  a[href] {
-    -webkit-transition: color 0.3s ease;
-    -khtml-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    color: #000000;
-    text-decoration: underline; }
-    a[href]:hover {
-      -webkit-opacity: 0.9;
-      -khtml-opacity: 0.9;
-      -moz-opacity: 0.9;
-      -ms-opacity: 0.9;
-      -o-opacity: 0.9;
-      opacity: 0.9;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-      filter: alpha(opacity=90);
-      color: #666; }
-  a:hover {
-    text-decoration: underline; }
-
+/* --- BEGIN PARAGRAPHS.CSS --- */
 p {
+  margin-bottom: 10px;
+  font-family: "Open-Sans", sans-serif;
+  color: #333335;
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.45;
-  margin-bottom: 10px; }
+  line-height: 1.45; }
 
+/* --- END PARAGRAPHS.CSS --- */
 /* --- BEGIN BUTTONS.CSS --- */
 .acc-button {
   border-radius: 0;
@@ -1469,7 +1483,7 @@ input:-ms-input-placeholder {
 .acc-style-guide--body {
   background: #2274a5;
   padding-top: 100px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open-Sans", sans-serif; }
 
 .acc-style-guide--container {
   margin: 30px auto;
@@ -1478,9 +1492,8 @@ input:-ms-input-placeholder {
   min-width: 400px;
   padding: 15px 20px;
   background: #ffffff; }
-  .acc-style-guide--container p,
   .acc-style-guide--container span {
-    font-family: 'Open Sans', sans-serif; }
+    font-family: "Open-Sans", sans-serif; }
   .acc-style-guide--container > div > h2, .acc-style-guide--container > div > h3 {
     text-transform: uppercase;
     margin-top: 20px;
@@ -1530,7 +1543,7 @@ input:-ms-input-placeholder {
         -webkit-font-smoothing: subpixel-antialiased;
         line-height: 38px;
         line-height: 3.8rem;
-        padding-left: 15px; }
+        padding-left: 5px; }
         .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li > a {
           color: #ffffff;
           text-transform: uppercase;

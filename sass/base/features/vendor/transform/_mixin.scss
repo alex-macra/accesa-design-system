@@ -1,4 +1,4 @@
-//Transform mixin
+//Transform
 
 @mixin transform($arguments) {
 	@include vendor-prefix('transform', $arguments);

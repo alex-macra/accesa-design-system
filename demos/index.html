@@ -63,6 +63,9 @@
           <a>Custom Components</a>
           <ul>
             <li>
+              <a>Ellipsis (soon)</a>
+            </li>
+            <li>
               <a class="js-scroll-31" href="#modal">Modal</a>
             </li>
             <li>
@@ -76,7 +79,17 @@
             </li>
           </ul>
         </li>
-
+        <li>
+          <a>Utils</a>
+          <ul>
+            <li>
+              <a class="js-scroll-91" href="#broken-image">Broken image</a>
+            </li>
+            <li>
+              <a>Height centering (soon)</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
 
@@ -634,7 +647,6 @@ The cat was playing in the garden.
         </div>
         <div class="acc-col-third"></div>
       </div>
-
     </div>
 
     <!-- Tabs -->
@@ -727,14 +739,9 @@ The cat was playing in the garden.
       </div>
     </div>
 
-
-    <!-- temp -->
-    <div id="broken-image" class="anchor-gap">
-      <h3>UI utils</h3>
-
-
-      <h4>Broken image example</h4>
-
+    <!-- Broken image -->
+    <div id="broken-image" class="js-scrollTo-91 anchor-gap">
+      <h3>Broken image</h3>
       <div class="acc-row">
         <div class="acc-col-third">
           <img src="http://test.test/te/img.jpg" class="acc-img" alt="example of broken image" />
@@ -743,7 +750,6 @@ The cat was playing in the garden.
         <div class="acc-col-third"></div>
       </div>
     </div>
-  </div>
 
 </body>
 
@@ -893,7 +899,16 @@ The cat was playing in the garden.
 
   document.querySelector('.js-scroll-34').addEventListener('click', () => {
     scrollIt(
-      document.querySelector('.js-scrollTo-11'),
+      document.querySelector('.js-scrollTo-34'),
+      300,
+      'easeOutQuad',
+      () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+    );
+  });
+
+  document.querySelector('.js-scroll-91').addEventListener('click', () => {
+    scrollIt(
+      document.querySelector('.js-scrollTo-91'),
       300,
       'easeOutQuad',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)

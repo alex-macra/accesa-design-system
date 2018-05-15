@@ -1,3 +1,5 @@
+// Hide / Show
+
 @mixin hide($visually: null) {
 
 	@if ($visually) {

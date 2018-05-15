@@ -1,4 +1,4 @@
-//General CSS3 Prefix mixin
+// CSS3 vendor prefix
 
 @mixin vendor-prefix($property, $value) {
 	-webkit-#{$property}: #{$value};

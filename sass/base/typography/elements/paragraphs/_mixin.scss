@@ -1,0 +1,10 @@
+// Paragraphs
+
+$font-paragraphs: $font-paragraph;
+$color-paragraphs: $color-paragraph;
+
+@mixin paragraphs-defaults() {
+    margin-bottom: 10px;
+    font-family: $font-paragraphs;
+    color: $color-paragraphs;
+}
