@@ -149,7 +149,7 @@ html {
   width: 100%; }
   .acc-img::before {
     background-color: #eeeeee;
-    border: 2px dotted #eeeeee;
+    border: 2px dotted #ccc;
     border-radius: 0;
     content: '';
     display: block;
