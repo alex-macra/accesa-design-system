@@ -1,5 +1,9 @@
+// Inputs / Textareas
+
 $placeholder-color: #999;
-// todo -> revisions
+
+// revise in beta
+
 @mixin input() {
   &[type=text],
   &[type=password],

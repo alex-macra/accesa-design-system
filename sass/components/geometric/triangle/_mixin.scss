@@ -1,5 +1,7 @@
-//Triangle mixin
-//todo: revisions
+// Triangle mixin
+
+// revise in beta
+// add helper 
 $square: 30px;
 
 @mixin triangleTest($alignment, $sizeV, $sizeH, $color) {
@@ -49,7 +51,7 @@ $square: 30px;
 	}
 }
 
-
+/// ???
 @mixin triangle($direction, $size: 8px, $color: #222){
 	content: '';
 	display: block;

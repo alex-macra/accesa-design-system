@@ -1,4 +1,7 @@
-@mixin button($color) { //improve mixing with sizes
+
+// Buttons
+
+@mixin button($color) {
 	@include no-select();
 	background-color: $color;
 	box-shadow: 0 2px 0 shade($color, 15%);
@@ -14,7 +17,7 @@
 
 @mixin input-button() {
 	input {
-		&.button { //???
+		&.button { // revise in beta, not mandatory yet
 			@include no-select();
 			background: #999;
 			border: none;

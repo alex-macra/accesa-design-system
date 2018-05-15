@@ -1,7 +1,5 @@
 /* --- BEGIN GRID.CSS --- */
 
-//Set default grid container classes
-
 .#{$prefix}-row {
 	@include grid-row();
 }

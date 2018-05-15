@@ -1,5 +1,5 @@
 /* --- BEGIN BUTTONS.CSS --- */
-//needs revision before beta
+
 .#{$prefix}-button {
   border-radius: $border-radius;
   color: white;
@@ -22,7 +22,7 @@
     outline: none;
   }
 
-  //colors
+  // Colors
 
   &.--primary {
     @include button ($color-main);
@@ -68,7 +68,7 @@
     }
   }
 
-  //sizing
+  // Sizing
 
   &.--large {
     @include text-size(28, 32);
@@ -81,7 +81,7 @@
     padding: .5em 1.5em;
   }
 
-  //alignments
+  // Alignments
 
   &.--align-top {
     vertical-align: top;
@@ -91,7 +91,7 @@
     vertical-align: bottom;
   }
 
-  //with icon
+  // Button with icon
 
   &.--icon {
     padding-left: 4em;
@@ -117,4 +117,5 @@
     }
   }
 }
+
 /* --- END BUTTONS.CSS --- */
