@@ -1607,5 +1607,9 @@ input:-ms-input-placeholder {
       font-style: italic;
       opacity: .7;
       color: #f2f2f2; }
+  .acc-style-guide--container.--full {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 100%; }
 
 /* --- END STYLE-GUIDE.CSS --- */

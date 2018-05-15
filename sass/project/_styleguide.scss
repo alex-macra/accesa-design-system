@@ -162,6 +162,12 @@
 				}
 			}
 		}
+
+		&.--full {
+			margin: 30px auto;
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	//todo move in component
