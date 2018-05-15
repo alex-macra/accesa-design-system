@@ -11,7 +11,7 @@
 
 	&::before {
 		background-color: $color-disabled;
-		border: 2px dotted $color-disabled;
+		border: 2px dotted $color-gray;
 		border-radius: $border-radius;
 		content: '';
 		display: block;
