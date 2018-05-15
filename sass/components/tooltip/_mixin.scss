@@ -1,3 +1,7 @@
+// Tooltip
+
+// revise in beta
+
 $triangle-size: 6px; // = height of triangle, width is 2x
 $tooltip-width: 200px;
 $fade: 300ms;
@@ -16,7 +20,7 @@ $fade: 300ms;
 
 	&:before { // tooltip body
 		background-color: $bg-color;
-		border-radius: 3px;
+		border-radius: $border-radius;
 		box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 		content: attr(data-tooltip);
 		font-size: 13px;

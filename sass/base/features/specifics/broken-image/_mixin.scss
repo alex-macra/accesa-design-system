@@ -1,7 +1,6 @@
-//Fallbacks
-//Broken Image fallback
+// Broken Image fallback
 
-@mixin broken-image() { //temp
+@mixin broken-image() {
 	display: block;
 	height: auto;
 	line-height: 2;
@@ -11,9 +10,9 @@
 	width: 100%;
 
 	&::before {
-		background-color: rgb(230, 230, 230);
-		border: 2px dotted rgb(200, 200, 200);
-		border-radius: 5px;
+		background-color: $color-disabled;
+		border: 2px dotted $color-disabled;
+		border-radius: $border-radius;
 		content: '';
 		display: block;
 		height: calc(100% + 10px);
@@ -24,7 +23,7 @@
 	}
 
 	&::after {
-		color: rgb(100, 100, 100);
+		color: $color-dark-gray;
 		content: attr(alt);
 		display: block;
 		left: 0;

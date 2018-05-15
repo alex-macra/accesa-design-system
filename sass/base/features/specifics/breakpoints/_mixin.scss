@@ -1,4 +1,6 @@
-//Responsive breakpoints mixin
+// Responsive breakpoints mixin
+// Note: Very similar with a pixels based breakpoint mixin, but we use instead em's
+// because it's the only unit that performed consistently across all major browsers
 
 @mixin for-size($size) {
 

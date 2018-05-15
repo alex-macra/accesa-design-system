@@ -1,16 +1,18 @@
 //maybe it's not the best place for a theme file
 //check if main color is too light, follow up colors will be wrong
 //color scheme 1
+
 $color-main: #2274a5; //273c42 //3d9970 //ff4236 //2274a5 //009DDC
 $color-secondary: darken(desaturate(adjust-hue($color-main, -9), 40.11), 18.43); //#273c42
 $color-error: #e90d00;
 $color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
 $color-disabled: #eeeeee;
-$color-temp: #333335;
 
-$color-gray: #ccc;
 $color-white: #ffffff;
 $color-black: #000000;
+
+$color-gray: #ccc;
+$color-dark-gray: #333335;
 
 //todo -create various styles based on primary colors usingsatuation, desaturation, lighten, etccc...
 //temp
@@ -22,8 +24,12 @@ $color-main-red-dark: darken(desaturate(adjust-hue($color-main, -189), 6.81), 15
 $color-main-blue-dark: darken(desaturate($color-main, 15.83), 20.98);
 $color-main-green-dark: darken(saturate(adjust-hue($color-main, -15), 17.10), 22.94);
 
-$color-headings: $color-temp;
-$color-paragraphs: $color-temp;
+$font-paragraph: 'Open-Sans', sans-serif;
+$font-heading: 'Lato', sans-serif;
 
-$font-stack: 'Roboto', sans-serif;
-$border-radius: 0;
+$color-paragraph: $color-dark-gray;
+$color-heading: $color-dark-gray;
+
+$border-radius: 0; //eg 4px
+
+//todo: revise in beta

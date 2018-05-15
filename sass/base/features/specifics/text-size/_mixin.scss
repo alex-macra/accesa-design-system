@@ -1,4 +1,4 @@
-//Font-size mixin
+//Font-size
 
 @mixin text-size($font-size: 18, $line-height: false) {
 	font-size: $font-size  + px;

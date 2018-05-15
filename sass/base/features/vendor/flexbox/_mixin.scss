@@ -1,5 +1,5 @@
 
-//Flexbox mixins
+//Flexbox
 
 @mixin flexbox() {
 	display: -moz-flex;
@@ -18,16 +18,23 @@
 	@if $value == row-reverse {
 		-webkit-box-direction: reverse;
 		-webkit-box-orient: horizontal;
-	} @else if $value == column {
+	} 
+	
+	@else if $value == column {
 		-webkit-box-direction: normal;
 		-webkit-box-orient: vertical;
-	} @else if $value == column-reverse {
+	} 
+	
+	@else if $value == column-reverse {
 		-webkit-box-direction: reverse;
 		-webkit-box-orient: vertical;
-	} @else {
+	}
+	
+	@else {
 		-webkit-box-direction: normal;
 		-webkit-box-orient: horizontal;
 	}
+
 	-webkit-flex-direction: $value;
 	-moz-flex-direction: $value;
 	-ms-flex-direction: $value;

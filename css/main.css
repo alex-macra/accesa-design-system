@@ -148,9 +148,9 @@ html {
   text-align: center;
   width: 100%; }
   .acc-img::before {
-    background-color: #e6e6e6;
-    border: 2px dotted #c8c8c8;
-    border-radius: 5px;
+    background-color: #eeeeee;
+    border: 2px dotted #eeeeee;
+    border-radius: 0;
     content: '';
     display: block;
     height: calc(100% + 10px);
@@ -159,7 +159,7 @@ html {
     top: -10px;
     width: 100%; }
   .acc-img::after {
-    color: #646464;
+    color: #333335;
     content: attr(alt);
     display: block;
     left: 0;
@@ -195,11 +195,25 @@ html {
   clip: rect(0 0 0 0);
   clip: rect(0, 0, 0, 0);
   height: 1px;
+  max-height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.acc-show {
+  display: block; }
+
+.acc-show-visually {
+  clip: inherit;
+  height: inherit;
+  margin: inherit;
+  max-height: inherit;
+  overflow: inherit;
+  padding: inherit;
+  position: inherit;
+  width: inherit; }
 
 /* --- END HIDE.CSS --- */
 /* --- BEGIN ELLIPSIS.CSS --- */
@@ -283,53 +297,88 @@ pre {
 
 /* --- END CODE.CSS --- */
 /* --- BEGIN HEADINGS.CSS --- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 10px;
-  font-family: 'Lato', sans-serif;
-  color: #333335; }
-
 h1 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 48px;
   font-size: 4.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 2.2; }
 
 h2 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 38px;
   font-size: 3.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.95; }
 
 h3 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 32px;
   font-size: 3.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.8; }
 
 h4 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 28px;
   font-size: 2.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.7; }
 
 h5 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 24px;
   font-size: 2.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.6; }
 
 h6 {
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  color: #333335;
   font-size: 22px;
   font-size: 2.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.55; }
 
 /* --- END HEADINGS.CSS --- */
+/* --- BEGIN LINKS.CSS --- */
+a {
+  text-decoration: none;
+  color: #000000; }
+  a[href] {
+    -webkit-transition: color 0.3s ease;
+    -khtml-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #000000;
+    text-decoration: underline; }
+    a[href]:hover {
+      -webkit-opacity: 0.9;
+      -khtml-opacity: 0.9;
+      -moz-opacity: 0.9;
+      -ms-opacity: 0.9;
+      -o-opacity: 0.9;
+      opacity: 0.9;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+      filter: alpha(opacity=90);
+      color: #666; }
+  a:hover {
+    text-decoration: underline; }
+
+/* --- END LINKS.CSS --- */
 /* --- BEGIN LISTS.CSS --- */
 ul li {
   font-size: 18px;
@@ -378,38 +427,17 @@ ol ul {
   padding-left: 20px; }
 
 /* --- END LISTS.CSS --- */
-a {
-  text-decoration: none;
-  color: #000000; }
-  a[href] {
-    -webkit-transition: color 0.3s ease;
-    -khtml-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    color: #000000;
-    text-decoration: underline; }
-    a[href]:hover {
-      -webkit-opacity: 0.9;
-      -khtml-opacity: 0.9;
-      -moz-opacity: 0.9;
-      -ms-opacity: 0.9;
-      -o-opacity: 0.9;
-      opacity: 0.9;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-      filter: alpha(opacity=90);
-      color: #666; }
-  a:hover {
-    text-decoration: underline; }
-
+/* --- BEGIN PARAGRAPHS.CSS --- */
 p {
+  margin-bottom: 10px;
+  font-family: "Open-Sans", sans-serif;
+  color: #333335;
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.45;
-  margin-bottom: 10px; }
+  line-height: 1.45; }
 
+/* --- END PARAGRAPHS.CSS --- */
 /* --- BEGIN BUTTONS.CSS --- */
 .acc-button {
   border-radius: 0;
@@ -597,6 +625,7 @@ select {
   line-height: 1;
   background: #ffffff;
   border: 1px solid #ccc;
+  border-radius: 0;
   color: #273c42;
   height: 38px;
   margin-bottom: 10px;
@@ -618,12 +647,14 @@ textarea {
   box-sizing: border-box;
   padding: 15px;
   border: 1px solid #ccc;
+  border-radius: 0;
   margin-bottom: 10px;
   color: #273c42; }
 
 input[type=text], input[type=password], input[type=email], input[type=number] {
   background: #ffffff;
   border: 1px solid #ccc;
+  border-radius: 0;
   color: #273c42;
   height: 38px;
   margin-bottom: 10px;
@@ -1035,7 +1066,7 @@ input:-ms-input-placeholder {
 .acc-modal .modal-dialog {
   background: #fefefe;
   border: #555 solid 1px;
-  border-radius: 5px;
+  border-radius: 0;
   position: fixed;
   left: 50%;
   top: -100%;
@@ -1116,7 +1147,7 @@ input:-ms-input-placeholder {
   .tabs label {
     display: block;
     padding: 14px 21px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 0;
     font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
@@ -1168,7 +1199,7 @@ input:-ms-input-placeholder {
   .tabs-filled label {
     display: block;
     padding: 14px 21px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 0;
     font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
@@ -1224,7 +1255,7 @@ input:-ms-input-placeholder {
       z-index: 98; }
     .info-icon.ne:before {
       background-color: #73a7c6;
-      border-radius: 3px;
+      border-radius: 0;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       content: attr(data-tooltip);
       font-size: 13px;
@@ -1276,7 +1307,7 @@ input:-ms-input-placeholder {
       z-index: 98; }
     .info-icon.nw:before {
       background-color: #73a7c6;
-      border-radius: 3px;
+      border-radius: 0;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       content: attr(data-tooltip);
       font-size: 13px;
@@ -1328,7 +1359,7 @@ input:-ms-input-placeholder {
       z-index: 98; }
     .info-icon.se:before {
       background-color: #73a7c6;
-      border-radius: 3px;
+      border-radius: 0;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       content: attr(data-tooltip);
       font-size: 13px;
@@ -1380,7 +1411,7 @@ input:-ms-input-placeholder {
       z-index: 98; }
     .info-icon.sw:before {
       background-color: #73a7c6;
-      border-radius: 3px;
+      border-radius: 0;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       content: attr(data-tooltip);
       font-size: 13px;
@@ -1452,18 +1483,17 @@ input:-ms-input-placeholder {
 .acc-style-guide--body {
   background: #2274a5;
   padding-top: 100px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open-Sans", sans-serif; }
 
 .acc-style-guide--container {
   margin: 30px auto;
   width: 76%;
-  max-width: calc(100% - 400px);
+  max-width: calc(100% - 550px);
   min-width: 400px;
   padding: 15px 20px;
   background: #ffffff; }
-  .acc-style-guide--container p,
   .acc-style-guide--container span {
-    font-family: 'Open Sans', sans-serif; }
+    font-family: "Open-Sans", sans-serif; }
   .acc-style-guide--container > div > h2, .acc-style-guide--container > div > h3 {
     text-transform: uppercase;
     margin-top: 20px;
@@ -1503,21 +1533,57 @@ input:-ms-input-placeholder {
       box-sizing: border-box;
       position: absolute;
       top: -15px;
-      width: 200px;
-      padding: 0 25px;
-      left: -200px;
-      margin-left: -40px;
+      width: 270px;
+      padding: 0 10px;
+      left: -290px;
       background-color: #2274a5; }
       .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li {
         font-size: 20px;
         font-size: 2rem;
         -webkit-font-smoothing: subpixel-antialiased;
         line-height: 38px;
-        line-height: 3.8rem; }
+        line-height: 3.8rem;
+        padding-left: 5px; }
         .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li > a {
           color: #ffffff;
           text-transform: uppercase;
-          text-decoration: none; }
+          text-decoration: none;
+          cursor: pointer; }
+        .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul {
+          max-height: 0;
+          overflow: hidden;
+          -webkit-transition: max-height 1s ease-out;
+          -khtml-transition: max-height 1s ease-out;
+          -moz-transition: max-height 1s ease-out;
+          -ms-transition: max-height 1s ease-out;
+          -o-transition: max-height 1s ease-out;
+          transition: max-height 1s ease-out; }
+          .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li {
+            padding-left: 15px; }
+            .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li a {
+              color: #ffffff;
+              text-decoration: none; }
+              .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li a:hover {
+                text-decoration: underline; }
+        .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li:first-child ul {
+          clip: inherit;
+          height: inherit;
+          margin: inherit;
+          max-height: inherit;
+          overflow: inherit;
+          padding: inherit;
+          position: inherit;
+          width: inherit; }
+        .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li:hover ul {
+          max-height: 200em;
+          -webkit-transition: max-height 2s ease-in;
+          -khtml-transition: max-height 2s ease-in;
+          -moz-transition: max-height 2s ease-in;
+          -ms-transition: max-height 2s ease-in;
+          -o-transition: max-height 2s ease-in;
+          transition: max-height 2s ease-in; }
+      .acc-style-guide--container .sidemenu-wrap .sidemenu-list li:before {
+        display: none; }
   .acc-style-guide--container .docs-example h4 {
     margin-top: 20px;
     margin-bottom: 30px; }

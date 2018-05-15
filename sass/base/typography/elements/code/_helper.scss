@@ -1,5 +1,9 @@
 /* --- BEGIN CODE.CSS --- */
+
 pre {
   @include code-styling();
 }
+
+// todo: provide a better helper, to ease up the code implementation
+
 /* --- END CODE.CSS --- */

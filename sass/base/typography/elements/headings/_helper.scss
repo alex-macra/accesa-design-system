@@ -1,36 +1,32 @@
 /* --- BEGIN HEADINGS.CSS --- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 10px;
-  font-family: 'Lato', sans-serif;
-  color: $color-headings;
-}
 
 h1 {
+  @include heading-defaults();
   @include text-size(48);
 }
 
 h2 {
+  @include heading-defaults();
   @include text-size(38);
 }
 
 h3 {
+  @include heading-defaults();
   @include text-size(32);
 }
 
 h4 {
+  @include heading-defaults();
   @include text-size(28);
 }
 
 h5 {
+  @include heading-defaults();
   @include text-size(24);
 }
 
 h6 {
+  @include heading-defaults();
   @include text-size(22);
 }
 

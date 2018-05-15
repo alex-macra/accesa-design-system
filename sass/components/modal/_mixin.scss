@@ -1,5 +1,8 @@
+// Modal
+
+// revise in beta 
+
 @mixin modal() {
-//todo: improve classes
 
   .modal-wrap:before {
     content: '';
@@ -44,7 +47,7 @@
   .modal-dialog {
     background: #fefefe; //????
     border: #555 solid 1px;
-    border-radius: 5px;
+    border-radius: $border-radius;
     position: fixed;
     left: 50%;
     top: -100%;
