@@ -7,4 +7,12 @@
 .#{$prefix}-hide-visually {
 	@include hide(visually);
 }
+
+.#{$prefix}-show {
+	@include show();
+}
+
+.#{$prefix}-show-visually {
+	@include show(visually);
+}
 /* --- END HIDE.CSS --- */

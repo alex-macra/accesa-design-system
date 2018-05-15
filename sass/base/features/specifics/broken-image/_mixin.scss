@@ -13,7 +13,7 @@
 	&::before {
 		background-color: rgb(230, 230, 230);
 		border: 2px dotted rgb(200, 200, 200);
-		border-radius: 5px;
+		border-radius: $border-radius;
 		content: '';
 		display: block;
 		height: calc(100% + 10px);

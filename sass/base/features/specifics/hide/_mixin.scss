@@ -4,6 +4,7 @@
 		clip: rect(0 0 0 0);
 		clip: rect(0, 0, 0, 0);
 		height: 1px;
+		max-height: 1px;
 		margin: -1px;
 		overflow: hidden;
 		padding: 0;
@@ -13,5 +14,23 @@
 
   @else {
 		display: none;
+	}
+}
+
+@mixin show($visually: null) {
+
+	@if ($visually) {
+		clip: inherit;
+		height: inherit;
+		margin: inherit;
+		max-height: inherit;
+		overflow: inherit;
+		padding: inherit;
+		position: inherit;
+		width: inherit;
+	}
+
+  @else {
+		display: block;
 	}
 }

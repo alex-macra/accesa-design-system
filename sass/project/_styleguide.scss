@@ -12,7 +12,7 @@
 .#{$prefix}-style-guide--container {
 		margin: 30px auto;
 		width: 76%;
-		max-width: calc(100% - 400px);
+		max-width: calc(100% - 550px);
 		min-width: 400px;
 		padding: 15px 20px;
 		background: $color-white;
@@ -69,20 +69,57 @@
 				@include box-sizing();
 				position: absolute;
 				top: -15px;
-				width: 200px;
-				padding: 0 25px;
-				left: -200px;
-				margin-left: -40px;
+				width: 270px;
+				padding: 0 10px;
+				left: -290px;
 				background-color: $color-main;
 
 				>li {
 					@include text-size(20,38);
+					padding-left: 15px;
 
 					>a {
 						color: $color-white;
 						text-transform: uppercase;
-            text-decoration: none;
+						text-decoration: none;
+						cursor: pointer;
 					}
+
+					ul {
+						max-height: 0;
+						overflow: hidden;
+						@include transition(max-height 1s ease-out);
+
+						li {				
+							padding-left: 15px;
+
+							a {
+								color: $color-white;
+								text-decoration: none;
+
+								&:hover {
+									text-decoration: underline;
+								}
+							}	
+						}										
+					}
+
+					&:first-child {
+						ul {						
+							@include show(visually);		
+						}
+					}
+
+					&:hover {
+						ul {					
+							max-height: 200em;
+							@include transition(max-height 2s ease-in);
+						}
+					}
+				}
+
+				li:before {
+					display: none;
 				}
 			}
 		}

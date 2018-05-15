@@ -7,6 +7,7 @@ $placeholder-color: #999;
   &[type=number] {
     background: $color-white;
     border: 1px solid $color-gray;
+    border-radius: $border-radius;
     color: $color-secondary;
     height: 38px; //???
     margin-bottom: 10px;
@@ -33,6 +34,7 @@ $placeholder-color: #999;
   @include box-sizing();
   padding: 15px;
   border: 1px solid $color-gray;
+  border-radius: $border-radius;
   margin-bottom: 10px;
   color: $color-secondary;
 }

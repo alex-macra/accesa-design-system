@@ -4,7 +4,7 @@
   word-wrap: break-word;
   overflow: auto;
   margin: 10px 0;
-  border-radius: 0;
+  border-radius: $border-radius;
   border: darken($color-main-gray-dark, 20);
   position: relative;
 
