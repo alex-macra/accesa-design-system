@@ -11,7 +11,7 @@
 	}
 
   @else if $size == tablet-portrait-up {
-		@media (min-width: 37.5em) {
+		@media (min-width: 37.4376em) {
 			@content;
 		}
 	}
