@@ -109,7 +109,7 @@
     <div id="grid" class="js-scrollTo-1 anchor-gap">
       <h3>The grid</h3>
       <p>Highly customizable grid with fix or fluid columns, number of grid items and gutter space.</p>
-      <h4>Design Example</h4>
+      <h4>General Grid Example</h4>
       <div class="colored-grid">
         <div class="acc-row">
           <!-- //???-->
@@ -215,7 +215,7 @@
         .ace_editor {
           position: relative !important;
           border: 1px solid lightgray;
-          margin: auto;
+          margin: 0;
           height: 200px;
           width: 80%;
         }
@@ -316,6 +316,27 @@
 
         Check it
         <a href="https://codepen.io/alexMacra/pen/VxGvYd/">@CodePen</a>
+
+        <div class="acc-spacer"></div>
+
+        <h4>Responsive example</h4>
+        <div class="colored-grid --big">
+          <div class="acc-row">
+            <div class="acc-col-third --lg-4 --md-6 --sm-half --xs-full">Grid column</div>
+            <div class="acc-col-third --lg-5 --md-4 --sm-half --xs-full">Grid column</div>
+            <div class="acc-col-third --lg-3 --md-2 --sm-full --xs-full">Grid column</div>
+          </div>
+        </div>
+
+        <h4>HTML Code</h4>
+
+        <div style="position: relative">
+          <pre id="editor-grid2">&lt;div class=&quot;acc-row&quot;&gt;
+            &lt;div class=&quot;acc-col-third --lg-4 --md-6 --sm-half --xs-full&quot;&gt;Grid column&lt;/div&gt;
+            &lt;div class=&quot;acc-col-third --lg-5 --md-4 --sm-half --xs-full&quot;&gt;Grid column&lt;/div&gt;
+            &lt;div class=&quot;acc-col-third --lg-3 --md-2 --sm-full --xs-full&quot;&gt;Grid column&lt;/div&gt;
+&lt;/div&gt;</pre>       
+        </div>
     </div>
 
     <!-- Queries -->
@@ -1133,6 +1154,10 @@ function myFunction() {
   var editor = ace.edit("editor-grid");
   editor.setTheme("ace/theme/idle_fingers");
   editor.session.setMode("ace/mode/html");
+
+    var editor2 = ace.edit("editor-grid2");
+  editor2.setTheme("ace/theme/idle_fingers");
+  editor2.session.setMode("ace/mode/html");
 </script>
 
 </html>

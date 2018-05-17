@@ -3,300 +3,6 @@
 .#{$prefix}-row {
 	@include grid-row();
 }
-	//Targeting mostly smartphone portrait devices
-	@include for-size(phone-only) {
-		.#{$prefix}-col-xs-full {
-			@include grid(full);
-		}
-
-		.#{$prefix}-col-xs-half {
-			@include grid(half);
-		}
-
-		.#{$prefix}-col-xs-1 {
-			@include grid(1);
-		}
-
-		.#{$prefix}-col-xs-2 {
-			@include grid(2);
-		}
-
-		.#{$prefix}-col-xs-3 {
-			@include grid(3);
-		}
-
-		.#{$prefix}-col-xs-4 {
-			@include grid(4);
-		}
-
-		.#{$prefix}-col-xs-5 {
-			@include grid(5);
-		}
-
-		.#{$prefix}-col-xs-6 {
-			@include grid(6);
-		}
-
-		.#{$prefix}-col-xs-7 {
-			@include grid(7);
-		}
-
-		.#{$prefix}-col-xs-8 {
-			@include grid(8);
-		}
-
-		.#{$prefix}-col-xs-9 {
-			@include grid(9);
-		}
-
-		.#{$prefix}-col-xs-10 {
-			@include grid(10);
-		}
-
-		.#{$prefix}-col-xs-11 {
-			@include grid(11);
-		}
-
-		.#{$prefix}-col-xs-12 {
-			@include grid(12);
-		}
-	}
-
-	//Targeting mostly table portrait and smartphone landscape and up
-	@include for-size(tablet-portrait-up) {
-		.#{$prefix}-col-sm-full {
-			@include grid(full);
-		}
-
-		.#{$prefix}-col-sm-half {
-			@include grid(half);
-		}
-
-		.#{$prefix}-col-sm-1 {
-			@include grid(1);
-		}
-
-		.#{$prefix}-col-sm-2 {
-			@include grid(2);
-		}
-
-		.#{$prefix}-col-sm-3 {
-			@include grid(3);
-		}
-
-		.#{$prefix}-col-sm-4 {
-			@include grid(4);
-		}
-
-		.#{$prefix}-col-sm-5 {
-			@include grid(5);
-		}
-
-		.#{$prefix}-col-sm-6 {
-			@include grid(6);
-		}
-
-		.#{$prefix}-col-sm-7 {
-			@include grid(7);
-		}
-
-		.#{$prefix}-col-sm-8 {
-			@include grid(8);
-		}
-
-		.#{$prefix}-col-sm-9 {
-			@include grid(9);
-		}
-
-		.#{$prefix}-col-sm-10 {
-			@include grid(10);
-		}
-
-		.#{$prefix}-col-sm-11 {
-			@include grid(11);
-		}
-
-		.#{$prefix}-col-sm-12 {
-			@include grid(12);
-		}
-	}
-
-	//Targeting mostly table landscape, some really small desktop monitors and up
-	@include for-size(tablet-landscape-up) {
-		.#{$prefix}-col-md-full {
-			@include grid(full);
-		}
-
-		.#{$prefix}-col-md-half {
-			@include grid(half);
-		}
-
-		.#{$prefix}-col-md-1 {
-			@include grid(1);
-		}
-
-		.#{$prefix}-col-md-2 {
-			@include grid(2);
-		}
-
-		.#{$prefix}-col-md-3 {
-			@include grid(3);
-		}
-
-		.#{$prefix}-col-md-4 {
-			@include grid(4);
-		}
-
-		.#{$prefix}-col-md-5 {
-			@include grid(5);
-		}
-
-		.#{$prefix}-col-md-6 {
-			@include grid(6);
-		}
-
-		.#{$prefix}-col-md-7 {
-			@include grid(7);
-		}
-
-		.#{$prefix}-col-md-8 {
-			@include grid(8);
-		}
-
-		.#{$prefix}-col-md-9 {
-			@include grid(9);
-		}
-
-		.#{$prefix}-col-md-10 {
-			@include grid(10);
-		}
-
-		.#{$prefix}-col-md-11 {
-			@include grid(11);
-		}
-
-		.#{$prefix}-col-md-12 {
-			@include grid(12);
-		}
-	}
-
-	//Targeting desktop monitors and up
-	@include for-size(desktop-up) {
-		.#{$prefix}-col-lg-full {
-			@include grid(full);
-		}
-
-		.#{$prefix}-col-lg-half {
-			@include grid(half);
-		}
-
-		.#{$prefix}-col-lg-1 {
-			@include grid(1);
-		}
-
-		.#{$prefix}-col-lg-2 {
-			@include grid(2);
-		}
-
-		.#{$prefix}-col-lg-3 {
-			@include grid(3);
-		}
-
-		.#{$prefix}-col-lg-4 {
-			@include grid(4);
-		}
-
-		.#{$prefix}-col-lg-5 {
-			@include grid(5);
-		}
-
-		.#{$prefix}-col-lg-6 {
-			@include grid(6);
-		}
-
-		.#{$prefix}-col-lg-7 {
-			@include grid(7);
-		}
-
-		.#{$prefix}-col-lg-8 {
-			@include grid(8);
-		}
-
-		.#{$prefix}-col-lg-9 {
-			@include grid(9);
-		}
-
-		.#{$prefix}-col-lg-10 {
-			@include grid(10);
-		}
-
-		.#{$prefix}-col-lg-11 {
-			@include grid(11);
-		}
-
-		.#{$prefix}-col-lg-12 {
-			@include grid(12);
-		}
-	}
-
-	//Targeting big desktop monitors and up
-	@include for-size(big-desktop-up) {
-		.#{$prefix}-col-big-full {
-			@include grid(full);
-		}
-
-		.#{$prefix}-col-big-half {
-			@include grid(half);
-		}
-
-		.#{$prefix}-col-big-1 {
-			@include grid(1);
-		}
-
-		.#{$prefix}-col-big-2 {
-			@include grid(2);
-		}
-
-		.#{$prefix}-col-big-3 {
-			@include grid(3);
-		}
-
-		.#{$prefix}-col-big-4 {
-			@include grid(4);
-		}
-
-		.#{$prefix}-col-big-5 {
-			@include grid(5);
-		}
-
-		.#{$prefix}-col-big-6 {
-			@include grid(6);
-		}
-
-		.#{$prefix}-col-big-7 {
-			@include grid(7);
-		}
-
-		.#{$prefix}-col-big-8 {
-			@include grid(8);
-		}
-
-		.#{$prefix}-col-big-9 {
-			@include grid(9);
-		}
-
-		.#{$prefix}-col-big-10 {
-			@include grid(10);
-		}
-
-		.#{$prefix}-col-big-11 {
-			@include grid(11);
-		}
-
-		.#{$prefix}-col-big-12 {
-			@include grid(12);
-		}
-	}
 
 	//Grid classes that apply at all times
 	.#{$prefix}-col-full {
@@ -359,6 +65,243 @@
 		@include grid(12);
 	}
 
+		//Targeting mostly smartphone portrait devices
+		@include for-size(phone-only) {
+			.--xs-full {
+				@include grid(full);
+			}
+	
+			.--xs-half {
+				@include grid(half);
+			}
+	
+			.--xs-1 {
+				@include grid(1);
+			}
+	
+			.--xs-2 {
+				@include grid(2);
+			}
+	
+			.--xs-3 {
+				@include grid(3);
+			}
+	
+			.--xs-4 {
+				@include grid(4);
+			}
+	
+			.--xs-5 {
+				@include grid(5);
+			}
+	
+			.--xs-6 {
+				@include grid(6);
+			}
+	
+			.--xs-7 {
+				@include grid(7);
+			}
+	
+			.--xs-8 {
+				@include grid(8);
+			}
+	
+			.--xs-9 {
+				@include grid(9);
+			}
+	
+			.--xs-10 {
+				@include grid(10);
+			}
+	
+			.--xs-11 {
+				@include grid(11);
+			}
+	
+			.--xs-12 {
+				@include grid(12);
+			}
+		}
+	
+	//Targeting mostly table portrait and smartphone landscape and up
+	@include for-size(tablet-portrait-up) {
+		.--sm-full {
+			@include grid(full);
+		}
+
+		.--sm-half {
+			@include grid(half);
+		}
+
+		.--sm-1 {
+			@include grid(1);
+		}
+
+		.--sm-2 {
+			@include grid(2);
+		}
+
+		.--sm-3 {
+			@include grid(3);
+		}
+
+		.--sm-4 {
+			@include grid(4);
+		}
+
+		.--sm-5 {
+			@include grid(5);
+		}
+
+		.--sm-6 {
+			@include grid(6);
+		}
+
+		.--sm-7 {
+			@include grid(7);
+		}
+
+		.--sm-8 {
+			@include grid(8);
+		}
+
+		.--sm-9 {
+			@include grid(9);
+		}
+
+		.--sm-10 {
+			@include grid(10);
+		}
+
+		.--sm-11 {
+			@include grid(11);
+		}
+
+		.--sm-12 {
+			@include grid(12);
+		}
+	}
+
+	//Targeting mostly table landscape, some really small desktop monitors and up
+	@include for-size(tablet-landscape-up) {
+		.--md-full {
+			@include grid(full);
+		}
+
+		.--md-half {
+			@include grid(half);
+		}
+
+		.--md-1 {
+			@include grid(1);
+		}
+
+		.--md-2 {
+			@include grid(2);
+		}
+
+		.--md-3 {
+			@include grid(3);
+		}
+
+		.--md-4 {
+			@include grid(4);
+		}
+
+		.--md-5 {
+			@include grid(5);
+		}
+
+		.--md-6 {
+			@include grid(6);
+		}
+
+		.--md-7 {
+			@include grid(7);
+		}
+
+		.--md-8 {
+			@include grid(8);
+		}
+
+		.--md-9 {
+			@include grid(9);
+		}
+
+		.--md-10 {
+			@include grid(10);
+		}
+
+		.--md-11 {
+			@include grid(11);
+		}
+
+		.--md-12 {
+			@include grid(12);
+		}
+	}
+
+	
+	//Targeting desktop monitors and up
+	@include for-size(desktop-up) {
+		.--lg-full {
+			@include grid(full);
+		}
+
+		.--lg-half {
+			@include grid(half);
+		}
+
+		.--lg-1 {
+			@include grid(1);
+		}
+
+		.--lg-2 {
+			@include grid(2);
+		}
+
+		.--lg-3 {
+			@include grid(3);
+		}
+
+		.--lg-4 {
+			@include grid(4);
+		}
+
+		.--lg-5 {
+			@include grid(5);
+		}
+
+		.--lg-6 {
+			@include grid(6);
+		}
+
+		.--lg-7 {
+			@include grid(7);
+		}
+
+		.--lg-8 {
+			@include grid(8);
+		}
+
+		.--lg-9 {
+			@include grid(9);
+		}
+
+		.--lg-10 {
+			@include grid(10);
+		}
+
+		.--lg-11 {
+			@include grid(11);
+		}
+
+		.--lg-12 {
+			@include grid(12);
+		}
+	}
+/*
 	//Gutter
 	.#{$prefix}-col-push-left-1 {
 		@include grid-push(left, 1 of 12);
@@ -455,5 +398,5 @@
 	.#{$prefix}-col-push-right-12 {
 		@include grid-push(right, 12 of 12);
 	}
-
+*/
 /* --- END GRID.CSS --- */
