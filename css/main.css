@@ -1025,7 +1025,7 @@ input:-ms-input-placeholder {
 
 /* --- END LOADERS.CSS --- */
 /* --- BEGIN MODAL.CSS --- */
-.acc-modal .modal-wrap:before {
+.acc-modal .acc-modal-wrap:before {
   content: '';
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -1036,7 +1036,7 @@ input:-ms-input-placeholder {
   left: 0;
   z-index: 100000; }
 
-.acc-modal .modal-overlay {
+.acc-modal .acc-modal-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -1045,7 +1045,7 @@ input:-ms-input-placeholder {
   left: 0;
   z-index: 100001; }
 
-.acc-modal .modal-exit {
+.acc-modal .acc-modal-exit {
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -1054,18 +1054,18 @@ input:-ms-input-placeholder {
   right: 15px;
   top: 5px; }
 
-.acc-modal .modal-open:checked ~ .modal-wrap:before,
-.acc-modal .modal-open:checked ~ .modal-wrap .modal-overlay {
+.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap:before,
+.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap .acc-modal-overlay {
   display: block; }
 
-.acc-modal .modal-open:checked ~ .modal-wrap .modal-dialog {
+.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap .acc-modal-dialog {
   transform: translate(-50%, -50%);
   position: fixed;
   top: 40%; }
 
-.acc-modal .modal-dialog {
-  background: #fefefe;
-  border: #555 solid 1px;
+.acc-modal .acc-modal-dialog {
+  background: #ffffff;
+  border: #eeeeee solid 1px;
   border-radius: 0;
   position: fixed;
   left: 50%;
@@ -1076,18 +1076,18 @@ input:-ms-input-placeholder {
   max-width: 600px;
   z-index: 100002; }
 
-.acc-modal .modal-body {
+.acc-modal .acc-modal-body {
   padding: 20px; }
 
-.acc-modal .modal-header,
-.acc-modal .modal-footer {
+.acc-modal .acc-modal-header,
+.acc-modal .acc-modal-footer {
   padding: 20px 20px; }
 
-.acc-modal .modal-header {
-  border-bottom: #eaeaea solid 1px; }
+.acc-modal .acc-modal-header {
+  border-bottom: #eeeeee solid 1px; }
 
-.acc-modal .modal-footer {
-  border-top: #eaeaea solid 1px;
+.acc-modal .acc-modal-footer {
+  border-top: #eeeeee solid 1px;
   text-align: right; }
 
 /* --- END MODAL.CSS --- */
