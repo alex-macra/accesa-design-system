@@ -1597,3 +1597,34 @@ input:-ms-input-placeholder {
     max-width: 100%; }
 
 /* --- END STYLE-GUIDE.CSS --- */
+/* --- BEGIN TEMP.CSS --- */
+.todo .block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em; }
+
+.todo .block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.todo .block-with-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white; }
+
+.acc-spacer {
+  height: 1px;
+  width: 100%;
+  margin: 10px 0; }
+
+/* --- END TEMP.CSS --- */
