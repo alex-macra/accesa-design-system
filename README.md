@@ -26,20 +26,17 @@ In order to customize, select the tools / components to import in your project, 
   * Also implemented a grid and several UI components. (loader, tooltip, etc).
   * (*still in progress*) Added a small styleguide / demo for components and UI features.
 
-
 ### Improvements to come
   * Provide easy integration with Javascript frameworks or components.
-  * Optimize writing / editing / larger scaling of CSS.
   * Provide an easy way to insert / remove components / features.
   * Create a {minimal classes} version. Right now, when using BEM, we use longer names, to be as easy as possible to understand how the SCSS classes and mixins / variables / functions are working.
-  * Improve / add more examples or know-hows / corner cases
+  * Add more examples or know-hows / corner cases
 
 ### Going forward
   * Implement experimental components or features (grid systems, such as masonry layout or CSS4 grid layout).
-  * Custom font support.
+  * Impprove Custom font support.
   * Start with the HTML / JS / CSS documentation.
   * Create an HTML element flowchart.
-  * Add a material option for the flat design components.
   * Import / sync with Sketch or Figma.
 
 ## Ok, I want to use it
