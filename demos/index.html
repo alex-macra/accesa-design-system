@@ -189,7 +189,6 @@
         <div class="acc-row">
           <div class="acc-col-full">Full</div>
         </div>
-
         <div class="acc-row">
           <div class="acc-col-auto">col auto</div>
           <div class="acc-col-auto">col auto</div>
@@ -203,13 +202,120 @@
 
       <div class="acc-spacer"></div>
 
+      <style>
+        #editor-grid {
+          margin: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .ace_editor {
+          position: relative !important;
+          border: 1px solid lightgray;
+          margin: auto;
+          height: 200px;
+          width: 80%;
+        }
+      </style>
+
       <h4>HTML Code</h3>
-        
-        <p data-height="265" data-theme-id="0" data-slug-hash="VxGvYd" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2"
-          data-pen-title="UI Styleguide - Grid " data-preview="true" class="codepen">See the Pen
-          <a href="https://codepen.io/alexMacra/pen/VxGvYd/">UI Styleguide - Grid </a> by Alex M (
-          <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
-          <a href="https://codepen.io">CodePen</a>.</p>
+        <div style="position: relative">
+          <pre id="editor-grid">&lt;div class=&quot;colored-grid&quot;&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-3&quot;&gt;Three&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-3&quot;&gt;Three&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-3&quot;&gt;Three&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-3&quot;&gt;Three&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-4&quot;&gt;Four&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-4&quot;&gt;Four&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-4&quot;&gt;Four&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-5&quot;&gt;Five&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-5&quot;&gt;Five&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-6&quot;&gt;Six&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-6&quot;&gt;Six&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-7&quot;&gt;Seven&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-5&quot;&gt;Five&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-8&quot;&gt;Eight&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-4&quot;&gt;Four&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-9&quot;&gt;Nine&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-3&quot;&gt;Three&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-10&quot;&gt;Ten&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-2&quot;&gt;Two&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-11&quot;&gt;Eleven&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-1&quot;&gt;One&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-12&quot;&gt;Twelve&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-half&quot;&gt;Half&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-half&quot;&gt;Half&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-third&quot;&gt;th&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-third&quot;&gt;th&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-third&quot;&gt;th&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-full&quot;&gt;Full&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;acc-row&quot;&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                  &lt;div class=&quot;acc-col-auto&quot;&gt;col auto&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;  </pre>
+        </div>
+
+
+        Check it
+        <a href="https://codepen.io/alexMacra/pen/VxGvYd/">@CodePen</a>
     </div>
 
     <!-- Queries -->
@@ -615,37 +721,37 @@ function myFunction() {
           </form>
         </div>
         <div class="acc-col-half">
-            <h4>Inline forms example</h4>
-            <form>
-              <div class="acc-form-inline-block">
-                <label for="exampleRecipientInput">Reason for contacting</label>
-                <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Admiration</option>
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
-              </div>
-              <div class="acc-form-inline-block">
-                <textarea name="message" rows="10" cols="30">test</textarea>
-              </div>
-              <div class="acc-form-inline-block">
-                <label>Text Input</label>
-                <input type="text" value="hello" />
-              </div>
-              <div class="acc-form-inline-block">
-                <label>Radio Input</label>
-                <input type="radio" />
-              </div>
-              <div class="acc-form-inline-block">
-                <label>Checkbox Input</label>
-                <input type="checkbox" />
-              </div>
-              <div class="acc-form-inline-block">
-                <label>Numeric Input</label>
-                <input type="number" />
-              </div>
-            </form>
-          </div>
+          <h4>Inline forms example</h4>
+          <form>
+            <div class="acc-form-inline-block">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+            <div class="acc-form-inline-block">
+              <textarea name="message" rows="10" cols="30">test</textarea>
+            </div>
+            <div class="acc-form-inline-block">
+              <label>Text Input</label>
+              <input type="text" value="hello" />
+            </div>
+            <div class="acc-form-inline-block">
+              <label>Radio Input</label>
+              <input type="radio" />
+            </div>
+            <div class="acc-form-inline-block">
+              <label>Checkbox Input</label>
+              <input type="checkbox" />
+            </div>
+            <div class="acc-form-inline-block">
+              <label>Numeric Input</label>
+              <input type="number" />
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="acc-row">
@@ -825,7 +931,11 @@ function myFunction() {
 
       <h4>HTML Code</h4>
 
-      <p data-height="265" data-theme-id="0" data-slug-hash="YLJbep" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2" data-pen-title="UI Styleguide - Tooltips" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/alexMacra/pen/YLJbep/">UI Styleguide - Tooltips</a> by Alex M (<a href="https://codepen.io/alexMacra">@alexMacra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <p data-height="265" data-theme-id="0" data-slug-hash="YLJbep" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2"
+        data-pen-title="UI Styleguide - Tooltips" data-preview="true" class="codepen">See the Pen
+        <a href="https://codepen.io/alexMacra/pen/YLJbep/">UI Styleguide - Tooltips</a> by Alex M (
+        <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+        <a href="https://codepen.io">CodePen</a>.</p>
     </div>
 
     <!-- Broken image -->
@@ -1016,5 +1126,13 @@ function myFunction() {
   });
 </script>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<script src="../js/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var editor = ace.edit("editor-grid");
+  editor.setTheme("ace/theme/idle_fingers");
+  editor.session.setMode("ace/mode/html");
+</script>
 
 </html>

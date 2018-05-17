@@ -225,7 +225,7 @@ html {
 
 /* --- END HIDE.CSS --- */
 /* --- BEGIN CODE.CSS --- */
-pre {
+pre.code {
   background: #333333;
   white-space: pre;
   word-wrap: break-word;
@@ -234,7 +234,7 @@ pre {
   border-radius: 0;
   border: black;
   position: relative; }
-  pre label {
+  pre.code label {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 13px;
@@ -248,7 +248,7 @@ pre {
     -moz-user-select: none;
     -ms-user-select: none;
     pointer-events: none; }
-  pre code {
+  pre.code code {
     font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     display: block;
     margin: 0 0 0 70px;
@@ -259,7 +259,7 @@ pre {
     line-height: 19px;
     color: #b2b2b2;
     cursor: text; }
-  pre::after {
+  pre.code::after {
     content: "double click to selection";
     padding: 0;
     width: auto;
@@ -273,25 +273,25 @@ pre {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     transition: all 0.3s ease; }
-  pre:hover::after {
+  pre.code:hover::after {
     opacity: 0;
     visibility: visible; }
-  pre.code-css {
+  pre.code.code-css {
     border: black;
     background: #07434b; }
-    pre.code-css code {
+    pre.code.code-css code {
       color: #61def0;
       border-left: 1px solid #61def0; }
-  pre.code-html {
+  pre.code.code-html {
     border: #100704;
     background: #612919; }
-    pre.code-html code {
+    pre.code.code-html code {
       color: #e4a795;
       border-left: 1px solid #e4a795; }
-  pre.code-javascript {
+  pre.code.code-javascript {
     border: black;
     background: #173445; }
-    pre.code-javascript code {
+    pre.code.code-javascript code {
       color: #85b8d6;
       border-left: 1px solid #85b8d6; }
 
