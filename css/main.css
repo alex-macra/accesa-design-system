@@ -1546,7 +1546,7 @@ p {
 /* --- BEGIN STYLE-GUIDE.CSS --- */
 .acc-style-guide--body {
   background: #2274a5;
-  padding-top: 100px;
+  padding-top: 75px;
   font-family: "Open-Sans", sans-serif; }
 
 .acc-style-guide--container {
@@ -1571,7 +1571,7 @@ p {
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 75px;
     background: #ffffff;
     text-transform: uppercase;
     border-bottom: 1px solid #ccc;
@@ -1579,13 +1579,20 @@ p {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 10001; }
-    .acc-style-guide--container section.header h1 {
-      color: #273c42; }
+    .acc-style-guide--container section.header title {
+      display: block;
+      font-size: 30px;
+      font-size: 3rem;
+      -webkit-font-smoothing: subpixel-antialiased;
+      line-height: 1.75;
+      color: #273c42;
+      line-height: 2.5; }
     .acc-style-guide--container section.header img {
       width: 120px;
       position: absolute;
       left: 5%;
-      top: 5px; }
+      top: 0;
+      max-height: 74px; }
   .acc-style-guide--container .sidemenu-wrap {
     position: fixed; }
     .acc-style-guide--container .sidemenu-wrap .sidemenu-list {
@@ -1597,7 +1604,7 @@ p {
       box-sizing: border-box;
       position: absolute;
       top: -15px;
-      width: 270px;
+      width: 265px;
       overflow: auto;
       padding: 0 10px;
       left: -290px;
@@ -1662,6 +1669,12 @@ p {
     margin: 30px auto;
     width: 100%;
     max-width: 100%; }
+  .acc-style-guide--container .ace_editor {
+    position: relative !important;
+    border: 1px solid lightgray;
+    margin: 0;
+    height: 200px;
+    width: 80%; }
   @media all and (max-width: 1100px) {
     .acc-style-guide--container {
       margin: 30px auto;
@@ -1707,5 +1720,19 @@ p {
   height: 1px;
   width: 100%;
   margin: 10px 0; }
+
+*::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5; }
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc; }
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  background-color: #f5f5f5; }
 
 /* --- END TEMP.CSS --- */
