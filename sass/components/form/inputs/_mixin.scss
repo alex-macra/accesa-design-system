@@ -1,10 +1,8 @@
-// Inputs / Textareas
+// Inputs / Textareas / Labels for them
 
 $placeholder-color: #999;
 
-// revise in beta
-
-@mixin input() {
+@mixin form-input($display: inline-block) {
   &[type=text],
   &[type=password],
   &[type=email],
@@ -17,7 +15,7 @@ $placeholder-color: #999;
     margin-bottom: 10px;
     outline: none;
     padding-left: 15px;
-    display: block;
+    display: $display;
   }
   &::-webkit-input-placeholder {
     color: $placeholder-color;
@@ -33,7 +31,7 @@ $placeholder-color: #999;
   }
 }
 
-@mixin textarea() {
+@mixin form-textarea($display: inline-block) {
   @include text-size(15);
   @include box-sizing();
   padding: 15px;
@@ -41,4 +39,15 @@ $placeholder-color: #999;
   border-radius: $border-radius;
   margin-bottom: 10px;
   color: $color-secondary;
+  display: $display;
+}
+
+@mixin form-legend($display: inline-block) {
+  span {
+    display: $display;
+  }
+
+  label {
+    display: $display;
+  }
 }
