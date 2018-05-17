@@ -1,10 +1,8 @@
 // Modal
 
-// revise in beta 
-
 @mixin modal() {
 
-  .modal-wrap:before {
+  .#{$prefix}-modal-wrap:before {
     content: '';
     display: none;
     background: rgba(0, 0, 0, 0.6);
@@ -16,7 +14,7 @@
     z-index: 100000;
   }
 
-  .modal-overlay {
+  .#{$prefix}-modal-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -26,27 +24,27 @@
     z-index: 100001
   }
 
-  .modal-exit {
+  .#{$prefix}-modal-exit {
     @include text-size(25);
     position: absolute;
     right: 15px;
     top: 5px;
   }
 
-  .modal-open:checked ~ .modal-wrap:before,
-  .modal-open:checked ~ .modal-wrap .modal-overlay {
-    display: block
+  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap:before,
+  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap .#{$prefix}-modal-overlay {
+    display: block;
   }
 
-  .modal-open:checked ~ .modal-wrap .modal-dialog {
+  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap .#{$prefix}-modal-dialog {
     transform: translate(-50%, -50%);
     position: fixed;
     top: 40%
   }
 
-  .modal-dialog {
-    background: #fefefe; //????
-    border: #555 solid 1px;
+  .#{$prefix}-modal-dialog {
+    background: $color-white;
+    border: $color-disabled solid 1px;
     border-radius: $border-radius;
     position: fixed;
     left: 50%;
@@ -58,21 +56,21 @@
     z-index: 100002;
   }
 
-  .modal-body {
+  .#{$prefix}-modal-body {
     padding: 20px;
   }
 
-  .modal-header,
-  .modal-footer {
-    padding: 20px 20px
+  .#{$prefix}-modal-header,
+  .#{$prefix}-modal-footer {
+    padding: 20px 20px;
   }
 
-  .modal-header {
-    border-bottom: #eaeaea solid 1px;
+  .#{$prefix}-modal-header {
+    border-bottom: $color-disabled solid 1px;
   }
 
-  .modal-footer {
-    border-top: #eaeaea solid 1px;
+  .#{$prefix}-modal-footer {
+    border-top: $color-disabled solid 1px;
     text-align: right
   }
 
