@@ -1,7 +1,15 @@
 /* --- BEGIN DROP-DOWNS.CSS --- */
 
-select {
-  @include select();
+.#{$prefix}-form-block {
+  select {
+    @include select(block);
+  }
+}
+
+.#{$prefix}-form-inline-block {
+  select {
+    @include select();
+  }
 }
 
 /* --- END DROP-DOWNS.CSS --- */

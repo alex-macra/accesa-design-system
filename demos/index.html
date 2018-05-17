@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Index</title>
-  <link rel="stylesheet" type="text/css" href="../css/main.css" /> <!-- dev-->
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <!-- dev-->
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alexandrumacra/accesa-ui-starter/master/css/main.css" /> prod -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
     crossorigin="anonymous">
@@ -79,8 +80,8 @@
               <a class="js-scroll-34" href="#tooltip">Tooltip</a>
             </li>
             <li>
-                <a>Geometric elements (soon)</a>
-              </li>
+              <a>Geometric elements (soon)</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -201,7 +202,11 @@
       </div>
       <div class="acc-spacer"></div>
       <h4>HTML Code</h3>
-      <p data-height="265" data-theme-id="0" data-slug-hash="VxGvYd" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2" data-pen-title="UI Styleguide - Grid " data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/alexMacra/pen/VxGvYd/">UI Styleguide - Grid </a> by Alex M (<a href="https://codepen.io/alexMacra">@alexMacra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="265" data-theme-id="0" data-slug-hash="VxGvYd" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2"
+          data-pen-title="UI Styleguide - Grid " data-preview="true" class="codepen">See the Pen
+          <a href="https://codepen.io/alexMacra/pen/VxGvYd/">UI Styleguide - Grid </a> by Alex M (
+          <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+          <a href="https://codepen.io">CodePen</a>.</p>
     </div>
 
     <!-- Queries -->
@@ -487,6 +492,7 @@ function myFunction() {
           <button class="acc-button --disabled" /> Disabled
           </button>
 
+          <h4>HTML Code</h4>
           <p data-height="290" data-theme-id="default" data-slug-hash="aGjPRo" data-default-tab="html,result" data-user="alexMacra"
             data-embed-version="2" data-pen-title="UI Styleguide - primary buttons" data-preview="true" class="codepen">See the Pen
             <a href="https://codepen.io/alexMacra/pen/aGjPRo/">UI Styleguide - primary buttons</a> by Alex M (
@@ -498,7 +504,14 @@ function myFunction() {
           <button class="acc-button --secondary">Default</button>
           <button class="acc-button --error --large">Large</button>
 
-          <h4>Alignment</h4>
+          <h4>HTML Code</h4>
+          <p data-height="193" data-theme-id="0" data-slug-hash="ELdJWL" data-default-tab="css,result" data-user="alexMacra" data-embed-version="2"
+            data-pen-title="UI Styleguide - Buttons - sizes" data-preview="true" class="codepen">See the Pen
+            <a href="https://codepen.io/alexMacra/pen/ELdJWL/">UI Styleguide - Buttons - sizes</a> by Alex M (
+            <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+            <a href="https://codepen.io">CodePen</a>.</p>
+
+          <h4>Alignments</h4>
           <div>
             <button class="acc-button --proceed --large --align-bottom">Bottom</button>
             <button class="acc-button --proceed --align-bottom">Bottom</button>
@@ -509,6 +522,13 @@ function myFunction() {
             <button class="acc-button --secondary --align-top">Top</button>
             <button class="acc-button --secondary --large --align-top">Top</button>
           </div>
+
+          <h4>HTML Code</h4>
+          <p data-height="254" data-theme-id="0" data-slug-hash="xjyeda" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2"
+            data-pen-title="UI Styleguide - Buttons - alignments" data-preview="true" class="codepen">See the Pen
+            <a href="https://codepen.io/alexMacra/pen/xjyeda/">UI Styleguide - Buttons - alignments</a> by Alex M (
+            <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+            <a href="https://codepen.io">CodePen</a>.</p>
 
           <h4>
             <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h4>
@@ -525,6 +545,7 @@ function myFunction() {
             Info
           </button>
 
+          <h4>HTML Code</h4>
           <h4>
             <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons
             <br>
@@ -542,6 +563,8 @@ function myFunction() {
             <i class="fa fa-info-circle"></i>
             Info
           </button>
+
+          <h4>HTML Code</h4>
         </div>
     </div>
 
@@ -549,59 +572,83 @@ function myFunction() {
     <div id="forms" class="js-scrollTo-23 anchor-gap">
       <h3>Forms</h3>
       <p>Forms are a huge pain, but hopefully these styles make it a bit easier.</p>
-      <div class="docs-example">
-        <form>
-          <div>
-            <label for="exampleRecipientInput">Reason for contacting</label>
-            <select class="u-full-width" id="exampleRecipientInput">
-              <option value="Option 1">Questions</option>
-              <option value="Option 2">Admiration</option>
-              <option value="Option 3">Can I get your number?</option>
-            </select>
+      <div class="acc-row">
+        <div class="acc-col-half">
+          <h4>Block example</h4>
+          <form>
+            <div class="acc-form-block">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+            <div class="acc-form-block">
+              <textarea name="message" rows="10" cols="30">test</textarea>
+            </div>
+            <div class="acc-form-block">
+              <label>Text Input</label>
+              <input type="text" value="hello" />
+            </div>
+            <div class="acc-form-block">
+              <label>Radio Input</label>
+              <input type="radio" />
+            </div>
+            <div class="acc-form-block">
+              <label>Checkbox Input</label>
+              <input type="checkbox" />
+            </div>
+            <div class="acc-form-block">
+              <label>Numeric Input</label>
+              <input type="number" />
+            </div>
+          </form>
+        </div>
+        <div class="acc-col-half">
+            <h4>Inline forms example</h4>
+            <form>
+              <div class="acc-form-inline-block">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">Questions</option>
+                  <option value="Option 2">Admiration</option>
+                  <option value="Option 3">Can I get your number?</option>
+                </select>
+              </div>
+              <div class="acc-form-inline-block">
+                <textarea name="message" rows="10" cols="30">test</textarea>
+              </div>
+              <div class="acc-form-inline-block">
+                <label>Text Input</label>
+                <input type="text" value="hello" />
+              </div>
+              <div class="acc-form-inline-block">
+                <label>Radio Input</label>
+                <input type="radio" />
+              </div>
+              <div class="acc-form-inline-block">
+                <label>Checkbox Input</label>
+                <input type="checkbox" />
+              </div>
+              <div class="acc-form-inline-block">
+                <label>Numeric Input</label>
+                <input type="number" />
+              </div>
+            </form>
           </div>
-          <div>
-            <textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
+      </div>
 
-          </div>
-          <div>
-            <input type="text" list="browsers">
-            <datalist id="browsers">
-              <option value="Internet Explorer">
-                <option value="Firefox">
-                  <option value="Chrome">
-                    <option value="Opera">
-                      <option value="Safari">
-            </datalist>
-          </div>
-        </form>
-
-        <div>
-          <label>Text Input</label>
-          <input type="text" value="hello" />
+      <div class="acc-row">
+        <div class="acc-col-full">
+          <h4>Output example</h4>
+          <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50"> 100 +
+            <input type="number" id="b" name="b" value="50"> =
+            <output name="x" for="a b"></output>
+          </form>
         </div>
-        <div>
-          <label>Radio Input</label>
-          <input type="radio" />
-        </div>
-        <div>
-          <label>Checkbox Input</label>
-          <input type="checkbox" />
-        </div>
-        <div>
-          <label>Numeric Input</label>
-          <input type="number" />
-        </div>
-        <!-- make an inline variant-->
-
-        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-          0
-          <input type="range" id="a" name="a" value="50"> 100 +
-          <input type="number" id="b" name="b" value="50"> =
-          <output name="x" for="a b"></output>
-
-        </form>
       </div>
     </div>
 
@@ -634,7 +681,11 @@ The cat was playing in the garden.
 
       <h4>HTML Code</h4>
 
-      <p data-height="265" data-theme-id="0" data-slug-hash="WJaPWY" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2" data-pen-title="UI Styleguide - modal" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/alexMacra/pen/WJaPWY/">UI Styleguide - modal</a> by Alex M (<a href="https://codepen.io/alexMacra">@alexMacra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <p data-height="265" data-theme-id="0" data-slug-hash="WJaPWY" data-default-tab="html,result" data-user="alexMacra" data-embed-version="2"
+        data-pen-title="UI Styleguide - modal" data-preview="true" class="codepen">See the Pen
+        <a href="https://codepen.io/alexMacra/pen/WJaPWY/">UI Styleguide - modal</a> by Alex M (
+        <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+        <a href="https://codepen.io">CodePen</a>.</p>
     </div>
 
     <!-- Spinner -->
@@ -666,7 +717,11 @@ The cat was playing in the garden.
 
       <h4>HTML Code</h4>
 
-      <p data-height="265" data-theme-id="0" data-slug-hash="OZBqyo" data-default-tab="css,result" data-user="alexMacra" data-embed-version="2" data-pen-title="UI Styleguide - Loaders" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/alexMacra/pen/OZBqyo/">UI Styleguide - Loaders</a> by Alex M (<a href="https://codepen.io/alexMacra">@alexMacra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <p data-height="265" data-theme-id="0" data-slug-hash="OZBqyo" data-default-tab="css,result" data-user="alexMacra" data-embed-version="2"
+        data-pen-title="UI Styleguide - Loaders" data-preview="true" class="codepen">See the Pen
+        <a href="https://codepen.io/alexMacra/pen/OZBqyo/">UI Styleguide - Loaders</a> by Alex M (
+        <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+        <a href="https://codepen.io">CodePen</a>.</p>
     </div>
 
     <!-- Tabs -->
@@ -745,16 +800,16 @@ The cat was playing in the garden.
       <h3>Tooltips</h3>
       <div class="tooltip-holder">
         <h5>Upper left tooltip
-          <i class="info-icon nw" data-tooltip="this is tooltip">i</i>
+          <i class="acc-info-icon top-left" data-tooltip="this is tooltip">i</i>
         </h5>
         <h5>Upper right tooltip
-          <i class="info-icon ne" data-tooltip="this is tooltip this is tooltip">i</i>
+          <i class="acc-info-icon bottom-left" data-tooltip="this is tooltip this is tooltip">i</i>
         </h5>
         <h5>Upper right tooltip
-          <i class="info-icon sw" data-tooltip="this is tooltip this is tooltip this is tooltip">i</i>
+          <i class="acc-info-icon bottom-left" data-tooltip="this is tooltip this is tooltip this is tooltip">i</i>
         </h5>
         <h5>Upper right tooltip
-          <i class="info-icon se" data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">i</i>
+          <i class="acc-info-icon bottom-right" data-tooltip="this is tooltip this is tooltip this is tooltip this is tooltip">i</i>
         </h5>
       </div>
     </div>
@@ -774,7 +829,11 @@ The cat was playing in the garden.
       <div class="acc-spacer"></div>
 
       <h4>HTML Code</h4>
-      <p data-height="265" data-theme-id="0" data-slug-hash="rvqRex" data-default-tab="css,result" data-user="alexMacra" data-embed-version="2" data-pen-title="UI Styleguide - Broken image" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/alexMacra/pen/rvqRex/">UI Styleguide - Broken image</a> by Alex M (<a href="https://codepen.io/alexMacra">@alexMacra</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      <p data-height="265" data-theme-id="0" data-slug-hash="rvqRex" data-default-tab="css,result" data-user="alexMacra" data-embed-version="2"
+        data-pen-title="UI Styleguide - Broken image" data-preview="true" class="codepen">See the Pen
+        <a href="https://codepen.io/alexMacra/pen/rvqRex/">UI Styleguide - Broken image</a> by Alex M (
+        <a href="https://codepen.io/alexMacra">@alexMacra</a>) on
+        <a href="https://codepen.io">CodePen</a>.</p>
     </div>
 
 </body>
@@ -942,4 +1001,5 @@ The cat was playing in the garden.
   });
 </script>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 </html>

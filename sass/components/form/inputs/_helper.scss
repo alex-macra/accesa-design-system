@@ -1,11 +1,27 @@
 /* --- BEGIN INPUT.CSS --- */
 
-textarea {
-  @include textarea();
+.#{$prefix}-form-block {
+  @include form-legend(block);
+
+  textarea {
+    @include form-textarea(block);
+  }
+  
+  input {
+    @include form-input(block);
+  }
 }
 
-input {
-  @include input();
+.#{$prefix}-form-inline-block {
+  @include form-legend();
+
+  textarea {
+    @include form-textarea();
+  }
+  
+  input {
+    @include form-input();
+  }
 }
 
 /* --- END INPUT.CSS --- */

@@ -2,9 +2,9 @@
 
 // revise in beta
 
-@mixin select {
+@mixin select($display: inline-block) {
 		padding: 0 10px;
-    display: block;
+    display: $display;
 		min-width: 100px;
 		line-height: 1;
 		background: $color-white;

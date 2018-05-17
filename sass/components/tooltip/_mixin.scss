@@ -7,7 +7,7 @@ $tooltip-width: 200px;
 $fade: 300ms;
 
 //todo move ? improve
-@mixin tooltip($direction: nw, $bg-color: #000, $title: false) {
+@mixin tooltip($direction: top-left, $bg-color: #000, $title: false) {
 	position: relative;
 
 	&:before, &:after {
@@ -18,7 +18,7 @@ $fade: 300ms;
 		//@include respondTo(smartphone){ display: none; }
 	}
 
-	&:before { // tooltip body
+	&:before {
 		background-color: $bg-color;
 		border-radius: $border-radius;
 		box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
@@ -38,8 +38,9 @@ $fade: 300ms;
 	//		color: $black;
 	//	}
 	}
-	&:after { content: ''; } // tooltip carrot
-
+	&:after { 
+		content: ''; 
+	} // tooltip carrot
 
 	&:hover {
 		&:before, &:after {
@@ -49,43 +50,54 @@ $fade: 300ms;
 		}
 	}
 
-	@if $direction == 'nw' or $direction == 'ne' {
+	@if $direction == 'top-left' or $direction == 'top-right' {
 		&:before {
-			@include transform(translateY(-100%)); bottom: auto; // override with auto in case this tooltip is overriding a previous instance in another direction
+			@include transform(translateY(-100%));
+			 bottom: auto; 
 			top: -($triangle-size + 3px);
 		}
 
 		&:after {
-			@include triangle(down, $triangle-size, $bg-color); bottom: auto;
+			@include triangle(down, $triangle-size, $bg-color);
+			 bottom: auto;
 			top: -($triangle-size + 3px);
 		}
 	}
-	@else if $direction == 'se' or $direction == 'sw' {
+	@else if $direction == 'bottom-right' or $direction == 'bottom-left' {
 		&:before {
 			@include transform(translateY(100%));
-			bottom: -($triangle-size + 3px); top: auto; // extra 3px for spacing
+			bottom: -($triangle-size + 3px);
+			 top: auto; 
 		}
 
 		&:after {
 			@include triangle(up, $triangle-size, $bg-color);
-			bottom: -($triangle-size + 3px); top: auto;
+			bottom: -($triangle-size + 3px); 
+			top: auto;
 		}
 	}
 
-	// apply positioning to left and right values
-	@if $direction == 'ne' or $direction == 'se' {
+	@if $direction == 'top-right' or $direction == 'bottom-right' {
 		&:before, &:after {
 			left: 50%;
-			margin-left: -$triangle-size; right: auto;
+			margin-left: -$triangle-size; 
+			right: auto;
 		}
-		&:before { margin-left: -$triangle-size * 3; }
+
+		&:before { 
+			margin-left: -$triangle-size * 3;
+		 }
 	}
-	@else if $direction == 'nw' or $direction == 'sw' {
-		&:before, &:after { left: auto;
+
+	@else if $direction == 'top-left' or $direction == 'bottom-left' {
+		&:before, &:after { 
+			left: auto;
 			margin-right: -$triangle-size;
 			right: 50%;
 		}
-		&:before { margin-right: -$triangle-size * 3; }
+
+		&:before { 
+			margin-right: -$triangle-size * 3;
+		 }
 	}
-	@else { @warn 'direction not valid in tooltip mixin'; }
 }

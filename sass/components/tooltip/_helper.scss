@@ -1,6 +1,6 @@
 /* --- BEGIN TOOL-TIPS.CSS --- */
 
-.info-icon { //todo: improve
+.#{$prefix}-info-icon { //todo: revise in beta
 	@include text-size(16, 30);
 	background: $color-main;
 	border-radius: 50%;
@@ -11,10 +11,22 @@
 	margin: 0 10px 10px 10px;
 	text-align: center;
 	width: 30px;
-	&.ne { @include tooltip(ne, $color-main-lighter); }
-	&.nw { @include tooltip(nw, $color-main-lighter); }
-	&.se { @include tooltip(se, $color-main-lighter); }
-	&.sw { @include tooltip(sw, $color-main-lighter); }
+
+	&.top-right { 
+		@include tooltip(top-right, $color-main-lighter); 
+	}
+
+	&.top-left { 
+		@include tooltip(top-left, $color-main-lighter); 
+	}
+
+	&.bottom-right { 
+		@include tooltip(bottom-right, $color-main-lighter); 
+	}
+
+	&.bottom-left {
+		@include tooltip(bottom-left, $color-main-lighter); 
+	}
 }
 
 /* --- END TOOL-TIPS.CSS --- */
