@@ -1612,8 +1612,8 @@ p {
       min-height: 200px;
       background-color: #2274a5; }
       .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li {
-        font-size: 20px;
-        font-size: 2rem;
+        font-size: 18px;
+        font-size: 1.8rem;
         -webkit-font-smoothing: subpixel-antialiased;
         line-height: 38px;
         line-height: 3.8rem;
@@ -1631,6 +1631,11 @@ p {
           -o-transition: max-height 1s ease-out;
           transition: max-height 1s ease-out; }
           .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li {
+            font-size: 16px;
+            font-size: 1.6rem;
+            -webkit-font-smoothing: subpixel-antialiased;
+            line-height: 28px;
+            line-height: 2.8rem;
             padding-left: 15px; }
             .acc-style-guide--container .sidemenu-wrap .sidemenu-list > li ul li a {
               color: #ffffff;
@@ -1646,7 +1651,9 @@ p {
     padding-top: 80px;
     margin-top: -80px;
     height: 100%;
-    min-height: 100vh; }
+    min-height: 100vh;
+    margin-bottom: 60px;
+    padding-bottom: 80px; }
   .acc-style-guide--container .colored-grid > div > div {
     padding: 3px 10px;
     color: #ffffff;

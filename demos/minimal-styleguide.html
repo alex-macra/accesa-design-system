@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Temp file - import to figma</title>
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  <!-- dev-->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alexandrumacra/accesa-ui-starter/master/css/main.css" /> prod -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous">
+  <!-- temp -->
+</head>
+
+<body>
+
+  <!-- style-guide- example Layout -->
+  <div class="acc-style-guide--container --full" style="margin-top: 0;">
+
+    <!-- Typography -->
+    <div id="typography" class="js-scrollTo-11 anchor-gap">
+      <h3>Typography
+        <strong>(area needs revisions)</strong>
+      </h3>
+      <p>Type is all set with the
+        <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single
+        <code>&lt;html&gt;</code> font-size property./p>
+
+        <hr/>
+
+        <div class="docs-example">
+          <p>
+            <strong>The typography base</strong> is
+            <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans
+            </a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like
+            <a href="#">anchors</a>,
+            <strong>strong</strong>,
+            <em>emphasis</em>, and
+            <u>underline</u> are all obviously included.</p>
+
+          <p>
+            <blockquote>
+              Don't forget
+              <b>blockquotes!</b> Blockquotes have a simple left border and an indent, there is nothing too fancy here. These
+              styles are meant to be familiar to GitHub markdown users.
+            </blockquote>
+          </p>
+
+          <p>
+            <strong>Headings</strong> create a family of distinct sizes each with specific
+            <code>letter-spacing</code>,
+            <code>line-height</code>, and
+            <code>margins</code>.</p>
+        </div>
+        <div>
+          <h1>Heading
+            <span>
+              <code>&lt;h1&gt;</code> 4.5rem</span>
+          </h1>
+          <h2>Heading
+            <span>
+              <code>&lt;h2&gt;</code> 3.6rem</span>
+          </h2>
+          <h3>Heading
+            <span>
+              <code>&lt;h3&gt;</code> 3.0rem</span>
+          </h3>
+          <h4>Heading
+            <span>
+              <code>&lt;h4&gt;</code> 2.6rem</span>
+          </h4>
+          <h5>Heading
+            <span>
+              <code>&lt;h5&gt;</code> 2.2rem</span>
+          </h5>
+          <h6>Heading
+            <span>
+              <code>&lt;h6&gt;</code> 2.0rem</span>
+          </h6>
+        </div>
+    </div>
+
+    <!-- Lists -->
+    <div id="lists" class="js-scrollTo-13 anchor-gap">
+      <h3>Lists</h3>
+
+      <p>Basic design implementation for ordered and unordered lists.</p>
+
+      <div class="acc-row">
+        <div class="acc-col-half">
+          <h4>Unordered list with basic style</h4>
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>More list items</li>
+          </ul>
+        </div>
+        <div class="acc-col-half">
+          <h4>Unordered list with basic square icon</h4>
+          <ul class="square">
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>More list items</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-row">
+        <div class="acc-col-half">
+          <h4>Unordered list with dash style</h4>
+          <ul class="dash">
+            <li>Unordered lists have dash styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items</li>
+          </ul>
+        </div>
+        <div class="acc-col-half">
+          <h4>Ordered list</h4>
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tables -->
+    <div id="tables" class="js-scrollTo-14 anchor-gap">
+      <h3>Tables</h3>
+      <p>Be sure to use properly formed table markup with
+        <code>&lt;thead&gt;</code> and
+        <code>&lt;tbody&gt;</code> when building a
+        <code>table</code>.</p>
+      <div class="tables-example">
+        <h4>Default design</h4>
+        <table class="acc-default-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>BAC</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>44</td>
+              <td>.150</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>42</td>
+              <td>.120</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>56</td>
+              <td>.220</td>
+              <td>Lorem ipsum</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Minimal design</h4>
+        <table class="acc-minimal-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>BAC</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>44</td>
+              <td>.150</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>42</td>
+              <td>.120</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>56</td>
+              <td>.220</td>
+              <td>Lorem ipsum</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div id="buttons" class="js-scrollTo-21 anchor-gap">
+      <h3>Buttons</h3>
+      <p>The standard
+        <code>&lt;button&gt;</code> element is plain, whereas the
+        <code>.{prefix}-primary</code> button is vibrant and prominent.
+        <div class="docs-example">
+
+          <h4>Styles</h4>
+          <button class="acc-button --primary" /> Primary
+          </button>
+          <button class="acc-button --secondary" /> Secondary
+          </button>
+          <button class="acc-button --alternative" /> Alternative
+          </button>
+          <button class="acc-button --error" /> Error
+          </button>
+          <button class="acc-button --proceed" /> Proceed
+          </button>
+          <button class="acc-button --greyed" /> Greyed out button</button>
+          <button class="acc-button --disabled" /> Disabled
+          </button>
+
+          <h4>Sizes</h4>
+          <button class="acc-button --primary --small">Small</button>
+          <button class="acc-button --secondary">Default</button>
+          <button class="acc-button --error --large">Large</button>
+
+          <h4>Alignments</h4>
+          <div>
+            <button class="acc-button --proceed --large --align-bottom">Bottom</button>
+            <button class="acc-button --proceed --align-bottom">Bottom</button>
+            <button class="acc-button --proceed --small --align-bottom">Bottom</button>
+          </div>
+          <div>
+            <button class="acc-button --secondary --small --align-top">Top</button>
+            <button class="acc-button --secondary --align-top">Top</button>
+            <button class="acc-button --secondary --large --align-top">Top</button>
+          </div>
+
+          <h4>
+            <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons</h4>
+          <button class="acc-button --error --icon">
+            <i class="fa fa-times"></i>
+            Error
+          </button>
+          <button class="acc-button --icon --proceed">
+            <i class="fa fa-check"></i>
+            Success!
+          </button>
+          <button class="acc-button --icon --primary">
+            <i class="fa fa-info-circle"></i>
+            Info
+          </button>
+
+          <h4>
+            <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a> Icons
+            <br>
+            <small>(Without left area)</small>
+          </h4>
+          <button class="acc-button --error">
+            <i class="fa fa-times"></i>
+            Error
+          </button>
+          <button class="acc-button --proceed">
+            <i class="fa fa-check"></i>
+            Success!
+          </button>
+          <button class="acc-button --primary">
+            <i class="fa fa-info-circle"></i>
+            Info
+          </button>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
