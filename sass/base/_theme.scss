@@ -1,18 +1,23 @@
 //maybe it's not the best place for a theme file
 //check if main color is too light, follow up colors will be wrong
-//color scheme 1
+//color scheme #2274a5 
+//09A6E4
+$default-primary-color: #2274a5;
+$default-color-red: #e90d00;
+$default-color-white: #ffffff;
+$default-color-black: #000000;
 
-$color-main: #2274a5; //273c42 //3d9970 //ff4236 //2274a5 //009DDC
-$color-secondary: darken(desaturate(adjust-hue($color-main, -9), 40.11), 18.43); //#273c42
-$color-error: #e90d00;
-$color-success: lighten(desaturate(adjust-hue($color-main, -49), 22.84), 2.94);
+$color-main: $default-primary-color;
+$color-white: $default-color-white;
+$color-black: $default-color-black;
+
+$color-gray: grayscale($color-main);
+$color-dark-gray: darken($color-gray, 20%);
 $color-disabled: #eeeeee;
 
-$color-white: #ffffff;
-$color-black: #000000;
-
-$color-gray: #ccc;
-$color-dark-gray: #333335;
+$color-secondary: mix(darken($color-main, 10%), $color-gray); //#273c42
+$color-error: darken(mix(lighten($color-main, 90%), $default-color-red), 20%);
+$color-success: adjust-color($color-main, -60, 60, -60);
 
 //todo -create various styles based on primary colors usingsatuation, desaturation, lighten, etccc...
 //temp

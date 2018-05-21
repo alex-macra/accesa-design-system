@@ -1,6 +1,7 @@
 /* --- BEGIN BUTTONS.CSS --- */
 
 .#{$prefix}-button {
+  @include text-size(12);
   border-radius: $border-radius;
   color: white;
   display: inline-block;
@@ -12,7 +13,7 @@
   transition: all .25s;
   vertical-align: middle;
   min-width: 80px;
-  min-height: 20px;
+  min-height: 36px;
   text-align: center;
   text-transform: uppercase;
 
@@ -41,7 +42,7 @@
   }
 
   &.--greyed {
-    @include button (#888888);
+    @include button ($color-gray);
   }
 
   &.--alternative {
@@ -71,14 +72,18 @@
   // Sizing
 
   &.--large {
-    @include text-size(28, 32);
+    @include text-size(14);
     padding-bottom: .5em;
     padding-top: .5em;
+    min-height: 50px;
+    min-width: 120px;
   }
 
   &.--small {
-    @include text-size(10,13);
+    @include text-size(9);
     padding: .5em 1.5em;
+    min-height: 14px;
+    min-width: 60px;
   }
 
   // Alignments
