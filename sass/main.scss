@@ -12,14 +12,3 @@
 // Temp
 
 @import 'project/temp';
-   
-   /**
-    * This is the prefered way to set the description.
-    * Since this DocBlock is missing the @section
-    * annotation, it would be shown in the generic
-    * section "Other". Please note the empty line
-    * after this block of text.
-    *
-    * @nuclide Language
-    */
-   $config--lang: "en"

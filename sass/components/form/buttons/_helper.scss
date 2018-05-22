@@ -1,17 +1,9 @@
 /* --- BEGIN BUTTONS.CSS --- */
 /**
- * @atom Button Styles
+ * @atom Button
  * @section Form elements > Buttons
  * @description
- *  Buttons containing different color schemes.
- * @modifiers
- *  .{prefix}-button default style for button (gray color).
- *  .--primary button that contains primary teme color
- *  .--secondary button that contains secondary teme color
- *  .--error button that contains (ususally) a red color
- *  .--proceed button that contains (ususally) a green color
- *  .--disabled used on buttons that are no longer clickable (disabled)
- *  .--alternative transparent background button
+ *  Buttons containing different color schemes, sizes and alingments.
  * @markup
  *   <button class="acc-button --primary">primary button</button>
  *   <button class="acc-button --secondary">secondary button</button>
@@ -20,7 +12,7 @@
  *   <button class="acc-button --greyed">greyed (default button)</button>
  *   <button class="acc-button --disabled">disabled button</button>
  *   <button class="acc-button --alternative">transparent button</button>
- */
+*/
 
 .#{$prefix}-button {
   @include text-size(12);
