@@ -1,5 +1,15 @@
 /* --- BEGIN LINKS.CSS --- */
 
+/**
+ * Links....
+ *
+ * @atom Links
+ * @section Typography
+ * @markup
+ *  <a>Link</a><br/>
+ *  <a href="#test">Link with url</a>
+ */
+
 a {
   text-decoration: none;
   color: $color-black;
