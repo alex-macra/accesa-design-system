@@ -4,6 +4,14 @@
 
 // nothing yet
 
+.SG-layout {
+  max-width: 1400px;
+
+  span {
+    @include text-size(16);
+  }
+}
+
 .todo {     
      
       .block-with-text {

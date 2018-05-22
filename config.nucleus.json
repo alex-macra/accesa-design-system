@@ -1,0 +1,13 @@
+{
+    "title": "Nucleus",
+    "files": [
+        "sass/**/*.scss"
+    ],
+    "target": "styleguide",
+    "css": "../css/main.css",
+    "namespace": "page",
+    "verbose": 3,
+    "counterCSS": true,
+    "staticLipsum": true,
+    "placeholderService": true
+}
