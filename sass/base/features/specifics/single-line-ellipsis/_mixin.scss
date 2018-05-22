@@ -3,9 +3,10 @@
  *
  * @mixin
  * @section Ellipsis
+ * @param $width use either a percentage or a pixel based size
  * @example
  *  @include single-line-ellipsis(); //default 100% width
- *  @include single-line-ellipsis(300px); // you can pass px or % parameter as width
+ *  @include single-line-ellipsis(300px);
  */
 
 @mixin single-line-ellipsis($width: 100%) {

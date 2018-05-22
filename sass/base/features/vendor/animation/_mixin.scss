@@ -1,4 +1,14 @@
-// Animation
+/**
+ * Animation
+ *
+ * @mixin
+ * @section Animation
+ * @param $delay 
+ * @param $duration
+ * @param $animation
+ * @example
+ *  @include animation(1s, 3s, my animation);
+ */
 
 @mixin animation($delay, $duration, $animation) {
 	-webkit-animation-delay: $delay;
@@ -14,4 +24,4 @@
 	-moz-animation-name: $animation;
 	animation-name: $animation;
 }
-//@include animation(1s, 3s, my animation);
+

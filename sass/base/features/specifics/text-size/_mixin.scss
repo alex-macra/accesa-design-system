@@ -3,8 +3,10 @@
  *
  * @mixin
  * @section Text size
+ * @param $font-size set the desired font size, line height is calculated based on it
+ * @param $line-height
  * @example
- *  @include text-size(20); //parameter is desired font size, line height is calculated based on it
+ *  @include text-size(20);
  *  @include text-size(28, 36); //first parameter is the font-size, second is line height
  */
 

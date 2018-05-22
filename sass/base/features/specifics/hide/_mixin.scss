@@ -3,6 +3,7 @@
  *
  * @mixin
  * @section Hide
+ * @param $visually this variable enables hiding certain HTML element / section, witouth removing it from the normal flow of the page.
  * @example
  *  @include hide();
  *  @include hide($visually); 
