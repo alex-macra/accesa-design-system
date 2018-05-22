@@ -1,5 +1,11 @@
-// Broken Image fallback
-// Add icon
+/**
+ * Solution for various scenarios when an image is not loaded.
+ *
+ * @mixin
+ * @section Image
+ * @example
+ *  @include broken-image()  //soon to be updated so you can pass parameters
+ */
 @mixin broken-image() {
 	display: block;
 	height: auto;

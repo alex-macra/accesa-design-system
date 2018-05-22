@@ -1,5 +1,13 @@
-// Single line ellipsis
-// todo: provide experimental multiple line ellipsis
+/**
+ * Truncate text, adding an ellipsis at the end of the first row. Width parameter should be set.
+ *
+ * @mixin
+ * @section Ellipsis
+ * @param $width use either a percentage or a pixel based size
+ * @example
+ *  @include single-line-ellipsis(); //default 100% width
+ *  @include single-line-ellipsis(300px);
+ */
 
 @mixin single-line-ellipsis($width: 100%) {
   overflow: hidden;
@@ -7,3 +15,5 @@
   text-overflow: ellipsis;
   width: $width;
 }
+
+// todo: provide experimental multiple line ellipsis

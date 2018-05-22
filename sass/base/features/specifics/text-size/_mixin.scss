@@ -1,4 +1,14 @@
-//Font-size
+/**
+ * Set the desired font size in pixel, and the mixin will automatically convert it to relative em units, and based on the size, will set it's default line height. The line height can also be optionally set as a second parameter.
+ *
+ * @mixin
+ * @section Text size
+ * @param $font-size set the desired font size, line height is calculated based on it
+ * @param $line-height
+ * @example
+ *  @include text-size(20);
+ *  @include text-size(28, 36); //first parameter is the font-size, second is line height
+ */
 
 @mixin text-size($font-size: 18, $line-height: false) {
 	font-size: $font-size  + px;

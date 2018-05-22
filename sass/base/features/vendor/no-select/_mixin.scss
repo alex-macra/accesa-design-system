@@ -1,4 +1,12 @@
-// No select
+/**
+ * Disable text selection
+ *
+ * @mixin
+ * @section no-select
+ * @example
+ *  @include no-select();
+ */
+
 
 @mixin no-select() {
   -webkit-user-select: none;

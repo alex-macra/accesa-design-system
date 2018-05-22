@@ -1,5 +1,13 @@
-// CSS3 vendor prefix
-
+/**
+ * Vendor prefix. Useful function to avoid writing all the vendorp refixes for various mixins or CSS styles.
+ *
+ * @mixin
+ * @section Prefix
+ * @param $property css property (eg box-sizing);
+ * @param $value value of it's property (eg border-box);
+ * @example
+ *  @include vendor-prefix(box-sizing, border-box);
+ */
 @mixin vendor-prefix($property, $value) {
 	-webkit-#{$property}: #{$value};
 	-khtml-#{$property}: #{$value};
