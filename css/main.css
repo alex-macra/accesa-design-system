@@ -439,6 +439,28 @@ p {
 
 /* --- END PARAGRAPHS.CSS --- */
 /* --- BEGIN BUTTONS.CSS --- */
+/**
+ * @atom Button Styles
+ * @section Form elements > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @modifiers
+ *  .{prefix}-button default style for button (gray color).
+ *  .--primary button that contains primary teme color
+ *  .--secondary button that contains secondary teme color
+ *  .--error button that contains (ususally) a red color
+ *  .--proceed button that contains (ususally) a green color
+ *  .--disabled used on buttons that are no longer clickable (disabled)
+ *  .--alternative transparent background button
+ * @markup
+ *   <button class="acc-button --primary">primary button</button>
+ *   <button class="acc-button --secondary">secondary button</button>
+ *   <button class="acc-button --error">error</button>
+ *   <button class="acc-button --proceed">proceed</button>
+ *   <button class="acc-button --greyed">greyed (default button)</button>
+ *   <button class="acc-button --disabled">disabled button</button>
+ *   <button class="acc-button --alternative">transparent button</button>
+ */
 .acc-button {
   font-size: 12px;
   font-size: 1.2rem;
@@ -471,6 +493,7 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #2274a5;
     box-shadow: 0 2px 0 shade(#2274a5, 15%); }
     .acc-button.--primary:hover, .acc-button.--primary:focus {
@@ -486,6 +509,7 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #3e5d6f;
     box-shadow: 0 2px 0 shade(#3e5d6f, 15%); }
     .acc-button.--secondary:hover, .acc-button.--secondary:focus {
@@ -501,6 +525,7 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #ec2d22;
     box-shadow: 0 2px 0 shade(#ec2d22, 15%); }
     .acc-button.--error:hover, .acc-button.--error:focus {
@@ -516,13 +541,14 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #00b069;
     box-shadow: 0 2px 0 shade(#00b069, 15%); }
     .acc-button.--proceed:hover, .acc-button.--proceed:focus {
       background-color: #004a30; }
     .acc-button.--proceed:active {
       background-color: #00b069; }
-  .acc-button.--greyed {
+  .acc-button.--greyed, .acc-button {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -531,11 +557,12 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #646464;
     box-shadow: 0 2px 0 shade(#646464, 15%); }
-    .acc-button.--greyed:hover, .acc-button.--greyed:focus {
+    .acc-button.--greyed:hover, .acc-button:hover, .acc-button.--greyed:focus, .acc-button:focus {
       background-color: #3d3d3d; }
-    .acc-button.--greyed:active {
+    .acc-button.--greyed:active, .acc-button:active {
       background-color: #646464; }
   .acc-button.--alternative {
     -webkit-user-select: none;
@@ -546,6 +573,7 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: transparent;
     box-shadow: 0 2px 0 shade(transparent, 15%);
     color: #000000; }
@@ -564,6 +592,7 @@ p {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
     background-color: #eeeeee;
     box-shadow: 0 2px 0 shade(#eeeeee, 15%);
     cursor: not-allowed;
@@ -1705,6 +1734,9 @@ p {
 
 /* --- END STYLE-GUIDE.CSS --- */
 /* --- BEGIN TEMP.CSS --- */
+.SG-layout {
+  max-width: 1400px; }
+
 .todo .block-with-text {
   overflow: hidden;
   position: relative;
@@ -1749,3 +1781,12 @@ p {
   background-color: #f5f5f5; }
 
 /* --- END TEMP.CSS --- */
+/**
+    * This is the prefered way to set the description.
+    * Since this DocBlock is missing the @section
+    * annotation, it would be shown in the generic
+    * section "Other". Please note the empty line
+    * after this block of text.
+    *
+    * @nuclide Language
+    */

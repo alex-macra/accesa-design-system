@@ -3,6 +3,7 @@
 
 @mixin button($color: #fff) {
 	@include no-select();
+	font-family: $font-paragraph;
 	background-color: $color;
 	box-shadow: 0 2px 0 shade($color, 15%);
 
