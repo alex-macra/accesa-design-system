@@ -12,6 +12,39 @@
   }
 }
 
+
+.SG-h2 {
+  color: $color-main;
+  font-size: 21px;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 20px 0;
+  margin-bottom: 1.5em;
+}
+.SG-icon-preview .SG-icon-preview__name {
+
+color: $color-main;
+}
+
+.SG-button:hover {
+  border-color:  $color-main;
+  color: $color-main;
+}
+
+.SG-nav .SG-nav__item--active {
+border-bottom: 3px solid $color-main;
+}
+
+.SG-h1 {
+font-family: Lato, sans-serif;
+font-weight: 300;
+padding: 0;
+margin: 0;
+font-size: 42px;
+color: $color-main;
+text-transform: uppewrcase;
+margin-bottom: 1em;
+}
+
 .todo {     
      
       .block-with-text {
