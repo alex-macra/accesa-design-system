@@ -1,7 +1,13 @@
-// Transition
+/**
+ * CSS transitions allows you to change property values, from one value to another, over a given duration.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $argument accepts any transition properties
+ * @example
+ *  @include transition(width 2s, height 4s);
+ */
 
 @mixin transition($arguments) {
 	@include vendor-prefix('transition', $arguments);
 }
-
-//@include transform(scale(1.5));

@@ -1,25 +1,25 @@
 /**
- * Set a general prefix throughout the entire app.
+ * Set a general prefix throughout the entire app using the $prefix variable.
+ * The default namespaces is 'accesa' -> 'acc'.
  *
- * @nuclide Prefix
+ * @nuclide $prefix
  * @section Config
  */
 /**
- * Primary color variable.
- *
+ * Primary color variable
  * @color Primary color variable
  * @section Theme Colors
  */
 /**
-* @color Default secondary color variable.
+* @color Default secondary color variable
 * @section Theme Colors
 */
 /**
-* @color Default alternate color variable.
+* @color Default alternate color variable
 * @section Theme Colors
 */
 /**
-* @color Default red color variable. 
+* @color Default red color variable
  * @section Theme Colors
  */
 /**
@@ -27,23 +27,23 @@
 * @section Grayscale
 */
 /**
-* @color Default whitesmoke variable.
+* @color Default whitesmoke variable
 * @section Grayscale
 */
 /**
-* @color Default light gray color variable.
+* @color Default light gray color variable
 * @section Grayscale
 */
 /**
-* @color Default gray color variable.
+* @color Default gray color variable
 * @section Grayscale
 */
 /**
-* @color Default dark gray color variable.
+* @color Default dark gray color variable
 * @section Grayscale
 */
 /**
-* @color Default black variable.
+* @color Default black variable
 * @section Grayscale
 */
 /* --- BEGIN RESET.CSS --- */
@@ -186,6 +186,122 @@ html {
     line-height: 1.6; }
 
 /* --- END BASE.CSS --- */
+/**
+ * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $property css property (eg box-sizing);
+ * @param $value value of it's property (eg border-box);
+ * @example
+ *  @include vendor-prefix(box-sizing, border-box);
+ */
+/**
+ * Animation
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $delay 
+ * @param $duration
+ * @param $animation
+ * @example
+ *  @include animation(1s, 3s, my animation);
+ */
+/**
+ * Include, exclude padding and border in the element's total width and height.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $type default is 'border-box', supports also 'content-box'
+ * @example
+ *  @include box-sizing();
+ */
+/**
+ * Calculate
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $property width, or height
+ * @param $expression any type of calculation (eg 100vh + 20px);
+ * @example
+ *  @include calc(width, 100px-20px);
+ */
+/**
+ * soon
+ *
+ * @mixin
+ * @section CSS Flex
+ */
+/**
+ * Disable text selection
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include no-select();
+ */
+/**
+ * Sets the trancparency level for an element.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $argument rational number between 0 and 1. (eg 0.9)
+ * @example
+ *  @include opacity(0.5);
+ */
+/**
+ * The transform property applies a 2D or 3D transformation to an element.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $arguments accepts any transform css property 
+ * @example
+ *  @include transform(scale(1,1.5));
+ */
+/**
+ * Transform-origin. This property allows you to change the position of transformed elements.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $params accepts any transform css property 
+ * @example
+ *  @include transform-origin(30%, 35%);
+ */
+/**
+ * Transform-style. Let the transformed child elements preserve the 3D transformations.
+
+ * @mixin
+ * @section CSS Helper
+ * @param $style accepts 'flat', 'preserve-3d', 'initial', 'inherit'
+ * @example
+ *  @include transform-style(flat);
+ */
+/**
+ * CSS transitions allows you to change property values, from one value to another, over a given duration.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $argument accepts any transition properties
+ * @example
+ *  @include transition(width 2s, height 4s);
+ */
+/**
+ * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performes consistently across all major browsers
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $size accepts 'phone-only', 'tablet-portrait-up', 'tablet-landscape-up', 'desktop-up', 'big-desktop-up'
+ * @example
+ *  @include for-size(phone-only);
+ */
+/**
+ * Solution for various scenarios when an image is not loaded.
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include broken-image()  //soon to be updated so you can pass parameters
+ */
 /* --- BEGIN BROKEN-IMAGE.CSS --- */
 .acc-img {
   display: block;
@@ -217,6 +333,14 @@ html {
     width: 100%; }
 
 /* --- END BROKEN-IMAGE.CSS --- */
+/**
+ * Clear child elments (fixing thee zero-height container problem).
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include float-clear()  //no parameters required
+ */
 /* --- BEGIN CLEAR-FLOAT.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -227,6 +351,81 @@ html {
     clear: both; }
 
 /* --- END FLOAT-CLEAR.CSS --- */
+/**
+ * Center horizontally text
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally-text()
+*/
+/**
+ * Basic horizontal centering of an HTML element
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally()
+*/
+/**
+ * Basic horizontal centering of multiple HTML elements in a row
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally-multiple-rows-block()
+*/
+/**
+ * Center vertically of an element or component, but knowing it's height.
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @param $height pixel or percentage based height.
+ * @example 
+ *  @include center-vertically-known-height-block(300px)
+*/
+/**
+ * Center vertically of of a component without knowing it's height.
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component with knowing it's height
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @param $width
+ * @param $height
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component without knowing it's height
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center vertically of of a component without knowing it's height (using flexbox).
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component without knowing it's height (using grid).
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
 /* --- BEGIN HEIGHT-CENTERING.CSS --- */
 .acc-text-center {
   text-align: center; }
@@ -235,6 +434,26 @@ html {
   margin: 0 auto; }
 
 /* --- END HEIGHT-CENTERING.CSS --- */
+/**
+ * Hide area by either removing the element from the normal flow of the page, or by leaving it in the page, but keeping it hidden. 
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $visually this variable enables hiding certain HTML element / section, without removing it from the normal flow of the page.
+ * @example
+ *  @include hide();
+ *  @include hide($visually); 
+ */
+/**
+ * Unhide element 
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $visually
+ * @example
+ *  @include show($visually); 
+ *  @include show(); 
+ */
 /* --- BEGIN HIDE.CSS --- */
 .acc-hide {
   display: none; }
@@ -264,6 +483,16 @@ html {
   width: inherit; }
 
 /* --- END HIDE.CSS --- */
+/**
+ * Truncate text, adding an ellipsis at the end of the first row.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $width use either a percentage or a pixel based size
+ * @example
+ *  @include single-line-ellipsis(); //default 100% width
+ *  @include single-line-ellipsis(300px);
+ */
 /* --- BEGIN ELLIPSIS.CSS --- */
 .acc-truncate-text {
   overflow: hidden;
@@ -272,6 +501,17 @@ html {
   width: 100%; }
 
 /* --- END HIDE.CSS --- */
+/**
+ * Set the desired font size in pixel, and the mixin will automatically convert it to relative em units, and based on the size, will set it's default line height. The line height can also be optionally set as a second parameter.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $font-size set the desired font size, line height is calculated based on it
+ * @param $line-height
+ * @example
+ *  @include text-size(20);
+ *  @include text-size(28, 36); //first parameter is the font-size, second is line height
+ */
 /* --- BEGIN BUTTONS.CSS --- */
 /**
  * @atom Button

@@ -1,8 +1,8 @@
 /**
- * Vendor prefix. Useful function to avoid writing all the vendorp refixes for various mixins or CSS styles.
+ * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
  *
  * @mixin
- * @section Prefix
+ * @section CSS Helper
  * @param $property css property (eg box-sizing);
  * @param $value value of it's property (eg border-box);
  * @example
