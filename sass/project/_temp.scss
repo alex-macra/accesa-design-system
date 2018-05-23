@@ -13,6 +13,10 @@
 }
 
 
+.SG-component .token.property, .SG-component .token.tag, .SG-component .token.constant, .SG-component .token.symbol, .SG-component .token.deleted {
+  color: #26f9ef;
+}
+
 .SG-h2 {
   color: $color-main;
   font-size: 21px;

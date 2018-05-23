@@ -1,22 +1,22 @@
-/* --- BEGIN BUTTONS.CSS --- */
+/* _- BEGIN BUTTONS.CSS _- */
 /**
- * @atom Button
+ * @atom Default styles
  * @section Buttons
  * @description
- *  Buttons containing different color schemes, sizes and alingments.
+ *  Buttons containing different color schemes.
  * @markup
- *   <button class="acc-button --primary">primary button</button>
- *   <button class="acc-button --secondary">secondary button</button>
- *   <button class="acc-button --error">error</button>
- *   <button class="acc-button --proceed">proceed</button>
- *   <button class="acc-button --greyed">greyed (default button)</button>
- *   <button class="acc-button --disabled">disabled button</button>
- *   <button class="acc-button --alternative">transparent button</button>
+ *   <button class="primary">primary button</button>
+ *   <button class="secondary">secondary button</button>
+ *   <button class="error">error</button>
+ *   <button class="go">proceed</button>
+ *   <button>greyed (default button)</button>
+ *   <button disabled>disabled button</button>
+ *   <button class="cancel">transparent button</button>
 */
 
-.#{$prefix}-button {
+button {
   @include text-size(12);
-  @extend .--greyed;
+  @include button ($color-gray);
   border-radius: $border-radius;
   color: white;
   display: inline-block;
@@ -38,29 +38,23 @@
     outline: none;
   }
 
-  // Colors
-
-  &.--primary {
+  &.primary {
     @include button ($color-main);
   }
 
-  &.--secondary {
+  &.secondary {
     @include button ($color-secondary);
   }
 
-  &.--error {
+  &.error {
     @include button ($color-error);
   }
 
-  &.--proceed {
+  &.go {
     @include button ($color-success);
   }
 
-  &.--greyed {
-    @include button ($color-gray);
-  }
-
-  &.--alternative {
+  &.cancel {
     @include button (transparent);
     color: $color-black;
 
@@ -71,7 +65,7 @@
     }
   }
 
-  &.--disabled {
+  &.disabled {
     @include button ($color-disabled);
     cursor: not-allowed;
     color: #b2b2b2;
@@ -84,9 +78,34 @@
     }
   }
 
-  // Sizing
+  &[disabled] {
+    @include button ($color-disabled);
+    cursor: not-allowed;
+    color: #b2b2b2;
+    @include opacity(.95);
 
-  &.--large {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #b2b2b2;
+    }
+  }
+}
+
+/**
+ * @atom Default sizes
+ * @section Buttons
+ * @description
+ *  Buttons containing different sizes.
+ * @markup
+ *   <button class="small">small button</button>
+ *   <button>normal button</button>
+ *   <button class="large">large button</button>
+*/
+
+button { 
+
+  &.large {
     @include text-size(14);
     padding-bottom: .5em;
     padding-top: .5em;
@@ -94,26 +113,56 @@
     min-width: 120px;
   }
 
-  &.--small {
+  &.small {
     @include text-size(9);
     padding: .5em 1.5em;
     min-height: 14px;
     min-width: 60px;
   }
+}
 
-  // Alignments
+/**
+ * @atom Default alignments
+ * @section Buttons
+ * @description
+ *  Buttons containing different alingments.
+ * @markup
+ *   <button class="bottom small secondary">small button</button>
+ *   <button class="bottom secondary">normal button</button>
+ *   <button class="large secondary">large button</button><br/>
+ *   <button class="large primary">large button</button>
+ *   <button class="top primary">normal button</button>
+ *   <button class="top small primary">small button</button>
+*/
 
-  &.--align-top {
+button { 
+
+  &.top {
     vertical-align: top;
   }
 
-  &.--align-bottom {
+  &.bottom {
     vertical-align: bottom;
   }
+}
 
-  // Button with icon
+/**
+ * @atom Buttons with icons
+ * @section Buttons
+ * @description
+ *  Buttons containing icons. Either with a separator or without.
+ * @markup
+ *   <button class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+*/
 
-  &.--icon {
+button { 
+  
+  &.icon {
     padding-left: 4em;
     padding-right: 1em;
 
@@ -138,4 +187,4 @@
   }
 }
 
-/* --- END BUTTONS.CSS --- */
+/* _- END BUTTONS.CSS _- */
