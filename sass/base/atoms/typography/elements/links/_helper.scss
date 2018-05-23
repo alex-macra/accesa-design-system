@@ -11,9 +11,10 @@
  */
 
 a {
+  @include text-size(16);
   text-decoration: none;
   color: $color-black;
-
+  
   &[href] {
       @include transition(color .3s ease);
       color: $color-black;

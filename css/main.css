@@ -134,9 +134,10 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  html body {
-    font-size: 1.5em;
-    line-height: 1.6; }
+
+body {
+  font-size: 1.6em;
+  line-height: 1.5; }
 
 /* --- END BASE.CSS --- */
 /**
@@ -1131,6 +1132,10 @@ h6 {
  *  <a href="#test">Link with url</a>
  */
 a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.32;
   text-decoration: none;
   color: #000000; }
   a[href] {
@@ -1157,12 +1162,136 @@ a {
 
 /* --- END LINKS.CSS --- */
 /* --- BEGIN LISTS.CSS --- */
-/*
-@include default-list();
-@include square-list();
-@include dash-list();
-@include ordered-list();
-*/
+/**
+ * Generic list style.
+ *
+ * @atom Default Lists
+ * @section Typography > List
+ * @markup
+ *  <ul class="list-default">
+ *    <li>default list style</li>
+ *    <li>default list style</li>
+ *    <li>default list style</li>
+ *  </ul>
+ */
+.list-default li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  .list-default li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+/**
+ * Square list style.
+ *
+ * @atom Square Lists
+ * @section Typography > List
+ * @markup
+ *  <ul class="list-square">
+ *    <li>square list style</li>
+ *    <li>square list style</li>
+ *    <li>square list style</li>
+ *  </ul>
+ */
+.list-square li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  .list-square li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+.list-square li:before {
+  border-radius: 0; }
+
+/**
+ * Dash list style.
+ *
+ * @atom Dash Lists
+ * @section Typography > List
+ * @markup
+ *  <ul class="list-dash">
+ *    <li>dash list style</li>
+ *    <li>dash list style</li>
+ *    <li>dash list style</li>
+ *  </ul>
+ */
+.list-dash li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  .list-dash li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+.list-dash li:before {
+  width: .5em;
+  height: .2em;
+  top: .93em; }
+
+/**
+ * Ordered list style.
+ *
+ * @atom Ordered Lists
+ * @section Typography > List
+ * @markup
+ *  <ol class="list-ordered">
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *  </ol>
+ */
+.list-ordered > li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  counter-increment: item; }
+  .list-ordered > li:before {
+    color: #2274a5;
+    content: counter(item);
+    display: inline-block;
+    padding-right: 2px;
+    border-radius: 100%;
+    min-width: 2rem;
+    text-align: left; }
+
+.list-ordered ul {
+  padding-left: 20px; }
+
 /* --- END LISTS.CSS --- */
 /* --- BEGIN PARAGRAPHS.CSS --- */
 /**
@@ -2067,6 +2196,18 @@ p {
     font-size: 1.6rem;
     -webkit-font-smoothing: subpixel-antialiased;
     line-height: 1.32; }
+
+.SG-a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.32; }
+
+.SG-p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.32; }
 
 .SG-header {
   height: 68px;

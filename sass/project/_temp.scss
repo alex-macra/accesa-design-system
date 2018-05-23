@@ -15,6 +15,14 @@
   }
 }
 
+.SG-a {
+  @include text-size(16);
+}
+
+.SG-p {
+  @include text-size(16);
+}
+
 .SG-header {
   height: 68px;
   position: fixed;
