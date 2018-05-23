@@ -1,9 +1,11 @@
 // CORE SASS
 
-@import 'config';
-@import 'theme';
+@import 'nuclide/config';
+@import 'nuclide/colors';
+@import 'nuclide/index';
+
+@import 'atoms/index';
 
 @import 'reset';
 @import 'set';
 
-@import 'features/index';

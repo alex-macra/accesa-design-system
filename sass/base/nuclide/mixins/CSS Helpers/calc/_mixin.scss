@@ -1,0 +1,15 @@
+/**
+ * The calc() function performs a calculation to be used as the property value.
+ *
+ * @mixin
+ * @section CSS Helpers
+ * @param $property width, or height
+ * @param $expression any type of calculation (eg 100vh + 20px);
+ * @example
+ *  @include calc(width, 100px-20px);
+ */
+
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}
