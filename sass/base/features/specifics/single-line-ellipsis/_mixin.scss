@@ -1,8 +1,8 @@
 /**
- * Truncate text, adding an ellipsis at the end of the first row. Width parameter should be set.
+ * Truncate text, adding an ellipsis at the end of the first row.
  *
  * @mixin
- * @section Ellipsis
+ * @section CSS Helper
  * @param $width use either a percentage or a pixel based size
  * @example
  *  @include single-line-ellipsis(); //default 100% width

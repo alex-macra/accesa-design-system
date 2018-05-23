@@ -2,10 +2,11 @@
  * Clear child elments (fixing thee zero-height container problem).
  *
  * @mixin
- * @section Float clearing
+ * @section CSS Enhancements
  * @example
  *  @include float-clear()  //no parameters required
  */
+ 
 @mixin float-clear() {
 	*zoom: 1;
 

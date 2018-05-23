@@ -2,12 +2,13 @@
  * Hide area by either removing the element from the normal flow of the page, or by leaving it in the page, but keeping it hidden. 
  *
  * @mixin
- * @section Hide
- * @param $visually this variable enables hiding certain HTML element / section, witouth removing it from the normal flow of the page.
+ * @section CSS Helper
+ * @param $visually this variable enables hiding certain HTML element / section, without removing it from the normal flow of the page.
  * @example
  *  @include hide();
  *  @include hide($visually); 
  */
+
 @mixin hide($visually: null) {
 
 	@if ($visually) {
@@ -31,11 +32,13 @@
  * Unhide element 
  *
  * @mixin
- * @section Hide
+ * @section CSS Helper
+ * @param $visually
  * @example
  *  @include show($visually); 
  *  @include show(); 
  */
+
 @mixin show($visually: null) {
 
 	@if ($visually) {

@@ -1,25 +1,25 @@
 /**
- * Set a general prefix throughout the entire app.
+ * Set a general prefix throughout the entire app using the $prefix variable.
+ * The default namespaces is 'accesa' -> 'acc'.
  *
- * @nuclide Prefix
+ * @nuclide $prefix
  * @section Config
  */
 /**
- * Primary color variable.
- *
+ * Primary color variable
  * @color Primary color variable
  * @section Theme Colors
  */
 /**
-* @color Default secondary color variable.
+* @color Default secondary color variable
 * @section Theme Colors
 */
 /**
-* @color Default alternate color variable.
+* @color Default alternate color variable
 * @section Theme Colors
 */
 /**
-* @color Default red color variable. 
+* @color Default red color variable
  * @section Theme Colors
  */
 /**
@@ -27,23 +27,23 @@
 * @section Grayscale
 */
 /**
-* @color Default whitesmoke variable.
+* @color Default whitesmoke variable
 * @section Grayscale
 */
 /**
-* @color Default light gray color variable.
+* @color Default light gray color variable
 * @section Grayscale
 */
 /**
-* @color Default gray color variable.
+* @color Default gray color variable
 * @section Grayscale
 */
 /**
-* @color Default dark gray color variable.
+* @color Default dark gray color variable
 * @section Grayscale
 */
 /**
-* @color Default black variable.
+* @color Default black variable
 * @section Grayscale
 */
 /* --- BEGIN RESET.CSS --- */
@@ -186,6 +186,122 @@ html {
     line-height: 1.6; }
 
 /* --- END BASE.CSS --- */
+/**
+ * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $property css property (eg box-sizing);
+ * @param $value value of it's property (eg border-box);
+ * @example
+ *  @include vendor-prefix(box-sizing, border-box);
+ */
+/**
+ * Allows animation of most HTML elements without using pure a pure CSS way.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $delay 
+ * @param $duration
+ * @param $animation
+ * @example
+ *  @include animation(1s, 3s, my animation);
+ */
+/**
+ * Include, exclude padding and border in the element's total width and height.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $type default is 'border-box', supports also 'content-box'
+ * @example
+ *  @include box-sizing();
+ */
+/**
+ * The calc() function performs a calculation to be used as the property value.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $property width, or height
+ * @param $expression any type of calculation (eg 100vh + 20px);
+ * @example
+ *  @include calc(width, 100px-20px);
+ */
+/**
+ * soon
+ *
+ * @mixin
+ * @section CSS Flex
+ */
+/**
+ * Disable text selection
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include no-select();
+ */
+/**
+ * Sets the trancparency level for an element.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $argument rational number between 0 and 1. (eg 0.9)
+ * @example
+ *  @include opacity(0.5);
+ */
+/**
+ * The transform property applies a 2D or 3D transformation to an element.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $arguments accepts any transform css property 
+ * @example
+ *  @include transform(scale(1,1.5));
+ */
+/**
+ * Transform-origin. This property allows you to change the position of transformed elements.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $params accepts any transform css property 
+ * @example
+ *  @include transform-origin(30%, 35%);
+ */
+/**
+ * Transform-style. Let the transformed child elements preserve the 3D transformations.
+
+ * @mixin
+ * @section CSS Helper
+ * @param $style accepts 'flat', 'preserve-3d', 'initial', 'inherit'
+ * @example
+ *  @include transform-style(flat);
+ */
+/**
+ * CSS transitions allows you to change property values, from one value to another, over a given duration.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $argument accepts any transition properties
+ * @example
+ *  @include transition(width 2s, height 4s);
+ */
+/**
+ * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performes consistently across all major browsers
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $size accepts 'phone-only', 'tablet-portrait-up', 'tablet-landscape-up', 'desktop-up', 'big-desktop-up'
+ * @example
+ *  @include for-size(phone-only);
+ */
+/**
+ * Solution for various scenarios when an image is not loaded.
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include broken-image()  //soon to be updated so you can pass parameters
+ */
 /* --- BEGIN BROKEN-IMAGE.CSS --- */
 .acc-img {
   display: block;
@@ -217,6 +333,14 @@ html {
     width: 100%; }
 
 /* --- END BROKEN-IMAGE.CSS --- */
+/**
+ * Clear child elments (fixing thee zero-height container problem).
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @example
+ *  @include float-clear()  //no parameters required
+ */
 /* --- BEGIN CLEAR-FLOAT.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -227,6 +351,81 @@ html {
     clear: both; }
 
 /* --- END FLOAT-CLEAR.CSS --- */
+/**
+ * Center horizontally text
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally-text()
+*/
+/**
+ * Basic horizontal centering of an HTML element
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally()
+*/
+/**
+ * Basic horizontal centering of multiple HTML elements in a row
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-horizontally-multiple-rows-block()
+*/
+/**
+ * Center vertically of an element or component, but knowing it's height.
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @param $height pixel or percentage based height.
+ * @example 
+ *  @include center-vertically-known-height-block(300px)
+*/
+/**
+ * Center vertically of of a component without knowing it's height.
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component with knowing it's height
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @param $width
+ * @param $height
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component without knowing it's height
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center vertically of of a component without knowing it's height (using flexbox).
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
+/**
+ * Center both vertically and horizontally of of a component without knowing it's height (using grid).
+ *
+ * @mixin
+ * @section CSS Positioning
+ * @example 
+ *  @include center-vertically-unknown-height-block() 
+*/
 /* --- BEGIN HEIGHT-CENTERING.CSS --- */
 .acc-text-center {
   text-align: center; }
@@ -235,6 +434,26 @@ html {
   margin: 0 auto; }
 
 /* --- END HEIGHT-CENTERING.CSS --- */
+/**
+ * Hide area by either removing the element from the normal flow of the page, or by leaving it in the page, but keeping it hidden. 
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $visually this variable enables hiding certain HTML element / section, without removing it from the normal flow of the page.
+ * @example
+ *  @include hide();
+ *  @include hide($visually); 
+ */
+/**
+ * Unhide element 
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $visually
+ * @example
+ *  @include show($visually); 
+ *  @include show(); 
+ */
 /* --- BEGIN HIDE.CSS --- */
 .acc-hide {
   display: none; }
@@ -264,6 +483,16 @@ html {
   width: inherit; }
 
 /* --- END HIDE.CSS --- */
+/**
+ * Truncate text, adding an ellipsis at the end of the first row.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $width use either a percentage or a pixel based size
+ * @example
+ *  @include single-line-ellipsis(); //default 100% width
+ *  @include single-line-ellipsis(300px);
+ */
 /* --- BEGIN ELLIPSIS.CSS --- */
 .acc-truncate-text {
   overflow: hidden;
@@ -272,26 +501,48 @@ html {
   width: 100%; }
 
 /* --- END HIDE.CSS --- */
-/* --- BEGIN BUTTONS.CSS --- */
 /**
- * @atom Button
+ * Set the desired font size in pixel, and the mixin will automatically convert it to relative em units, and based on the size, will set it's default line height. The line height can also be optionally set as a second parameter.
+ *
+ * @mixin
+ * @section CSS Helper
+ * @param $font-size set the desired font size, line height is calculated based on it
+ * @param $line-height
+ * @example
+ *  @include text-size(20);
+ *  @include text-size(28, 36); //first parameter is the font-size, second is line height
+ */
+/* _- BEGIN BUTTONS.CSS _- */
+/**
+ * @atom Default styles
  * @section Buttons
  * @description
- *  Buttons containing different color schemes, sizes and alingments.
+ *  Buttons containing different color schemes.
  * @markup
- *   <button class="acc-button --primary">primary button</button>
- *   <button class="acc-button --secondary">secondary button</button>
- *   <button class="acc-button --error">error</button>
- *   <button class="acc-button --proceed">proceed</button>
- *   <button class="acc-button --greyed">greyed (default button)</button>
- *   <button class="acc-button --disabled">disabled button</button>
- *   <button class="acc-button --alternative">transparent button</button>
+ *   <button class="primary">primary button</button>
+ *   <button class="secondary">secondary button</button>
+ *   <button class="error">error</button>
+ *   <button class="go">proceed</button>
+ *   <button>greyed (default button)</button>
+ *   <button disabled>disabled button</button>
+ *   <button class="cancel">transparent button</button>
 */
-.acc-button {
+button {
   font-size: 12px;
   font-size: 1.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.3;
+  line-height: 1.24;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Open-Sans", sans-serif;
+  background-color: #646464;
+  box-shadow: 0 2px 0 shade(#646464, 15%);
   border-radius: 0;
   color: white;
   display: inline-block;
@@ -306,11 +557,15 @@ html {
   min-height: 36px;
   text-align: center;
   text-transform: uppercase; }
-  .acc-button:hover, .acc-button:focus {
+  button:hover, button:focus {
+    background-color: #3d3d3d; }
+  button:active {
+    background-color: #646464; }
+  button:hover, button:focus {
     box-shadow: none;
     color: white;
     outline: none; }
-  .acc-button.--primary {
+  button.primary {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -322,11 +577,11 @@ html {
     font-family: "Open-Sans", sans-serif;
     background-color: #2274a5;
     box-shadow: 0 2px 0 shade(#2274a5, 15%); }
-    .acc-button.--primary:hover, .acc-button.--primary:focus {
+    button.primary:hover, button.primary:focus {
       background-color: #154766; }
-    .acc-button.--primary:active {
+    button.primary:active {
       background-color: #2274a5; }
-  .acc-button.--secondary {
+  button.secondary {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -338,11 +593,11 @@ html {
     font-family: "Open-Sans", sans-serif;
     background-color: #3e5d6f;
     box-shadow: 0 2px 0 shade(#3e5d6f, 15%); }
-    .acc-button.--secondary:hover, .acc-button.--secondary:focus {
+    button.secondary:hover, button.secondary:focus {
       background-color: #23343e; }
-    .acc-button.--secondary:active {
+    button.secondary:active {
       background-color: #3e5d6f; }
-  .acc-button.--error {
+  button.error {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -354,11 +609,11 @@ html {
     font-family: "Open-Sans", sans-serif;
     background-color: #ec2d22;
     box-shadow: 0 2px 0 shade(#ec2d22, 15%); }
-    .acc-button.--error:hover, .acc-button.--error:focus {
+    button.error:hover, button.error:focus {
       background-color: #b2180f; }
-    .acc-button.--error:active {
+    button.error:active {
       background-color: #ec2d22; }
-  .acc-button.--proceed {
+  button.go {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -370,27 +625,11 @@ html {
     font-family: "Open-Sans", sans-serif;
     background-color: #00b069;
     box-shadow: 0 2px 0 shade(#00b069, 15%); }
-    .acc-button.--proceed:hover, .acc-button.--proceed:focus {
+    button.go:hover, button.go:focus {
       background-color: #004a30; }
-    .acc-button.--proceed:active {
+    button.go:active {
       background-color: #00b069; }
-  .acc-button.--greyed, .acc-button {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #646464;
-    box-shadow: 0 2px 0 shade(#646464, 15%); }
-    .acc-button.--greyed:hover, .acc-button:hover, .acc-button.--greyed:focus, .acc-button:focus {
-      background-color: #3d3d3d; }
-    .acc-button.--greyed:active, .acc-button:active {
-      background-color: #646464; }
-  .acc-button.--alternative {
+  button.cancel {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -403,13 +642,13 @@ html {
     background-color: transparent;
     box-shadow: 0 2px 0 shade(transparent, 15%);
     color: #000000; }
-    .acc-button.--alternative:hover, .acc-button.--alternative:focus {
+    button.cancel:hover, button.cancel:focus {
       background-color: rgba(0, 0, 0, 0); }
-    .acc-button.--alternative:active {
+    button.cancel:active {
       background-color: transparent; }
-    .acc-button.--alternative:hover, .acc-button.--alternative:active, .acc-button.--alternative:focus {
+    button.cancel:hover, button.cancel:active, button.cancel:focus {
       color: #333333; }
-  .acc-button.--disabled {
+  button.disabled {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -431,55 +670,139 @@ html {
     opacity: 0.95;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     filter: alpha(opacity=95); }
-    .acc-button.--disabled:hover, .acc-button.--disabled:focus {
+    button.disabled:hover, button.disabled:focus {
       background-color: #c8c8c8; }
-    .acc-button.--disabled:active {
+    button.disabled:active {
       background-color: #eeeeee; }
-    .acc-button.--disabled:hover, .acc-button.--disabled:active, .acc-button.--disabled:focus {
+    button.disabled:hover, button.disabled:active, button.disabled:focus {
       color: #b2b2b2; }
-  .acc-button.--large {
-    font-size: 14px;
-    font-size: 1.4rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.35;
-    padding-bottom: .5em;
-    padding-top: .5em;
-    min-height: 50px;
-    min-width: 120px; }
-  .acc-button.--small {
-    font-size: 9px;
-    font-size: 0.9rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.225;
-    padding: .5em 1.5em;
-    min-height: 14px;
-    min-width: 60px; }
-  .acc-button.--align-top {
-    vertical-align: top; }
-  .acc-button.--align-bottom {
-    vertical-align: bottom; }
-  .acc-button.--icon {
-    padding-left: 4em;
-    padding-right: 1em; }
-    .acc-button.--icon > i {
-      left: 1em;
-      margin-top: -.5em;
-      position: absolute;
-      top: 50%; }
-    .acc-button.--icon:before {
-      background-color: rgba(0, 0, 0, 0.25);
-      border-radius: 0 0 0 0;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: all .25s;
-      width: 3em; }
+  button[disabled] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Open-Sans", sans-serif;
+    background-color: #eeeeee;
+    box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    button[disabled]:hover, button[disabled]:focus {
+      background-color: #c8c8c8; }
+    button[disabled]:active {
+      background-color: #eeeeee; }
+    button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
+      color: #b2b2b2; }
 
-/* --- END BUTTONS.CSS --- */
+/**
+ * @atom Default sizes
+ * @section Buttons
+ * @description
+ *  Buttons containing different sizes.
+ * @markup
+ *   <button class="small">small button</button>
+ *   <button>normal button</button>
+ *   <button class="large">large button</button>
+*/
+button.large {
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.28;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  min-height: 50px;
+  min-width: 120px; }
+
+button.small {
+  font-size: 9px;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.18;
+  padding: .5em 1.5em;
+  min-height: 14px;
+  min-width: 60px; }
+
+/**
+ * @atom Default alignments
+ * @section Buttons
+ * @description
+ *  Buttons containing different alingments.
+ * @markup
+ *   <button class="bottom small secondary">small button</button>
+ *   <button class="bottom secondary">normal button</button>
+ *   <button class="large secondary">large button</button><br/>
+ *   <button class="large primary">large button</button>
+ *   <button class="top primary">normal button</button>
+ *   <button class="top small primary">small button</button>
+*/
+button.top {
+  vertical-align: top; }
+
+button.bottom {
+  vertical-align: bottom; }
+
+/**
+ * @atom Buttons with icons
+ * @section Buttons
+ * @description
+ *  Buttons containing icons. Either with a separator or without.
+ * @markup
+ *   <button class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+*/
+button.icon {
+  padding-left: 4em;
+  padding-right: 1em; }
+  button.icon > i {
+    left: 1em;
+    margin-top: -.5em;
+    position: absolute;
+    top: 50%; }
+  button.icon:before {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 0 0;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .25s;
+    width: 3em; }
+
+/* _- END BUTTONS.CSS _- */
 /* --- BEGIN DROP-DOWNS.CSS --- */
-.acc-form-block select {
+/**
+ * @atom Block select
+ * @section Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
+.form select {
   padding: 0 10px;
   display: block;
   min-width: 100px;
@@ -493,7 +816,22 @@ html {
   outline: none;
   padding-left: 15px; }
 
-.acc-form-inline-block select {
+/**
+ * @atom Inline select
+ * @section Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
+.form-inline select {
   padding: 0 10px;
   display: inline-block;
   min-width: 100px;
@@ -509,17 +847,107 @@ html {
 
 /* --- END DROP-DOWNS.CSS --- */
 /* --- BEGIN INPUT.CSS --- */
-.acc-form-block span {
+/**
+ * @atom Block inputs
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+.form span {
   display: block; }
 
-.acc-form-block label {
+.form label {
   display: block; }
 
-.acc-form-block textarea {
+.form input[type=text], .form input[type=password], .form input[type=email], .form input[type=number] {
+  background: #ffffff;
+  border: 1px solid #646464;
+  border-radius: 0;
+  color: #3e5d6f;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
+  display: block; }
+
+.form input::-webkit-input-placeholder {
+  color: #999; }
+
+.form input:-moz-placeholder {
+  color: #999; }
+
+.form input::-moz-placeholder {
+  color: #999; }
+
+.form input:-ms-input-placeholder {
+  color: #999; }
+
+/**
+ * @atom Inline inputs
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+.form-inline span {
+  display: inline-block; }
+
+.form-inline label {
+  display: inline-block; }
+
+.form-inline input[type=text], .form-inline input[type=password], .form-inline input[type=email], .form-inline input[type=number] {
+  background: #ffffff;
+  border: 1px solid #646464;
+  border-radius: 0;
+  color: #3e5d6f;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
+  display: inline-block; }
+
+.form-inline input::-webkit-input-placeholder {
+  color: #999; }
+
+.form-inline input:-moz-placeholder {
+  color: #999; }
+
+.form-inline input::-moz-placeholder {
+  color: #999; }
+
+.form-inline input:-ms-input-placeholder {
+  color: #999; }
+
+/**
+ * @atom Textarea
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *  </div>
+*/
+.form span {
+  display: block; }
+
+.form label {
+  display: block; }
+
+.form textarea {
   font-size: 15px;
   font-size: 1.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.375;
+  line-height: 1.3;
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -532,76 +960,6 @@ html {
   margin-bottom: 10px;
   color: #3e5d6f;
   display: block; }
-
-.acc-form-block input[type=text], .acc-form-block input[type=password], .acc-form-block input[type=email], .acc-form-block input[type=number] {
-  background: #ffffff;
-  border: 1px solid #646464;
-  border-radius: 0;
-  color: #3e5d6f;
-  height: 38px;
-  margin-bottom: 10px;
-  outline: none;
-  padding-left: 15px;
-  display: block; }
-
-.acc-form-block input::-webkit-input-placeholder {
-  color: #999; }
-
-.acc-form-block input:-moz-placeholder {
-  color: #999; }
-
-.acc-form-block input::-moz-placeholder {
-  color: #999; }
-
-.acc-form-block input:-ms-input-placeholder {
-  color: #999; }
-
-.acc-form-inline-block span {
-  display: inline-block; }
-
-.acc-form-inline-block label {
-  display: inline-block; }
-
-.acc-form-inline-block textarea {
-  font-size: 15px;
-  font-size: 1.5rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.375;
-  -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 15px;
-  border: 1px solid #646464;
-  border-radius: 0;
-  margin-bottom: 10px;
-  color: #3e5d6f;
-  display: inline-block; }
-
-.acc-form-inline-block input[type=text], .acc-form-inline-block input[type=password], .acc-form-inline-block input[type=email], .acc-form-inline-block input[type=number] {
-  background: #ffffff;
-  border: 1px solid #646464;
-  border-radius: 0;
-  color: #3e5d6f;
-  height: 38px;
-  margin-bottom: 10px;
-  outline: none;
-  padding-left: 15px;
-  display: inline-block; }
-
-.acc-form-inline-block input::-webkit-input-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input:-moz-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input::-moz-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input:-ms-input-placeholder {
-  color: #999; }
 
 /* --- END INPUT.CSS --- */
 /* --- BEGIN GRID.CSS --- */
@@ -974,7 +1332,7 @@ html {
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.625;
+  line-height: 1.5;
   position: absolute;
   right: 15px;
   top: 5px; }
@@ -1476,7 +1834,7 @@ h1 {
   font-size: 48px;
   font-size: 4.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 2.2; }
+  line-height: 1.96; }
 
 h2 {
   margin-bottom: 15px;
@@ -1485,7 +1843,7 @@ h2 {
   font-size: 38px;
   font-size: 3.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.95; }
+  line-height: 1.76; }
 
 h3 {
   margin-bottom: 15px;
@@ -1494,7 +1852,7 @@ h3 {
   font-size: 32px;
   font-size: 3.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.8; }
+  line-height: 1.64; }
 
 h4 {
   margin-bottom: 15px;
@@ -1503,7 +1861,7 @@ h4 {
   font-size: 28px;
   font-size: 2.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.7; }
+  line-height: 1.56; }
 
 h5 {
   margin-bottom: 15px;
@@ -1512,7 +1870,7 @@ h5 {
   font-size: 24px;
   font-size: 2.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.6; }
+  line-height: 1.48; }
 
 h6 {
   margin-bottom: 15px;
@@ -1521,7 +1879,7 @@ h6 {
   font-size: 22px;
   font-size: 2.2rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.55; }
+  line-height: 1.44; }
 
 /* --- END HEADINGS.CSS --- */
 /* --- BEGIN LINKS.CSS --- */
@@ -1587,7 +1945,7 @@ p {
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.45; }
+  line-height: 1.36; }
 
 /**
  * Basic styles to decorate text. Just use normal semantic markup. 
@@ -1678,7 +2036,7 @@ p {
       font-size: 30px;
       font-size: 3rem;
       -webkit-font-smoothing: subpixel-antialiased;
-      line-height: 1.75;
+      line-height: 1.6;
       color: #3e5d6f;
       line-height: 2.5; }
     .acc-style-guide--container section.header img {
@@ -1799,7 +2157,10 @@ p {
     font-size: 16px;
     font-size: 1.6rem;
     -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.4; }
+    line-height: 1.32; }
+
+.SG-component .token.property, .SG-component .token.tag, .SG-component .token.constant, .SG-component .token.symbol, .SG-component .token.deleted {
+  color: #26f9ef; }
 
 .SG-h2 {
   color: #2274a5;

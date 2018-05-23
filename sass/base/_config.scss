@@ -2,11 +2,12 @@
 
 /**
  * Set a general prefix throughout the entire app using the $prefix variable.
+ * The default namespaces is 'accesa' -> 'acc'.
  *
  * @nuclide $prefix
  * @section Config
  */
  
-$prefix: 'acc'; //we setup the default namespaces for 'accesa' -> 'acc'
+$prefix: 'acc';
 
 //$minimal-classes: false; -- todo, upcoming version

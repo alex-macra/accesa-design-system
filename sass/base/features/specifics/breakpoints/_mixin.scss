@@ -1,8 +1,8 @@
 /**
- * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performed consistently across all major browsers
+ * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performes consistently across all major browsers
  *
  * @mixin
- * @section Responsive breakpoints
+ * @section CSS Helper
  * @param $size accepts 'phone-only', 'tablet-portrait-up', 'tablet-landscape-up', 'desktop-up', 'big-desktop-up'
  * @example
  *  @include for-size(phone-only);
