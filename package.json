@@ -1,6 +1,6 @@
 {
   "name": "accesa-ui-starter",
-  "version": "0.5.0-beta.21",
+  "version": "0.5.0-beta.22",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
     "css:build-minified": "uglifycss css/main.css > css/main.min.css",
     "css:build-nested": "node-sass -r --output-style nested sass sass/main.scss -o css",
     "css:watch": "npm run css:build && npm run css:build -- -w",
-    "css:lint": "stylelint css/main.css > css/lintOutput.txt",
-    "sass:lint": "stylelint sass/**/**/**/*.scss > sass/lintOutput.txt",
-    "sass:lint-lint": "stylelint /sass/**/**/**/*.scss --fix > sass/lintOutput.txt",
+    "css:lint": "stylelint /css/main.css > css/lintOutput.txt",
+    "sass:lint": "stylelint /sass/**/**/**/*.scss > sass/lintOutput.txt",
+    "sass:lint-fix": "stylelint /sass/**/**/**/*.scss --fix > sass/lintOutput.txt",
     "styleguide": "nucleus --config styleguide-config.json"
   },
   "repository": {
