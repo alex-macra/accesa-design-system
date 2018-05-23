@@ -2225,6 +2225,11 @@ p {
   padding-top: 90px;
   position: relative;
   z-index: 5;
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 27px;
+  line-height: 2.7rem;
   background: #fff; }
 
 .SG-search {
