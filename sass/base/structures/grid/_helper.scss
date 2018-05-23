@@ -1,0 +1,506 @@
+/* --- BEGIN GRID.CSS --- */
+
+/**
+ * Semantic structure. Create and divide columns using a natural semantic HTML language. Providing also an option for auto generating width.
+ * @structure Default grid
+ * @section Grid
+ * @markup
+ *  <div class="colored-grid">
+ *   <div class="acc-row">
+ *    <div class="col-full">Full width</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-half">One half</div>
+ *    <div class="col-half">One half</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-third">One third</div>
+ *    <div class="col-third">One third</div>
+ *    <div class="col-third">One third</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-auto">Auto width</div>
+ *    <div class="col-auto">Auto width</div>
+ *    <div class="col-auto">Auto width</div>
+ *    <div class="col-auto">Auto width</div>
+ *    <div class="col-auto">Auto width</div>
+ *    <div class="col-auto">Auto width</div>
+ *   </div>
+ * </div>
+ */
+
+.#{$prefix}-row {
+	@include grid-row();
+
+	.col-full {
+		@include grid(full);
+	}
+
+	.col-half {
+		@include grid(half);
+	}
+
+	.col-third {
+		@include grid(third);
+	}
+}
+
+/**
+ * Default grid system with 12 columns.
+ * @structure 12 columns grid system
+ * @section Grid
+ * @markup
+ *  <div class="colored-grid">
+ *   <div class="acc-row">
+ *    <div class="col-12">Full width</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-6">One half</div>
+ *    <div class="col-6">One half</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-3">One third</div>
+ *    <div class="col-4">One fourth</div>
+ *    <div class="col-5">One fifth</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-2">Column 2</div>
+ *    <div class="col-2">Column 2</div>
+ *    <div class="col-6">Column 6</div>
+ *    <div class="col-1">Column 1</div>
+ *    <div class="col-auto">Auto width</div>
+ *   </div>
+ * </div>
+ */
+
+.#{$prefix}-row {
+
+	.col-1 {
+		@include grid(1);
+	}
+
+	.col-2 {
+		@include grid(2);
+	}
+
+	.col-3 {
+		@include grid(3);
+	}
+
+	.col-4 {
+		@include grid(4);
+	}
+
+	.col-5 {
+		@include grid(5);
+	}
+
+	.col-6 {
+		@include grid(6);
+	}
+
+	.col-7 {
+		@include grid(7);
+	}
+
+	.col-8 {
+		@include grid(8);
+	}
+
+	.col-9 {
+		@include grid(9);
+	}
+
+	.col-10 {
+		@include grid(10);
+	}
+
+	.col-11 {
+		@include grid(11);
+	}
+
+	.col-12 {
+		@include grid(12);
+	}
+}
+
+
+/**
+ * todo
+ * @structure Responsive example
+ * @section Grid
+ * @markup
+ *  <div class="colored-grid">
+ *   <div class="acc-row">
+ *    <div class="col-half xs-full">One half</div>
+ *    <div class="col-half xs-full">One half</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-third xs-half">One third</div>
+ *    <div class="col-third xs-half">One third</div>
+ *    <div class="col-third xs-full">One third</div>
+ *   </div>
+ *   <div class="acc-row">
+ *    <div class="col-auto xs-half">Auto width</div>
+ *    <div class="col-auto xs-half">Auto width</div>
+ *    <div class="col-auto xs-full">Auto width</div>
+ *    <div class="col-auto md-third xs-full">Auto width</div>
+ *    <div class="col-auto md-half xs-half">Auto width</div>
+ *    <div class="col-auto sm-full xs-full">Auto width</div>
+ *   </div>
+ * </div>
+ */
+
+ .#{$prefix}-row {
+	@include for-size(phone-only) {
+
+		.xs-full {
+			@include grid(full);
+		}
+
+		.xs-half {
+			@include grid(half);
+		} 
+
+		.xs-third {
+			@include grid(third);
+		} 
+
+		.xs-1 {
+			@include grid(1);
+		}
+
+		.xs-2 {
+			@include grid(2);
+		}
+
+		.xs-3 {
+			@include grid(3);
+		}
+
+		.xs-4 {
+			@include grid(4);
+		}
+
+		.xs-5 {
+			@include grid(5);
+		}
+
+		.xs-6 {
+			@include grid(6);
+		}
+
+		.xs-7 {
+			@include grid(7);
+		}
+
+		.xs-8 {
+			@include grid(8);
+		}
+
+		.xs-9 {
+			@include grid(9);
+		}
+
+		.xs-10 {
+			@include grid(10);
+		}
+
+		.xs-11 {
+			@include grid(11);
+		}
+
+		.xs-12 {
+			@include grid(12);
+		}
+	}
+
+	@include for-size(tablet-portrait-up) {
+
+		.sm-full {
+			@include grid(full);
+		}
+
+		.sm-half {
+			@include grid(half);
+		}
+
+		.sm-third {
+			@include grid(third);
+		} 
+
+		.sm-1 {
+			@include grid(1);
+		}
+
+		.sm-2 {
+			@include grid(2);
+		}
+
+		.sm-3 {
+			@include grid(3);
+		}
+
+		.sm-4 {
+			@include grid(4);
+		}
+
+		.sm-5 {
+			@include grid(5);
+		}
+
+		.sm-6 {
+			@include grid(6);
+		}
+
+		.sm-7 {
+			@include grid(7);
+		}
+
+		.sm-8 {
+			@include grid(8);
+		}
+
+		.sm-9 {
+			@include grid(9);
+		}
+
+		.sm-10 {
+			@include grid(10);
+		}
+
+		.sm-11 {
+			@include grid(11);
+		}
+
+		.sm-12 {
+			@include grid(12);
+		}
+	}
+
+	@include for-size(tablet-landscape-up) {
+
+		.md-full {
+			@include grid(full);
+		}
+
+		.md-half {
+			@include grid(half);
+		} 
+
+		.md-third {
+			@include grid(third);
+		} 
+
+		.md-1 {
+			@include grid(1);
+		}
+
+		.md-2 {
+			@include grid(2);
+		}
+
+		.md-3 {
+			@include grid(3);
+		}
+
+		.md-4 {
+			@include grid(4);
+		}
+
+		.md-5 {
+			@include grid(5);
+		}
+
+		.md-6 {
+			@include grid(6);
+		}
+
+		.md-7 {
+			@include grid(7);
+		}
+
+		.md-8 {
+			@include grid(8);
+		}
+
+		.md-9 {
+			@include grid(9);
+		}
+
+		.md-10 {
+			@include grid(10);
+		}
+
+		.md-11 {
+			@include grid(11);
+		}
+
+		.md-12 {
+			@include grid(12);
+		}
+	}
+
+	@include for-size(desktop-up) {	
+		
+		.lg-full {
+			@include grid(full);
+		}
+
+		.lg-half {
+			@include grid(half);
+		}
+
+		.lg-third {
+			@include grid(third);
+		} 
+
+		.lg-1 {
+			@include grid(1);
+		}
+	
+		.lg-2 {
+			@include grid(2);
+		}
+	
+		.lg-3 {
+			@include grid(3);
+		}
+	
+		.lg-4 {
+			@include grid(4);
+		}
+	
+		.lg-5 {
+			@include grid(5);
+		}
+	
+		.lg-6 {
+			@include grid(6);
+		}
+	
+		.lg-7 {
+			@include grid(7);
+		}
+	
+		.lg-8 {
+			@include grid(8);
+		}
+	
+		.lg-9 {
+			@include grid(9);
+		}
+	
+		.lg-10 {
+			@include grid(10);
+		}
+	
+		.lg-11 {
+			@include grid(11);
+		}
+	
+		.lg-12 {
+			@include grid(12);
+		}
+	}
+}
+
+/*
+	//Gutter
+	.col-push-left-1 {
+		@include grid-push(left, 1 of 12);
+	}
+
+	.col-push-left-2 {
+		@include grid-push(left, 2 of 12);
+	}
+
+	.col-push-left-3 {
+		@include grid-push(left, 3 of 12);
+	}
+
+	.col-push-left-4 {
+		@include grid-push(left, 4 of 12);
+	}
+
+	.col-push-left-5 {
+		@include grid-push(left, 5 of 12);
+	}
+
+	.col-push-left-6 {
+		@include grid-push(left, 6 of 12);
+	}
+
+	.col-push-left-7 {
+		@include grid-push(left, 7 of 12);
+	}
+
+	.col-push-left-8 {
+		@include grid-push(left, 8 of 12);
+	}
+
+	.col-push-left-9 {
+		@include grid-push(left, 9 of 12);
+	}
+
+	.col-push-left-10 {
+		@include grid-push(left, 10 of 12);
+	}
+
+	.col-push-left-11 {
+		@include grid-push(left, 11 of 12);
+	}
+
+	.col-push-left-12 {
+		@include grid-push(left, 12 of 12);
+	}
+
+	.col-push-right-1 {
+		@include grid-push(right, 1 of 12);
+	}
+
+	.col-push-right-2 {
+		@include grid-push(right, 2 of 12);
+	}
+
+	.col-push-right-3 {
+		@include grid-push(right, 3 of 12);
+	}
+
+	.col-push-right-4 {
+		@include grid-push(right, 4 of 12);
+	}
+
+	.col-push-right-5 {
+		@include grid-push(right, 5 of 12);
+	}
+
+	.col-push-right-6 {
+		@include grid-push(right, 6 of 12);
+	}
+
+	.col-push-right-7 {
+		@include grid-push(right, 7 of 12);
+	}
+
+	.col-push-right-8 {
+		@include grid-push(right, 8 of 12);
+	}
+
+	.col-push-right-9 {
+		@include grid-push(right, 9 of 12);
+	}
+
+	.col-push-right-10 {
+		@include grid-push(right, 10 of 12);
+	}
+
+	.col-push-right-11 {
+		@include grid-push(right, 11 of 12);
+	}
+
+	.col-push-right-12 {
+		@include grid-push(right, 12 of 12);
+	}
+*/
+/* --- END GRID.CSS --- */
