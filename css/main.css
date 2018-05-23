@@ -787,7 +787,22 @@ button.icon {
 
 /* _- END BUTTONS.CSS _- */
 /* --- BEGIN DROP-DOWNS.CSS --- */
-.acc-form-block select {
+/**
+ * @atom Block select
+ * @section Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
+.form select {
   padding: 0 10px;
   display: block;
   min-width: 100px;
@@ -801,7 +816,22 @@ button.icon {
   outline: none;
   padding-left: 15px; }
 
-.acc-form-inline-block select {
+/**
+ * @atom Inline select
+ * @section Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
+.form-inline select {
   padding: 0 10px;
   display: inline-block;
   min-width: 100px;
@@ -817,13 +847,103 @@ button.icon {
 
 /* --- END DROP-DOWNS.CSS --- */
 /* --- BEGIN INPUT.CSS --- */
-.acc-form-block span {
+/**
+ * @atom Block inputs
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+.form span {
   display: block; }
 
-.acc-form-block label {
+.form label {
   display: block; }
 
-.acc-form-block textarea {
+.form input[type=text], .form input[type=password], .form input[type=email], .form input[type=number] {
+  background: #ffffff;
+  border: 1px solid #646464;
+  border-radius: 0;
+  color: #3e5d6f;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
+  display: block; }
+
+.form input::-webkit-input-placeholder {
+  color: #999; }
+
+.form input:-moz-placeholder {
+  color: #999; }
+
+.form input::-moz-placeholder {
+  color: #999; }
+
+.form input:-ms-input-placeholder {
+  color: #999; }
+
+/**
+ * @atom Inline inputs
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+.form-inline span {
+  display: inline-block; }
+
+.form-inline label {
+  display: inline-block; }
+
+.form-inline input[type=text], .form-inline input[type=password], .form-inline input[type=email], .form-inline input[type=number] {
+  background: #ffffff;
+  border: 1px solid #646464;
+  border-radius: 0;
+  color: #3e5d6f;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
+  display: inline-block; }
+
+.form-inline input::-webkit-input-placeholder {
+  color: #999; }
+
+.form-inline input:-moz-placeholder {
+  color: #999; }
+
+.form-inline input::-moz-placeholder {
+  color: #999; }
+
+.form-inline input:-ms-input-placeholder {
+  color: #999; }
+
+/**
+ * @atom Textarea
+ * @section Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *  </div>
+*/
+.form span {
+  display: block; }
+
+.form label {
+  display: block; }
+
+.form textarea {
   font-size: 15px;
   font-size: 1.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -840,76 +960,6 @@ button.icon {
   margin-bottom: 10px;
   color: #3e5d6f;
   display: block; }
-
-.acc-form-block input[type=text], .acc-form-block input[type=password], .acc-form-block input[type=email], .acc-form-block input[type=number] {
-  background: #ffffff;
-  border: 1px solid #646464;
-  border-radius: 0;
-  color: #3e5d6f;
-  height: 38px;
-  margin-bottom: 10px;
-  outline: none;
-  padding-left: 15px;
-  display: block; }
-
-.acc-form-block input::-webkit-input-placeholder {
-  color: #999; }
-
-.acc-form-block input:-moz-placeholder {
-  color: #999; }
-
-.acc-form-block input::-moz-placeholder {
-  color: #999; }
-
-.acc-form-block input:-ms-input-placeholder {
-  color: #999; }
-
-.acc-form-inline-block span {
-  display: inline-block; }
-
-.acc-form-inline-block label {
-  display: inline-block; }
-
-.acc-form-inline-block textarea {
-  font-size: 15px;
-  font-size: 1.5rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.3;
-  -webkit-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 15px;
-  border: 1px solid #646464;
-  border-radius: 0;
-  margin-bottom: 10px;
-  color: #3e5d6f;
-  display: inline-block; }
-
-.acc-form-inline-block input[type=text], .acc-form-inline-block input[type=password], .acc-form-inline-block input[type=email], .acc-form-inline-block input[type=number] {
-  background: #ffffff;
-  border: 1px solid #646464;
-  border-radius: 0;
-  color: #3e5d6f;
-  height: 38px;
-  margin-bottom: 10px;
-  outline: none;
-  padding-left: 15px;
-  display: inline-block; }
-
-.acc-form-inline-block input::-webkit-input-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input:-moz-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input::-moz-placeholder {
-  color: #999; }
-
-.acc-form-inline-block input:-ms-input-placeholder {
-  color: #999; }
 
 /* --- END INPUT.CSS --- */
 /* --- BEGIN GRID.CSS --- */
