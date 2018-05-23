@@ -1,0 +1,62 @@
+/* --- BEGIN INPUT.CSS --- */
+
+/**
+ * @atom Block inputs
+ * @section Form > Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+
+.form {
+  @include form-legend(block);
+  
+  input {
+    @include form-input(block);
+  }
+}
+
+/**
+ * @atom Inline inputs
+ * @section Form > Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+
+.form-inline {
+  @include form-legend();
+
+  input {
+    @include form-input();
+  }
+}
+
+/**
+ * @atom Textarea
+ * @section Form > Input
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *  </div>
+*/
+
+.form {
+  @include form-legend(block);
+
+  textarea {
+    @include form-textarea(block);
+  }
+}
+
+/* --- END INPUT.CSS --- */

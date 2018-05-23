@@ -1,0 +1,58 @@
+/**
+ * Hide area by either removing the element from the normal flow of the page, or by leaving it in the page, but keeping it hidden. 
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @param $visually this variable enables hiding certain HTML element / section, without removing it from the normal flow of the page.
+ * @example
+ *  @include hide();
+ *  @include hide($visually); 
+ */
+
+@mixin hide($visually: null) {
+
+	@if ($visually) {
+		clip: rect(0 0 0 0);
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		max-height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+  @else {
+		display: none;
+	}
+}
+
+/**
+ * Unhide element 
+ *
+ * @mixin
+ * @section CSS Enhancements
+ * @param $visually
+ * @example
+ *  @include show($visually); 
+ *  @include show(); 
+ */
+
+@mixin show($visually: null) {
+
+	@if ($visually) {
+		clip: inherit;
+		height: inherit;
+		margin: inherit;
+		max-height: inherit;
+		overflow: inherit;
+		padding: inherit;
+		position: inherit;
+		width: inherit;
+	}
+
+  @else {
+		display: block;
+	}
+}

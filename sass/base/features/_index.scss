@@ -1,8 +1,0 @@
-// General features
-
-// Specifics features are helper functions that can ease and provide shortcuts to write faster CSS
-// Vendor features provide an easy and optimal way to import existing CSS proprieties along with their vendor prefixes.
-// Note: Vendor features are mandatory to import as they provide fallbacks for older browsers, and extend throught the app. Specifics can be ingored if needed.
-
-@import 'vendor/index';
-@import 'specifics/index';
