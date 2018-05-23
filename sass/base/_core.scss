@@ -1,11 +1,15 @@
 // CORE SASS
 
+@import 'reset';
+@import 'set';
+
 @import 'nuclide/config';
 @import 'nuclide/colors';
 @import 'nuclide/index';
 
 @import 'atoms/index';
 
-@import 'reset';
-@import 'set';
+//@import 'molecules/index';
+
+@import 'structures/index';
 

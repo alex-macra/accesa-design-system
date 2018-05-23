@@ -1,4 +1,5 @@
 //Grid 
+//issue when mixing auto with normal grid
 
 @mixin grid-row() {
 	@include flexbox();
@@ -6,13 +7,13 @@
 	margin-left: -$gutter;
 	padding: 0;
 
-	[class*="-col-"] {
+	[class*="col-"] {
 		@include flex(1 0 100%);
 		margin-left: $gutter;
 		margin-bottom: ($gutter / 2);
 	}
 
-	[class*="-col-auto"] {
+	[class*="col-auto"] {
 		@include flex(1 0 auto);
 	}
 }
