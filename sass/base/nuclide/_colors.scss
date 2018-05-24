@@ -71,7 +71,6 @@ $default-color-gray--dark: #313131;
 $default-color-black: #000000;
 
 // Here we define our main color, and the secondary colors are auto generated
-
 $color-main: #2274a5 ;
 $color-white: $default-color-white;
 $color-black: $default-color-black;
@@ -86,7 +85,6 @@ $color-success: adjust-color($color-main, -90, 60, -90);
 
 
 //this is temporary
-
 $color-main-lighter: lighten(desaturate($color-main, 23.70), 22.35);
 $color-main-gray: lighten(desaturate(adjust-hue($color-main, -2), 50.76), 3.92);
 $color-main-white: lighten(desaturate(adjust-hue($color-main, -202), 65.83), 55.88);
