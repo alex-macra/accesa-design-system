@@ -551,10 +551,10 @@ button {
   background-color: #646464;
   box-shadow: 0 2px 0 shade(#646464, 15%);
   cursor: pointer;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.24; }
+  line-height: 1.28; }
   button:hover, button:focus {
     box-shadow: none;
     color: #ffffff;
@@ -975,8 +975,8 @@ button.icon {
   background-color: #646464;
   box-shadow: 0 2px 0 shade(#646464, 15%);
   cursor: pointer;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 22px;
   line-height: 2.2rem;
@@ -2381,16 +2381,16 @@ p {
   max-width: 1400px; }
 
 .SG-a {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.32; }
+  line-height: 1.36; }
 
 .SG-p {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.32; }
+  line-height: 1.36; }
 
 .SG-header {
   height: 68px;
@@ -2401,19 +2401,36 @@ p {
   z-index: 555;
   background: #fff; }
 
+.SG-toc ul {
+  line-height: 2.5; }
+
 .SG-header::before {
   display: none; }
 
 .SG-layout {
-  padding-top: 90px;
+  padding-top: 140px;
   position: relative;
   z-index: 5;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 27px;
   line-height: 2.7rem;
   background: #fff; }
+  .SG-layout .SG-table__cell {
+    font-size: 18px;
+    font-size: 1.8rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.36; }
+
+.SG-logo .SG-logo__icon {
+  background: url("https://www.accesa.eu/wp-content/uploads/2016/04/accesa_logo_bg.png");
+  height: 40px;
+  background-size: 100% auto;
+  width: 84px; }
+
+.SG-logo .SG-logo__icon::before {
+  display: none; }
 
 .SG-search {
   z-index: 999999;
@@ -2427,18 +2444,45 @@ p {
 .SG-component .token.property, .SG-component .token.tag, .SG-component .token.constant, .SG-component .token.symbol, .SG-component .token.deleted {
   color: #26f9ef; }
 
+.SG-mixin .SG-mixin__file {
+  color: #3597c6; }
+
 .SG-h2 {
   color: #2274a5;
-  font-size: 21px;
-  border-bottom: 1px solid #d8d8d8;
-  padding: 20px 0;
-  margin-bottom: 1.5em; }
+  font-size: 38px;
+  font-size: 3.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.76;
+  border-bottom: 0;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding: 0; }
 
 .SG-icon-preview .SG-icon-preview__name {
   color: #2274a5; }
 
+.SG-component {
+  padding-bottom: 95px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+.SG-component .SG-component__title,
+.SG-h3 {
+  color: #2274a5;
+  font-size: 25px;
+  font-size: 2.5rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.5;
+  border-bottom: 1px solid #2274a5; }
+
 .SG-button:hover {
   border-color: #2274a5;
+  color: #2274a5; }
+
+.SG-nav .SG-nav__item {
+  color: #2274a5; }
+
+.SG-nav .SG-nav__item--active {
   color: #2274a5; }
 
 .SG-nav .SG-nav__item--active {
@@ -2451,7 +2495,7 @@ p {
   margin: 0;
   font-size: 42px;
   color: #2274a5;
-  text-transform: uppewrcase;
+  text-transform: uppercase;
   margin-bottom: 1em; }
 
 .SG-nav .SG-nav__item--active:hover {

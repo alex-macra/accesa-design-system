@@ -38,6 +38,7 @@ In order to customize, select the tools / components to import in your project, 
   * Start with the HTML / JS / CSS documentation.
   * Create an HTML element flowchart.
   * Import / sync with Sketch or Figma.
+  * todo - error, wrans in scss
 
 ## Ok, I want to use it
 

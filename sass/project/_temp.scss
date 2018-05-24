@@ -12,11 +12,11 @@
 }
 
 .SG-a {
-  @include text-size(16);
+  @include text-size(18);
 }
 
 .SG-p {
-  @include text-size(16);
+  @include text-size(18);
 }
 
 .SG-header {
@@ -29,16 +29,35 @@
   background: #fff;
 }
 
+.SG-toc ul {
+  line-height: 2.5;
+}
+
 .SG-header::before {
   display: none;
 }
 
 .SG-layout {
-  padding-top: 90px;
+  padding-top: 140px;
   position: relative;
   z-index: 5;
-  @include text-size(16,27);
+  @include text-size(18,27);
   background: #fff;
+
+  .SG-table__cell {
+    @include text-size(18);
+  }
+}
+
+.SG-logo .SG-logo__icon {
+  background: url('https://www.accesa.eu/wp-content/uploads/2016/04/accesa_logo_bg.png');
+  height: 40px;
+  background-size: 100% auto;
+  width: 84px;
+}
+
+.SG-logo .SG-logo__icon::before {
+  display: none;
 }
 
 .SG-search {
@@ -55,21 +74,48 @@
   color: #26f9ef;
 }
 
+.SG-mixin .SG-mixin__file {
+  color: #3597c6;
+}
+
 .SG-h2 {
   color: $color-main;
-  font-size: 21px;
-  border-bottom: 1px solid #d8d8d8;
-  padding: 20px 0;
+  @include text-size(38);
+  border-bottom:0;
+  text-transform: uppercase;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding: 0;
 }
 .SG-icon-preview .SG-icon-preview__name {
 
 color: $color-main;
 }
 
+.SG-component {
+  padding-bottom: 95px;
+  border-bottom: 1px solid rgba(0,0,0, 0.05);
+}
+
+
+.SG-component .SG-component__title,
+.SG-h3 {
+  color: $color-main;
+  @include text-size(25);
+  border-bottom: 1px solid $color-main;
+}
+
 .SG-button:hover {
   border-color:  $color-main;
   color: $color-main;
+}
+
+.SG-nav .SG-nav__item {
+  color: #2274a5;
+}
+
+.SG-nav .SG-nav__item--active {
+  color: #2274a5;
 }
 
 .SG-nav .SG-nav__item--active {
@@ -83,7 +129,7 @@ padding: 0;
 margin: 0;
 font-size: 42px;
 color: $color-main;
-text-transform: uppewrcase;
+text-transform: uppercase;
 margin-bottom: 1em;
 }
 
