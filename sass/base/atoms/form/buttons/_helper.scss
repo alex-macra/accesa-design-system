@@ -3,7 +3,7 @@
 button {
 
   @include button ($color-gray);
-  @include text-size(12);
+  @include text-size(14);
 }
 
 /**
@@ -94,7 +94,7 @@ button {
 
 .is-button { 
   @include button ($color-gray);
-  @include text-size(12, 22);
+  @include text-size(14, 22);
   @include button-lookalike();
 
   //include stuff

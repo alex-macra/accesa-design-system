@@ -14,7 +14,7 @@
 
 .form {
   @include form-legend(block);
-  
+
   input {
     @include form-input(block);
   }
