@@ -1,96 +1,30 @@
 /* _- BEGIN BUTTONS.CSS _- */
+
+button {
+
+  @include button ($color-gray);
+  @include text-size(12);
+}
+
 /**
  * @atom Default styles
  * @section Form > Buttons
  * @description
  *  Buttons containing different color schemes.
  * @markup
- *   <button class="primary">primary button</button>
- *   <button class="secondary">secondary button</button>
- *   <button class="error">error</button>
- *   <button class="go">proceed</button>
- *   <button>greyed (default button)</button>
- *   <button disabled>disabled button</button>
- *   <button class="cancel">transparent button</button>
+ *   <button type="button" class="primary">primary button</button>
+ *   <button type="button" class="secondary">secondary button</button>
+ *   <button type="button" class="error">error</button>
+ *   <button type="button" class="go">proceed</button>
+ *   <button type="button">greyed (default button)</button>
+ *   <button type="button" disabled>disabled button</button>
+ *   <button type="button" class="cancel">transparent button</button>
 */
 
 button {
-  @include text-size(12);
-  @include button ($color-gray);
-  border-radius: $border-radius;
-  color: white;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
 
-  &:hover, &:focus {
-    box-shadow: none;
-    color: white;
-    outline: none;
-  }
-
-  &.primary {
-    @include button ($color-main);
-  }
-
-  &.secondary {
-    @include button ($color-secondary);
-  }
-
-  &.error {
-    @include button ($color-error);
-  }
-
-  &.go {
-    @include button ($color-success);
-  }
-
-  &.cancel {
-    @include button (transparent);
-    color: $color-black;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: #333333;
-    }
-  }
-
-  &.disabled {
-    @include button ($color-disabled);
-    cursor: not-allowed;
-    color: #b2b2b2;
-    @include opacity(.95);
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: #b2b2b2;
-    }
-  }
-
-  &[disabled] {
-    @include button ($color-disabled);
-    cursor: not-allowed;
-    color: #b2b2b2;
-    @include opacity(.95);
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: #b2b2b2;
-    }
-  }
-}
+  @include button-styles();
+ }
 
 /**
  * @atom Default sizes
@@ -98,27 +32,14 @@ button {
  * @description
  *  Buttons containing different sizes.
  * @markup
- *   <button class="small">small button</button>
- *   <button>normal button</button>
- *   <button class="large">large button</button>
+ *   <button type="button" class="small">small button</button>
+ *   <button type="button">normal button</button>
+ *   <button type="button" class="large">large button</button>
 */
 
 button { 
 
-  &.large {
-    @include text-size(14);
-    padding-bottom: .5em;
-    padding-top: .5em;
-    min-height: 50px;
-    min-width: 120px;
-  }
-
-  &.small {
-    @include text-size(9);
-    padding: .5em 1.5em;
-    min-height: 14px;
-    min-width: 60px;
-  }
+  @include button-sizes();
 }
 
 /**
@@ -127,23 +48,17 @@ button {
  * @description
  *  Buttons containing different alingments.
  * @markup
- *   <button class="bottom small secondary">small button</button>
- *   <button class="bottom secondary">normal button</button>
- *   <button class="large secondary">large button</button><br/>
- *   <button class="large primary">large button</button>
- *   <button class="top primary">normal button</button>
- *   <button class="top small primary">small button</button>
+ *   <button type="button" class="bottom small secondary">small button</button>
+ *   <button type="button" class="bottom secondary">normal button</button>
+ *   <button type="button" class="large secondary">large button</button><br/>
+ *   <button type="button" class="large primary">large button</button>
+ *   <button type="button" class="top primary">normal button</button>
+ *   <button type="button" class="top small primary">small button</button>
 */
 
 button { 
 
-  &.top {
-    vertical-align: top;
-  }
-
-  &.bottom {
-    vertical-align: bottom;
-  }
+  @include button-alignments();
 }
 
 /**
@@ -152,39 +67,37 @@ button {
  * @description
  *  Buttons containing icons. Either with a separator or without.
  * @markup
- *   <button class="error icon"><i class="fa fa-times"></i>Error</button>
- *   <button class="proceed icon"><i class="fa fa-check"></i>Success</button>
- *   <button class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
- *   <button class="error"><i class="fa fa-times"></i>Error</button>
- *   <button class="proceed"><i class="fa fa-check"></i>Success</button>
- *   <button class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+ *   <button type="button" class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button type="button" class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary"><i class="fa fa-icon-circle"></i>Info</button>
 */
 
 button { 
   
-  &.icon {
-    padding-left: 4em;
-    padding-right: 1em;
+  @include button-icon();
+}
 
-    > i {
-      left: 1em;
-      margin-top: -.5em;
-      position: absolute;
-      top: 50%;
-    }
+/**
+ * @atom Elements that will look like a button
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <input type="button" value="input button" class="is-button">
+ *   <a class="is-button">link button</a>
+ *   <span class="is-button">span button</span>
+ *   <span class="is-button primary large">span button</span>
+*/
 
-    &:before {
-      background-color: rgba(black, .25);
-      border-radius: $border-radius 0 0 $border-radius;
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: all .25s;
-      width: 3em;
-    }
-  }
+.is-button { 
+  @include button ($color-gray);
+  @include text-size(12, 22);
+  @include button-lookalike();
+
+  //include stuff
 }
 
 /* _- END BUTTONS.CSS _- */

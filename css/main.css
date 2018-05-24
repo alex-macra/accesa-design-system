@@ -64,9 +64,6 @@ button {
   cursor: pointer;
   outline: none; }
 
-[type='submit'],
-[type='reset'],
-[type='button'],
 button {
   -webkit-appearance: button;
   background: none;
@@ -84,10 +81,7 @@ button {
   -ms-user-select: none;
   user-select: none; }
 
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+button::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
@@ -530,25 +524,7 @@ body {
     content: "\f2ba"; }
 
 /* _- BEGIN BUTTONS.CSS _- */
-/**
- * @atom Default styles
- * @section Form > Buttons
- * @description
- *  Buttons containing different color schemes.
- * @markup
- *   <button class="primary">primary button</button>
- *   <button class="secondary">secondary button</button>
- *   <button class="error">error</button>
- *   <button class="go">proceed</button>
- *   <button>greyed (default button)</button>
- *   <button disabled>disabled button</button>
- *   <button class="cancel">transparent button</button>
-*/
 button {
-  font-size: 12px;
-  font-size: 1.2rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.24;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -557,11 +533,8 @@ button {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: "Open-Sans", sans-serif;
-  background-color: #646464;
-  box-shadow: 0 2px 0 shade(#646464, 15%);
   border-radius: 0;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   font-weight: 200;
   margin: 0 1% 2% 0;
@@ -573,154 +546,316 @@ button {
   min-width: 80px;
   min-height: 36px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #646464;
+  box-shadow: 0 2px 0 shade(#646464, 15%);
+  cursor: pointer;
+  font-size: 12px;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.24; }
+  button:hover, button:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
   button:hover, button:focus {
     background-color: #3d3d3d; }
   button:active {
     background-color: #646464; }
-  button:hover, button:focus {
+
+/**
+ * @atom Default styles
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <button type="button" class="primary">primary button</button>
+ *   <button type="button" class="secondary">secondary button</button>
+ *   <button type="button" class="error">error</button>
+ *   <button type="button" class="go">proceed</button>
+ *   <button type="button">greyed (default button)</button>
+ *   <button type="button" disabled>disabled button</button>
+ *   <button type="button" class="cancel">transparent button</button>
+*/
+button.primary {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #2274a5;
+  box-shadow: 0 2px 0 shade(#2274a5, 15%);
+  cursor: pointer; }
+  button.primary:hover, button.primary:focus {
     box-shadow: none;
-    color: white;
+    color: #ffffff;
     outline: none; }
-  button.primary {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #2274a5;
-    box-shadow: 0 2px 0 shade(#2274a5, 15%); }
-    button.primary:hover, button.primary:focus {
-      background-color: #154766; }
-    button.primary:active {
-      background-color: #2274a5; }
-  button.secondary {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #3e5d6f;
-    box-shadow: 0 2px 0 shade(#3e5d6f, 15%); }
-    button.secondary:hover, button.secondary:focus {
-      background-color: #23343e; }
-    button.secondary:active {
-      background-color: #3e5d6f; }
-  button.error {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #ec2d22;
-    box-shadow: 0 2px 0 shade(#ec2d22, 15%); }
-    button.error:hover, button.error:focus {
-      background-color: #b2180f; }
-    button.error:active {
-      background-color: #ec2d22; }
-  button.go {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #00b069;
-    box-shadow: 0 2px 0 shade(#00b069, 15%); }
-    button.go:hover, button.go:focus {
-      background-color: #004a30; }
-    button.go:active {
-      background-color: #00b069; }
-  button.cancel {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: transparent;
-    box-shadow: 0 2px 0 shade(transparent, 15%);
-    color: #000000; }
-    button.cancel:hover, button.cancel:focus {
-      background-color: rgba(0, 0, 0, 0); }
-    button.cancel:active {
-      background-color: transparent; }
-    button.cancel:hover, button.cancel:active, button.cancel:focus {
-      color: #333333; }
-  button.disabled {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #eeeeee;
-    box-shadow: 0 2px 0 shade(#eeeeee, 15%);
-    cursor: not-allowed;
-    color: #b2b2b2;
-    -webkit-opacity: 0.95;
-    -khtml-opacity: 0.95;
-    -moz-opacity: 0.95;
-    -ms-opacity: 0.95;
-    -o-opacity: 0.95;
-    opacity: 0.95;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-    filter: alpha(opacity=95); }
-    button.disabled:hover, button.disabled:focus {
-      background-color: #c8c8c8; }
-    button.disabled:active {
-      background-color: #eeeeee; }
-    button.disabled:hover, button.disabled:active, button.disabled:focus {
-      color: #b2b2b2; }
-  button[disabled] {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-family: "Open-Sans", sans-serif;
-    background-color: #eeeeee;
-    box-shadow: 0 2px 0 shade(#eeeeee, 15%);
-    cursor: not-allowed;
-    color: #b2b2b2;
-    -webkit-opacity: 0.95;
-    -khtml-opacity: 0.95;
-    -moz-opacity: 0.95;
-    -ms-opacity: 0.95;
-    -o-opacity: 0.95;
-    opacity: 0.95;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-    filter: alpha(opacity=95); }
-    button[disabled]:hover, button[disabled]:focus {
-      background-color: #c8c8c8; }
-    button[disabled]:active {
-      background-color: #eeeeee; }
-    button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
-      color: #b2b2b2; }
+  button.primary:hover, button.primary:focus {
+    background-color: #154766; }
+  button.primary:active {
+    background-color: #2274a5; }
+
+button.secondary {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #3e5d6f;
+  box-shadow: 0 2px 0 shade(#3e5d6f, 15%);
+  cursor: pointer; }
+  button.secondary:hover, button.secondary:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button.secondary:hover, button.secondary:focus {
+    background-color: #23343e; }
+  button.secondary:active {
+    background-color: #3e5d6f; }
+
+button.error {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #ec2d22;
+  box-shadow: 0 2px 0 shade(#ec2d22, 15%);
+  cursor: pointer; }
+  button.error:hover, button.error:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button.error:hover, button.error:focus {
+    background-color: #b2180f; }
+  button.error:active {
+    background-color: #ec2d22; }
+
+button.go {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #00b069;
+  box-shadow: 0 2px 0 shade(#00b069, 15%);
+  cursor: pointer; }
+  button.go:hover, button.go:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button.go:hover, button.go:focus {
+    background-color: #004a30; }
+  button.go:active {
+    background-color: #00b069; }
+
+button.cancel {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: transparent;
+  box-shadow: 0 2px 0 shade(transparent, 15%);
+  cursor: pointer;
+  color: #000000; }
+  button.cancel:hover, button.cancel:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button.cancel:hover, button.cancel:focus {
+    background-color: rgba(0, 0, 0, 0); }
+  button.cancel:active {
+    background-color: transparent; }
+  button.cancel:hover, button.cancel:active, button.cancel:focus {
+    color: #333333; }
+
+button.disabled {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #eeeeee;
+  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+  cursor: pointer;
+  cursor: not-allowed;
+  color: #b2b2b2;
+  -webkit-opacity: 0.95;
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  -ms-opacity: 0.95;
+  -o-opacity: 0.95;
+  opacity: 0.95;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  filter: alpha(opacity=95); }
+  button.disabled:hover, button.disabled:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button.disabled:hover, button.disabled:focus {
+    background-color: #c8c8c8; }
+  button.disabled:active {
+    background-color: #eeeeee; }
+  button.disabled:hover, button.disabled:active, button.disabled:focus {
+    color: #b2b2b2; }
+
+button[disabled] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #eeeeee;
+  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+  cursor: pointer;
+  cursor: not-allowed;
+  color: #b2b2b2;
+  -webkit-opacity: 0.95;
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  -ms-opacity: 0.95;
+  -o-opacity: 0.95;
+  opacity: 0.95;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  filter: alpha(opacity=95); }
+  button[disabled]:hover, button[disabled]:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  button[disabled]:hover, button[disabled]:focus {
+    background-color: #c8c8c8; }
+  button[disabled]:active {
+    background-color: #eeeeee; }
+  button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
+    color: #b2b2b2; }
 
 /**
  * @atom Default sizes
@@ -728,9 +863,9 @@ button {
  * @description
  *  Buttons containing different sizes.
  * @markup
- *   <button class="small">small button</button>
- *   <button>normal button</button>
- *   <button class="large">large button</button>
+ *   <button type="button" class="small">small button</button>
+ *   <button type="button">normal button</button>
+ *   <button type="button" class="large">large button</button>
 */
 button.large {
   font-size: 14px;
@@ -757,12 +892,12 @@ button.small {
  * @description
  *  Buttons containing different alingments.
  * @markup
- *   <button class="bottom small secondary">small button</button>
- *   <button class="bottom secondary">normal button</button>
- *   <button class="large secondary">large button</button><br/>
- *   <button class="large primary">large button</button>
- *   <button class="top primary">normal button</button>
- *   <button class="top small primary">small button</button>
+ *   <button type="button" class="bottom small secondary">small button</button>
+ *   <button type="button" class="bottom secondary">normal button</button>
+ *   <button type="button" class="large secondary">large button</button><br/>
+ *   <button type="button" class="large primary">large button</button>
+ *   <button type="button" class="top primary">normal button</button>
+ *   <button type="button" class="top small primary">small button</button>
 */
 button.top {
   vertical-align: top; }
@@ -776,12 +911,12 @@ button.bottom {
  * @description
  *  Buttons containing icons. Either with a separator or without.
  * @markup
- *   <button class="error icon"><i class="fa fa-times"></i>Error</button>
- *   <button class="proceed icon"><i class="fa fa-check"></i>Success</button>
- *   <button class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
- *   <button class="error"><i class="fa fa-times"></i>Error</button>
- *   <button class="proceed"><i class="fa fa-check"></i>Success</button>
- *   <button class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+ *   <button type="button" class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button type="button" class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary"><i class="fa fa-icon-circle"></i>Info</button>
 */
 button.icon {
   padding-left: 4em;
@@ -801,6 +936,59 @@ button.icon {
     top: 0;
     transition: all .25s;
     width: 3em; }
+
+/**
+ * @atom Elements that will look like a button
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <input type="button" value="input button" class="is-button">
+ *   <a class="is-button">link button</a>
+ *   <span class="is-button">span button</span>
+ *   <span class="is-button primary large">span button</span>
+*/
+.is-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0 1% 2% 0;
+  padding: 0.5% 1%;
+  position: relative;
+  text-decoration: none;
+  transition: all .25s;
+  vertical-align: middle;
+  min-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open-Sans", sans-serif;
+  background-color: #646464;
+  box-shadow: 0 2px 0 shade(#646464, 15%);
+  cursor: pointer;
+  font-size: 12px;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 22px;
+  line-height: 2.2rem;
+  border: 0; }
+  .is-button:hover, .is-button:focus {
+    box-shadow: none;
+    color: #ffffff;
+    outline: none; }
+  .is-button:hover, .is-button:focus {
+    background-color: #3d3d3d; }
+  .is-button:active {
+    background-color: #646464; }
 
 /* _- END BUTTONS.CSS _- */
 /* --- BEGIN DROP-DOWNS.CSS --- */
@@ -2191,11 +2379,6 @@ p {
 /* --- BEGIN TEMP.CSS --- */
 .SG-layout {
   max-width: 1400px; }
-  .SG-layout span {
-    font-size: 16px;
-    font-size: 1.6rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.32; }
 
 .SG-a {
   font-size: 16px;
