@@ -2384,7 +2384,8 @@ p {
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.36; }
+  line-height: 1.36;
+  text-decoration: none; }
 
 .SG-p {
   font-size: 18px;
@@ -2403,6 +2404,14 @@ p {
 
 .SG-toc ul {
   line-height: 2.5; }
+  .SG-toc ul li a {
+    text-decoration: none;
+    color: #395565;
+    font-size: 19px;
+    font-size: 1.9rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 35px;
+    line-height: 3.5rem; }
 
 .SG-header::before {
   display: none; }
@@ -2466,14 +2475,17 @@ p {
   padding-bottom: 95px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
+.SG-strong {
+  font-weight: 400; }
+
 .SG-component .SG-component__title,
 .SG-h3 {
-  color: #2274a5;
+  color: #3E5D6F;
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.5;
-  border-bottom: 1px solid #2274a5; }
+  border-bottom: 1px solid #3E5D6F; }
 
 .SG-button:hover {
   border-color: #2274a5;

@@ -13,6 +13,7 @@
 
 .SG-a {
   @include text-size(18);
+  text-decoration: none;
 }
 
 .SG-p {
@@ -31,6 +32,12 @@
 
 .SG-toc ul {
   line-height: 2.5;
+
+  li a {
+    text-decoration: none;
+    color: #395565;
+    @include text-size(19, 35);
+  }
 }
 
 .SG-header::before {
@@ -97,12 +104,15 @@ color: $color-main;
   border-bottom: 1px solid rgba(0,0,0, 0.05);
 }
 
+.SG-strong {
+  font-weight: 400;
+}
 
 .SG-component .SG-component__title,
 .SG-h3 {
-  color: $color-main;
+  color: #3E5D6F;
   @include text-size(25);
-  border-bottom: 1px solid $color-main;
+  border-bottom: 1px solid #3E5D6F;
 }
 
 .SG-button:hover {
