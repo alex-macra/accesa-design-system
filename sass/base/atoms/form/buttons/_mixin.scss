@@ -1,3 +1,6 @@
+$buttons-font: 'Open-Sans', sans-serif;
+$button-font: $buttons-font;
+
 @mixin button-defaults() {
 	border-radius: $border-radius;
 	color: $color-white;
@@ -24,7 +27,7 @@
 @mixin button($color: #fff) {
 	@include no-select();
 	@include button-defaults();
-	font-family: $font-paragraph;
+	font-family: $button-font;
 	background-color: $color;
 	box-shadow: 0 2px 0 shade($color, 15%);
 	cursor: pointer;

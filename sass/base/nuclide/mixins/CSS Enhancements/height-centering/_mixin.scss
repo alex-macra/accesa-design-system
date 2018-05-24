@@ -24,7 +24,6 @@
 	margin: 0 auto;
 }
 
-
 /**
  * Basic horizontal centering of multiple HTML elements in a row
  *
@@ -88,6 +87,7 @@
  * @example 
  *  @include center-vertically-unknown-height-block() 
 */
+
 @mixin center-horizontally-vertically-known-height-grid($height, $width) {
 	position: relative;
 

@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://use.fontawesome.com/releases/v5.0.12/css/all.css');
+
 // nothing yet
 
 .SG-layout {
@@ -13,6 +14,7 @@
 
 .SG-a {
   @include text-size(18);
+  text-decoration: none;
 }
 
 .SG-p {
@@ -31,6 +33,12 @@
 
 .SG-toc ul {
   line-height: 2.5;
+
+  li a {
+    text-decoration: none;
+    color: #395565;
+    @include text-size(19, 35);
+  }
 }
 
 .SG-header::before {
@@ -97,12 +105,15 @@ color: $color-main;
   border-bottom: 1px solid rgba(0,0,0, 0.05);
 }
 
+.SG-strong {
+  font-weight: 400;
+}
 
 .SG-component .SG-component__title,
 .SG-h3 {
-  color: $color-main;
+  color: #3E5D6F;
   @include text-size(25);
-  border-bottom: 1px solid $color-main;
+  border-bottom: 1px solid #3E5D6F;
 }
 
 .SG-button:hover {
@@ -229,3 +240,16 @@ margin-bottom: 1em;
 }
 
 /* --- END TEMP.CSS --- */
+
+
+
+#_Mixins {
+ // @include for-size(desktop-up) {
+ //  @include text-size(80, 95);
+ // }
+
+  //@include for-size(tablet-portrait-up) {
+  //  font-size: 4vw;
+
+ // }
+}

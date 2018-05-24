@@ -138,7 +138,13 @@ body {
  * Set a general prefix throughout the entire app using the $prefix variable.
  * The default namespaces is 'accesa' -> 'acc'.
  *
- * @nuclide $prefix
+ * @nuclide Project prefix
+ * @section Config
+ */
+/**
+ * Set a global border radius that will automatically update throught the entire stylesheet.
+ *
+ * @nuclide Global border radius
  * @section Config
  */
 /**
@@ -209,7 +215,7 @@ body {
   text-align: center;
   width: 100%; }
   .acc-img::before {
-    background-color: #eeeeee;
+    background-color: #cacaca;
     border: 2px dotted #646464;
     border-radius: 0;
     content: '';
@@ -710,17 +716,17 @@ button.go {
   text-align: center;
   text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
-  background-color: #00b069;
-  box-shadow: 0 2px 0 shade(#00b069, 15%);
+  background-color: #00b04b;
+  box-shadow: 0 2px 0 shade(#00b04b, 15%);
   cursor: pointer; }
   button.go:hover, button.go:focus {
     box-shadow: none;
     color: #ffffff;
     outline: none; }
   button.go:hover, button.go:focus {
-    background-color: #004a30; }
+    background-color: #002c19; }
   button.go:active {
-    background-color: #00b069; }
+    background-color: #00b04b; }
 
 button.cancel {
   -webkit-user-select: none;
@@ -785,8 +791,8 @@ button.disabled {
   text-align: center;
   text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
-  background-color: #eeeeee;
-  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+  background-color: #cacaca;
+  box-shadow: 0 2px 0 shade(#cacaca, 15%);
   cursor: pointer;
   cursor: not-allowed;
   color: #b2b2b2;
@@ -803,9 +809,9 @@ button.disabled {
     color: #ffffff;
     outline: none; }
   button.disabled:hover, button.disabled:focus {
-    background-color: #c8c8c8; }
+    background-color: #a3a3a3; }
   button.disabled:active {
-    background-color: #eeeeee; }
+    background-color: #cacaca; }
   button.disabled:hover, button.disabled:active, button.disabled:focus {
     color: #b2b2b2; }
 
@@ -833,8 +839,8 @@ button[disabled] {
   text-align: center;
   text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
-  background-color: #eeeeee;
-  box-shadow: 0 2px 0 shade(#eeeeee, 15%);
+  background-color: #cacaca;
+  box-shadow: 0 2px 0 shade(#cacaca, 15%);
   cursor: pointer;
   cursor: not-allowed;
   color: #b2b2b2;
@@ -851,9 +857,9 @@ button[disabled] {
     color: #ffffff;
     outline: none; }
   button[disabled]:hover, button[disabled]:focus {
-    background-color: #c8c8c8; }
+    background-color: #a3a3a3; }
   button[disabled]:active {
-    background-color: #eeeeee; }
+    background-color: #cacaca; }
   button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
     color: #b2b2b2; }
 
@@ -1984,7 +1990,7 @@ p {
 
 .acc-modal .acc-modal-dialog {
   background: #ffffff;
-  border: #eeeeee solid 1px;
+  border: #cacaca solid 1px;
   border-radius: 0;
   position: fixed;
   left: 50%;
@@ -2003,10 +2009,10 @@ p {
   padding: 20px 20px; }
 
 .acc-modal .acc-modal-header {
-  border-bottom: #eeeeee solid 1px; }
+  border-bottom: #cacaca solid 1px; }
 
 .acc-modal .acc-modal-footer {
-  border-top: #eeeeee solid 1px;
+  border-top: #cacaca solid 1px;
   text-align: right; }
 
 /* --- END MODAL.CSS --- */
@@ -2384,7 +2390,8 @@ p {
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.36; }
+  line-height: 1.36;
+  text-decoration: none; }
 
 .SG-p {
   font-size: 18px;
@@ -2403,6 +2410,14 @@ p {
 
 .SG-toc ul {
   line-height: 2.5; }
+  .SG-toc ul li a {
+    text-decoration: none;
+    color: #395565;
+    font-size: 19px;
+    font-size: 1.9rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 35px;
+    line-height: 3.5rem; }
 
 .SG-header::before {
   display: none; }
@@ -2466,14 +2481,17 @@ p {
   padding-bottom: 95px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
+.SG-strong {
+  font-weight: 400; }
+
 .SG-component .SG-component__title,
 .SG-h3 {
-  color: #2274a5;
+  color: #3E5D6F;
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.5;
-  border-bottom: 1px solid #2274a5; }
+  border-bottom: 1px solid #3E5D6F; }
 
 .SG-button:hover {
   border-color: #2274a5;
