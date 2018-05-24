@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://use.fontawesome.com/releases/v5.0.12/css/all.css');
+
 // nothing yet
 
 .SG-layout {
@@ -239,3 +240,16 @@ margin-bottom: 1em;
 }
 
 /* --- END TEMP.CSS --- */
+
+
+
+#_Mixins {
+ // @include for-size(desktop-up) {
+ //  @include text-size(80, 95);
+ // }
+
+  //@include for-size(tablet-portrait-up) {
+  //  font-size: 4vw;
+
+ // }
+}
