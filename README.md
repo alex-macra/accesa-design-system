@@ -1,6 +1,6 @@
-# ACCESA UI STARTER
+# ACCESA DESIGN SYSTEM
 
-Starter pack for web-based projects
+Starter pack for web-based projects. Styleguide. Design system.
 
 Version: 0.5.0 - Beta
 
@@ -69,7 +69,7 @@ npm run sass:lint
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/alexandrumacra/accesa-ui-starter/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/alexandrumacra/accesa-design-system/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
