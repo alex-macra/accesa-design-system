@@ -18,27 +18,20 @@ In order to customize, select the tools / components to import in your project, 
 
 ## The road so far...
 
-### Happy to announce that
-  * We have implemented a SASS-based UI starter pack.
-  * A list of base and custom features that can extend existing CSS utilities or that can be used as building blocks for new components.
-  * Added a minimal build, watch & lint tool both for SCSS and CSS.
-  * We have improved the CSS output, increased performance (*still in progress*).
-  * Also implemented a grid and several UI components. (loader, tooltip, etc).
-  * (*still in progress*) Added a small styleguide / demo for components and UI features.
+### Happy to announce that we have:
+  * Implemented a SASS-based UI starter pack.
+  * Created a dynamic styleguide generator
+  * Imported the styleguide design in figma
 
 ### Improvements to come
+  * Finish the guidelines section
   * Provide easy integration with Javascript frameworks or components.
-  * Provide an easy way to insert / remove components / features.
   * Create a {minimal classes} version. Right now, when using BEM, we use longer names, to be as easy as possible to understand how the SCSS classes and mixins / variables / functions are working.
-  * Add more examples or know-hows / corner cases
+  * Export and sync the figma design with sketch
 
 ### Going forward
   * Implement experimental components or features (grid systems, such as masonry layout or CSS4 grid layout).
   * Impprove Custom font support.
-  * Start with the HTML / JS / CSS documentation.
-  * Create an HTML element flowchart.
-  * Import / sync with Sketch or Figma.
-  * todo - error, wrans in scss
 
 ## Ok, I want to use it
 
@@ -65,6 +58,11 @@ To lint the CSS / SASS files
 ```
 npm run css:lint
 npm run sass:lint
+```
+
+To generate the styleguide
+```
+npm run styleguide
 ```
 
 ## Contributing

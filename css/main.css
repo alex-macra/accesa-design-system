@@ -2519,6 +2519,9 @@ p {
 .SG-nav .SG-nav__item--active:hover {
   border-bottom: 3px solid #000000; }
 
+.SG-top-wrapper {
+  min-height: calc(100vh - 140px); }
+
 .colored-grid > div > div {
   padding: 3px 10px;
   color: #ffffff;

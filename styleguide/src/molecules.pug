@@ -19,23 +19,24 @@ block nav
   -var selected = 'Molecules';
 
 block content
-  .SG-row
-    .SG-gr-12
-      .SG-h1 Molecules
+  .SG-top-wrapper 
+    .SG-row
+      .SG-gr-12
+        .SG-h1 Molecules
 
-  .SG-row
-    .SG-gr-6
-      .SG-h3 Table of content
-    .SG-gr-6
-      .SG-h3 What are Molecules?
+    .SG-row
+      .SG-gr-6
+        .SG-h3 Table of content
+      .SG-gr-6
+        .SG-h3 What are Molecules?
 
-  .SG-row
-    .SG-gr-6.SG-toc
-      +toc(styles.Molecules)
-    .SG-gr-6
-      .SG-p.
-        Molecules (or components) consinst of one or more atoms linked together, creating a molecule-like structure.
-        For example, using icons or buttons creating a tooltip molecule.
- 
+    .SG-row
+      .SG-gr-6.SG-toc
+        +toc(styles.Molecules)
+      .SG-gr-6
+        .SG-p.
+          Molecules (or components) consinst of one or more atoms linked together, creating a molecule-like structure.
+          For example, using icons or buttons creating a tooltip molecule.
+  
   if styles.Molecules
     +section-second-level(styles.Molecules)
