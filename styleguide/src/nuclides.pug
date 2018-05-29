@@ -20,26 +20,25 @@ block title
   | Nuclides
 
 block content
-  .SG-row
-    .SG-gr-12
-      .SG-h1 Nuclides
+  .SG-top-wrapper 
+    .SG-row
+      .SG-gr-12
+        .SG-h1 Nuclides
 
-  .SG-row
-    .SG-gr-6
-      .SG-h3 Table of content
-    .SG-gr-6
-      .SG-h3 What are Nuclides?
+    .SG-row
+      .SG-gr-6
+        .SG-h3 Table of content
+      .SG-gr-6
+        .SG-h3 What are Nuclides?
 
-  .SG-row
-    .SG-gr-6.SG-toc
-      +toc(styles.Nuclides)
-    .SG-gr-6
-      p.SG-p.
-        Nuclides are parts of the stylesheet source that are not directly useable on their own, or that are used to create atoms.
-      p.SG-p.
-        This could be mixins, variables like colors and sizes, or settings.
-       
-  include ./common/hint.pug
- 
+    .SG-row
+      .SG-gr-6.SG-toc
+        +toc(styles.Nuclides)
+      .SG-gr-6
+        p.SG-p.
+          Nuclides are parts of the stylesheet source that are not directly useable on their own, or that are used to create atoms.
+        p.SG-p.
+          This could be mixins, variables like colors and sizes, or settings.     
+  
   if styles.Nuclides
     +section-second-level(styles.Nuclides)

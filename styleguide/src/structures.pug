@@ -20,25 +20,26 @@ block nav
   -var selected = 'Structures';
 
 block content
-  .SG-row
-    .SG-gr-12
-      .SG-h1 Structures
+  .SG-top-wrapper 
+    .SG-row
+      .SG-gr-12
+        .SG-h1 Structures
 
-  .SG-row
-    .SG-gr-6
-      .SG-h3 Table of content
-    .SG-gr-6
-      .SG-h3 What are Structures?
+    .SG-row
+      .SG-gr-6
+        .SG-h3 Table of content
+      .SG-gr-6
+        .SG-h3 What are Structures?
 
-  .SG-row
-    .SG-gr-6.SG-toc
-      +toc(styles.Structures)
-    .SG-gr-6
-      .SG-p.
-        Structures are the most complex types. They may consist of multiple molecules
-        or other structures. Or even may serve as wrappers for molecules. For example, the grid.
-      .SG-p.
-        The header of this page is surely a structure.
+    .SG-row
+      .SG-gr-6.SG-toc
+        +toc(styles.Structures)
+      .SG-gr-6
+        .SG-p.
+          Structures are the most complex types. They may consist of multiple molecules
+          or other structures. Or even may serve as wrappers for molecules. For example, the grid.
+        .SG-p.
+          The header of this page is surely a structure.
 
   if styles.Structures
     +section-second-level(styles.Structures)

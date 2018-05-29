@@ -19,26 +19,25 @@ block nav
   -var selected = 'Atoms';
 
 block content
-  .SG-row
-    .SG-gr-12
-      .SG-h1 Atoms
+  .SG-top-wrapper 
+    .SG-row
+      .SG-gr-12
+        .SG-h1 Atoms
 
-  .SG-row
-    .SG-gr-6
-      .SG-h3 Table of content
-    .SG-gr-6
-      .SG-h3 What are Atoms?
+    .SG-row
+      .SG-gr-6
+        .SG-h3 Table of content
+      .SG-gr-6
+        .SG-h3 What are Atoms?
 
-  .SG-row
-    .SG-gr-6.SG-toc
-      +toc(styles.Atoms)
-    .SG-gr-6
-      .SG-p.
-        Atoms are the very basic elements of the stylesheet. Imagine every single-class element or selector rules as an atom. Examples could be buttons, links, headlines, inputs.
-      .SG-p.
-        As a rule only nested atoms within atoms are accepted (and try to keep it as a single level). Example is the 'button' atom containing an icon atom.
+    .SG-row
+      .SG-gr-6.SG-toc
+        +toc(styles.Atoms)
+      .SG-gr-6
+        .SG-p.
+          Atoms are the very basic elements of the stylesheet. Imagine every single-class element or selector rules as an atom. Examples could be buttons, links, headlines, inputs.
+        .SG-p.
+          As a rule only nested atoms within atoms are accepted (and try to keep it as a single level). Example is the 'button' atom containing an icon atom.
 
   if styles.Atoms
     +section-second-level(styles.Atoms)
-
-
