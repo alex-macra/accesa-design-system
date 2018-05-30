@@ -1160,7 +1160,7 @@ button.icon {
   display: block; }
 
 /* --- END INPUT.CSS --- */
-/* --- BEGIN PARAGRAPHS.CSS --- */
+/* --- BEGIN BLOCKQUOTE.CSS --- */
 /**
  * Generic blockquote style for medium to long blocks of text. This element
  * is using the @{lipsum} substitution to generate two blocks of text.
@@ -1214,7 +1214,7 @@ q {
   q p {
     display: inline; }
 
-/* --- END PARAGRAPHS.CSS --- */
+/* --- END BLOCKQUOTE.CSS --- */
 /* --- BEGIN CODE.CSS --- */
 pre.code {
   background: #333333;

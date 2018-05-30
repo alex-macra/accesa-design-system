@@ -1,4 +1,4 @@
-/* --- BEGIN PARAGRAPHS.CSS --- */
+/* --- BEGIN BLOCKQUOTE.CSS --- */
 /**
  * Generic blockquote style for medium to long blocks of text. This element
  * is using the @{lipsum} substitution to generate two blocks of text.
@@ -6,9 +6,9 @@
  * @atom Blockquote
  * @section Typography
  * @markup
- *  <p>
+ *  <blockquote>
  *    @{lipsum:2:paragraphs}
- *  </p>
+ *  </blockquote>
  */
 
 blockquote,
@@ -17,4 +17,4 @@ q {
   @include text-size(18);
 }
 
-/* --- END PARAGRAPHS.CSS --- */
+/* --- END BLOCKQUOTE.CSS --- */
