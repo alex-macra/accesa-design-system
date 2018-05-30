@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>ACCESA DESIGN SYSTEMS::Nuclides</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="../build/styles/app.css" rel="stylesheet">
+      <link href="../../css/main.css" rel="stylesheet">
+      <link rel="icon" href="../build/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="../build/favicon.ico" type="image/x-icon">
+   </head>
+   <body class="SG-page">
+      <div class="SG-header">
+         <a class="SG-logo" href="../build/index.html"><span class="SG-logo__icon SG-ico SG-ico--logo"></span></a>
+         <ul class="SG-nav">
+            <li><a class="SG-nav__item SG-nav__item--active" href="nuclides.html">Nuclides</a></li>
+            <li><a class="SG-nav__item" href="../build/atoms.html">Back to styleguide</a></li>
+         </ul>
+         <ul class="SG-nav-icons">
+            <li><a class="SG-nav-icons__item" href="https://github.com/alexandrumacra/accesa-design-system/" title="Help and Documentation" target="_blank"><i class="SG-ico SG-ico--question"></i></a></li>
+         </ul>
+      </div>
+      <div class="SG-layout">
+         <div class="SG-top-wrapper">
+            <div class="SG-row">
+               <div class="SG-gr-12">
+                  <div class="SG-h1">Accesibility guidelines</div>
+               </div>
+            </div>
+            <div class="SG-row">
+               <div class="SG-gr-6">
+                  <div class="SG-h3">Table of content</div>
+               </div>
+               <div class="SG-gr-6">
+                  <div class="SG-h3">What is accesibility?</div>
+               </div>
+            </div>
+               <div class="SG-row">
+                  <div class="SG-gr-6 SG-toc">
+                     <ul>
+                        <li>
+                           <a class="SG-a" href="#_first">Accessible design overview</a>                       
+                        </li>
+                        <li><a class="SG-a" href="#_second">HTML Markup</a></li>
+                        <ul>
+                           <li><a class="SG-a" href="#_Typography_List">ARIA</a></li>
+                        </ul>
+                        <li><a class="SG-a" href="#_Icons">Keyboard Accessibility</a></li>
+                        </a></li>
+                        <li><a class="SG-a" href="#_Icons">Additional Resources
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="SG-gr-6">                 
+                        <p><strong>The Web is fundamentally designed to work for all people, whatever their hardware, software, language, location, or ability. </strong></p>
+                        <p>Both by designing and / or developing your application to reach AA+ standards is good for all users, not just for people with various disabilities.</p>
+                        <p>Thinking about less-than-perfect contexts in which a user may try to access your application will make things more clear and direct throughout. </p>
+                        <blockquote>Accessibility is essential for developers and organizations that want to create high quality websites and web tools, and not exclude people from using their products and services.</blockquote>
+                        <em><a href="https://www.w3.org/standards/webdesign/accessibility">w3c</a></em>
+                     
+                  </div>
+               </div>
+            </div>
+      
+            <div class="SG-row"><div class="SG-gr-12"><div class="SG-h2" id="_first">Accessible design overview</div></div></div>
+
+         <div class="SG-component">
+            <a class="SG-anchor" name="2a19ddf737bb75e2b41806441470d38c297ed47b"></a>
+            <div class="SG-row">
+               <div class="SG-gr-8">
+                  <div class="SG-component__title">General requirements</div>
+               </div>    
+            </div>
+            <div class="SG-row">
+               <div class="SG-gr-12 SG-nogutter">
+                  <div class="SG-p SG-component__preview--description">
+                        <p>Step one to an easily accessible application is designing with accessibility in mind from the start. This includes foundational details like:</p>
+                        <ul>
+                                    <li>Using a font size at least 12px large.</li>
+                                    <li>Selecting color combinations that meet AA standards for luminosity of at least a 4.5 contrast ratio.</li>
+                                    <li>Using more than one indicator when text is a link.</li>
+                                    <li>Ensuring any interactive target (ex. buttons, tabs) is of sufficient size. Making targets roughly 40 screen-pixels large is a good rule-of-thumb for mobile devices, and also helps with the interactivity of any element on any device.</li>
+                                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="SG-row"><div class="SG-gr-12"><div class="SG-h2" id="_second">HTML Markup</div></div></div>
+
+         <div class="SG-component">
+            <a class="SG-anchor" name="2a19ddf737bb75e2b41806441470d38c297ed47b"></a>
+            <div class="SG-row">
+               <div class="SG-gr-8">
+                  <div class="SG-component__title">First thing first</div>
+               </div>
+            </div>
+            <div class="SG-row">
+               <div class="SG-gr-12 SG-nogutter">
+                  <div class="SG-p SG-component__preview--description">
+                              <p><strong>One of the most direct ways to make your application accessible is to write proper, semantic code. Screen readers and other accessibility tools depend on markup tags to convey what kind of information or interaction the user has encountered.</strong></p>
+                        <ul>
+                                    <li>Using a font size at least 12px large.</li>
+                                    <li>Selecting color combinations that meet AA standards for luminosity of at least a 4.5 contrast ratio.</li>
+                                    <li>Using more than one indicator when text is a link.</li>
+                                    <li>Ensuring any interactive target (ex. buttons, tabs) is of sufficient size. Making targets roughly 40 screen-pixels large is a good rule-of-thumb for mobile devices, and also helps with the interactivity of any element on any device.</li>
+                                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="SG-component">
+                  <a class="SG-anchor" name="2a19ddf737bb75e2b41806441470d38c297ed47b"></a>
+                  <div class="SG-row">
+                     <div class="SG-gr-8">
+                        <div class="SG-component__title">Images</div>
+                     </div>
+                     <div class="SG-gr-4 SG-txt-right">
+                        <div class="SG-button SG-button--ico" data-d-code-preview-toggle="data-d-code-preview-toggle"><span class="SG-ico SG-ico--code"></span>Show example</div>
+                        &nbsp;
+                        <div class="SG-button SG-button--ico" data-d-copy="data-d-copy" data-clipboard-text="<button type=&quot;button&quot; class=&quot;small&quot;>small button</button>
+                           <button type=&quot;button&quot;>normal button</button>
+                           <button type=&quot;button&quot; class=&quot;large&quot;>large button</button>"><span class="SG-ico SG-ico--copy"></span>Copy markup</div>
+                     </div>
+                  </div>
+                  <div class="SG-row">
+                     <div class="SG-gr-12 SG-nogutter">
+                        <div class="SG-p SG-component__preview--description">
+                                    <p>Declaring an <code>alt</code> description within images, unless they are purely decorative.</p>                           
+                        </div>
+                     </div>
+                  </div>          
+                  <div class="SG-row">
+                     <div class="SG-gr-12 SG-nogutter">
+                        <div class="SG-code SG-code--hidden SG-component__markup  language-html" data-d-code-preview="data-d-code-preview">
+                                    < img src="path/to/image" alt="description of the image" />                
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      </div>
+
+
+      <!-- more content
+      Adding a summary to tables.
+<table summary="What kind of information is inside this table"></table>
+
+      Combining the use of id on form inputs with a for attribute on the respective label to link them together.
+
+      <label for="name">Name</label>
+<input type="text" id="name" placeholder="Name">
+
+<h3>Keyboard Accessibility
+</h3>
+Not all users have the ability to use a mouse. To allow them to still use your application, all actions that are activated with a mouse click should also be fully accessible when only using a keyboard. Forms should keep a logical tab order, and the submit button should activate with the Return key.
+
+Another important thing to keep in mind is including visual queues on your interface for what is currently focused or selected.
+
+<h3> voice accesibility</h3>
+Blind or sight-impaired users will be listening to (rather than looking at) your application. When semantic markup is insufficient, WAI-ARIA attributes should be used to provide clarity.
+
+<nav class="navbar navbar-default" role="navigation" aria-label="Site Navigation"></nav>
+
+<button class="btn btn-link" data-toggle="collapse" data-target="#multi-search"
+    aria-controls="multi-search" aria-expanded="true">Advanced Search</button>
+
+    Additional Resources
+This guide is a high-level overview of accessibility best practices. More information about accessibile web practices can be found at W3C's Web Accessibility Initiative.
+
+todo - even more resources need to be added
+      -->
+
+      <script src="../build/scripts/app.js"></script>
+   </body>
+</html>

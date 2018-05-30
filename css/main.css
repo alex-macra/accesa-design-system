@@ -1500,7 +1500,7 @@ a {
  *  </p>
  */
 p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: "Open-Sans", sans-serif;
   color: #313131;
   font-size: 18px;
@@ -2490,7 +2490,8 @@ p {
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.5;
+  line-height: 50px;
+  line-height: 5rem;
   border-bottom: 1px solid #3E5D6F; }
 
 .SG-button:hover {
