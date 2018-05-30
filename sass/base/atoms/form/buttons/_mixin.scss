@@ -1,7 +1,25 @@
 $buttons-font: 'Open-Sans', sans-serif;
 $button-font: $buttons-font;
 
+@mixin button($color: #fff) {
+	@include no-select();
+	@include button-defaults();
+	font-family: $button-font;
+	background-color: $color;
+	box-shadow: 0 2px 0 shade($color, 15%);
+	cursor: pointer;
+	
+	&:hover, &:focus {
+		background-color: darken($color, 15%);
+	}
+
+	&:active {
+		background-color: $color;
+	}
+}
+
 @mixin button-defaults() {
+	border: 0;
 	border-radius: $border-radius;
 	color: $color-white;
 	display: inline-block;
@@ -24,78 +42,6 @@ $button-font: $buttons-font;
 	}
 }
 
-@mixin button($color: #fff) {
-	@include no-select();
-	@include button-defaults();
-	font-family: $button-font;
-	background-color: $color;
-	box-shadow: 0 2px 0 shade($color, 15%);
-	cursor: pointer;
-	
-	&:hover, &:focus {
-		background-color: darken($color, 15%);
-	}
-
-	&:active {
-		background-color: $color;
-	}
-}
-
-@mixin button-icon() {
-
-	&.icon {
-		padding-left: 4em;
-		padding-right: 1em;
-	
-		> i {
-		  left: 1em;
-		  margin-top: -.5em;
-		  position: absolute;
-		  top: 50%;
-		}
-	
-		&:before {
-		  background-color: rgba(black, .25);
-		  border-radius: $border-radius 0 0 $border-radius;
-		  bottom: 0;
-		  content: '';
-		  left: 0;
-		  position: absolute;
-		  top: 0;
-		  transition: all .25s;
-		  width: 3em;
-		}
-	}
-}
-
-@mixin button-alignments() {
-	
-	&.top {
-		vertical-align: top;
-	}
-	
-	&.bottom {
-		vertical-align: bottom;
-	}
-}
-
-@mixin button-sizes() {
-
-	&.large {
-		@include text-size(14);
-		padding-bottom: .5em;
-		padding-top: .5em;
-		min-height: 50px;
-		min-width: 120px;
-	}
-	
-	&.small {
-		@include text-size(9);
-		padding: .5em 1.5em;
-		min-height: 14px;
-		min-width: 60px;
-	}
-}
 
 @mixin button-styles() {
 
@@ -153,6 +99,73 @@ $button-font: $buttons-font;
 	}
 }
 
+@mixin button-icon() {
+
+	&:not(.icon) {
+		> i {
+			position: relative;
+			right: 5px;
+		}
+	}
+
+	&.icon {
+		padding-left: 4em;
+		padding-right: 1em;
+	
+		> i {
+		  left: 1em;
+		  margin-top: -.5em;
+		  position: absolute;
+		  top: 50%;
+		}
+	
+		&:before {
+		  background-color: rgba(black, .25);
+		  border-radius: $border-radius 0 0 $border-radius;
+		  bottom: 0;
+		  content: '';
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		  transition: all .25s;
+		  width: 3em;
+		}
+	}
+}
+
+@mixin button-alignments() {
+	
+	&.top {
+		vertical-align: top;
+	}
+	
+	&.bottom {
+		vertical-align: bottom;
+	}
+}
+
+@mixin button-sizes() {
+
+	&.large {
+		@include text-size(14);
+		padding-bottom: .5em;
+		padding-top: .5em;
+		min-height: 50px;
+		min-width: 120px;
+	}
+	
+	&.small {
+		@include text-size(9);
+		padding: .5em 1.5em;
+		min-height: 14px;
+		min-width: 60px;
+	}
+}
+
+//todo
 @mixin button-lookalike() {
-	border: 0;
+
+	&:hover {
+		text-decoration: none;
+	}
 }

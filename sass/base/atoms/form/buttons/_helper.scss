@@ -94,10 +94,8 @@ button {
 
 .is-button { 
   @include button ($color-gray);
-  @include text-size(14, 22);
   @include button-lookalike();
-
-  //include stuff
+  @include text-size(14, 22);
 }
 
 /* _- END BUTTONS.CSS _- */
