@@ -9,7 +9,7 @@ $temp-color: #4a4a4a;
   &[type=email],
   &[type=number] { 
     font: inherit;
-    @include text-size(14, 22);
+    @include text-size(16, 22);
     background: $color-white;
     border: 1px solid $default-color-gray--light;
     border-radius: $border-radius;
@@ -19,7 +19,6 @@ $temp-color: #4a4a4a;
     outline: none;
     padding-left: 15px;
     display: $display;
-    
   }
 
   &::-webkit-input-placeholder {
@@ -41,7 +40,7 @@ $temp-color: #4a4a4a;
 
 @mixin form-textarea($display: inline-block) { 
   font: inherit;
-  @include text-size(14,22);
+  @include text-size(16,22);
   @include box-sizing();
   padding: 15px;
   border: 1px solid $default-color-gray--light;
