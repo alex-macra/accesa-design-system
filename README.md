@@ -2,7 +2,7 @@
 
 Starter pack for web-based projects. Styleguide. Design system.
 
-Version: 0.5.0 - Beta
+Current version: 0.6.0 - Beta
 
 ## Getting Started
 
