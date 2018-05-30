@@ -14,6 +14,7 @@
 
 .form {
   @include form-legend(block);
+  @include form-legend-color();
 
   input {
     @include form-input(block);
@@ -33,7 +34,8 @@
 */
 
 .form-inline {
-  @include form-legend();
+  @include form-legend(inline-block);
+  @include form-legend-color();
 
   input {
     @include form-input();
@@ -52,7 +54,6 @@
 */
 
 .form {
-  @include form-legend(block);
 
   textarea {
     @include form-textarea(block);

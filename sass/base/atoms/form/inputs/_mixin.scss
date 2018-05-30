@@ -1,6 +1,7 @@
 // Inputs / Textareas / Labels
 
 $placeholder-color: #999;
+$temp-color: #4a4a4a;
 
 @mixin form-input($display: inline-block) {
   &[type=text],
@@ -10,9 +11,9 @@ $placeholder-color: #999;
     font: inherit;
     @include text-size(14, 22);
     background: $color-white;
-    border: 1px solid $color-gray;
+    border: 1px solid $default-color-gray--light;
     border-radius: $border-radius;
-    color: $color-secondary;
+    color: $temp-color;
     height: 38px; //???
     margin-bottom: 10px;
     outline: none;
@@ -43,10 +44,10 @@ $placeholder-color: #999;
   @include text-size(14,22);
   @include box-sizing();
   padding: 15px;
-  border: 1px solid $color-gray;
+  border: 1px solid $default-color-gray--light;
   border-radius: $border-radius;
   margin-bottom: 10px;
-  color: $color-secondary;
+  color: $temp-color;
   display: $display;
 }
 
@@ -56,6 +57,16 @@ $placeholder-color: #999;
   }
 
   label {
-    display: $display;
+    display: $display;  
+  }
+}
+
+@mixin form-legend-color() {
+  span {
+    color: $temp-color;
+  }
+
+  label {
+    color: $temp-color;
   }
 }
