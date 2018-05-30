@@ -112,7 +112,7 @@ color: $color-main;
 .SG-component .SG-component__title,
 .SG-h3 {
   color: #3E5D6F;
-  @include text-size(25);
+  @include text-size(25, 50);
   border-bottom: 1px solid #3E5D6F;
 }
 
