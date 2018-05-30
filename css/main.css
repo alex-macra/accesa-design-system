@@ -1,3 +1,24 @@
+/**
+ * CONTENTS
+ *
+ * BASE
+ * Reset................Globally-impacting file that resets browser inherited stylesheet.
+ * Set..................Globally-impacting file that sets default stylesheet values to certain elements.
+ *
+ * NUCLIDES
+ * Config...............Globally-available variables and config settings.
+ * Colors...............Globally-available variables for creating a theme based stylesheet.
+ * Mixins...............Useful mixins (Enhancements and helper mixins).
+ *
+ * ATOMS
+ * Form.................Buttons, inputs, dropdowns. Form elements in general.
+ * Icons................todo.
+ * Typography...........Contains basic stylesheet for typographic elements such as paragraphs and headings.
+ *
+ * MOLECULES //todo
+ *
+ * STRUCTURES (COMPONENTS)
+ */
 /* --- BEGIN RESET.CSS --- */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
