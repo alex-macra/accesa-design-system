@@ -2,13 +2,15 @@
 
 // revise in beta
 
+$temp-color: #4a4a4a;
+
 @mixin select($display: inline-block) {
+		@include text-size(16);
 		padding: 0 10px;
     display: $display;
 		min-width: 100px;
-		line-height: 1;
 		background: $color-white;
-		border: 1px solid $color-gray;
+    border: 1px solid $default-color-gray--light;
     border-radius: $border-radius;
 		color: $color-secondary;
 		height: 38px;
