@@ -1,4 +1,4 @@
-// Inputs / Textareas / Labels for them
+// Inputs / Textareas / Labels
 
 $placeholder-color: #999;
 
@@ -6,7 +6,9 @@ $placeholder-color: #999;
   &[type=text],
   &[type=password],
   &[type=email],
-  &[type=number] {
+  &[type=number] { 
+    font: inherit;
+    @include text-size(14, 22);
     background: $color-white;
     border: 1px solid $color-gray;
     border-radius: $border-radius;
@@ -16,23 +18,29 @@ $placeholder-color: #999;
     outline: none;
     padding-left: 15px;
     display: $display;
+    
   }
+
   &::-webkit-input-placeholder {
     color: $placeholder-color;
   }
+
   &:-moz-placeholder {
     color: $placeholder-color;
   }
+
   &::-moz-placeholder {
     color: $placeholder-color;
   }
+
   &:-ms-input-placeholder {
     color: $placeholder-color;
   }
 }
 
-@mixin form-textarea($display: inline-block) {
-  @include text-size(15);
+@mixin form-textarea($display: inline-block) { 
+  font: inherit;
+  @include text-size(14,22);
   @include box-sizing();
   padding: 15px;
   border: 1px solid $color-gray;
