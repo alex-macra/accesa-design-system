@@ -109,6 +109,8 @@ color: $color-main;
   font-weight: 400;
 }
 
+.SG-nav li:last-child{ float: right;}
+
 .SG-component .SG-component__title,
 .SG-h3 {
   color: #3E5D6F;

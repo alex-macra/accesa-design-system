@@ -1502,7 +1502,7 @@ a {
 p {
   margin-bottom: 15px;
   font-family: "Open-Sans", sans-serif;
-  color: #313131;
+  color: #4a4a4a;
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -2483,6 +2483,9 @@ p {
 
 .SG-strong {
   font-weight: 400; }
+
+.SG-nav li:last-child {
+  float: right; }
 
 .SG-component .SG-component__title,
 .SG-h3 {

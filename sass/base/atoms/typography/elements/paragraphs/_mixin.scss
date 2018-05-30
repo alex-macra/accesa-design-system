@@ -3,9 +3,10 @@ $color-paragraph: $color-dark-gray;
 
 $font-paragraphs: $font-paragraph;
 $color-paragraphs: $color-paragraph;
+$temp-color: #4a4a4a;
 
 @mixin paragraphs-defaults() {
     margin-bottom: 15px;
     font-family: $font-paragraphs;
-    color: $color-paragraphs;
+    color: $temp-color;
 }
