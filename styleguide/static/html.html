@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>ACCESA DESIGN SYSTEMS::Style guidelines</title>
+      <title>ACCESA DESIGN SYSTEMS::HTML guidelines</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="../build/styles/app.css" rel="stylesheet">
@@ -13,10 +13,10 @@
    <body class="SG-page">
       <div class="SG-header">
          <a class="SG-logo" href="../build/index.html"><span class="SG-logo__icon SG-ico SG-ico--logo"></span></a>
-         <ul class="SG-nav">
-            <li><a class="SG-nav__item" href="accesibility.html">Accesibility</a></li>  
-            <li><a class="SG-nav__item" href="html.html">HTML</a></li>
-            <li><a class="SG-nav__item SG-nav__item--active" href="style.html">Stylesheet</a></li>       
+         <ul class="SG-nav">         
+            <li><a class="SG-nav__item" href="accesibility.html">Accesibility</a></li>     
+            <li><a class="SG-nav__item SG-nav__item--active" href="html.html">HTML</a></li>
+            <li><a class="SG-nav__item" href="style.html">Stylesheet</a></li>
             <li><a class="SG-nav__item" href="../build/atoms.html">Back to styleguide</a></li>
          </ul>
          <ul class="SG-nav-icons">
@@ -27,7 +27,7 @@
          <div class="SG-top-wrapper">
             <div class="SG-row">
                <div class="SG-gr-12">
-                  <div class="SG-h1">Stylesheet guidelines</div>
+                  <div class="SG-h1">HTML guidelines</div>
                </div>
             </div>
             <div class="SG-row">
@@ -35,7 +35,7 @@
                   <div class="SG-h3">Table of content</div>
                </div>
                <div class="SG-gr-6">
-                  <div class="SG-h3">What is stylesheet guideline for?</div>
+                  <div class="SG-h3">Why</div>
                </div>
             </div>
                <div class="SG-row">
@@ -47,58 +47,7 @@
                      </ul>
                   </div>
                   <div class="SG-gr-6">                 
-                        <p><strong>Writing effective stylesheet could make a huge impact over time in any given project.</strong></p>
-                        
-
-                        <!-- 
-he troubled history of CSS comes mostly from the fact that it’s so simple for development newbies to learn through brute force, and that it’s too easy to structure poorly in a project. Anyone starting out in web development can examine web pages in their browser and see how things are styled and then copy/paste those styles into their own project. When a global style property is preventing a style on a specific element from working, the newbie developer does a Google search for “how to override a CSS style” and learns of the evil !important flag.
-
-At first, it’s easy enough to just build colossal stylesheets with several properties overriding each other and !important declared where some properties are in conflict. This is exactly what the Cascading Style Sheet was designed to do. It’s a powerful thing, but common practices around them become a headache for developers and designers alike, which is why it’s common to resort to framework code.
-
-In the past, there have been more legitimate reasons for depending on CSS frameworks. Properties such as flex and grid did not exist yet, and browsers had poor support for CSS transitions and pseudo classes. The icon fonts available through these frameworks reduced the headache around implementing basic icons, especially before SVG sprites became well supported.
-
-At this point, CSS frameworks solve fewer everyday problems than they used to, and although I still maintain that they are great for prototyping and for building tools where custom design isn’t necessary, they may hinder one’s understanding of how to write effective CSS. For the seasoned developer, a framework feature as simple as a dropdown menu might not function as they’d like, thus forcing them to override someone else’s code.
-
-By slamming my head against writing framework-free CSS multiple times, I developed some patterns around writing CSS that keep application design comprehensible without giving up simplicity.
-
-
-//next specifity https://www.elinkdesign.com/news/main/running-the-numbers--css-specificity?
-
-
-///blubber 
-
-CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale. There isn’t much we can do to change how CSS works, but we can make changes to the way we author and structure it.
-
-In working on large, long-running projects, with dozens of developers of differing specialities and abilities, it is important that we all work in a unified way in order to—among other things—
-
-keep stylesheets maintainable;
-keep code transparent, sane, and readable;
-keep stylesheets scalable.
-There are a variety of techniques we must employ in order to satisfy these goals, and CSS Guidelines is a document of recommendations and approaches that will help us to do so.
-
-//styleguide
-
-
-A coding styleguide (note, not a visual styleguide) is a valuable tool for teams who
-
-build and maintain products for a reasonable length of time;
-have developers of differing abilities and specialisms;
-have a number of different developers working on a product at any given time;
-on-board new staff regularly;
-have a number of codebases that developers dip in and out of.
-Whilst styleguides are typically more suited to product teams—large codebases on long-lived and evolving projects, with multiple developers contributing over prolonged periods of time—all developers should strive for a degree of standardisation in their code.
-
-A good styleguide, when well followed, will
-
-set the standard for code quality across a codebase;
-promote consistency across codebases;
-give developers a feeling of familiarity across codebases;
-increase productivity.
-Styleguides should be learned, understood, and implemented at all times on a project which is governed by one, and any deviation must be fully justified.
-
-
-
-                        -->
+                        <!-- tips regarding html, stuff about writing more semantic-->
                      
                   </div>
                </div>
