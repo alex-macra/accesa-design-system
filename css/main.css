@@ -1168,9 +1168,9 @@ button.icon {
  * @atom Blockquote
  * @section Typography
  * @markup
- *  <p>
+ *  <blockquote>
  *    @{lipsum:2:paragraphs}
- *  </p>
+ *  </blockquote>
  */
 blockquote,
 q {

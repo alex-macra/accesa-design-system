@@ -6,7 +6,7 @@ $color-blockquotes: $color-blockquote;
 $temp-color: #4a4a4a;
 
 @mixin blockquote() {
-
+    
     font-family: $font-blockquotes;
     color: $temp-color;
     border-left: 10px solid $color-light-gray;
