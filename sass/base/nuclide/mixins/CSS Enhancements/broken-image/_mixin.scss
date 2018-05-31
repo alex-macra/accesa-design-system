@@ -7,11 +7,11 @@
  *  @include broken-image()  //soon to be updated so you can pass parameters
  */
  
-@mixin broken-image() {
+@mixin broken-image($image-height: 50px) {
 	display: block;
 	height: auto;
 	line-height: 2;
-	min-height: 50px;
+	min-height: $image-height;
 	position: relative;
 	text-align: center;
 	width: 100%;
