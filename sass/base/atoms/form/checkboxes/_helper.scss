@@ -2,19 +2,21 @@
 
 /**
  * @atom Checkbox
- * @section Form > Checkbox
+ * @section Form > Checkboxes
  * @description
  *  todo
  * @markup
- *  <label class="checkbox">Checkbox
+ *  <label class="checkbox">
  *   <input id="check2" type="checkbox" onchange="console.log('changed');">
  *   <span></span>
+ *   Checkbox
  *  </label>
 */
 
 .checkbox {
   @include checkbox();
-  
+  @include legend-color();
+
   input + span {
     border-radius: 2px;
     
@@ -24,6 +26,38 @@
       width: 2em;
       height: 2em;
     }
+  }
+}
+
+/**
+ * @atom Radio
+ * @section Form > Checkboxes
+ * @description
+ *  todo
+ * @markup
+ *  <label class="radio">
+ *   <input id="check3" type="radio" onchange="console.log('changed');">
+ *   <span></span>
+ *   Radio button
+ *  </label>
+*/
+.radio {
+  @include checkbox();
+  @include legend-color();
+  
+  input + span {
+    border-radius: 100%;
+    
+    &::after {
+      border-radius: 100%;
+      margin: .65em;
+      width: .75em;
+      height: .75em;
+    }
+  }
+  
+  input:checked + span::after {
+    background: black;
   }
 }
 
