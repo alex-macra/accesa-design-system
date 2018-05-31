@@ -62,12 +62,12 @@ $temp-color: #4a4a4a;
   }
 }
 
-@mixin form-legend-color() {
+@mixin form-legend-color($text-color: $temp-color) {
   span {
-    color: $temp-color;
+    color: $text-color;
   }
 
   label {
-    color: $temp-color;
+    color: $text-color;
   }
 }
