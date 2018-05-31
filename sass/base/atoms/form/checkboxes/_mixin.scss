@@ -1,0 +1,55 @@
+// ugly right now.
+
+@mixin checkbox {
+    position: relative;
+    cursor: pointer;
+    padding: 1em;
+    
+    &::selection {
+      background: transparent;
+    }
+    
+    input + span {
+      background: white;
+      content: "";
+      display: inline-block;
+      margin: 0 .5em 0 0;
+      padding: 0;
+      vertical-align: middle;
+      width: 2em;
+      height: 2em;
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      
+      &::after {
+        content: "";
+        display: block;
+        transform: scale(0);
+        transition: transform .2s;
+      }
+    }
+    
+    @media screen and (min-width: 768px) {
+      &:hover input + span {
+        box-shadow: 0 2px 4px rgba(#000, .15);
+      }
+    }
+    
+    input:active + span {
+      box-shadow: 0 4px 8px rgba(#000, .15);
+    }
+    
+    input:focus + span {
+      box-shadow: 0 0 0 3px lightblue;
+    }
+    
+    input:checked + span::after {
+      transform: scale(1);
+    }
+    
+    input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+    }
+}

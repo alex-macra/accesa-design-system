@@ -1,6 +1,6 @@
 {
   "name": "accesa-design-system",
-  "version": "0.6.0-beta.4",
+  "version": "0.6.0-beta.5",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {

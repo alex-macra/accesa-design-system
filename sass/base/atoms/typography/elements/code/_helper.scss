@@ -1,4 +1,13 @@
 /* --- BEGIN CODE.CSS --- */
+/**
+ * Generic blockquote style for medium to long blocks of text. This element
+ * is using the @{lipsum} substitution to generate two blocks of text.
+ *
+ * @atom Code
+ * @section Typography > Content markup tags
+ * @markup
+ *  todo
+ */
 
 pre.code {
   @include code-styling();

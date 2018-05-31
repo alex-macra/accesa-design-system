@@ -541,7 +541,7 @@ button {
  *   <button type="button" class="error">error</button>
  *   <button type="button" class="go">proceed</button>
  *   <button type="button">greyed (default button)</button>
- *   <button type="button" disabled>disabled button</button>
+ *   <button type="buttfdfdfdfdon" disabled>disabled button</button>
  *   <button type="button" class="cancel">transparent button</button>
 */
 button.primary {
@@ -970,6 +970,62 @@ button.icon {
     text-decoration: none; }
 
 /* _- END BUTTONS.CSS _- */
+/* --- BEGIN CHECKBOX.CSS --- */
+/**
+ * @atom Checkbox
+ * @section Form > Checkbox
+ * @description
+ *  todo
+ * @markup
+ *  <label class="checkbox">Checkbox
+ *   <input id="check2" type="checkbox" onchange="console.log('changed');">
+ *   <span></span>
+ *  </label>
+*/
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  padding: 1em; }
+  .checkbox::selection {
+    background: transparent; }
+  .checkbox input + span {
+    background: white;
+    content: "";
+    display: inline-block;
+    margin: 0 .5em 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden; }
+    .checkbox input + span::after {
+      content: "";
+      display: block;
+      transform: scale(0);
+      transition: transform .2s; }
+  @media screen and (min-width: 768px) {
+    .checkbox:hover input + span {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); } }
+  .checkbox input:active + span {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+  .checkbox input:focus + span {
+    box-shadow: 0 0 0 3px lightblue; }
+  .checkbox input:checked + span::after {
+    transform: scale(1); }
+  .checkbox input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; }
+  .checkbox input + span {
+    border-radius: 2px; }
+    .checkbox input + span::after {
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwb2x5Z29uIHBvaW50cz0iMTMuNzA3LDMyLjI5MyAxMi4yOTMsMzMuODU0IDI0LjI5Myw0NiAyNS43MDcsNDYgNDkuNzA3LDIxLjg1NCA0OC4yOTMsMjAuMzY2IDI1LDQzLjYyMyAiLz48L2c+PC9zdmc+) no-repeat center;
+      background-size: contain;
+      width: 2em;
+      height: 2em; }
+
+/* --- END CHECKBOX.CSS --- */
 /* --- BEGIN DROP-DOWNS.CSS --- */
 /**
  * @atom Block select
@@ -1178,7 +1234,7 @@ button.icon {
  * is using the @{lipsum} substitution to generate two blocks of text.
  *
  * @atom Blockquote
- * @section Typography
+ * @section Typography > Content markup tags
  * @markup
  *  <blockquote>
  *    @{lipsum:2:paragraphs}
@@ -1228,6 +1284,15 @@ q {
 
 /* --- END BLOCKQUOTE.CSS --- */
 /* --- BEGIN CODE.CSS --- */
+/**
+ * Generic blockquote style for medium to long blocks of text. This element
+ * is using the @{lipsum} substitution to generate two blocks of text.
+ *
+ * @atom Code
+ * @section Typography > Content markup tags
+ * @markup
+ *  todo
+ */
 pre.code {
   background: #333333;
   white-space: pre;
@@ -1305,7 +1370,7 @@ pre.code {
  * pages and the documentation pages.
  *
  * @atom Headlines
- * @section Typography
+ * @section Typography > Content markup tags
  * @markup
  *  <h1>Headline H1</h1>
  *  <h2>Headline H2</h2>
@@ -1374,7 +1439,7 @@ h6 {
  * Links....
  *
  * @atom Links
- * @section Typography
+ * @section Typography > Content markup tags
  * @markup
  *  <a>Link</a><br/>
  *  <a href="#test">Link with url</a>
@@ -1414,7 +1479,7 @@ a {
  * Generic list style.
  *
  * @atom Default Lists
- * @section Typography > List
+ * @section Typography > Content markup tags
  * @markup
  *  <ul class="list-default">
  *    <li>default list style</li>
@@ -1444,7 +1509,7 @@ a {
  * Square list style.
  *
  * @atom Square Lists
- * @section Typography > List
+ * @section Typography > Content markup tags
  * @markup
  *  <ul class="list-square">
  *    <li>square list style</li>
@@ -1477,7 +1542,7 @@ a {
  * Dash list style.
  *
  * @atom Dash Lists
- * @section Typography > List
+ * @section Typography > Content markup tags
  * @markup
  *  <ul class="list-dash">
  *    <li>dash list style</li>
@@ -1512,7 +1577,7 @@ a {
  * Ordered list style.
  *
  * @atom Ordered Lists
- * @section Typography > List
+ * @section Typography > Content markup tags
  * @markup
  *  <ol class="list-ordered">
  *    <li>ordered list style</li>
@@ -1547,7 +1612,7 @@ a {
  * is using the @{lipsum} substitution to generate two blocks of text.
  *
  * @atom Paragraph
- * @section Typography
+ * @section Typography > Content markup tags
  * @markup
  *  <p>
  *    @{lipsum:2:paragraphs}
@@ -1566,7 +1631,7 @@ p {
  * Basic styles to decorate text. Just use normal semantic markup. 
  *
  * @atom Basic text style
- * @section Typography
+ * @section Typography > Content markup tags
  * @markup
  *  <strong>Bold text</strong><br/>
  *  <em>Italic text</em><br/>
@@ -2533,7 +2598,13 @@ p {
 
 .SG-component {
   padding-bottom: 95px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: -60px;
+  padding-top: 60px; }
+
+.SG-anchor {
+  padding-top: 140px;
+  margin-top: -140px; }
 
 .SG-strong {
   font-weight: 400; }

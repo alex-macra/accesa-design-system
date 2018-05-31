@@ -103,6 +103,12 @@ color: $color-main;
 .SG-component {
   padding-bottom: 95px;
   border-bottom: 1px solid rgba(0,0,0, 0.05);
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.SG-anchor {
+  padding-top: 140px; margin-top: -140px;
 }
 
 .SG-strong {
