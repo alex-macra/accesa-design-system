@@ -44,7 +44,7 @@
 
   .#{$prefix}-modal-dialog {
     background: $color-white;
-    border: $color-disabled solid 1px;
+    border: $color-light-gray solid 1px;
     border-radius: $border-radius;
     position: fixed;
     left: 50%;
@@ -66,11 +66,11 @@
   }
 
   .#{$prefix}-modal-header {
-    border-bottom: $color-disabled solid 1px;
+    border-bottom: $color-light-gray solid 1px;
   }
 
   .#{$prefix}-modal-footer {
-    border-top: $color-disabled solid 1px;
+    border-top: $color-light-gray solid 1px;
     text-align: right
   }
 

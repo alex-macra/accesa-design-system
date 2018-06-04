@@ -1,0 +1,18 @@
+    $color-main: #2274a5;
+    $color-dark-main: shade($color-main, 10%);
+    $color-lighter-main: tint($color-main, 90%);
+
+    $color-white: tint($color-main, 100%);
+    $color-black: shade($color-main, 100%);
+
+    $color-gray: grayscale($color-main);
+    $color-dark-gray: shade($color-gray, 20%);
+    $color-light-gray: tint($color-gray, 20%);
+
+    $color-secondary: mix($color-main, $color-gray, 50%);
+    $color-secondary-dark: shade($color-secondary, 20%);
+
+    $color-error: mix($color-main, #e90d00, 50%);
+    $color-success: adjust-color($color-main, -90, 60, -90);
+
+    $color-white-smoke: #efefef;

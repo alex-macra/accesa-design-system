@@ -42,7 +42,7 @@
 			//@include transition(all 0.2s ease-in-out);
 
 			&:hover {
-				background: darken($color-main-white, 10);
+				background: shade($color-white, 10);
 			}
 		}
 
@@ -116,7 +116,7 @@
 			//@include transition(all 0.2s ease-in-out);
 
 			&:hover {
-				background: darken($color-main, 10);
+				background: shade($color-main, 10);
 			}
 		}
 
@@ -132,13 +132,13 @@
 			color: $color-white;
 			top: 53px;
 			left: 0;
-			background: $color-main-lighter;
+			background: $color-lighter-main;
 		}
 
 		[id^="tab"]:checked + label {
 			top: 0;
 			padding-top: 17px;
-			background: $color-main-lighter;
+			background: $color-lighter-main;
 		}
 
 		[id^="tab"]:checked ~ [id^="tab-content"] {

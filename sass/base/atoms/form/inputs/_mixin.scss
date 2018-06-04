@@ -13,7 +13,7 @@ $temp-color: #4a4a4a;
     font: inherit;
     @include text-size(16, 22);
     background: $color-white;
-    border: 1px solid $default-color-gray--light;
+    border: 1px solid $color-light-gray;
     border-radius: $border-radius;
     color: $temp-color;
     height: 38px; //???
@@ -45,7 +45,7 @@ $temp-color: #4a4a4a;
   @include text-size(16,22);
   @include box-sizing();
   padding: 15px;
-  border: 1px solid $default-color-gray--light;
+  border: 1px solid $color-light-gray;
   border-radius: $border-radius;
   margin-bottom: 10px;
   color: $temp-color;

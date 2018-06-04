@@ -2,7 +2,7 @@
 
 button {
 
-  @include button ($color-gray);
+  @include button($default-button-color);
   @include text-size(14);
 }
 
