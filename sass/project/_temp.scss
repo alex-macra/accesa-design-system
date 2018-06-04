@@ -105,6 +105,12 @@ color: $color-main;
   border-bottom: 1px solid rgba(0,0,0, 0.05);
   margin-top: -60px;
   padding-top: 60px;
+
+  .SG-component {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 }
 
 .SG-anchor {

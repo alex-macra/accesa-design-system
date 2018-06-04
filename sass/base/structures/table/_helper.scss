@@ -1,10 +1,10 @@
 /* --- BEGIN TABLE.CSS --- */
 
-.#{$prefix}-default-table {
+.default-table {
   @include default-table();
 }
 
-.#{$prefix}-minimal-table {
+.minimal-table {
   @include minimal-table();
 }
 

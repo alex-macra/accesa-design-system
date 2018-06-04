@@ -7,7 +7,7 @@
   overflow: auto;
   margin: 10px 0;
   border-radius: $border-radius;
-  border: shade($color-dark-gray, 20);
+  border: darken($color-dark-gray, 20);
   position: relative;
 
   label {
@@ -31,11 +31,11 @@
     display: block;
     margin: 0 0 0 70px;
     padding: 15px 16px 14px;
-    border-left: 1px solid tint($color-dark-gray, 50);
+    border-left: 1px solid lighten($color-dark-gray, 50);
     overflow-x: auto;
     font-size: 13px;
     line-height: 19px;
-    color: tint($color-dark-gray, 50);
+    color: lighten($color-dark-gray, 50);
     cursor: text;
   }
 
@@ -70,20 +70,20 @@
   }
 
   &.code-html {
-    border: shade($color-main-red-dark, 20);
+    border: shdarkenade($color-main-red-dark, 20);
     background: $color-main-red-dark;
     code {
-      color: tint($color-main-red-dark, 50);
-      border-left: 1px solid tint($color-main-red-dark, 50);
+      color: lighten($color-main-red-dark, 50);
+      border-left: 1px solid lighten($color-main-red-dark, 50);
     }
   }
 
   &.code-javascript {
-    border: shade($color-main-blue-dark, 20);
+    border: darken($color-main-blue-dark, 20);
     background: $color-main-blue-dark;
     code {
-      color: tint($color-main-blue-dark, 50);
-      border-left: 1px solid tint($color-main-blue-dark, 50);
+      color: lighten($color-main-blue-dark, 50);
+      border-left: 1px solid lighten($color-main-blue-dark, 50);
     }
   }
 }

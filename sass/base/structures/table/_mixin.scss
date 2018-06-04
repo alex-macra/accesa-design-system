@@ -1,8 +1,44 @@
-// Tables
-
-//todo: improve mixins,
-//add more styles
 //sync with responsive breakpoints maybe?
+/**
+ * Default table design
+ * @structure Default table
+ * @section Table
+ * @markup
+*  <table class="default-table">
+*   <thead>	                                 
+*    <tr>
+*     <th>table heading</th>
+*     <th>table heading</th>                    
+*     <th>table heading</th>                   
+*     <th>table heading</th>
+*     <th>table heading</th>
+*    </tr>
+*   </thead>
+*   <tbody>	                 
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*   </tbody>
+*  </table>
+*/
 
 @mixin default-table() {
 	border: 1px solid #ccc;
@@ -18,6 +54,47 @@
 		border: 1px solid #ddd;
 	}
 }
+
+/**
+ * Minimal table design
+ * @structure Minimal table
+ * @section Table
+ * @markup
+*  <table class="minimal-table">
+*   <thead>	                                 
+*    <tr>
+*     <th>table heading</th>
+*     <th>table heading</th>                    
+*     <th>table heading</th>                   
+*     <th>table heading</th>
+*     <th>table heading</th>
+*    </tr>
+*   </thead>
+*   <tbody>	                 
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*   </tbody>
+*  </table>
+*/
 
 @mixin minimal-table() {
 		border: 1px solid #ccc;
