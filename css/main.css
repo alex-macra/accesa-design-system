@@ -710,18 +710,17 @@ button {
   text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #646464;
-  box-shadow: 0 2px 0 shade(#646464, 15%);
+  box-shadow: 0 2px 0 #575757;
   cursor: pointer;
   font-size: 14px;
   font-size: 1.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.28; }
   button:hover, button:focus {
-    box-shadow: none;
     color: #ffffff;
     outline: none; }
   button:hover, button:focus {
-    background-color: shade(#646464, 30%); }
+    background-color: #3e3e3e; }
   button:active {
     background-color: #646464; }
 
@@ -740,220 +739,62 @@ button {
  *   <button type="button" class="cancel">transparent button</button>
 */
 button.primary {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #2274a5;
-  box-shadow: 0 2px 0 shade(#2274a5, 15%);
+  box-shadow: 0 2px 0 #1e6590;
   cursor: pointer; }
   button.primary:hover, button.primary:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.primary:hover, button.primary:focus {
-    background-color: shade(#2274a5, 30%); }
+    background-color: #154766; }
   button.primary:active {
     background-color: #2274a5; }
 
 button.secondary {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #3e5d6f;
-  box-shadow: 0 2px 0 shade(#3e5d6f, 15%);
+  box-shadow: 0 2px 0 #354f5f;
   cursor: pointer; }
   button.secondary:hover, button.secondary:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.secondary:hover, button.secondary:focus {
-    background-color: shade(#3e5d6f, 30%); }
+    background-color: #23343e; }
   button.secondary:active {
     background-color: #3e5d6f; }
 
 button.error {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #e90d00;
-  box-shadow: 0 2px 0 shade(#e90d00, 15%);
+  box-shadow: 0 2px 0 #d00c00;
   cursor: pointer; }
   button.error:hover, button.error:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.error:hover, button.error:focus {
-    background-color: shade(#e90d00, 30%); }
+    background-color: #9d0900; }
   button.error:active {
     background-color: #e90d00; }
 
 button.go {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #00b069;
-  box-shadow: 0 2px 0 shade(#00b069, 15%);
+  box-shadow: 0 2px 0 #00975a;
   cursor: pointer; }
   button.go:hover, button.go:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.go:hover, button.go:focus {
-    background-color: shade(#00b069, 30%); }
+    background-color: #00643b; }
   button.go:active {
     background-color: #00b069; }
 
 button.cancel {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: transparent;
-  box-shadow: 0 2px 0 shade(transparent, 15%);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
   cursor: pointer;
   color: #000000; }
   button.cancel:hover, button.cancel:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.cancel:hover, button.cancel:focus {
-    background-color: shade(transparent, 30%); }
+    background-color: rgba(0, 0, 0, 0); }
   button.cancel:active {
     background-color: transparent; }
   button.cancel:hover, button.cancel:active, button.cancel:focus {
     color: #333333; }
 
 button.disabled {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #cccccc;
-  box-shadow: 0 2px 0 shade(#cccccc, 15%);
+  box-shadow: 0 2px 0 #bfbfbf;
   cursor: pointer;
   cursor: not-allowed;
   color: #b2b2b2;
@@ -966,43 +807,16 @@ button.disabled {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
   filter: alpha(opacity=95); }
   button.disabled:hover, button.disabled:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button.disabled:hover, button.disabled:focus {
-    background-color: shade(#cccccc, 30%); }
+    background-color: #a6a6a6; }
   button.disabled:active {
     background-color: #cccccc; }
   button.disabled:hover, button.disabled:active, button.disabled:focus {
     color: #b2b2b2; }
 
 button[disabled] {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border: 0;
-  border-radius: 0;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 200;
-  margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
-  vertical-align: middle;
-  min-width: 80px;
-  min-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #cccccc;
-  box-shadow: 0 2px 0 shade(#cccccc, 15%);
+  box-shadow: 0 2px 0 #bfbfbf;
   cursor: pointer;
   cursor: not-allowed;
   color: #b2b2b2;
@@ -1015,11 +829,7 @@ button[disabled] {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
   filter: alpha(opacity=95); }
   button[disabled]:hover, button[disabled]:focus {
-    box-shadow: none;
-    color: #ffffff;
-    outline: none; }
-  button[disabled]:hover, button[disabled]:focus {
-    background-color: shade(#cccccc, 30%); }
+    background-color: #a6a6a6; }
   button[disabled]:active {
     background-color: #cccccc; }
   button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
@@ -1146,7 +956,7 @@ button.icon {
   text-transform: uppercase;
   font-family: "Open-Sans", sans-serif;
   background-color: #646464;
-  box-shadow: 0 2px 0 shade(#646464, 15%);
+  box-shadow: 0 2px 0 #575757;
   cursor: pointer;
   font-size: 14px;
   font-size: 1.4rem;
@@ -1154,15 +964,104 @@ button.icon {
   line-height: 22px;
   line-height: 2.2rem; }
   .is-button:hover, .is-button:focus {
-    box-shadow: none;
     color: #ffffff;
     outline: none; }
   .is-button:hover, .is-button:focus {
-    background-color: shade(#646464, 30%); }
+    background-color: #3e3e3e; }
   .is-button:active {
     background-color: #646464; }
   .is-button:hover {
     text-decoration: none; }
+  .is-button.primary {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #2274a5;
+    box-shadow: 0 2px 0 #1e6590;
+    cursor: pointer; }
+    .is-button.primary:hover, .is-button.primary:focus {
+      background-color: #154766; }
+    .is-button.primary:active {
+      background-color: #2274a5; }
+  .is-button.secondary {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #3e5d6f;
+    box-shadow: 0 2px 0 #354f5f;
+    cursor: pointer; }
+    .is-button.secondary:hover, .is-button.secondary:focus {
+      background-color: #23343e; }
+    .is-button.secondary:active {
+      background-color: #3e5d6f; }
+  .is-button.error {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #e90d00;
+    box-shadow: 0 2px 0 #d00c00;
+    cursor: pointer; }
+    .is-button.error:hover, .is-button.error:focus {
+      background-color: #9d0900; }
+    .is-button.error:active {
+      background-color: #e90d00; }
+  .is-button.go {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #00b069;
+    box-shadow: 0 2px 0 #00975a;
+    cursor: pointer; }
+    .is-button.go:hover, .is-button.go:focus {
+      background-color: #00643b; }
+    .is-button.go:active {
+      background-color: #00b069; }
+  .is-button.cancel {
+    font-family: "Open-Sans", sans-serif;
+    background-color: transparent;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #000000; }
+    .is-button.cancel:hover, .is-button.cancel:focus {
+      background-color: rgba(0, 0, 0, 0); }
+    .is-button.cancel:active {
+      background-color: transparent; }
+    .is-button.cancel:hover, .is-button.cancel:active, .is-button.cancel:focus {
+      color: #333333; }
+  .is-button.disabled {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #cccccc;
+    box-shadow: 0 2px 0 #bfbfbf;
+    cursor: pointer;
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    .is-button.disabled:hover, .is-button.disabled:focus {
+      background-color: #a6a6a6; }
+    .is-button.disabled:active {
+      background-color: #cccccc; }
+    .is-button.disabled:hover, .is-button.disabled:active, .is-button.disabled:focus {
+      color: #b2b2b2; }
+  .is-button[disabled] {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #cccccc;
+    box-shadow: 0 2px 0 #bfbfbf;
+    cursor: pointer;
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    .is-button[disabled]:hover, .is-button[disabled]:focus {
+      background-color: #a6a6a6; }
+    .is-button[disabled]:active {
+      background-color: #cccccc; }
+    .is-button[disabled]:hover, .is-button[disabled]:active, .is-button[disabled]:focus {
+      color: #b2b2b2; }
 
 /* _- END BUTTONS.CSS _- */
 /* --- BEGIN CHECKBOX.CSS --- */
@@ -2248,9 +2147,33 @@ p {
     transform: translateY(-1rem); } }
 
 /* --- END LOADERS.CSS --- */
+/**
+ * Default modal design. Make sure to add the markup right before the </body> tag ends.
+ * @structure Modal
+ * @section Modal
+ * @markup
+ *  <div class="modal"> 
+ *   Check it
+ *   <input class="modal-open" id="modal-one" type="checkbox">
+ *   <div class="modal-wrap" aria-hidden="true" role="dialog">
+ *    <label class="modal-overlay" for="modal-one"></label>
+ *    <div class="modal-dialog">
+ *     <div class="modal-header"> 
+ *      <h2>Modal in CSS?</h2>
+ *       <label class="is-button cancel" for="modal-one" aria-hidden="true">×</label>
+ *     </div>
+ *     <div class="modal-body">
+ *      <p>One modal example here</p>
+ *     </div>
+ *     <div class="modal-footer">
+ *      <label class="is-button primary" for="modal-one">okay</label>
+ *     </div>      
+ *    </div>
+ *   </div>
+ *  </div>
+*/
 /* --- BEGIN MODAL.CSS --- */
-.acc-modal .acc-modal-wrap:before {
-  content: '';
+.modal .modal-overlay {
   display: none;
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -2258,18 +2181,9 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100000; }
-
-.acc-modal .acc-modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 100001; }
 
-.acc-modal .acc-modal-exit {
+.modal .modal-exit {
   font-size: 25px;
   font-size: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -2278,16 +2192,16 @@ p {
   right: 15px;
   top: 5px; }
 
-.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap:before,
-.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap .acc-modal-overlay {
+.modal .modal-open:checked ~ .modal-wrap:before,
+.modal .modal-open:checked ~ .modal-wrap .modal-overlay {
   display: block; }
 
-.acc-modal .acc-modal-open:checked ~ .acc-modal-wrap .acc-modal-dialog {
+.modal .modal-open:checked ~ .modal-wrap .modal-dialog {
   transform: translate(-50%, -50%);
   position: fixed;
   top: 40%; }
 
-.acc-modal .acc-modal-dialog {
+.modal .modal-dialog {
   background: #ffffff;
   border: #cccccc solid 1px;
   border-radius: 0;
@@ -2300,47 +2214,127 @@ p {
   max-width: 600px;
   z-index: 100002; }
 
-.acc-modal .acc-modal-body {
+.modal .modal-body {
   padding: 20px; }
 
-.acc-modal .acc-modal-header,
-.acc-modal .acc-modal-footer {
+.modal .modal-header,
+.modal .modal-footer {
   padding: 20px 20px; }
 
-.acc-modal .acc-modal-header {
+.modal .modal-header {
   border-bottom: #cccccc solid 1px; }
 
-.acc-modal .acc-modal-footer {
+.modal .modal-footer {
   border-top: #cccccc solid 1px;
   text-align: right; }
 
 /* --- END MODAL.CSS --- */
+/**
+ * Default table design
+ * @structure Default table
+ * @section Table
+ * @markup
+*  <table class="default-table">
+*   <thead>	                                 
+*    <tr>
+*     <th>table heading</th>
+*     <th>table heading</th>                    
+*     <th>table heading</th>                   
+*     <th>table heading</th>
+*     <th>table heading</th>
+*    </tr>
+*   </thead>
+*   <tbody>	                 
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*   </tbody>
+*  </table>
+*/
+/**
+ * Minimal table design
+ * @structure Minimal table
+ * @section Table
+ * @markup
+*  <table class="minimal-table">
+*   <thead>	                                 
+*    <tr>
+*     <th>table heading</th>
+*     <th>table heading</th>                    
+*     <th>table heading</th>                   
+*     <th>table heading</th>
+*     <th>table heading</th>
+*    </tr>
+*   </thead>
+*   <tbody>	                 
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*    <tr>	                                   
+*     <td>table cell</td>                  
+*     <td>table cell</td>
+*     <td>table cell</td>
+*     <td>table cell</td>                   
+*     <td>table cell</td>                 
+*    </tr>
+*   </tbody>
+*  </table>
+*/
 /* --- BEGIN TABLE.CSS --- */
-.acc-default-table {
+.default-table {
   border: 1px solid #ccc;
   min-width: 50%;
   padding: 5px;
   text-align: left; }
-  .acc-default-table td,
-  .acc-default-table th {
+  .default-table td,
+  .default-table th {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
     border: 1px solid #ddd; }
 
-.acc-minimal-table {
+.minimal-table {
   border: 1px solid #ccc;
   min-width: 50%;
   padding: 5px;
   text-align: left; }
-  .acc-minimal-table thead {
+  .minimal-table thead {
     padding: 5px; }
-  .acc-minimal-table tbody {
+  .minimal-table tbody {
     padding: 5px; }
-  .acc-minimal-table tr {
+  .minimal-table tr {
     padding: 5px; }
-  .acc-minimal-table td,
-  .acc-minimal-table th {
+  .minimal-table td,
+  .minimal-table th {
     padding: 5px; }
 
 /* --- END TABLE.CSS --- */
@@ -2444,6 +2438,10 @@ p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: -60px;
   padding-top: 60px; }
+  .SG-component .SG-component {
+    padding: 0;
+    margin: 0;
+    border: 0; }
 
 .SG-anchor {
   padding-top: 140px;

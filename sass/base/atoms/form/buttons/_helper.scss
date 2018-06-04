@@ -1,7 +1,7 @@
 /* _- BEGIN BUTTONS.CSS _- */
 
 button {
-
+	@include button-defaults();
   @include button($default-button-color);
   @include text-size(14);
 }
@@ -93,8 +93,10 @@ button {
 */
 
 .is-button { 
+	@include button-defaults();
   @include button ($color-gray);
   @include button-lookalike();
+  @include button-styles();
   @include text-size(14, 22);
 }
 

@@ -1,21 +1,36 @@
-// Modal
+/**
+ * Default modal design. Make sure to add the markup right before the </body> tag ends.
+ * @structure Modal
+ * @section Modal
+ * @markup
+ *  <div class="modal"> 
+ *   Check it
+ *   <input class="modal-open" id="modal-one" type="checkbox">
+ *   <div class="modal-wrap" aria-hidden="true" role="dialog">
+ *    <label class="modal-overlay" for="modal-one"></label>
+ *    <div class="modal-dialog">
+ *     <div class="modal-header"> 
+ *      <h2>Modal in CSS?</h2>
+ *       <label class="is-button cancel" for="modal-one" aria-hidden="true">×</label>
+ *     </div>
+ *     <div class="modal-body">
+ *      <p>One modal example here</p>
+ *     </div>
+ *     <div class="modal-footer">
+ *      <label class="is-button primary" for="modal-one">okay</label>
+ *     </div>      
+ *    </div>
+ *   </div>
+ *  </div>
+*/
+
+//revise in beta
 
 @mixin modal() {
 
-  .#{$prefix}-modal-wrap:before {
-    content: '';
+  .modal-overlay {
     display: none;
     background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100000;
-  }
-
-  .#{$prefix}-modal-overlay {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -24,25 +39,25 @@
     z-index: 100001
   }
 
-  .#{$prefix}-modal-exit {
+  .modal-exit {
     @include text-size(25);
     position: absolute;
     right: 15px;
     top: 5px;
   }
 
-  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap:before,
-  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap .#{$prefix}-modal-overlay {
+  .modal-open:checked ~ .modal-wrap:before,
+  .modal-open:checked ~ .modal-wrap .modal-overlay {
     display: block;
   }
 
-  .#{$prefix}-modal-open:checked ~ .#{$prefix}-modal-wrap .#{$prefix}-modal-dialog {
+  .modal-open:checked ~ .modal-wrap .modal-dialog {
     transform: translate(-50%, -50%);
     position: fixed;
     top: 40%
   }
 
-  .#{$prefix}-modal-dialog {
+  .modal-dialog {
     background: $color-white;
     border: $color-light-gray solid 1px;
     border-radius: $border-radius;
@@ -56,20 +71,20 @@
     z-index: 100002;
   }
 
-  .#{$prefix}-modal-body {
+  .modal-body {
     padding: 20px;
   }
 
-  .#{$prefix}-modal-header,
-  .#{$prefix}-modal-footer {
+  .modal-header,
+  .modal-footer {
     padding: 20px 20px;
   }
 
-  .#{$prefix}-modal-header {
+  .modal-header {
     border-bottom: $color-light-gray solid 1px;
   }
 
-  .#{$prefix}-modal-footer {
+  .modal-footer {
     border-top: $color-light-gray solid 1px;
     text-align: right
   }

@@ -42,7 +42,7 @@
 			//@include transition(all 0.2s ease-in-out);
 
 			&:hover {
-				background: shade($color-white, 10);
+				background: darken($color-white, 10);
 			}
 		}
 
@@ -116,7 +116,7 @@
 			//@include transition(all 0.2s ease-in-out);
 
 			&:hover {
-				background: shade($color-main, 10);
+				background: darken($color-main, 10);
 			}
 		}
 
