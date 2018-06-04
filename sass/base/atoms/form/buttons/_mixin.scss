@@ -1,20 +1,24 @@
 $buttons-font: 'Open-Sans', sans-serif;
 $button-font: $buttons-font;
+$default-button-color: $color-gray !default;
 
-@mixin button($color: #fff) {
+@mixin button($button-color: $default-button-color) {
+	$button-shade-color: shade($button-color, 15%);
+	$button-darken-color: shade($button-color, 30%);
+
 	@include no-select();
 	@include button-defaults();
 	font-family: $button-font;
-	background-color: $color;
-	box-shadow: 0 2px 0 shade($color, 15%);
+	background-color: $button-color;
+	box-shadow: 0 2px 0 $button-shade-color;
 	cursor: pointer;
 	
 	&:hover, &:focus {
-		background-color: darken($color, 15%);
+		background-color: $button-darken-color;
 	}
 
 	&:active {
-		background-color: $color;
+		background-color: $button-color;
 	}
 }
 
@@ -73,7 +77,7 @@ $button-font: $buttons-font;
 	}
 	
 	&.disabled {
-		@include button ($color-disabled);
+		@include button ($color-light-gray);
 		cursor: not-allowed;
 		color: #b2b2b2;
 		@include opacity(.95);
@@ -86,7 +90,7 @@ $button-font: $buttons-font;
 	}
 	
 	&[disabled] {
-		@include button ($color-disabled);
+		@include button ($color-light-gray);
 		cursor: not-allowed;
 		color: #b2b2b2;
 		@include opacity(.95);

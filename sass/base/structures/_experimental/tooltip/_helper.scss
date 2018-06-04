@@ -13,19 +13,19 @@
 	width: 30px;
 
 	&.top-right { 
-		@include tooltip(top-right, $color-main-lighter); 
+		@include tooltip(top-right, $color-lighter-main); 
 	}
 
 	&.top-left { 
-		@include tooltip(top-left, $color-main-lighter); 
+		@include tooltip(top-left, $color-lighter-main); 
 	}
 
 	&.bottom-right { 
-		@include tooltip(bottom-right, $color-main-lighter); 
+		@include tooltip(bottom-right, $color-lighter-main); 
 	}
 
 	&.bottom-left {
-		@include tooltip(bottom-left, $color-main-lighter); 
+		@include tooltip(bottom-left, $color-lighter-main); 
 	}
 }
 

@@ -1,57 +1,29 @@
-
 /**
- * soon
+ * Display flex mixin.
  *
  * @mixin
  * @section CSS Helpers > CSS Flex
- */
+ * @example
+ *  @include flexbox();
+*/
 
 @mixin flexbox() {
 	display: -moz-flex;
-	display: flex;
+	display: -webkit-box;
+  	display: -ms-flexbox;  
+  	display: -webkit-flex; 
+ 	display: flex;         
 }
 
-@mixin flex($val) {
-	-webkit-box-flex: $val;
-	-moz-box-flex: $val;
-	-webkit-flex: $val;
-	-ms-flex: $val;
-	flex: $val;
-}
-
-@mixin flex-direction($value: row) {
-	@if $value == row-reverse {
-		-webkit-box-direction: reverse;
-		-webkit-box-orient: horizontal;
-	} 
-	
-	@else if $value == column {
-		-webkit-box-direction: normal;
-		-webkit-box-orient: vertical;
-	} 
-	
-	@else if $value == column-reverse {
-		-webkit-box-direction: reverse;
-		-webkit-box-orient: vertical;
-	}
-	
-	@else {
-		-webkit-box-direction: normal;
-		-webkit-box-orient: horizontal;
-	}
-
-	-webkit-flex-direction: $value;
-	-moz-flex-direction: $value;
-	-ms-flex-direction: $value;
-	flex-direction: $value;
-}
-
-@mixin flex-wrap($wrap) {
-	-webkit-flex-wrap: $wrap;
-	-moz-flex-wrap: $wrap;
-	-ms-flex-wrap: $wrap;
-	flex-wrap: $wrap;
-}
+/**
+ * The order CSS property specifies the order used to lay out a flex or grid item in its flex or grid container. Items within the same container are laid out in ascending order according to their order values. Elements with the same order value are laid out in the order in which they appear in the source code.
+ *
+ * @mixin Flex order
+ * @section CSS Helpers > CSS Flex
+ * @param $int has a default value of "0". Accepts any integer.
+ * @example
+ *  @include flex-order(5);
+*/
 
 @mixin flex-order($int: 0) {
 	-webkit-box-ordinal-group: $int + 1;
@@ -61,12 +33,106 @@
 	order: $int;
 }
 
+
+/**
+ * The flex property is a shorthand for the flex-grow, flex-shrink and flex-basis.
+ *
+ * @mixin Flex
+ * @section CSS Helpers > CSS Flex
+ * @param $flex-value has a default value of "0 1 auto"
+ * @example
+ *  @include flex(1);
+*/
+
+@mixin flex($flex-value) {
+	-webkit-box-flex: $flex-value;
+	-moz-box-flex: $flex-value;
+	-webkit-flex: $flex-value;
+	-ms-flex: $flex-value;
+	flex: $flex-value;
+}
+
+/**
+ * The flex-direction property specifies the direction of the flexible items.
+ *
+ * @mixin Flex Direction
+ * @section CSS Helpers > CSS Flex
+ * @param $direction has a default value of "row". Accepts column, column-reverse, row, and row-reverse.
+ * @example
+ *  @include flex-direction(column);
+ *  @include flex-direction(column-reverse);
+*/
+
+@mixin flex-direction($direction: row) {
+	@if $direction == row-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+	} 
+	
+	@else if $direction == column {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+	} 
+	
+	@else if $direction == column-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+	}
+	
+	@else {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+	}
+
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	flex-direction: $direction;
+}
+
+/**
+ * The flex-wrap property specifies whether the flexible items should wrap or not.
+ *
+ * @mixin Flex wrap
+ * @section CSS Helpers > CSS Flex
+ * @param $wrap has a default value of "nowrap". Also accepts wrap, wrap-reverse
+ * @example
+ *  @include flex-wrap(wrap);
+*/
+
+@mixin flex-wrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+	-moz-flex-wrap: $wrap;
+	-ms-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+/**
+ * The flex-flow property is a shorthand property for the flex-direction and flex-wrap properties.
+ *
+ * @mixin Flex flow
+ * @section CSS Helpers > CSS Flex
+ * @param $flow has a default value of "row nowrap". Accepts flex-direction, flex-wrap, initial, inherit.
+ * @example
+ *  @include flex-flow(row nowrap);
+*/
+
 @mixin flex-flow($flow) {
 	-webkit-flex-flow: $flow;
 	-moz-flex-flow: $flow;
 	-ms-flex-flow: $flow;
 	flex-flow: $flow;
 }
+
+/**
+ * The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+ *
+ * @mixin Flex grow
+ * @section CSS Helpers > CSS Flex
+ * @param $grow has a default value of "0". Accepts a number, initial or inherit.
+ * @example
+ *  @include flex-grow(3);
+*/
 
 @mixin flex-grow($grow) {
 	-webkit-flex-grow: $grow;
@@ -75,6 +141,16 @@
 	flex-grow: $grow;
 }
 
+/**
+ * The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+ *
+ * @mixin Flex shrink
+ * @section CSS Helpers > CSS Flex
+ * @param $shrink has a default value of "1". Accepts a number, initial or inherit.
+ * @example
+ *  @include flex-shrink(3);
+*/
+
 @mixin flex-shrink($shrink) {
 	-webkit-flex-shrink: $shrink;
 	-moz-flex-shrink: $shrink;
@@ -82,12 +158,32 @@
 	flex-shrink: $shrink;
 }
 
+/**
+ * The flex-basis property specifies the initial length of a flexible item.
+ *
+ * @mixin Flex basis
+ * @section CSS Helpers > CSS Flex
+ * @param $width has a default value of "auto". Accepts a number, auto, initial or inherit.
+ * @example
+ *  @include flex-basis(3);
+*/
+
 @mixin flex-basis($width) {
 	-webkit-flex-basis: $width;
 	-moz-flex-basis: $width;
 	-ms-flex-basis: $width;
 	flex-basis: $width;
 }
+
+/**
+ * It defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+ *
+ * @mixin Flex justify content
+ * @section CSS Helpers > CSS Flex
+ * @param $justify has a default value of "flex-start". Accepts flex-start, flex-end, center, space-between, space-around, space-evenly
+ * @example
+ *  @include justify-content(flex-end);
+*/
 
 @mixin flex-justify-content($justify) {
 	-ms-flex-pack: $justify;
@@ -97,6 +193,16 @@
 	justify-content: $justify;
 }
 
+/**
+ * It helps aligning a flex container's lines within it when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+ *
+ * @mixin Flex align content
+ * @section CSS Helpers > CSS Flex
+ * @param $align has a default value of "flex-start". Accepts flex-start, flex-end, center, space-between, space-around, stretch
+ * @example
+ *  @include flex-align-content(center);
+*/
+
 @mixin flex-align-content($align) {
 	-webkit-align-content: $align;
 	-moz-align-content: $align;
@@ -104,12 +210,32 @@
 	align-content: $align;
 }
 
+/**
+ * The align-items property specifies the default alignment for items inside the flexible container.
+ *
+ * @mixin Flex align items
+ * @section CSS Helpers > CSS Flex
+ * @param $align has a default value of "stretch". Accepts stretch, center, flex-start, flex-end, baseline, initial, inherit.
+ * @example
+ *  @include flex-align-items(baseline);
+*/
+
 @mixin flex-align-items($align) {
 	-webkit-align-items: $align;
 	-moz-align-items: $align;
 	-ms-align-items: $align;
 	align-items: $align;
 }
+
+/**
+ * The align-self property specifies the alignment for the selected item inside the flexible container.
+ *
+ * @mixin Flex align self
+ * @section CSS Helpers > CSS Flex
+ * @param $align has a default value of "auto". Accepts auto, stretch, center, flex-start, flex-end, baseline, initial, inherit.
+ * @example
+ *  @include flex-align-self(stretch);
+*/
 
 @mixin flex-align-self($align) {
 	-webkit-align-self: $align;

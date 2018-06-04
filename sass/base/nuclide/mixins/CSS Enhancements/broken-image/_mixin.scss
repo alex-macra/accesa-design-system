@@ -17,7 +17,7 @@
 	width: 100%;
 
 	&::before {
-		background-color: $color-disabled;
+		background-color: $color-light-gray;
 		border: 2px dotted $color-gray;
 		border-radius: $border-radius;
 		content: '';
