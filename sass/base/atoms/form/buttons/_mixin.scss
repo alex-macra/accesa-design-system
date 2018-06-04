@@ -111,7 +111,8 @@ $default-button-color: $color-gray !default;
 	&.icon {
 		padding-left: 4em;
 		padding-right: 1em;
-	
+		box-shadow: none;
+		
 		> i {
 		  left: 1em;
 		  margin-top: -.5em;
