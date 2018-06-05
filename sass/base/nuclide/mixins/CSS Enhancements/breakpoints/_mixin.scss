@@ -8,10 +8,6 @@
  *  @include for-size(phone-only);
 */
 
-//NOTE//
-//Test more, maybe improve the responsiveness, maybe make it fluid?
-//
-
 @mixin for-size($size) {
 
 	@if $size == phone-only {
@@ -44,3 +40,7 @@
 		}
 	}
 }
+
+//NOTE//
+//Test more, maybe improve the responsiveness, maybe make it fluid?
+//

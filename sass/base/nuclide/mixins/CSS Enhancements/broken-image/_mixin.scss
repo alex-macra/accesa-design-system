@@ -8,10 +8,6 @@
  *  @include broken-image(30px)
 */
 
-//NOTE//
-//Improve in upcoming versions.
-//
-
 @mixin broken-image($image-height: 50px) {
 	display: block;
 	height: auto;
@@ -45,3 +41,7 @@
 		width: 100%;
 	}
 }
+
+//NOTE//
+//Improve in upcoming versions.
+//
