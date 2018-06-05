@@ -6,10 +6,10 @@ $color-gray: grayscale($color-main);
 $color-dark-gray: darken($color-gray, 20%);
 $color-light-gray: lighten($color-gray, 20%);
 
-//
+//NOTE//
 //Improve in upcoming versions:
 //
-$color-red: #e90d00; //todo
+$color-red: #e90d00;
 $color-error: darken(mix(lighten($color-main, 90%), $color-red), 20%);
 $color-success: adjust-color($color-main, -90, 60, -90);
 
@@ -17,8 +17,9 @@ $color-secondary: mix(darken($color-main, 10%), $color-gray);
 $color-secondary-dark: darken($color-secondary, 20%);
 
 $color-white: lighten($color-main, 100%);
-//
+
+//NOTE//
 //Improve in upcoming versions:
 //
-$color-white-smoke: #efefef; //todo
+$color-white-smoke: #efefef;
 $color-black: darken($color-main, 100%);
