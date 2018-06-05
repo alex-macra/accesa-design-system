@@ -13,8 +13,10 @@ $default-button-color: $color-gray !default;
 	box-shadow: 0 2px 0 darken($button-color, 5%);
 	cursor: pointer;
 	
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		background-color: darken($button-color, 15%);
+		box-shadow: 0 2px 0 darken($button-color, 15%);
 	}
 
 	&:active {
@@ -165,6 +167,11 @@ $default-button-color: $color-gray !default;
 		  transition: all .25s;
 		  width: 3em;
 		}
+
+		&:hover,
+		&:focus {
+			box-shadow: none;
+		}
 	}
 }
 
@@ -228,10 +235,10 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing different color schemes.
  * @markup
- *   <input type="button" value="input button" class="is-button">
- *   <a class="is-button">link button</a>
- *   <span class="is-button">span button</span>
- *   <span class="is-button primary large">span button</span>
+ *   <input type="button" value="input button" class="acc-is-button">
+ *   <a class="acc-is-button">link button</a>
+ *   <span class="acc-is-button">span button</span>
+ *   <span class="acc-is-button primary large">span button</span>
 */
 
 @mixin button-lookalike() {

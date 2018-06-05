@@ -12,7 +12,7 @@
  * @description
  *  Default styling for inputs
  * @markup
- *  <div class="form">
+ *  <div class="acc-form">
  *   <label>Text Input</label>
  *   <input type="text" value="hello">
  *  </div>
@@ -27,7 +27,7 @@ $temp-color: #4a4a4a;
  * @description
  *  Inline input example
  * @markup
- *  <div class="form-inline">
+ *  <div class="acc-form-inline">
  *   <label>Text Input</label>
  *   <input type="text" value="hello">
  *  </div>
@@ -74,7 +74,7 @@ $temp-color: #4a4a4a;
  * @description
  *  Default styling for textarea
  * @markup
- *  <div class="form">
+ *  <div class="acc-form">
  *   <textarea name="message" rows="10" cols="30">test</textarea>
  *  </div>
 */
