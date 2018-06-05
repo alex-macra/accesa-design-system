@@ -6,7 +6,7 @@
  * @param $type default is 'border-box', supports also 'content-box'
  * @example
  *  @include box-sizing();
- */
+*/
 
 @mixin box-sizing($type: border-box) {
 	@include vendor-prefix('box-sizing', $type);

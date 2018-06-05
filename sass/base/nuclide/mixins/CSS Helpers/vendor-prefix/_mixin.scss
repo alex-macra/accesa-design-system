@@ -7,7 +7,7 @@
  * @param $value value of it's property (eg border-box);
  * @example
  *  @include vendor-prefix(box-sizing, border-box);
- */
+*/
  
 @mixin vendor-prefix($property, $value) {
 	-webkit-#{$property}: #{$value};

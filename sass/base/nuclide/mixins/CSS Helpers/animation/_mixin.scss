@@ -8,7 +8,7 @@
  * @param $animation
  * @example
  *  @include animation(1s, 3s, my animation);
- */
+*/
 
 @mixin animation($delay, $duration, $animation) {
 	-webkit-animation-delay: $delay;
