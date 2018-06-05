@@ -1,12 +1,14 @@
 /* --- BEGIN TOGGLE-ELEMENTS.CSS --- */
 
 .#{$prefix}checkbox {
+  
   @include default-control-settings();
   @include legend-color();
   @include checkbox();
 }
 
 .#{$prefix}radio {
+
   @include default-control-settings();
   @include legend-color();
   @include radio();

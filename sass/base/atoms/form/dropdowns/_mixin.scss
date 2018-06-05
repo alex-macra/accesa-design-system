@@ -19,6 +19,7 @@
 */
 
 $temp-color: #4a4a4a;
+
 /**
  * @atom Block select
  * @section Form > Dropdowns
@@ -36,6 +37,7 @@ $temp-color: #4a4a4a;
 */
 
 @mixin select($display: inline-block) {
+
   @include text-size(16);
   padding: 0 10px;
   display: $display;

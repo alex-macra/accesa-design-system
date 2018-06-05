@@ -1,6 +1,7 @@
 /* --- BEGIN INPUT-TEXTAREA.CSS --- */
 
 .#{$prefix}form {
+
   @include form-legend(block);
   @include form-legend-color();
 
@@ -10,6 +11,7 @@
 }
 
 .#{$prefix}form-inline {
+  
   @include form-legend(inline-block);
   @include form-legend-color();
 

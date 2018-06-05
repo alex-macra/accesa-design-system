@@ -1,6 +1,7 @@
 /* --- BEGIN ELLIPSIS.CSS --- */
 
 .#{$prefix}truncate-text {
+	
 	@include single-line-ellipsis();
 }
 

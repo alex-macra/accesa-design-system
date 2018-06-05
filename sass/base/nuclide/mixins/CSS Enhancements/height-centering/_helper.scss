@@ -5,10 +5,12 @@
 //
 
 .#{$prefix}text-center {
+
   @include center-horizontally-text();
 }
 
 .#{$prefix}area-center-horizontal {
+  
   @include center-horizontally();
 }
 

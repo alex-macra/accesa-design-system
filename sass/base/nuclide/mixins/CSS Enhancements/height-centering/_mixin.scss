@@ -12,6 +12,7 @@
 */
 
 @mixin center-horizontally-text() {
+	
 	text-align: center;
 }
 
@@ -25,6 +26,7 @@
 */
 
 @mixin center-horizontally() {
+
 	margin: 0 auto;
 }
 
@@ -38,6 +40,7 @@
 */
 
 @mixin center-horizontally-multiple-rows-block() {
+
 	display: inline-block;
 }
 
@@ -52,6 +55,7 @@
 */
 
 @mixin center-vertically-known-height-block($height) {
+
 	position: relative;
 
 	> div {
@@ -72,6 +76,7 @@
 */
 
 @mixin center-vertically-unknown-height-block() {
+
 	position: relative;
 
 	> div {
@@ -93,6 +98,7 @@
 */
 
 @mixin center-horizontally-vertically-known-height-grid($height, $width) {
+	
 	position: relative;
 
 	> div {
@@ -117,6 +123,7 @@
 */
 
 @mixin center-horizontally-vertically-unknown-height() {
+
 	position: relative;
 
 	> div {
@@ -137,6 +144,7 @@
 */
 
 @mixin center-vertically-unknown-height-flex() {
+
 	@include flexbox();
 	@include flex-justify-content(center);
 	@include flex-direction(column);
@@ -152,6 +160,7 @@
 */
 
 @mixin center-horizontally-vertically-unknown-height-grid() {
+
 	display: grid;
 
 	> div {

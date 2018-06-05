@@ -11,6 +11,7 @@
 */
 
 @mixin text-size($font-size: 18, $line-height: false) {
+	
 	font-size: $font-size  + px;
 	font-size: px-to-rem($font-size);
 	-webkit-font-smoothing: subpixel-antialiased;

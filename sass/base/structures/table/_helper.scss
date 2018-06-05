@@ -1,11 +1,13 @@
 /* --- BEGIN TABLE.CSS --- */
 
 .default-table {
-  @include default-table();
+  @include table-default-design();
+  @include table-typography();
 }
 
 .minimal-table {
-  @include minimal-table();
+  @include table-minimal-design();
+  @include table-typography();
 }
 
 /* --- END TABLE.CSS --- */

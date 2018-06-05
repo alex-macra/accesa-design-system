@@ -5,10 +5,12 @@
 $temp-color: #4a4a4a;
 
 @mixin legend-color() {
+
   color: $temp-color;
 }
 
 @mixin default-control-settings() {
+
   position: relative;
   cursor: pointer;
 
@@ -38,6 +40,7 @@ $temp-color: #4a4a4a;
   }
 
   @media screen and (min-width: 768px) {
+    
     &:hover input + span {
       box-shadow: 0 2px 4px rgba(#000, .15);
     }
@@ -76,6 +79,7 @@ $temp-color: #4a4a4a;
 */
 
 @mixin checkbox() {
+
   input + span {
     border-radius: 2px;
 
@@ -102,6 +106,7 @@ $temp-color: #4a4a4a;
 */
 
 @mixin radio() {
+
   input + span {
     border-radius: 100%;
 
