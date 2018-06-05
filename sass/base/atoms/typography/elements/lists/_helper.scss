@@ -3,18 +3,22 @@
 @include reset-list();
 
 .#{$prefix}list-default {
+
     @include default-list();
 }
 
 .#{$prefix}list-square {
+
     @include square-list();
 }
 
 .#{$prefix}list-dash {
+
     @include dash-list();
 }
 
 .#{$prefix}list-ordered {
+    
     @include ordered-list();
 }
 

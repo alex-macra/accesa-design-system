@@ -3,6 +3,7 @@
 //
 
 @mixin reset-list() {
+
   ol,
   ul,
   li {
@@ -57,6 +58,7 @@
 */
 
 @mixin square-list() {
+
   @include default-list();
 
   li {
@@ -80,6 +82,7 @@
 */
 
 @mixin dash-list() {
+  
   @include default-list();
   
   li {

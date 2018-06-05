@@ -9,13 +9,15 @@ $font-paragraphs: $font-paragraph;
 $color-paragraphs: $color-paragraph;
 $temp-color: #4a4a4a;
 
-@mixin paragraphs-defaults() {
+@mixin inline-content-default() {
+
     margin-bottom: 15px;
     font-family: $font-paragraphs;
     color: $temp-color;
 }
 
 @mixin default-bold-content() {
+
     b,
     strong {
         font-weight: bolder;

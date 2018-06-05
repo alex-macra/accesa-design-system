@@ -659,6 +659,7 @@ body {
  *   <button type="button" class="go">proceed</button>
  *   <button type="button">greyed (default button)</button>
  *   <button type="button" disabled>disabled button</button>
+ *   <button type="button" class="white">white button</button>
  *   <button type="button" class="cancel">transparent button</button>
 */
 /**
@@ -693,8 +694,10 @@ body {
  * @description
  *  Buttons containing different sizes.
  * @markup
+ *   <button type="button" class="smallest">smallest button</button>
  *   <button type="button" class="small">small button</button>
  *   <button type="button">normal button</button>
+ *   <button type="button" class="medium">medium button</button> 
  *   <button type="button" class="large">large button</button>
 */
 /**
@@ -724,7 +727,7 @@ button {
   display: inline-block;
   font-weight: 200;
   margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
+  padding: 0.5rem 1rem;
   position: relative;
   text-decoration: none;
   transition: all .25s;
@@ -740,7 +743,8 @@ button {
   font-size: 14px;
   font-size: 1.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.28; }
+  line-height: 24px;
+  line-height: 2.4rem; }
   button:hover, button:focus {
     color: #ffffff;
     outline: none; }
@@ -802,6 +806,23 @@ button {
       background-color: transparent; }
     button.cancel:hover, button.cancel:active, button.cancel:focus {
       color: #333333; }
+  button.white {
+    font-family: "Open-Sans", sans-serif;
+    background-color: transparent;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 0 #cccccc;
+    color: #646464; }
+    button.white:hover, button.white:focus {
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0); }
+    button.white:active {
+      background-color: transparent; }
+    button.white:hover, button.white:active, button.white:focus {
+      color: #2274a5;
+      border-color: #2274a5;
+      box-shadow: 0 2px 0 #2274a5; }
   button.disabled {
     font-family: "Open-Sans", sans-serif;
     background-color: #cccccc;
@@ -850,17 +871,26 @@ button {
     font-size: 14px;
     font-size: 1.4rem;
     -webkit-font-smoothing: subpixel-antialiased;
-    line-height: 1.28;
+    line-height: 26px;
+    line-height: 2.6rem;
     padding-bottom: .5em;
     padding-top: .5em;
     min-height: 50px;
     min-width: 120px; }
   button.small {
+    font-size: 11px;
+    font-size: 1.1rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.22;
+    padding: .5em 1.5em .15em 1.5em;
+    min-height: 22px;
+    min-width: 60px; }
+  button.smallest {
     font-size: 9px;
     font-size: 0.9rem;
     -webkit-font-smoothing: subpixel-antialiased;
     line-height: 1.18;
-    padding: .5em 1.5em;
+    padding: .5em 1.5em .15em 1.5em;
     min-height: 14px;
     min-width: 60px; }
   button.top {
@@ -907,7 +937,7 @@ button {
   display: inline-block;
   font-weight: 200;
   margin: 0 1% 2% 0;
-  padding: 0.5% 1%;
+  padding: 0.5rem 1rem;
   position: relative;
   text-decoration: none;
   transition: all .25s;
@@ -923,8 +953,8 @@ button {
   font-size: 14px;
   font-size: 1.4rem;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 22px;
-  line-height: 2.2rem; }
+  line-height: 26px;
+  line-height: 2.6rem; }
   .acc-is-button:hover, .acc-is-button:focus {
     color: #ffffff;
     outline: none; }
@@ -1592,7 +1622,6 @@ p {
  *  <em>Italic text</em><br/>
  *  <u>Underline</u>
 */
-span,
 p span {
   margin-bottom: 15px;
   font-family: "Open-Sans", sans-serif;
@@ -2208,7 +2237,8 @@ p span {
   padding: 5px;
   text-align: left;
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  color: #4a4a4a; }
   .default-table td,
   .default-table th {
     padding: 8px;
@@ -2218,20 +2248,13 @@ p span {
 
 .minimal-table {
   border: 1px solid #ccc;
-  min-width: 50%;
-  padding: 5px;
-  text-align: left;
   border-collapse: collapse;
-  border-spacing: 0; }
-  .minimal-table thead {
-    padding: 5px; }
-  .minimal-table tbody {
-    padding: 5px; }
-  .minimal-table tr {
-    padding: 5px; }
-  .minimal-table td,
-  .minimal-table th {
-    padding: 5px; }
+  border-spacing: 0;
+  color: #4a4a4a; }
+  .minimal-table thead tr th {
+    padding: 10px; }
+  .minimal-table tbody tr td {
+    padding: 5px 10px; }
 
 /* --- END TABLE.CSS --- */
 /* --- BEGIN TEMP.CSS --- */

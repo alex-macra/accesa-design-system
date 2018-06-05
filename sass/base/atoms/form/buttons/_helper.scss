@@ -1,9 +1,11 @@
 /* --- BEGIN BUTTONS.CSS --- */
 
 button {
+  
   @include button-defaults();
   @include button($default-button-color);
-  @include text-size(14);
+
+  @include text-size(14, 24);
 
   @include button-styles();
   @include button-sizes();
@@ -12,9 +14,11 @@ button {
 }
 
 .#{$prefix}is-button {
+
   @include button-defaults();
   @include button($default-button-color);
-  @include text-size(14, 22);
+
+  @include text-size(14, 26);
 
   @include button-lookalike();
 }

@@ -1,6 +1,7 @@
 /* --- BEGIN CLEAR-FLOAT.CSS --- */
 
 .#{$prefix}clear-float {
+	
 	@include float-clear;
 }
 

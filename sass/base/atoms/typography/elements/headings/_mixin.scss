@@ -20,6 +20,7 @@ $font-headings: $font-heading;
 */
 
 @mixin heading-defaults() {
+    
     margin-bottom: 15px;
     font-family: $font-headings;
     color: $color-headings;

@@ -1,12 +1,14 @@
 /* --- BEGIN DROP-DOWNS.CSS --- */
 
 .#{$prefix}form {
+
   select {
     @include select(block);
   }
 }
 
 .#{$prefix}form-inline {
+  
   select {
     @include select();
   }

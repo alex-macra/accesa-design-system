@@ -14,7 +14,8 @@
 */
 
 p {
-  @include paragraphs-defaults();
+
+  @include inline-content-default();
   @include text-size(18);
 }
 
@@ -29,9 +30,9 @@ p {
  *  <u>Underline</u>
 */
 
-span,
 p span {
-  @include paragraphs-defaults();
+
+  @include inline-content-default();
   @include text-size(18);
 }//this is not fully tested
 

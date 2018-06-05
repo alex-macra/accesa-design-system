@@ -34,6 +34,7 @@ $temp-color: #4a4a4a;
 */
 
 @mixin form-input($display: inline-block) {
+
   &[type=text],
   &[type=password],
   &[type=email],
@@ -79,7 +80,8 @@ $temp-color: #4a4a4a;
  *  </div>
 */
 
-@mixin form-textarea($display: inline-block) { 
+@mixin form-textarea($display: inline-block) {
+
   font: inherit;
   @include text-size(16,22);
   @include box-sizing();
@@ -92,6 +94,7 @@ $temp-color: #4a4a4a;
 }
 
 @mixin form-legend($display: inline-block) {
+
   span {
     display: $display;
   }
@@ -102,6 +105,7 @@ $temp-color: #4a4a4a;
 }
 
 @mixin form-legend-color($text-color: $temp-color) {
+  
   span {
     color: $text-color;
   }

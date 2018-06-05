@@ -40,7 +40,7 @@
 *  </table>
 */
 
-@mixin default-table() {
+@mixin table-default-design() {
 	border: 1px solid #ccc;
 	min-width: 50%;
 	padding: 5px;
@@ -98,28 +98,40 @@
 *  </table>
 */
 
-@mixin minimal-table() {
+@mixin table-minimal-design() {
 	border: 1px solid #ccc;
-	min-width: 50%;
-	padding: 5px;
-	text-align: left;
 	border-collapse: collapse;
 	border-spacing: 0;
 
 	thead {
-		padding: 5px;
+
+		tr {
+		
+			th {
+				padding: 10px;
+			}
+		}
 	}
 
 	tbody {
-		padding: 5px;
-	}
 
-	tr {
-		padding: 5px;
+		tr {
+		
+			td {
+				padding: 5px 10px;
+			}
+		}
 	}
+}
 
-	td,
-	th {
-		padding: 5px;
-	}
+
+@mixin table-typography() {
+	$font-table: 'Open-Sans', sans-serif;
+	$color-table: $color-dark-gray;
+
+	$font-tables: $font-table;
+	$color-tables: $color-table;
+	$temp-color: #4a4a4a;
+
+	color: $temp-color;
 }
