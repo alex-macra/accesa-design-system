@@ -2,7 +2,7 @@
 
 /* --- BEGIN PRINT.CSS --- */
 
-.#{$prefix}-print-me {
+.#{$prefix}print-me {
 	display: none !important;
 }
 
@@ -28,11 +28,11 @@
 		}
 	}
 
-	.#{$prefix}-no-print {
+	.#{$prefix}no-print {
 		display: none !important;
 	}
 
-	.#{$prefix}-print-me {
+	.#{$prefix}print-me {
 		display: block !important;
 	}
 }

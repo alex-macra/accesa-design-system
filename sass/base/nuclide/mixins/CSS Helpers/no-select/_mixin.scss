@@ -5,7 +5,7 @@
  * @section CSS Helpers
  * @example
  *  @include no-select();
- */
+*/
 
 @mixin no-select() {
   -webkit-user-select: none;

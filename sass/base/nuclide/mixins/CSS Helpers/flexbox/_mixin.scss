@@ -1,3 +1,7 @@
+//NOTE//
+//Test / improve in upcoming versions
+//
+
 /**
  * Display flex mixin.
  *
@@ -32,7 +36,6 @@
 	-moz-order: $int;
 	order: $int;
 }
-
 
 /**
  * The flex property is a shorthand for the flex-grow, flex-shrink and flex-basis.

@@ -3,10 +3,11 @@
  *
  * @mixin
  * @section CSS Enhancements
+ * @param $image-height define a default image
  * @example
- *  @include broken-image()  //soon to be updated so you can pass parameters
- */
- 
+ *  @include broken-image(30px)
+*/
+
 @mixin broken-image($image-height: 50px) {
 	display: block;
 	height: auto;
@@ -40,3 +41,7 @@
 		width: 100%;
 	}
 }
+
+//NOTE//
+//Improve in upcoming versions.
+//

@@ -6,7 +6,7 @@
  * @param $arguments accepts any transform css property 
  * @example
  *  @include transform(scale(1,1.5));
- */
+*/
 
 @mixin transform($arguments) {
 	@include vendor-prefix('transform', $arguments);
@@ -20,7 +20,7 @@
  * @param $params accepts any transform css property 
  * @example
  *  @include transform-origin(30%, 35%);
- */
+*/
 
 @mixin transform-origin($params) {
 	@include vendor-prefix('transform-origin', $params);
@@ -34,7 +34,7 @@
  * @param $style accepts 'flat', 'preserve-3d', 'initial', 'inherit'
  * @example
  *  @include transform-style(flat);
- */
+*/
 
 @mixin transform-style($style: preserve-3d) {
 	@include vendor-prefix('transform-style', $style);

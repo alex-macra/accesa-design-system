@@ -1,9 +1,37 @@
 // Inputs / Textareas / Labels
 
-//todo disabled inputs. hover activ states
+//todo disabled inputs. hover active states
 //add colored option for inputs to change borders
+//NOTE//
+//Improve in upcoming versions. THIS IS NOT FINISHED
+//
+
+/**
+ * @atom Block inputs
+ * @section Form > Input
+ * @description
+ *  Default styling for inputs
+ * @markup
+ *  <div class="acc-form">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
+
 $placeholder-color: #999;
 $temp-color: #4a4a4a;
+
+/**
+ * @atom Inline inputs
+ * @section Form > Input
+ * @description
+ *  Inline input example
+ * @markup
+ *  <div class="acc-form-inline">
+ *   <label>Text Input</label>
+ *   <input type="text" value="hello">
+ *  </div>
+*/
 
 @mixin form-input($display: inline-block) {
   &[type=text],
@@ -39,6 +67,17 @@ $temp-color: #4a4a4a;
     color: $placeholder-color;
   }
 }
+
+/**
+ * @atom Textarea
+ * @section Form > Input
+ * @description
+ *  Default styling for textarea
+ * @markup
+ *  <div class="acc-form">
+ *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *  </div>
+*/
 
 @mixin form-textarea($display: inline-block) { 
   font: inherit;

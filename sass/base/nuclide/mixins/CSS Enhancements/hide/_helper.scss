@@ -1,18 +1,18 @@
 /* --- BEGIN HIDE.CSS --- */
 
-.#{$prefix}-hide {
+.#{$prefix}hide {
 	@include hide();
 }
 
-.#{$prefix}-hide-visually {
+.#{$prefix}hide-visually {
 	@include hide(visually);
 }
 
-.#{$prefix}-show {
+.#{$prefix}show {
 	@include show();
 }
 
-.#{$prefix}-show-visually {
+.#{$prefix}show-visually {
 	@include show(visually);
 }
 

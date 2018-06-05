@@ -7,7 +7,7 @@
  * @example
  *  @include hide();
  *  @include hide($visually); 
- */
+*/
 
 @mixin hide($visually: null) {
 
@@ -29,7 +29,7 @@
 }
 
 /**
- * Unhide element 
+ * Show element, make sure that the element is visible.
  *
  * @mixin
  * @section CSS Enhancements
@@ -37,22 +37,22 @@
  * @example
  *  @include show($visually); 
  *  @include show(); 
- */
+*/
 
 @mixin show($visually: null) {
 
 	@if ($visually) {
-		clip: inherit;
-		height: inherit;
-		margin: inherit;
-		max-height: inherit;
-		overflow: inherit;
-		padding: inherit;
-		position: inherit;
-		width: inherit;
+		clip: inherit !important;
+		height: inherit !important;
+		margin: inherit !important;
+		max-height: inherit !important;
+		overflow: inherit !important;
+		padding: inherit !important;
+		position: inherit !important;
+		width: inherit !important;
 	}
 
   @else {
-		display: block;
+		display: block !important;
 	}
 }

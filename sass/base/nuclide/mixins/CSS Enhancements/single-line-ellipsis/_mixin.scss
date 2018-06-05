@@ -3,11 +3,11 @@
  *
  * @mixin
  * @section CSS Enhancements
- * @param $width use either a percentage or a pixel based size
+ * @param $width default with is set to 100%. Use either a percentage or a pixel based size
  * @example
- *  @include single-line-ellipsis(); //default 100% width
+ *  @include single-line-ellipsis();
  *  @include single-line-ellipsis(300px);
- */
+*/
 
 @mixin single-line-ellipsis($width: 100%) {
   overflow: hidden;
@@ -16,4 +16,6 @@
   width: $width;
 }
 
-// todo: provide experimental multiple line ellipsis
+//NOTE//
+//Improve in upcoming versions. Add experimental multiple lines ellipsis
+//

@@ -5,6 +5,18 @@ $font-blockquotes: $font-blockquote;
 $color-blockquotes: $color-blockquote;
 $temp-color: #4a4a4a;
 
+/**
+ * Generic blockquote style for medium to long blocks of text. This element
+ * is using the @{lipsum} substitution to generate two blocks of text.
+ *
+ * @atom Blockquote
+ * @section Typography > Content markup tags
+ * @markup
+ *  <blockquote>
+ *    @{lipsum:2:paragraphs}
+ *  </blockquote>
+ */
+
 @mixin blockquote() {
     
     font-family: $font-blockquotes;
@@ -38,3 +50,7 @@ $temp-color: #4a4a4a;
         display: inline;
     }
 }
+
+//NOTE//
+//Improve in upcoming versions.
+//

@@ -6,7 +6,7 @@
  * @param $argument rational number between 0 and 1. (eg 0.9)
  * @example
  *  @include opacity(0.5);
- */
+*/
 
 @mixin opacity($argument) {
 	$argument-ie: ($argument * 100);

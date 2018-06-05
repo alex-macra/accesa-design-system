@@ -49,31 +49,6 @@ figure, footer, header, hgroup,
 menu, nav, section {
   display: block; }
 
-ol,
-ul,
-li {
-  list-style: none; }
-
-a {
-  background-color: transparent; }
-
-b,
-strong {
-  font-weight: bolder; }
-
-q::before, q::after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*
-button::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}*/
 /* --- END RESET.CSS --- */
 /* --- BEGIN BASE.CSS --- */
 html {
@@ -95,142 +70,130 @@ body {
 /* --- END BASE.CSS --- */
 /**
  * Set a general prefix throughout the entire app using the $prefix variable.
- * The default namespaces is 'accesa' -> 'acc'.
+ * The default namespaces is 'accesa' -> 'acc-'. Want to disable it? Set it to null.
  *
  * @nuclide Project prefix
  * @section Config
- */
+*/
 /**
  * Set a global border radius that will automatically update throught the entire stylesheet.
  *
  * @nuclide Global border radius
  * @section Config
- */
+*/
 /**
- * todo
- *
- * @nuclide Dynamic colors
- * @section Config
- */
+  * Primary color variable
+  * @color Primary color variable
+  * @section Theme Colors
+*/
 /**
-     * Primary color variable
-     * @color Primary color variable
-     * @section Theme Colors
-     */
+ * Lighter primary color variable
+ * @color Lighter primary color variable
+ * @section Theme Colors
+*/
 /**
-      * Lighter primary color variable
-      * @color Lighter primary color variable
-      * @section Theme Colors
-     */
+* @color Default secondary color variable
+* @section Theme Colors
+*/
 /**
-     * @color Default secondary color variable
-     * @section Theme Colors
-     */
+* @color Secondary dark color variable
+* @section Theme Colors
+*/
 /**
-     * @color Secondary dark color variable
-     * @section Theme Colors
-     */
+* @color Default alternate color variable
+* @section Theme Colors
+*/
 /**
-     * @color Default alternate color variable
-     * @section Theme Colors
-     */
+* @color Default red color variable
+ * @section Theme Colors
+*/
 /**
-     * @color Default red color variable
-      * @section Theme Colors
-      */
+* @color Default white variable.
+* @section Grayscale
+*/
 /**
-     * @color Default white variable.
-     * @section Grayscale
-     */
+* @color Default whitesmoke variable
+* @section Grayscale
+*/
 /**
-     * @color Default whitesmoke variable
-     * @section Grayscale
-     */
+* @color Default light gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default light gray color variable
-     * @section Grayscale
-     */
+* @color Default gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default gray color variable
-     * @section Grayscale
-     */
+* @color Default dark gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default dark gray color variable
-     * @section Grayscale
-     */
-/**
-     * @color Default black variable
-     * @section Grayscale
-     */
+* @color Default black variable
+* @section Grayscale
+*/
 /**
  * Set a general prefix throughout the entire app using the $prefix variable.
- * The default namespaces is 'accesa' -> 'acc'.
+ * The default namespaces is 'accesa' -> 'acc-'. Want to disable it? Set it to null.
  *
  * @nuclide Project prefix
  * @section Config
- */
+*/
 /**
  * Set a global border radius that will automatically update throught the entire stylesheet.
  *
  * @nuclide Global border radius
  * @section Config
- */
+*/
 /**
- * todo
- *
- * @nuclide Dynamic colors
- * @section Config
- */
+  * Primary color variable
+  * @color Primary color variable
+  * @section Theme Colors
+*/
 /**
-     * Primary color variable
-     * @color Primary color variable
-     * @section Theme Colors
-     */
+ * Lighter primary color variable
+ * @color Lighter primary color variable
+ * @section Theme Colors
+*/
 /**
-      * Lighter primary color variable
-      * @color Lighter primary color variable
-      * @section Theme Colors
-     */
+* @color Default secondary color variable
+* @section Theme Colors
+*/
 /**
-     * @color Default secondary color variable
-     * @section Theme Colors
-     */
+* @color Secondary dark color variable
+* @section Theme Colors
+*/
 /**
-     * @color Secondary dark color variable
-     * @section Theme Colors
-     */
+* @color Default alternate color variable
+* @section Theme Colors
+*/
 /**
-     * @color Default alternate color variable
-     * @section Theme Colors
-     */
+* @color Default red color variable
+ * @section Theme Colors
+*/
 /**
-     * @color Default red color variable
-      * @section Theme Colors
-      */
+* @color Default white variable.
+* @section Grayscale
+*/
 /**
-     * @color Default white variable.
-     * @section Grayscale
-     */
+* @color Default whitesmoke variable
+* @section Grayscale
+*/
 /**
-     * @color Default whitesmoke variable
-     * @section Grayscale
-     */
+* @color Default light gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default light gray color variable
-     * @section Grayscale
-     */
+* @color Default gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default gray color variable
-     * @section Grayscale
-     */
+* @color Default dark gray color variable
+* @section Grayscale
+*/
 /**
-     * @color Default dark gray color variable
-     * @section Grayscale
-     */
-/**
-     * @color Default black variable
-     * @section Grayscale
-     */
+* @color Default black variable
+* @section Grayscale
+*/
 /**
  * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performes consistently across all major browsers
  *
@@ -239,15 +202,16 @@ body {
  * @param $size accepts 'phone-only', 'tablet-portrait-up', 'tablet-landscape-up', 'desktop-up', 'big-desktop-up'
  * @example
  *  @include for-size(phone-only);
- */
+*/
 /**
  * Solution for various scenarios when an image is not loaded.
  *
  * @mixin
  * @section CSS Enhancements
+ * @param $image-height define a default image
  * @example
- *  @include broken-image()  //soon to be updated so you can pass parameters
- */
+ *  @include broken-image(30px)
+*/
 /* --- BEGIN BROKEN-IMAGE.CSS --- */
 .acc-img {
   display: block;
@@ -285,8 +249,8 @@ body {
  * @mixin
  * @section CSS Enhancements
  * @example
- *  @include float-clear()  //no parameters required
- */
+ *  @include float-clear()
+*/
 /* --- BEGIN CLEAR-FLOAT.CSS --- */
 .acc-clear-float {
   *zoom: 1; }
@@ -389,9 +353,9 @@ body {
  * @example
  *  @include hide();
  *  @include hide($visually); 
- */
+*/
 /**
- * Unhide element 
+ * Show element, make sure that the element is visible.
  *
  * @mixin
  * @section CSS Enhancements
@@ -399,7 +363,7 @@ body {
  * @example
  *  @include show($visually); 
  *  @include show(); 
- */
+*/
 /* --- BEGIN HIDE.CSS --- */
 .acc-hide {
   display: none; }
@@ -416,17 +380,17 @@ body {
   width: 1px; }
 
 .acc-show {
-  display: block; }
+  display: block !important; }
 
 .acc-show-visually {
-  clip: inherit;
-  height: inherit;
-  margin: inherit;
-  max-height: inherit;
-  overflow: inherit;
-  padding: inherit;
-  position: inherit;
-  width: inherit; }
+  clip: inherit !important;
+  height: inherit !important;
+  margin: inherit !important;
+  max-height: inherit !important;
+  overflow: inherit !important;
+  padding: inherit !important;
+  position: inherit !important;
+  width: inherit !important; }
 
 /* --- END HIDE.CSS --- */
 /**
@@ -434,11 +398,11 @@ body {
  *
  * @mixin
  * @section CSS Enhancements
- * @param $width use either a percentage or a pixel based size
+ * @param $width default with is set to 100%. Use either a percentage or a pixel based size
  * @example
- *  @include single-line-ellipsis(); //default 100% width
+ *  @include single-line-ellipsis();
  *  @include single-line-ellipsis(300px);
- */
+*/
 /* --- BEGIN ELLIPSIS.CSS --- */
 .acc-truncate-text {
   overflow: hidden;
@@ -457,7 +421,7 @@ body {
  * @example
  *  @include text-size(20);
  *  @include text-size(28, 36); //first parameter is the font-size, second is line height
- */
+*/
 /**
  * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
  *
@@ -467,7 +431,7 @@ body {
  * @param $value value of it's property (eg border-box);
  * @example
  *  @include vendor-prefix(box-sizing, border-box);
- */
+*/
 /**
  * Allows animation of most HTML elements without using pure a pure CSS way.
  *
@@ -478,7 +442,7 @@ body {
  * @param $animation
  * @example
  *  @include animation(1s, 3s, my animation);
- */
+*/
 /**
  * Include, exclude padding and border in the element's total width and height.
  *
@@ -487,7 +451,7 @@ body {
  * @param $type default is 'border-box', supports also 'content-box'
  * @example
  *  @include box-sizing();
- */
+*/
 /**
  * The calc() function performs a calculation to be used as the property value.
  *
@@ -497,7 +461,7 @@ body {
  * @param $expression any type of calculation (eg 100vh + 20px);
  * @example
  *  @include calc(width, 100px-20px);
- */
+*/
 /**
  * Display flex mixin.
  *
@@ -622,7 +586,7 @@ body {
  * @section CSS Helpers
  * @example
  *  @include no-select();
- */
+*/
 /**
  * Sets the trancparency level for an element.
  *
@@ -631,7 +595,7 @@ body {
  * @param $argument rational number between 0 and 1. (eg 0.9)
  * @example
  *  @include opacity(0.5);
- */
+*/
 /**
  * The transform property applies a 2D or 3D transformation to an element.
  *
@@ -640,7 +604,7 @@ body {
  * @param $arguments accepts any transform css property 
  * @example
  *  @include transform(scale(1,1.5));
- */
+*/
 /**
  * Transform-origin. This property allows you to change the position of transformed elements.
  *
@@ -649,7 +613,7 @@ body {
  * @param $params accepts any transform css property 
  * @example
  *  @include transform-origin(30%, 35%);
- */
+*/
 /**
  * Transform-style. Let the transformed child elements preserve the 3D transformations.
 
@@ -658,7 +622,7 @@ body {
  * @param $style accepts 'flat', 'preserve-3d', 'initial', 'inherit'
  * @example
  *  @include transform-style(flat);
- */
+*/
 /**
  * CSS transitions allows you to change property values, from one value to another, over a given duration.
  *
@@ -667,9 +631,9 @@ body {
  * @param $argument accepts any transition properties
  * @example
  *  @include transition(width 2s, height 4s);
- */
+*/
 /**
- * @icon fontAwesome icons
+ * @icon fontAwesome icons - broken
  * @markup
  *  <i class="acc-icon --bars"></i>
  */
@@ -683,7 +647,68 @@ body {
   .acc-icon.--bars:before {
     content: "\f2ba"; }
 
-/* _- BEGIN BUTTONS.CSS _- */
+/**
+ * @atom Default styles
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <button type="button" class="primary">primary button</button>
+ *   <button type="button" class="secondary">secondary button</button>
+ *   <button type="button" class="error">error</button>
+ *   <button type="button" class="go">proceed</button>
+ *   <button type="button">greyed (default button)</button>
+ *   <button type="button" disabled>disabled button</button>
+ *   <button type="button" class="cancel">transparent button</button>
+*/
+/**
+ * @atom Buttons with icons
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing icons. Either with a separator or without.
+ * @markup
+ *   <button type="button" class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button type="button" class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+*/
+/**
+ * @atom Default alignments
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different alingments.
+ * @markup
+ *   <button type="button" class="bottom small secondary">small button</button>
+ *   <button type="button" class="bottom secondary">normal button</button>
+ *   <button type="button" class="large secondary">large button</button><br/>
+ *   <button type="button" class="large primary">large button</button>
+ *   <button type="button" class="top primary">normal button</button>
+ *   <button type="button" class="top small primary">small button</button>
+*/
+/**
+ * @atom Default sizes
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different sizes.
+ * @markup
+ *   <button type="button" class="small">small button</button>
+ *   <button type="button">normal button</button>
+ *   <button type="button" class="large">large button</button>
+*/
+/**
+ * @atom Elements that will look like a button
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <input type="button" value="input button" class="acc-is-button">
+ *   <a class="acc-is-button">link button</a>
+ *   <span class="acc-is-button">span button</span>
+ *   <span class="acc-is-button primary large">span button</span>
+*/
+/* --- BEGIN BUTTONS.CSS --- */
 button {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -720,218 +745,154 @@ button {
     color: #ffffff;
     outline: none; }
   button:hover, button:focus {
-    background-color: #3e3e3e; }
+    background-color: #3e3e3e;
+    box-shadow: 0 2px 0 #3e3e3e; }
   button:active {
     background-color: #646464; }
+  button.primary {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #2274a5;
+    box-shadow: 0 2px 0 #1e6590;
+    cursor: pointer; }
+    button.primary:hover, button.primary:focus {
+      background-color: #154766;
+      box-shadow: 0 2px 0 #154766; }
+    button.primary:active {
+      background-color: #2274a5; }
+  button.secondary {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #3e5d6f;
+    box-shadow: 0 2px 0 #354f5f;
+    cursor: pointer; }
+    button.secondary:hover, button.secondary:focus {
+      background-color: #23343e;
+      box-shadow: 0 2px 0 #23343e; }
+    button.secondary:active {
+      background-color: #3e5d6f; }
+  button.error {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #e90d00;
+    box-shadow: 0 2px 0 #d00c00;
+    cursor: pointer; }
+    button.error:hover, button.error:focus {
+      background-color: #9d0900;
+      box-shadow: 0 2px 0 #9d0900; }
+    button.error:active {
+      background-color: #e90d00; }
+  button.go {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #00b069;
+    box-shadow: 0 2px 0 #00975a;
+    cursor: pointer; }
+    button.go:hover, button.go:focus {
+      background-color: #00643b;
+      box-shadow: 0 2px 0 #00643b; }
+    button.go:active {
+      background-color: #00b069; }
+  button.cancel {
+    font-family: "Open-Sans", sans-serif;
+    background-color: transparent;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #000000; }
+    button.cancel:hover, button.cancel:focus {
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0); }
+    button.cancel:active {
+      background-color: transparent; }
+    button.cancel:hover, button.cancel:active, button.cancel:focus {
+      color: #333333; }
+  button.disabled {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #cccccc;
+    box-shadow: 0 2px 0 #bfbfbf;
+    cursor: pointer;
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    button.disabled:hover, button.disabled:focus {
+      background-color: #a6a6a6;
+      box-shadow: 0 2px 0 #a6a6a6; }
+    button.disabled:active {
+      background-color: #cccccc; }
+    button.disabled:hover, button.disabled:active, button.disabled:focus {
+      color: #b2b2b2; }
+  button[disabled] {
+    font-family: "Open-Sans", sans-serif;
+    background-color: #cccccc;
+    box-shadow: 0 2px 0 #bfbfbf;
+    cursor: pointer;
+    cursor: not-allowed;
+    color: #b2b2b2;
+    -webkit-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    -moz-opacity: 0.95;
+    -ms-opacity: 0.95;
+    -o-opacity: 0.95;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95); }
+    button[disabled]:hover, button[disabled]:focus {
+      background-color: #a6a6a6;
+      box-shadow: 0 2px 0 #a6a6a6; }
+    button[disabled]:active {
+      background-color: #cccccc; }
+    button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
+      color: #b2b2b2; }
+  button.large {
+    font-size: 14px;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.28;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    min-height: 50px;
+    min-width: 120px; }
+  button.small {
+    font-size: 9px;
+    font-size: 0.9rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.18;
+    padding: .5em 1.5em;
+    min-height: 14px;
+    min-width: 60px; }
+  button.top {
+    vertical-align: top; }
+  button.bottom {
+    vertical-align: bottom; }
+  button:not(.icon) > i {
+    position: relative;
+    right: 5px; }
+  button.icon {
+    padding-left: 4em;
+    padding-right: 1em;
+    box-shadow: none; }
+    button.icon > i {
+      left: 1em;
+      margin-top: -.5em;
+      position: absolute;
+      top: 50%; }
+    button.icon:before {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 0 0 0 0;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all .25s;
+      width: 3em; }
+    button.icon:hover, button.icon:focus {
+      box-shadow: none; }
 
-/**
- * @atom Default styles
- * @section Form > Buttons
- * @description
- *  Buttons containing different color schemes.
- * @markup
- *   <button type="button" class="primary">primary button</button>
- *   <button type="button" class="secondary">secondary button</button>
- *   <button type="button" class="error">error</button>
- *   <button type="button" class="go">proceed</button>
- *   <button type="button">greyed (default button)</button>
- *   <button type="button" disabled>disabled button</button>
- *   <button type="button" class="cancel">transparent button</button>
-*/
-button.primary {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #2274a5;
-  box-shadow: 0 2px 0 #1e6590;
-  cursor: pointer; }
-  button.primary:hover, button.primary:focus {
-    background-color: #154766; }
-  button.primary:active {
-    background-color: #2274a5; }
-
-button.secondary {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #3e5d6f;
-  box-shadow: 0 2px 0 #354f5f;
-  cursor: pointer; }
-  button.secondary:hover, button.secondary:focus {
-    background-color: #23343e; }
-  button.secondary:active {
-    background-color: #3e5d6f; }
-
-button.error {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #e90d00;
-  box-shadow: 0 2px 0 #d00c00;
-  cursor: pointer; }
-  button.error:hover, button.error:focus {
-    background-color: #9d0900; }
-  button.error:active {
-    background-color: #e90d00; }
-
-button.go {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #00b069;
-  box-shadow: 0 2px 0 #00975a;
-  cursor: pointer; }
-  button.go:hover, button.go:focus {
-    background-color: #00643b; }
-  button.go:active {
-    background-color: #00b069; }
-
-button.cancel {
-  font-family: "Open-Sans", sans-serif;
-  background-color: transparent;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
-  cursor: pointer;
-  color: #000000; }
-  button.cancel:hover, button.cancel:focus {
-    background-color: rgba(0, 0, 0, 0); }
-  button.cancel:active {
-    background-color: transparent; }
-  button.cancel:hover, button.cancel:active, button.cancel:focus {
-    color: #333333; }
-
-button.disabled {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #cccccc;
-  box-shadow: 0 2px 0 #bfbfbf;
-  cursor: pointer;
-  cursor: not-allowed;
-  color: #b2b2b2;
-  -webkit-opacity: 0.95;
-  -khtml-opacity: 0.95;
-  -moz-opacity: 0.95;
-  -ms-opacity: 0.95;
-  -o-opacity: 0.95;
-  opacity: 0.95;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-  filter: alpha(opacity=95); }
-  button.disabled:hover, button.disabled:focus {
-    background-color: #a6a6a6; }
-  button.disabled:active {
-    background-color: #cccccc; }
-  button.disabled:hover, button.disabled:active, button.disabled:focus {
-    color: #b2b2b2; }
-
-button[disabled] {
-  font-family: "Open-Sans", sans-serif;
-  background-color: #cccccc;
-  box-shadow: 0 2px 0 #bfbfbf;
-  cursor: pointer;
-  cursor: not-allowed;
-  color: #b2b2b2;
-  -webkit-opacity: 0.95;
-  -khtml-opacity: 0.95;
-  -moz-opacity: 0.95;
-  -ms-opacity: 0.95;
-  -o-opacity: 0.95;
-  opacity: 0.95;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-  filter: alpha(opacity=95); }
-  button[disabled]:hover, button[disabled]:focus {
-    background-color: #a6a6a6; }
-  button[disabled]:active {
-    background-color: #cccccc; }
-  button[disabled]:hover, button[disabled]:active, button[disabled]:focus {
-    color: #b2b2b2; }
-
-/**
- * @atom Default sizes
- * @section Form > Buttons
- * @description
- *  Buttons containing different sizes.
- * @markup
- *   <button type="button" class="small">small button</button>
- *   <button type="button">normal button</button>
- *   <button type="button" class="large">large button</button>
-*/
-button.large {
-  font-size: 14px;
-  font-size: 1.4rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.28;
-  padding-bottom: .5em;
-  padding-top: .5em;
-  min-height: 50px;
-  min-width: 120px; }
-
-button.small {
-  font-size: 9px;
-  font-size: 0.9rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.18;
-  padding: .5em 1.5em;
-  min-height: 14px;
-  min-width: 60px; }
-
-/**
- * @atom Default alignments
- * @section Form > Buttons
- * @description
- *  Buttons containing different alingments.
- * @markup
- *   <button type="button" class="bottom small secondary">small button</button>
- *   <button type="button" class="bottom secondary">normal button</button>
- *   <button type="button" class="large secondary">large button</button><br/>
- *   <button type="button" class="large primary">large button</button>
- *   <button type="button" class="top primary">normal button</button>
- *   <button type="button" class="top small primary">small button</button>
-*/
-button.top {
-  vertical-align: top; }
-
-button.bottom {
-  vertical-align: bottom; }
-
-/**
- * @atom Buttons with icons
- * @section Form > Buttons
- * @description
- *  Buttons containing icons. Either with a separator or without.
- * @markup
- *   <button type="button" class="error icon"><i class="fa fa-times"></i>Error</button>
- *   <button type="button" class="proceed icon"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
- *   <button type="button" class="error"><i class="fa fa-times"></i>Error</button>
- *   <button type="button" class="proceed"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="primary"><i class="fa fa-icon-circle"></i>Info</button>
-*/
-button:not(.icon) > i {
-  position: relative;
-  right: 5px; }
-
-button.icon {
-  padding-left: 4em;
-  padding-right: 1em;
-  box-shadow: none; }
-  button.icon > i {
-    left: 1em;
-    margin-top: -.5em;
-    position: absolute;
-    top: 50%; }
-  button.icon:before {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 0 0;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all .25s;
-    width: 3em; }
-
-/**
- * @atom Elements that will look like a button
- * @section Form > Buttons
- * @description
- *  Buttons containing different color schemes.
- * @markup
- *   <input type="button" value="input button" class="is-button">
- *   <a class="is-button">link button</a>
- *   <span class="is-button">span button</span>
- *   <span class="is-button primary large">span button</span>
-*/
-.is-button {
+.acc-is-button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -964,183 +925,50 @@ button.icon {
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 22px;
   line-height: 2.2rem; }
-  .is-button:hover, .is-button:focus {
+  .acc-is-button:hover, .acc-is-button:focus {
     color: #ffffff;
     outline: none; }
-  .is-button:hover, .is-button:focus {
-    background-color: #3e3e3e; }
-  .is-button:active {
+  .acc-is-button:hover, .acc-is-button:focus {
+    background-color: #3e3e3e;
+    box-shadow: 0 2px 0 #3e3e3e; }
+  .acc-is-button:active {
     background-color: #646464; }
-  .is-button:hover {
+  .acc-is-button:hover {
     text-decoration: none; }
-  .is-button.primary {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #2274a5;
-    box-shadow: 0 2px 0 #1e6590;
-    cursor: pointer; }
-    .is-button.primary:hover, .is-button.primary:focus {
-      background-color: #154766; }
-    .is-button.primary:active {
-      background-color: #2274a5; }
-  .is-button.secondary {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #3e5d6f;
-    box-shadow: 0 2px 0 #354f5f;
-    cursor: pointer; }
-    .is-button.secondary:hover, .is-button.secondary:focus {
-      background-color: #23343e; }
-    .is-button.secondary:active {
-      background-color: #3e5d6f; }
-  .is-button.error {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #e90d00;
-    box-shadow: 0 2px 0 #d00c00;
-    cursor: pointer; }
-    .is-button.error:hover, .is-button.error:focus {
-      background-color: #9d0900; }
-    .is-button.error:active {
-      background-color: #e90d00; }
-  .is-button.go {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #00b069;
-    box-shadow: 0 2px 0 #00975a;
-    cursor: pointer; }
-    .is-button.go:hover, .is-button.go:focus {
-      background-color: #00643b; }
-    .is-button.go:active {
-      background-color: #00b069; }
-  .is-button.cancel {
-    font-family: "Open-Sans", sans-serif;
-    background-color: transparent;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
-    cursor: pointer;
-    color: #000000; }
-    .is-button.cancel:hover, .is-button.cancel:focus {
-      background-color: rgba(0, 0, 0, 0); }
-    .is-button.cancel:active {
-      background-color: transparent; }
-    .is-button.cancel:hover, .is-button.cancel:active, .is-button.cancel:focus {
-      color: #333333; }
-  .is-button.disabled {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #cccccc;
-    box-shadow: 0 2px 0 #bfbfbf;
-    cursor: pointer;
-    cursor: not-allowed;
-    color: #b2b2b2;
-    -webkit-opacity: 0.95;
-    -khtml-opacity: 0.95;
-    -moz-opacity: 0.95;
-    -ms-opacity: 0.95;
-    -o-opacity: 0.95;
-    opacity: 0.95;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-    filter: alpha(opacity=95); }
-    .is-button.disabled:hover, .is-button.disabled:focus {
-      background-color: #a6a6a6; }
-    .is-button.disabled:active {
-      background-color: #cccccc; }
-    .is-button.disabled:hover, .is-button.disabled:active, .is-button.disabled:focus {
-      color: #b2b2b2; }
-  .is-button[disabled] {
-    font-family: "Open-Sans", sans-serif;
-    background-color: #cccccc;
-    box-shadow: 0 2px 0 #bfbfbf;
-    cursor: pointer;
-    cursor: not-allowed;
-    color: #b2b2b2;
-    -webkit-opacity: 0.95;
-    -khtml-opacity: 0.95;
-    -moz-opacity: 0.95;
-    -ms-opacity: 0.95;
-    -o-opacity: 0.95;
-    opacity: 0.95;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-    filter: alpha(opacity=95); }
-    .is-button[disabled]:hover, .is-button[disabled]:focus {
-      background-color: #a6a6a6; }
-    .is-button[disabled]:active {
-      background-color: #cccccc; }
-    .is-button[disabled]:hover, .is-button[disabled]:active, .is-button[disabled]:focus {
-      color: #b2b2b2; }
 
-/* _- END BUTTONS.CSS _- */
-/* --- BEGIN CHECKBOX.CSS --- */
+/* --- END BUTTONS.CSS --- */
 /**
  * @atom Checkbox
  * @section Form > Checkboxes
  * @description
  *  todo
  * @markup
- *  <label class="checkbox">
+ *  <label class="acc-checkbox">
  *   <input id="check2" type="checkbox" onchange="console.log('changed');">
  *   <span></span>
  *   Checkbox
  *  </label>
 */
-.checkbox {
-  position: relative;
-  cursor: pointer;
-  color: #4a4a4a; }
-  .checkbox::selection {
-    background: transparent; }
-  .checkbox input + span {
-    background: #ffffff;
-    border: 1px solid #cccccc;
-    content: "";
-    display: inline-block;
-    margin: 0 .5em 0 0;
-    padding: 0;
-    vertical-align: middle;
-    width: 2em;
-    height: 2em;
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden; }
-    .checkbox input + span::after {
-      content: "";
-      display: block;
-      transform: scale(0);
-      transition: transform .2s; }
-  @media screen and (min-width: 768px) {
-    .checkbox:hover input + span {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); } }
-  .checkbox input:active + span {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
-  .checkbox input:focus + span {
-    box-shadow: 0 0 0 3px lightblue; }
-  .checkbox input:checked + span::after {
-    transform: scale(1); }
-  .checkbox input {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0; }
-  .checkbox input + span {
-    border-radius: 2px; }
-    .checkbox input + span::after {
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwb2x5Z29uIHBvaW50cz0iMTMuNzA3LDMyLjI5MyAxMi4yOTMsMzMuODU0IDI0LjI5Myw0NiAyNS43MDcsNDYgNDkuNzA3LDIxLjg1NCA0OC4yOTMsMjAuMzY2IDI1LDQzLjYyMyAiLz48L2c+PC9zdmc+) no-repeat center;
-      background-size: contain;
-      width: 2em;
-      height: 2em; }
-
 /**
  * @atom Radio
  * @section Form > Checkboxes
  * @description
  *  todo
  * @markup
- *  <label class="radio">
+ *  <label class="acc-radio">
  *   <input id="check3" type="radio" onchange="console.log('changed');">
  *   <span></span>
  *   Radio button
  *  </label>
 */
-.radio {
+/* --- BEGIN TOGGLE-ELEMENTS.CSS --- */
+.acc-checkbox {
   position: relative;
   cursor: pointer;
   color: #4a4a4a; }
-  .radio::selection {
+  .acc-checkbox::selection {
     background: transparent; }
-  .radio input + span {
+  .acc-checkbox input + span {
     background: #ffffff;
     border: 1px solid #cccccc;
     content: "";
@@ -1152,43 +980,86 @@ button.icon {
     height: 2em;
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden; }
-    .radio input + span::after {
+    .acc-checkbox input + span::after {
       content: "";
       display: block;
       transform: scale(0);
       transition: transform .2s; }
   @media screen and (min-width: 768px) {
-    .radio:hover input + span {
+    .acc-checkbox:hover input + span {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); } }
-  .radio input:active + span {
+  .acc-checkbox input:active + span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
-  .radio input:focus + span {
+  .acc-checkbox input:focus + span {
     box-shadow: 0 0 0 3px lightblue; }
-  .radio input:checked + span::after {
+  .acc-checkbox input:checked + span::after {
     transform: scale(1); }
-  .radio input {
+  .acc-checkbox input {
     position: absolute;
     cursor: pointer;
     opacity: 0; }
-  .radio input + span {
+  .acc-checkbox input + span {
+    border-radius: 2px; }
+    .acc-checkbox input + span::after {
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwb2x5Z29uIHBvaW50cz0iMTMuNzA3LDMyLjI5MyAxMi4yOTMsMzMuODU0IDI0LjI5Myw0NiAyNS43MDcsNDYgNDkuNzA3LDIxLjg1NCA0OC4yOTMsMjAuMzY2IDI1LDQzLjYyMyAiLz48L2c+PC9zdmc+) no-repeat center;
+      background-size: contain;
+      width: 2em;
+      height: 2em; }
+
+.acc-radio {
+  position: relative;
+  cursor: pointer;
+  color: #4a4a4a; }
+  .acc-radio::selection {
+    background: transparent; }
+  .acc-radio input + span {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    content: "";
+    display: inline-block;
+    margin: 0 .5em 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden; }
+    .acc-radio input + span::after {
+      content: "";
+      display: block;
+      transform: scale(0);
+      transition: transform .2s; }
+  @media screen and (min-width: 768px) {
+    .acc-radio:hover input + span {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); } }
+  .acc-radio input:active + span {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+  .acc-radio input:focus + span {
+    box-shadow: 0 0 0 3px lightblue; }
+  .acc-radio input:checked + span::after {
+    transform: scale(1); }
+  .acc-radio input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; }
+  .acc-radio input + span {
     border-radius: 100%; }
-    .radio input + span::after {
+    .acc-radio input + span::after {
       border-radius: 100%;
       margin: .65em;
       width: .75em;
       height: .75em; }
-  .radio input:checked + span::after {
+  .acc-radio input:checked + span::after {
     background: black; }
 
-/* --- END CHECKBOX.CSS --- */
-/* --- BEGIN DROP-DOWNS.CSS --- */
+/* --- END TOGGLE-ELEMENTS.CSS --- */
 /**
- * @atom Block select
+ * @atom Inline select
  * @section Form > Dropdowns
  * @description
  *  todo
  * @markup
- *  <div class="form">
+ *  <div class="acc-form-inline">
  *   <label for="select">label</label>
  *   <select id="select">
  *    <option value="Option 1">option 1</option>
@@ -1197,7 +1068,23 @@ button.icon {
  *   </select>
  *  </div>
 */
-.form select {
+/**
+ * @atom Block select
+ * @section Form > Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="acc-form">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
+/* --- BEGIN DROP-DOWNS.CSS --- */
+.acc-form select {
   font-size: 16px;
   font-size: 1.6rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -1214,22 +1101,7 @@ button.icon {
   outline: none;
   padding-left: 15px; }
 
-/**
- * @atom Inline select
- * @section Form > Dropdowns
- * @description
- *  todo
- * @markup
- *  <div class="form-inline">
- *   <label for="select">label</label>
- *   <select id="select">
- *    <option value="Option 1">option 1</option>
- *    <option value="Option 2">option 2</option>
- *    <option value="Option 3">option 3</option>
- *   </select>
- *  </div>
-*/
-.form-inline select {
+.acc-form-inline select {
   font-size: 16px;
   font-size: 1.6rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -1247,83 +1119,93 @@ button.icon {
   padding-left: 15px; }
 
 /* --- END DROP-DOWNS.CSS --- */
-/* --- BEGIN INPUT.CSS --- */
 /**
  * @atom Block inputs
  * @section Form > Input
  * @description
- *  todo
+ *  Default styling for inputs
  * @markup
- *  <div class="form">
+ *  <div class="acc-form">
  *   <label>Text Input</label>
  *   <input type="text" value="hello">
  *  </div>
 */
-.form span {
-  display: block; }
-
-.form label {
-  display: block; }
-
-.form span {
-  color: #4a4a4a; }
-
-.form label {
-  color: #4a4a4a; }
-
-.form input[type=text], .form input[type=password], .form input[type=email], .form input[type=number] {
-  font: inherit;
-  font-size: 16px;
-  font-size: 1.6rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 22px;
-  line-height: 2.2rem;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-  color: #4a4a4a;
-  height: 38px;
-  margin-bottom: 10px;
-  outline: none;
-  padding-left: 15px;
-  display: block; }
-
-.form input::-webkit-input-placeholder {
-  color: #999; }
-
-.form input:-moz-placeholder {
-  color: #999; }
-
-.form input::-moz-placeholder {
-  color: #999; }
-
-.form input:-ms-input-placeholder {
-  color: #999; }
-
 /**
  * @atom Inline inputs
  * @section Form > Input
  * @description
- *  todo
+ *  Inline input example
  * @markup
- *  <div class="form-inline">
+ *  <div class="acc-form-inline">
  *   <label>Text Input</label>
  *   <input type="text" value="hello">
  *  </div>
 */
-.form-inline span {
-  display: inline-block; }
+/**
+ * @atom Textarea
+ * @section Form > Input
+ * @description
+ *  Default styling for textarea
+ * @markup
+ *  <div class="acc-form">
+ *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *  </div>
+*/
+/* --- BEGIN INPUT-TEXTAREA.CSS --- */
+.acc-form span {
+  display: block; }
 
-.form-inline label {
-  display: inline-block; }
+.acc-form label {
+  display: block; }
 
-.form-inline span {
+.acc-form span {
   color: #4a4a4a; }
 
-.form-inline label {
+.acc-form label {
   color: #4a4a4a; }
 
-.form-inline input[type=text], .form-inline input[type=password], .form-inline input[type=email], .form-inline input[type=number] {
+.acc-form input[type=text], .acc-form input[type=password], .acc-form input[type=email], .acc-form input[type=number] {
+  font: inherit;
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 22px;
+  line-height: 2.2rem;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  color: #4a4a4a;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
+  display: block; }
+
+.acc-form input::-webkit-input-placeholder {
+  color: #999; }
+
+.acc-form input:-moz-placeholder {
+  color: #999; }
+
+.acc-form input::-moz-placeholder {
+  color: #999; }
+
+.acc-form input:-ms-input-placeholder {
+  color: #999; }
+
+.acc-form-inline span {
+  display: inline-block; }
+
+.acc-form-inline label {
+  display: inline-block; }
+
+.acc-form-inline span {
+  color: #4a4a4a; }
+
+.acc-form-inline label {
+  color: #4a4a4a; }
+
+.acc-form-inline input[type=text], .acc-form-inline input[type=password], .acc-form-inline input[type=email], .acc-form-inline input[type=number] {
   font: inherit;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1340,29 +1222,19 @@ button.icon {
   padding-left: 15px;
   display: inline-block; }
 
-.form-inline input::-webkit-input-placeholder {
+.acc-form-inline input::-webkit-input-placeholder {
   color: #999; }
 
-.form-inline input:-moz-placeholder {
+.acc-form-inline input:-moz-placeholder {
   color: #999; }
 
-.form-inline input::-moz-placeholder {
+.acc-form-inline input::-moz-placeholder {
   color: #999; }
 
-.form-inline input:-ms-input-placeholder {
+.acc-form-inline input:-ms-input-placeholder {
   color: #999; }
 
-/**
- * @atom Textarea
- * @section Form > Input
- * @description
- *  todo
- * @markup
- *  <div class="form">
- *   <textarea name="message" rows="10" cols="30">test</textarea>
- *  </div>
-*/
-.form textarea {
+.acc-form textarea {
   font: inherit;
   font-size: 16px;
   font-size: 1.6rem;
@@ -1382,8 +1254,7 @@ button.icon {
   color: #4a4a4a;
   display: block; }
 
-/* --- END INPUT.CSS --- */
-/* --- BEGIN BLOCKQUOTE.CSS --- */
+/* --- END INPUT-TEXTAREA.CSS --- */
 /**
  * Generic blockquote style for medium to long blocks of text. This element
  * is using the @{lipsum} substitution to generate two blocks of text.
@@ -1395,6 +1266,7 @@ button.icon {
  *    @{lipsum:2:paragraphs}
  *  </blockquote>
  */
+/* --- BEGIN BLOCKQUOTE.CSS --- */
 blockquote,
 q {
   font-family: "Open-Sans", sans-serif;
@@ -1438,7 +1310,6 @@ q {
     display: inline; }
 
 /* --- END BLOCKQUOTE.CSS --- */
-/* --- BEGIN HEADINGS.CSS --- */
 /**
  * Headlines which visually separate and introduce content. Both used on Nucleus
  * pages and the documentation pages.
@@ -1452,7 +1323,8 @@ q {
  *  <h4>Headline H4</h4>
  *  <h5>Headline H5</h5>
  *  <h6>Headline H6</h6>
- */
+*/
+/* --- BEGIN HEADINGS.CSS --- */
 h1 {
   margin-bottom: 15px;
   font-family: "Lato", sans-serif;
@@ -1508,21 +1380,22 @@ h6 {
   line-height: 1.44; }
 
 /* --- END HEADINGS.CSS --- */
-/* --- BEGIN LINKS.CSS --- */
 /**
- * Links....
+ * Hyperlink default styling
  *
  * @atom Links
  * @section Typography > Content markup tags
  * @markup
  *  <a>Link</a><br/>
  *  <a href="#test">Link with url</a>
- */
+*/
+/* --- BEGIN LINKS.CSS --- */
 a {
   font-size: 16px;
   font-size: 1.6rem;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.32;
+  background-color: transparent;
   text-decoration: none;
   color: #000000; }
   a[href] {
@@ -1548,83 +1421,61 @@ a {
     text-decoration: underline; }
 
 /* --- END LINKS.CSS --- */
-/* --- BEGIN LISTS.CSS --- */
 /**
  * Generic list style.
  *
  * @atom Default Lists
  * @section Typography > Content markup tags
  * @markup
- *  <ul class="list-default">
+ *  <ul class="acc-list-default">
  *    <li>default list style</li>
  *    <li>default list style</li>
  *    <li>default list style</li>
  *  </ul>
- */
-.list-default li {
-  font-size: 18px;
-  font-size: 1.8rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 30px;
-  line-height: 3rem;
-  position: relative;
-  padding-left: 1.75rem; }
-  .list-default li:before {
-    content: '';
-    width: .375em;
-    height: .375em;
-    border-radius: 2em;
-    position: absolute;
-    left: 0;
-    top: .6em;
-    background: #2274a5; }
-
+*/
 /**
  * Square list style.
  *
  * @atom Square Lists
  * @section Typography > Content markup tags
  * @markup
- *  <ul class="list-square">
+ *  <ul class="acc-list-square">
  *    <li>square list style</li>
  *    <li>square list style</li>
  *    <li>square list style</li>
  *  </ul>
- */
-.list-square li {
-  font-size: 18px;
-  font-size: 1.8rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 30px;
-  line-height: 3rem;
-  position: relative;
-  padding-left: 1.75rem; }
-  .list-square li:before {
-    content: '';
-    width: .375em;
-    height: .375em;
-    border-radius: 2em;
-    position: absolute;
-    left: 0;
-    top: .6em;
-    background: #2274a5; }
-
-.list-square li:before {
-  border-radius: 0; }
-
+*/
 /**
  * Dash list style.
  *
  * @atom Dash Lists
  * @section Typography > Content markup tags
  * @markup
- *  <ul class="list-dash">
+ *  <ul class="acc-list-dash">
  *    <li>dash list style</li>
  *    <li>dash list style</li>
  *    <li>dash list style</li>
  *  </ul>
- */
-.list-dash li {
+*/
+/**
+ * Ordered list style.
+ *
+ * @atom Ordered Lists
+ * @section Typography > Content markup tags
+ * @markup
+ *  <ol class="acc-list-ordered">
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *  </ol>
+*/
+/* --- BEGIN LISTS.CSS --- */
+ol,
+ul,
+li {
+  list-style: none; }
+
+.acc-list-default li {
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -1632,7 +1483,7 @@ a {
   line-height: 3rem;
   position: relative;
   padding-left: 1.75rem; }
-  .list-dash li:before {
+  .acc-list-default li:before {
     content: '';
     width: .375em;
     height: .375em;
@@ -1642,24 +1493,51 @@ a {
     top: .6em;
     background: #2274a5; }
 
-.list-dash li:before {
+.acc-list-square li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  .acc-list-square li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+.acc-list-square li:before {
+  border-radius: 0; }
+
+.acc-list-dash li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 30px;
+  line-height: 3rem;
+  position: relative;
+  padding-left: 1.75rem; }
+  .acc-list-dash li:before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-radius: 2em;
+    position: absolute;
+    left: 0;
+    top: .6em;
+    background: #2274a5; }
+
+.acc-list-dash li:before {
   width: .5em;
   height: .2em;
   top: .93em; }
 
-/**
- * Ordered list style.
- *
- * @atom Ordered Lists
- * @section Typography > Content markup tags
- * @markup
- *  <ol class="list-ordered">
- *    <li>ordered list style</li>
- *    <li>ordered list style</li>
- *    <li>ordered list style</li>
- *  </ol>
- */
-.list-ordered > li {
+.acc-list-ordered > li {
   font-size: 18px;
   font-size: 1.8rem;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -1667,7 +1545,7 @@ a {
   line-height: 3rem;
   position: relative;
   counter-increment: item; }
-  .list-ordered > li:before {
+  .acc-list-ordered > li:before {
     color: #2274a5;
     content: counter(item);
     display: inline-block;
@@ -1676,14 +1554,17 @@ a {
     min-width: 2rem;
     text-align: left; }
 
-.list-ordered ul {
+.acc-list-ordered ul {
   padding-left: 20px; }
 
 /* --- END LISTS.CSS --- */
-/* --- BEGIN PARAGRAPHS.CSS --- */
+/* --- BEGIN INLINE-CONTENT.CSS --- */
+b,
+strong {
+  font-weight: bolder; }
+
 /**
- * Generic paragraph style for medium to long blocks of text. This element
- * is using the @{lipsum} substitution to generate two blocks of text.
+ * Generic paragraph style for medium to long blocks of text. This element is using the @{lipsum} substitution to generate two blocks of text.
  *
  * @atom Paragraph
  * @section Typography > Content markup tags
@@ -1691,7 +1572,7 @@ a {
  *  <p>
  *    @{lipsum:2:paragraphs}
  *  </p>
- */
+*/
 p {
   margin-bottom: 15px;
   font-family: "Open-Sans", sans-serif;
@@ -1710,8 +1591,18 @@ p {
  *  <strong>Bold text</strong><br/>
  *  <em>Italic text</em><br/>
  *  <u>Underline</u>
- */
-/* --- END PARAGRAPHS.CSS --- */
+*/
+span,
+p span {
+  margin-bottom: 15px;
+  font-family: "Open-Sans", sans-serif;
+  color: #4a4a4a;
+  font-size: 18px;
+  font-size: 1.8rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.36; }
+
+/* --- END INLINE-CONTENT.CSS --- */
 /* --- BEGIN GRID.CSS --- */
 /**
  * Semantic structure. Create and divide columns using a natural semantic HTML language. Providing also an option for auto generating width.
@@ -2315,7 +2206,9 @@ p {
   border: 1px solid #ccc;
   min-width: 50%;
   padding: 5px;
-  text-align: left; }
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0; }
   .default-table td,
   .default-table th {
     padding: 8px;
@@ -2327,7 +2220,9 @@ p {
   border: 1px solid #ccc;
   min-width: 50%;
   padding: 5px;
-  text-align: left; }
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0; }
   .minimal-table thead {
     padding: 5px; }
   .minimal-table tbody {

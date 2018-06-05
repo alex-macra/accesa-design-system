@@ -6,7 +6,7 @@
  * @param $argument accepts any transition properties
  * @example
  *  @include transition(width 2s, height 4s);
- */
+*/
 
 @mixin transition($arguments) {
 	@include vendor-prefix('transition', $arguments);

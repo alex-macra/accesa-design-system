@@ -1,4 +1,27 @@
-// Lists
+//NOTE//
+//Test / improve in upcoming versions
+//
+
+@mixin reset-list() {
+  ol,
+  ul,
+  li {
+    list-style: none;
+  }
+}
+
+/**
+ * Generic list style.
+ *
+ * @atom Default Lists
+ * @section Typography > Content markup tags
+ * @markup
+ *  <ul class="acc-list-default">
+ *    <li>default list style</li>
+ *    <li>default list style</li>
+ *    <li>default list style</li>
+ *  </ul>
+*/
 
 @mixin default-list() {
 
@@ -20,6 +43,19 @@
   }
 }
 
+/**
+ * Square list style.
+ *
+ * @atom Square Lists
+ * @section Typography > Content markup tags
+ * @markup
+ *  <ul class="acc-list-square">
+ *    <li>square list style</li>
+ *    <li>square list style</li>
+ *    <li>square list style</li>
+ *  </ul>
+*/
+
 @mixin square-list() {
   @include default-list();
 
@@ -29,6 +65,19 @@
     }
   }
 }
+
+/**
+ * Dash list style.
+ *
+ * @atom Dash Lists
+ * @section Typography > Content markup tags
+ * @markup
+ *  <ul class="acc-list-dash">
+ *    <li>dash list style</li>
+ *    <li>dash list style</li>
+ *    <li>dash list style</li>
+ *  </ul>
+*/
 
 @mixin dash-list() {
   @include default-list();
@@ -41,6 +90,19 @@
       }
     }
 }
+
+/**
+ * Ordered list style.
+ *
+ * @atom Ordered Lists
+ * @section Typography > Content markup tags
+ * @markup
+ *  <ol class="acc-list-ordered">
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *    <li>ordered list style</li>
+ *  </ol>
+*/
 
 @mixin ordered-list() {
 

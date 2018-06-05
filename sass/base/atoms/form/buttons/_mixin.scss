@@ -1,3 +1,7 @@
+//NOTE//
+//Improve in upcoming versions. THIS IS NOT FINISHED
+//
+
 $buttons-font: 'Open-Sans', sans-serif;
 $button-font: $buttons-font;
 $default-button-color: $color-gray !default;
@@ -9,8 +13,10 @@ $default-button-color: $color-gray !default;
 	box-shadow: 0 2px 0 darken($button-color, 5%);
 	cursor: pointer;
 	
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		background-color: darken($button-color, 15%);
+		box-shadow: 0 2px 0 darken($button-color, 15%);
 	}
 
 	&:active {
@@ -42,6 +48,20 @@ $default-button-color: $color-gray !default;
 	}
 }
 
+/**
+ * @atom Default styles
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <button type="button" class="primary">primary button</button>
+ *   <button type="button" class="secondary">secondary button</button>
+ *   <button type="button" class="error">error</button>
+ *   <button type="button" class="go">proceed</button>
+ *   <button type="button">greyed (default button)</button>
+ *   <button type="button" disabled>disabled button</button>
+ *   <button type="button" class="cancel">transparent button</button>
+*/
 
 @mixin button-styles() {
 
@@ -99,6 +119,22 @@ $default-button-color: $color-gray !default;
 	}
 }
 
+
+/**
+ * @atom Buttons with icons
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing icons. Either with a separator or without.
+ * @markup
+ *   <button type="button" class="error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
+ *   <button type="button" class="error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="primary"><i class="fa fa-icon-circle"></i>Info</button>
+*/
+
+
 @mixin button-icon() {
 
 	&:not(.icon) {
@@ -131,8 +167,27 @@ $default-button-color: $color-gray !default;
 		  transition: all .25s;
 		  width: 3em;
 		}
+
+		&:hover,
+		&:focus {
+			box-shadow: none;
+		}
 	}
 }
+
+/**
+ * @atom Default alignments
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different alingments.
+ * @markup
+ *   <button type="button" class="bottom small secondary">small button</button>
+ *   <button type="button" class="bottom secondary">normal button</button>
+ *   <button type="button" class="large secondary">large button</button><br/>
+ *   <button type="button" class="large primary">large button</button>
+ *   <button type="button" class="top primary">normal button</button>
+ *   <button type="button" class="top small primary">small button</button>
+*/
 
 @mixin button-alignments() {
 	
@@ -144,6 +199,17 @@ $default-button-color: $color-gray !default;
 		vertical-align: bottom;
 	}
 }
+
+/**
+ * @atom Default sizes
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different sizes.
+ * @markup
+ *   <button type="button" class="small">small button</button>
+ *   <button type="button">normal button</button>
+ *   <button type="button" class="large">large button</button>
+*/
 
 @mixin button-sizes() {
 
@@ -163,7 +229,18 @@ $default-button-color: $color-gray !default;
 	}
 }
 
-//todo
+/**
+ * @atom Elements that will look like a button
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing different color schemes.
+ * @markup
+ *   <input type="button" value="input button" class="acc-is-button">
+ *   <a class="acc-is-button">link button</a>
+ *   <span class="acc-is-button">span button</span>
+ *   <span class="acc-is-button primary large">span button</span>
+*/
+
 @mixin button-lookalike() {
 
 	&:hover {

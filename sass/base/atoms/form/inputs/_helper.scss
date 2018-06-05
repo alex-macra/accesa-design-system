@@ -1,18 +1,6 @@
-/* --- BEGIN INPUT.CSS --- */
+/* --- BEGIN INPUT-TEXTAREA.CSS --- */
 
-/**
- * @atom Block inputs
- * @section Form > Input
- * @description
- *  todo
- * @markup
- *  <div class="form">
- *   <label>Text Input</label>
- *   <input type="text" value="hello">
- *  </div>
-*/
-
-.form {
+.#{$prefix}form {
   @include form-legend(block);
   @include form-legend-color();
 
@@ -21,19 +9,7 @@
   }
 }
 
-/**
- * @atom Inline inputs
- * @section Form > Input
- * @description
- *  todo
- * @markup
- *  <div class="form-inline">
- *   <label>Text Input</label>
- *   <input type="text" value="hello">
- *  </div>
-*/
-
-.form-inline {
+.#{$prefix}form-inline {
   @include form-legend(inline-block);
   @include form-legend-color();
 
@@ -42,22 +18,11 @@
   }
 }
 
-/**
- * @atom Textarea
- * @section Form > Input
- * @description
- *  todo
- * @markup
- *  <div class="form">
- *   <textarea name="message" rows="10" cols="30">test</textarea>
- *  </div>
-*/
-
-.form {
+.#{$prefix}form {
 
   textarea {
     @include form-textarea(block);
   }
 }
 
-/* --- END INPUT.CSS --- */
+/* --- END INPUT-TEXTAREA.CSS --- */

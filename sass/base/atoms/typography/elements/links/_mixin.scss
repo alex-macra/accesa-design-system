@@ -1,0 +1,35 @@
+/**
+ * Hyperlink default styling
+ *
+ * @atom Links
+ * @section Typography > Content markup tags
+ * @markup
+ *  <a>Link</a><br/>
+ *  <a href="#test">Link with url</a>
+*/
+
+@mixin link-styling() {
+  @include text-size(16);
+  background-color: transparent; // crossbrowser setting
+  text-decoration: none;
+  color: $color-black;
+
+  &[href] {
+    @include transition(color .3s ease);
+    color: $color-black;
+    text-decoration: underline;
+
+    &:hover {
+      @include opacity(0.9);
+      color: #666;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//NOTE//
+//Improve in upcoming versions.
+//

@@ -1,13 +1,15 @@
 /* --- BEGIN HEIGHT-CENTERING.CSS --- */
 
-.#{$prefix}-text-center {
+//NOTE//
+//Improve in upcoming versions. Add more helpers
+//
+
+.#{$prefix}text-center {
   @include center-horizontally-text();
 }
 
-.#{$prefix}-area-center-horizontal {
+.#{$prefix}area-center-horizontal {
   @include center-horizontally();
 }
-
-//todo: finish in beta version
 
 /* --- END HEIGHT-CENTERING.CSS --- */

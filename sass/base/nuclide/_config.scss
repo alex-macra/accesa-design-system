@@ -2,30 +2,25 @@
 
 /**
  * Set a general prefix throughout the entire app using the $prefix variable.
- * The default namespaces is 'accesa' -> 'acc'.
+ * The default namespaces is 'accesa' -> 'acc-'. Want to disable it? Set it to null.
  *
  * @nuclide Project prefix
  * @section Config
- */
+*/
  
-$prefix: 'acc';
+$prefix: 'acc-';
 
 /**
  * Set a global border radius that will automatically update throught the entire stylesheet.
  *
  * @nuclide Global border radius
  * @section Config
- */
+*/
  
-$border-radius: 0; //eg 4px
+$border-radius: 0;
 
-//$minimal-classes: false; -- todo, upcoming version
-
-/**
- * todo
- *
- * @nuclide Dynamic colors
- * @section Config
- */
-
-$dynamic-colors: true;
+//NOTE//
+//Implement in upcoming versions:
+//
+//$minimal-classes: false;
+//$dynamic-colors: true;

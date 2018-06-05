@@ -8,7 +8,7 @@
  * @example
  *  @include text-size(20);
  *  @include text-size(28, 36); //first parameter is the font-size, second is line height
- */
+*/
 
 @mixin text-size($font-size: 18, $line-height: false) {
 	font-size: $font-size  + px;
@@ -24,3 +24,7 @@
 		line-height: (1 + (px-to-rem-line($font-size)))
 	}
 }
+
+//NOTE//
+//Test / improve in upcoming versions
+//
