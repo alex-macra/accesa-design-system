@@ -1,7 +1,5 @@
-//Eric Meyer's reset slighly customized
-//http://meyerweb.com/eric/tools/css/reset/
-
 /* --- BEGIN RESET.CSS --- */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,40 +27,5 @@ figure, footer, header, hgroup,
 menu, nav, section {
 	display: block;
 }
-
-ol,
-ul,
-li {
-	list-style: none;
-}
-
-
-a {
-	background-color: transparent;
-}
-
-b,
-strong {
-	font-weight: bolder;
-}
-
-q {
-	&::before,
-	&::after {
-		content: '';
-		content: none;
-	}
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*
-button::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}*/
 
 /* --- END RESET.CSS --- */
