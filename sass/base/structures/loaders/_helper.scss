@@ -1,10 +1,10 @@
 /* --- BEGIN LOADERS.CSS --- */
 
-.#{$prefix}-spinner {
+.#{$prefix}spinner {
 	@include spinner();
 }
 
-.#{$prefix}-bouncing-loader {
+.#{$prefix}bouncing-loader {
   @include bouncing-loader();
 }
 

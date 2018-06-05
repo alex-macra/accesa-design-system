@@ -45,6 +45,8 @@
 	min-width: 50%;
 	padding: 5px;
 	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
 
 	td,
 	th {
@@ -97,10 +99,12 @@
 */
 
 @mixin minimal-table() {
-		border: 1px solid #ccc;
-		min-width: 50%;
-		padding: 5px;
-		text-align: left;
+	border: 1px solid #ccc;
+	min-width: 50%;
+	padding: 5px;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
 
 	thead {
 		padding: 5px;

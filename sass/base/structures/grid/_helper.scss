@@ -29,7 +29,7 @@
  * </div>
  */
 
-.#{$prefix}-row {
+.#{$prefix}row {
 	@include grid-row();
 
 	.col-full {
@@ -73,7 +73,7 @@
  * </div>
  */
 
-.#{$prefix}-row {
+.#{$prefix}row {
 
 	.col-1 {
 		@include grid(1);
@@ -151,7 +151,7 @@
  * </div>
  */
 
- .#{$prefix}-row {
+ .#{$prefix}row {
 	@include for-size(phone-only) {
 
 		.xs-full {
