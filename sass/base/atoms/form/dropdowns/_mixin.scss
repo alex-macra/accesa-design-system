@@ -1,20 +1,51 @@
-// Select
+//NOTE//
+//Improve in upcoming versions. THIS IS NOT FINISHED
+//
 
-// revise in beta
+/**
+ * @atom Inline select
+ * @section Form > Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form-inline">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
 
 $temp-color: #4a4a4a;
+/**
+ * @atom Block select
+ * @section Form > Dropdowns
+ * @description
+ *  todo
+ * @markup
+ *  <div class="form">
+ *   <label for="select">label</label>
+ *   <select id="select">
+ *    <option value="Option 1">option 1</option>
+ *    <option value="Option 2">option 2</option>
+ *    <option value="Option 3">option 3</option>
+ *   </select>
+ *  </div>
+*/
 
 @mixin select($display: inline-block) {
-		@include text-size(16);
-		padding: 0 10px;
-    display: $display;
-		min-width: 100px;
-		background: $color-white;
-    border: 1px solid $color-light-gray;
-    border-radius: $border-radius;
-		color: $color-secondary;
-		height: 38px;
-		margin-bottom: 10px;
-		outline: none;
-		padding-left: 15px;
+  @include text-size(16);
+  padding: 0 10px;
+  display: $display;
+  min-width: 100px;
+  background: $color-white;
+  border: 1px solid $color-light-gray;
+  border-radius: $border-radius;
+  color: $color-secondary;
+  height: 38px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 15px;
 }

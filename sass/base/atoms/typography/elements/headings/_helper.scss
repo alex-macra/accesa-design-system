@@ -1,18 +1,4 @@
 /* --- BEGIN HEADINGS.CSS --- */
-/**
- * Headlines which visually separate and introduce content. Both used on Nucleus
- * pages and the documentation pages.
- *
- * @atom Headlines
- * @section Typography > Content markup tags
- * @markup
- *  <h1>Headline H1</h1>
- *  <h2>Headline H2</h2>
- *  <h3>Headline H3</h3>
- *  <h4>Headline H4</h4>
- *  <h5>Headline H5</h5>
- *  <h6>Headline H6</h6>
- */
 
 h1 {
   @include heading-defaults();
@@ -43,6 +29,11 @@ h6 {
   @include heading-defaults();
   @include text-size(22);
 }
+
+
+//NOTE//
+//Improve in upcoming versions. Maybe come up with an option to automatically set font sizes on all headings at once
+//
 
 //$base-font-size: 18;
 //$heading-scale: 6; // amount of px headings grow from h6 to h1

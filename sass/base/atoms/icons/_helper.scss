@@ -1,10 +1,10 @@
 /**
- * @icon fontAwesome icons
+ * @icon fontAwesome icons - broken
  * @markup
  *  <i class="acc-icon --bars"></i>
  */
   
- .#{$prefix}-icon {
+ .#{$prefix}icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -16,3 +16,7 @@
     content: "\f2ba";
   }
  }
+
+//NOTE//
+//Improve in upcoming versions. THIS IS BROKEN
+//

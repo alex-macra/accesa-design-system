@@ -1,7 +1,9 @@
-/* --- BEGIN PARAGRAPHS.CSS --- */
+/* --- BEGIN INLINE-CONTENT.CSS --- */
+
+@include default-bold-content();
+
 /**
- * Generic paragraph style for medium to long blocks of text. This element
- * is using the @{lipsum} substitution to generate two blocks of text.
+ * Generic paragraph style for medium to long blocks of text. This element is using the @{lipsum} substitution to generate two blocks of text.
  *
  * @atom Paragraph
  * @section Typography > Content markup tags
@@ -9,7 +11,7 @@
  *  <p>
  *    @{lipsum:2:paragraphs}
  *  </p>
- */
+*/
 
 p {
   @include paragraphs-defaults();
@@ -25,6 +27,12 @@ p {
  *  <strong>Bold text</strong><br/>
  *  <em>Italic text</em><br/>
  *  <u>Underline</u>
- */
+*/
 
-/* --- END PARAGRAPHS.CSS --- */
+span,
+p span {
+  @include paragraphs-defaults();
+  @include text-size(18);
+}//this is not fully tested
+
+/* --- END INLINE-CONTENT.CSS --- */

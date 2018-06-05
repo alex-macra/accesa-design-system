@@ -1,3 +1,7 @@
+//NOTE//
+//Test / improve in upcoming versions
+//
+
 $font-paragraph: 'Open-Sans', sans-serif;
 $color-paragraph: $color-dark-gray;
 
@@ -9,4 +13,11 @@ $temp-color: #4a4a4a;
     margin-bottom: 15px;
     font-family: $font-paragraphs;
     color: $temp-color;
+}
+
+@mixin default-bold-content() {
+    b,
+    strong {
+        font-weight: bolder;
+    }
 }
