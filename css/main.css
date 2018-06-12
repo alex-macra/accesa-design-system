@@ -659,7 +659,6 @@ body {
  *   <button type="button" class="go">proceed</button>
  *   <button type="button">greyed (default button)</button>
  *   <button type="button" disabled>disabled button</button>
- *   <button type="button" class="white">white button</button>
  *   <button type="button" class="cancel">transparent button</button>
 */
 /**
@@ -806,23 +805,6 @@ button {
       background-color: transparent; }
     button.cancel:hover, button.cancel:active, button.cancel:focus {
       color: #333333; }
-  button.white {
-    font-family: "Open-Sans", sans-serif;
-    background-color: transparent;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0);
-    cursor: pointer;
-    border: 1px solid #cccccc;
-    box-shadow: 0 2px 0 #cccccc;
-    color: #646464; }
-    button.white:hover, button.white:focus {
-      background-color: rgba(0, 0, 0, 0);
-      box-shadow: 0 2px 0 rgba(0, 0, 0, 0); }
-    button.white:active {
-      background-color: transparent; }
-    button.white:hover, button.white:active, button.white:focus {
-      color: #2274a5;
-      border-color: #2274a5;
-      box-shadow: 0 2px 0 #2274a5; }
   button.disabled {
     font-family: "Open-Sans", sans-serif;
     background-color: #cccccc;

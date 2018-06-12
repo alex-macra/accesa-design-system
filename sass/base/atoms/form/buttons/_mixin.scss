@@ -61,7 +61,6 @@ $default-button-color: $color-gray !default;
  *   <button type="button" class="go">proceed</button>
  *   <button type="button">greyed (default button)</button>
  *   <button type="button" disabled>disabled button</button>
- *   <button type="button" class="white">white button</button>
  *   <button type="button" class="cancel">transparent button</button>
 */
 
@@ -91,21 +90,6 @@ $default-button-color: $color-gray !default;
 		&:active,
 		&:focus {
 		  color: #333333;
-		}
-	}
-
-	&.white { //good?
-		@include button (transparent);
-		border: 1px solid $color-light-gray;
-		box-shadow: 0 2px 0 $color-light-gray;
-		color: $color-gray;
-	
-		&:hover,
-		&:active,
-		&:focus {
-		  color: $color-main;
-		  border-color: $color-main;	  
-			box-shadow: 0 2px 0 $color-main;
 		}
 	}
 	
