@@ -1,21 +1,22 @@
-// Tooltip
+/**
+ * @molecule Toolip molecule
+ * @section Tooltip
+ * @description
+ *  Created using an icon, headings level 5 and a little bit of geomerty.
+ * @markup
+ *  <div class="tooltip">
+ *      <h5>upper right tooltip <i class="acc-info-icon top-right" data-tooltip="this is tooltip">i</i></h5>
+ *      <h5>bottom left tooltip <i class="acc-info-icon bottom-left" data-tooltip="this is tooltip this is tooltip">i</i></h5>
+ *  </div>
+*/
 
-// revise in beta
-
-$triangle-size: 6px; // = height of triangle, width is 2x
-$tooltip-width: 200px;
-$fade: 300ms;
-
-//todo move ? improve
 @mixin tooltip($direction: top-left, $bg-color: #000, $title: false) {
 	position: relative;
 
 	&:before, &:after {
 		opacity: 0;
-		//	@include transition(opacity $fade, visibility 0ms linear $fade); // delay visibility on fade out
 		pointer-events: none;
 		z-index: 98;
-		//@include respondTo(smartphone){ display: none; }
 	}
 
 	&:before {
@@ -31,7 +32,7 @@ $fade: 300ms;
 		position: absolute;
 		text-align: left;
 		white-space: normal;
-		width: $tooltip-width;
+		width: 220px;
 		//@if lightness($bg-color) < 50% { // dynamically determine light or dark color based on $bg-color --GOOD IDEA TO USE IN ALL PROJECT
 		//	color: $white;
 		//} @else {
@@ -46,9 +47,10 @@ $fade: 300ms;
 		&:before, &:after {
 			opacity: 1;
 			pointer-events: all;
-			//@include transition-delay(0ms);
 		}
 	}
+
+	$triangle-size: 6px; // = height of triangle, width is 2x
 
 	@if $direction == 'top-left' or $direction == 'top-right' {
 		&:before {
@@ -99,5 +101,37 @@ $fade: 300ms;
 		&:before { 
 			margin-right: -$triangle-size * 3;
 		 }
+	}
+}
+
+@mixin triangle($direction, $size: 8px, $color: #222){
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute; 
+	width: 0;
+	@if ($direction == 'up'){
+		border-bottom: $size solid $color;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: none;
+	}
+	@else if ($direction == 'down'){
+		border-bottom: none;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+	}
+	@else if ($direction == 'left'){
+		border-bottom: $size solid transparent;
+		border-left: none;
+		border-right: $size solid $color;
+		border-top: $size solid transparent;
+	}
+	@else if ($direction == 'right'){
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+		border-right: none;
+		border-top: $size solid transparent;
 	}
 }
