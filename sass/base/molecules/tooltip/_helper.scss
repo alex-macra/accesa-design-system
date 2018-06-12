@@ -1,6 +1,6 @@
 /* --- BEGIN TOOL-TIPS.CSS --- */
 
-.#{$prefix}info-icon { //todo: revise in beta
+.#{$prefix}info-icon {
 	@include text-size(16, 30);
 	background: $color-main;
 	border-radius: 50%;
