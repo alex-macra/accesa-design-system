@@ -13,7 +13,7 @@
 	width: 30px;
 
 	&.top-right { 
-		@include tooltip(top-right, $color-lighter-main); 
+		@include tooltip(top-right, blue); 
 	}
 
 	&.top-left { 
