@@ -1,6 +1,10 @@
 ##Comprehensive list of useful files and folders to ignore. From popular operating systems to IDE's and much more.
 ##Thanks https://github.com/github/gitignore !
 
+/react-start
+/css 
+/styleguide/build
+
 ##SVN
 .svn/
 
