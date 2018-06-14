@@ -2,6 +2,7 @@
 ##Thanks https://github.com/github/gitignore !
 
 /react-start
+/react
 /css 
 /styleguide/build
 
