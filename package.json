@@ -1,6 +1,6 @@
 {
   "name": "accesa-design-system",
-  "version": "0.9.0-beta",
+  "version": "0.9.1-beta",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,6 @@
     "css:build-minified": "uglifycss css/main.css > css/main.min.css",
     "css:build-nested": "node-sass -r --output-style nested sass sass/main.scss -o css",
     "css:watch": "npm run css:build && npm run css:build -- -w",
-    "css:lint": "stylelint /css/main.css > css/lintOutput.txt",
-    "sass:lint": "stylelint /sass/**/**/**/*.scss > sass/lintOutput.txt",
-    "sass:lint-fix": "stylelint /sass/**/**/**/*.scss --fix > sass/lintOutput.txt",
     "styleguide": "nucleus --config styleguide-config.json"
   },
   "repository": {
@@ -21,12 +18,8 @@
   "author": "alex macra",
   "license": "OSL-3.0",
   "devDependencies": {
-    "font-awesome": "^4.7.0",
     "nucleus-styleguide": "^1.1.1",
     "node-sass": "^4.8.3",
-    "stylelint": "^9.1.1",
-    "stylelint-config-sass-guidelines": "^5.0.0",
-    "stylelint-scss": "^3.1.0",
     "uglifycss": "0.0.29"
   }
 }
