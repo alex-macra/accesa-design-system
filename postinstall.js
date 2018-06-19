@@ -76,16 +76,19 @@ inquirer
         console.log(`\u001b[96m\u001b[1mDownloading react starter pack...\u001b[96m\u001b[1m`);
       }
 
-      child = exec('git clone https://github.com/alex-macra/react-start',
+      child = exec('git clone https://github.com/alex-macra/react',
         function (error, stderr) {
           if (error === null) {
             console.log(`\u001b[96m\u001b[1mReact starter pack has been downloaded with success.\u001b[96m\u001b[1m`);
             console.log(`\u001b[96m\u001b[1mNext step, Installing the react dependencies. This can take a while on a slow speed internet.\u001b[96m\u001b[1m`);
-            console.log(`\u001b[96m\u001b[1mPlease wait...\u001b[96m\u001b[1m`);
+            
+            if (answers.design === false) {
+              console.log(`\u001b[96m\u001b[1mPlease wait...\u001b[96m\u001b[1m`);
+            }
             console.log("\n");
           }
 
-          exec('cd react-start && npm install',
+          exec('cd react && npm install',
             function (error, stderr) {
               if (error == null) {
                 console.log(`\u001b[96m\u001b[1mReact starter pack was installed with success.\u001b[96m\u001b[1m`);
@@ -100,7 +103,7 @@ inquirer
                       console.log(`\u001b[96m\u001b[1mStarting up the local server...\u001b[96m\u001b[1m`);
                     }
 
-                    exec('cd react-start && npm run start',
+                    exec('cd react && npm run start',
                       function (error, stderr) {
                         if (error !== null) {
                           console.log('exec error: ' + error);
