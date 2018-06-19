@@ -6,6 +6,10 @@ Current version: 0.9.-Beta
 
 Upcoming version: 1.0.0-RC1
 
+### Projects linked with the design system
+* [Accesa React Start](https://github.com/alex-macra/react) - react starter pack, very easy to integrate
+* [Accesa Base Design](https://github.com/alex-macra/design) - core design files for the example components
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

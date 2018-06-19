@@ -24,6 +24,12 @@ if (pkg.collective) {
 const getReactQuestion = [
   {
     type: 'confirm',
+    name: 'design',
+    message: 'Would you like download the base design files?',
+    default: true
+  },
+  {
+    type: 'confirm',
     name: 'yes',
     message: 'Would you like to automatically integrate react (takes a few moments)?',
     default: true
@@ -39,60 +45,48 @@ const startServerQuestion = [
   }
 ];
 
-
-const designQuestion = [
-  {
-    type: 'confirm',
-    name: 'yes',
-    message: 'Would you like download the base design files?',
-    default: true
-  }
-];
-
-inquirer 
-  .prompt(designQuestion)
+inquirer
+  .prompt(getReactQuestion)
   .then(function (answers) {
-    if (answers.yes === true) {
+
+    if (answers.design === true) {
       console.log("\n");
       console.log(`\u001b[96m\u001b[1mDownloading the design files...\u001b[96m\u001b[1m`);
 
       child = exec('git clone https://github.com/alexandrumacra/design',
         function (error, stderr) {
           if (error === null) {
-            console.log(`\u001b[96m\u001b[1mDesign files were downloaded with success.\u001b[96m\u001b[1m`);        
+            console.log(`\u001b[96m\u001b[1mDesign files were downloaded with success.\u001b[96m\u001b[1m`);
             console.log("\n");
+
+            if (answers.yes === true) {
+              console.log(`\u001b[96m\u001b[1mPlease wait for the react starter to install...\u001b[96m\u001b[1m`);
+            }
           }
-     
+
           if (error !== null) {
             console.log('exec error: ' + error);
           }
         });
     }
-  })
 
-inquirer
-  .prompt(getReactQuestion)
-  .then(function (answers) {
-  
     if (answers.yes === true) {
-      console.log("\n");
-      console.log(`\u001b[96m\u001b[1mDownloading react starter pack...\u001b[96m\u001b[1m`);
+      if (answers.design === false) {
+        console.log("\n");
+        console.log(`\u001b[96m\u001b[1mDownloading react starter pack...\u001b[96m\u001b[1m`);
+      }
 
       child = exec('git clone https://github.com/alexandrumacra/react-start',
         function (error, stderr) {
           if (error === null) {
             console.log(`\u001b[96m\u001b[1mReact starter pack has been downloaded with success.\u001b[96m\u001b[1m`);
             console.log(`\u001b[96m\u001b[1mNext step, Installing the react dependencies. This can take a while on a slow speed internet.\u001b[96m\u001b[1m`);
-            console.log("\n");
             console.log(`\u001b[96m\u001b[1mPlease wait...\u001b[96m\u001b[1m`);
             console.log("\n");
           }
 
-          console.log("this is rribrary", stderr);
-
           exec('cd react-start && npm install',
             function (error, stderr) {
-              console.log("this is rribrary", stderr);
               if (error == null) {
                 console.log(`\u001b[96m\u001b[1mReact starter pack was installed with success.\u001b[96m\u001b[1m`);
               }
@@ -108,7 +102,6 @@ inquirer
 
                     exec('cd react-start && npm run start',
                       function (error, stderr) {
-                        console.log("this is library", stderr);
                         if (error !== null) {
                           console.log('exec error: ' + error);
                         }
@@ -119,7 +112,7 @@ inquirer
                       setTimeout(function () {
                         opn('http://localhost:8888/');
                         console.log(`\u001b[96m\u001b[1mAnd we are done!\u001b[96m\u001b[1m`);
-                      }, 7500);
+                      }, 8000);
                     }
 
                   }
