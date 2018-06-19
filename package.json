@@ -1,15 +1,14 @@
 {
   "name": "accesa-design-system",
-  "version": "0.9.2-beta",
+  "version": "0.9.3-beta",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
     "css:build": "node-sass -r sass sass/main.scss -o css --trace",
-    "css:build-compressed": "node-sass -r --output-style compressed sass sass/main.scss -o css",
     "css:build-minified": "uglifycss css/main.css > css/main.min.css",
-    "css:build-nested": "node-sass -r --output-style nested sass sass/main.scss -o css",
     "css:watch": "npm run css:build && npm run css:build -- -w",
-    "styleguide": "nucleus --config styleguide-config.json"
+    "update:styleguide": "nucleus --config styleguide-config.json",
+    "postinstall": "node ./postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,16 @@
   "author": "alex macra",
   "license": "OSL-3.0",
   "devDependencies": {
-    "nucleus-styleguide": "^1.1.1",
     "node-sass": "^4.8.3",
+    "nucleus-styleguide": "^1.1.1",
+    "opn": "^5.3.0",
     "uglifycss": "0.0.29"
+  },
+  "collective": {
+    "url": "accesa.eu"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "inquirer": "^6.0.0"
   }
 }
