@@ -56,7 +56,7 @@ inquirer
       console.log("\n");
       console.log(`\u001b[96m\u001b[1mDownloading the design files...\u001b[96m\u001b[1m`);
 
-      child = exec('git clone https://github.com/alexandrumacra/design',
+      child = exec('git clone https://github.com/alex-macra/design',
         function (error, stderr) {
           if (error === null) {
             console.log(`\u001b[96m\u001b[1mDesign files were downloaded with success.\u001b[96m\u001b[1m`);        
@@ -78,7 +78,7 @@ inquirer
       console.log("\n");
       console.log(`\u001b[96m\u001b[1mDownloading react starter pack...\u001b[96m\u001b[1m`);
 
-      child = exec('git clone https://github.com/alexandrumacra/react-start',
+      child = exec('git clone https://github.com/alex-macra/react-start',
         function (error, stderr) {
           if (error === null) {
             console.log(`\u001b[96m\u001b[1mReact starter pack has been downloaded with success.\u001b[96m\u001b[1m`);

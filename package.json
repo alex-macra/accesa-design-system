@@ -1,18 +1,18 @@
 {
   "name": "accesa-design-system",
-  "version": "0.9.5-beta",
+  "version": "0.9.6-beta",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
     "css:build": "node-sass -r sass sass/main.scss -o css --trace",
     "css:build-minified": "uglifycss css/main.css > css/main.min.css",
     "css:watch": "npm run css:build && npm run css:build -- -w",
-    "update:styleguide": "nucleus --config styleguide-config.json",
+    "styleguide": "nucleus --config styleguide-config.json",
     "postinstall": "node ./postinstall.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexandrumacra/accesa-design-system"
+    "url": "git://github.com/alex-macra/accesa-design-system"
   },
   "author": "alex macra",
   "license": "OSL-3.0",

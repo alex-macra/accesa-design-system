@@ -69,11 +69,11 @@ npm run styleguide
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/alexandrumacra/accesa-design-system/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/alex-macra/accesa-design-system/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-Alexandru Macra
+* [Alexandru Macra](https://github.com/alex-macra)
 
 ## License
 
