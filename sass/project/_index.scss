@@ -1,0 +1,94 @@
+/* --- BEGIN PROJECT.CSS --- */
+
+.acc-testing-app-wrapper {
+  min-height: 200vh;
+  max-width: 1580px;
+  margin: 25px auto;
+  box-shadow: 0 1px 1px $color-light-gray;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.acc-form {
+  max-width: 1580px;
+  margin: 25px auto;
+  min-height: 50vh;
+  box-shadow: 0 1px 1px $color-light-gray;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.acc-main-nav {
+  @include flexbox();
+  background-color: $color-main;
+  height: 72px;
+  color: $color-white;
+  box-shadow: 3px 1px 2px $color-light-gray;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-light-gray;
+    }
+  }
+
+  .acc-logo {
+    @include flex(0 0 15%);
+    @include flexbox();
+     
+    > a {
+      @include flex-align-self(center);
+      padding: 0 15px;
+      text-transform: uppercase;
+      @include text-size(17);
+    }
+  }
+
+  .acc-main-nav {
+    @include flex(0 0 85%);
+
+    ul {
+      @include flexbox();
+
+        li {
+        @include flex-align-self(center);
+        display: inline-block;
+        padding: 0 15px;
+
+        a {
+          text-transform: uppercase;
+          @include text-size(17);
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    &.to-right {
+      @include flex-justify-content(flex-end);
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.acc-main-nav.sticky + *:nth-child(2) {
+  margin-top: 100px;
+}
+
+* {
+  font-family: Helvetica!important;
+}
+
+/* --- BEGIN PROJECT.CSS --- */
