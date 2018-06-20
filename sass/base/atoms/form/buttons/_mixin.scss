@@ -5,7 +5,7 @@
 $buttons-font: 'Open-Sans', sans-serif;
 $button-font: $buttons-font;
 $default-button-color: $color-gray !default;
-$color-pink: pink;
+
 @mixin button($button-color: $default-button-color) {
 
 	font-family: $button-font;
@@ -63,7 +63,6 @@ $color-pink: pink;
  *   <button type="button">greyed (default button)</button>
  *   <button type="button" disabled>disabled button</button>
  *   <button type="button" class="cancel">transparent button</button>
- *   <button class="pink">Pink buttom</button>
  * </div>
 */
 
@@ -83,10 +82,6 @@ $color-pink: pink;
 	
 	&.go {
 		@include button ($color-success);
-	}
-
-	&.pink {
-		@include button (pink);
 	}
 	
 	&.cancel {

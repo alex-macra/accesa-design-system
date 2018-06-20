@@ -9,9 +9,13 @@
   h1 {
     text-align: center;
   }
+  
+  * {
+    font-family: "Open Sans"!important;
+  }
 }
 
-.acc-form {
+.acc-default-form {
   max-width: 1580px;
   margin: 25px auto;
   min-height: 50vh;
@@ -20,9 +24,18 @@
   h1 {
     text-align: center;
   }
+
+  * {
+    font-family: "Open Sans"!important;
+  }
 }
 
 .acc-main-nav {
+  
+  * {
+    font-family: "Open Sans"!important;
+  }
+
   @include flexbox();
   background-color: $color-main;
   height: 72px;
@@ -85,10 +98,6 @@
 
 .acc-main-nav.sticky + *:nth-child(2) {
   margin-top: 100px;
-}
-
-* {
-  font-family: Helvetica!important;
 }
 
 /* --- BEGIN PROJECT.CSS --- */
