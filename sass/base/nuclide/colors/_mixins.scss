@@ -1,11 +1,10 @@
-@mixin predefined-color-scheme() {
 /**
   * Primary color variable
   * @color Primary color variable
   * @section Theme Colors
 */
 
-$color-main: #426BB3!default;
+$color-main: #2274a5!default;
 
 /**
  * Lighter primary color variable
@@ -13,7 +12,15 @@ $color-main: #426BB3!default;
  * @section Theme Colors
 */
 
-$color-lighter-main: #2274a5!default;
+$color-lighter-main: rgb(59, 147, 219)!default;
+
+/**
+ * Darken primary color variable
+ * @color Darken primary color variable
+ * @section Theme Colors
+*/
+
+$color-darker-main: #426BB3!default;
 
 /**
 * @color Default secondary color variable
@@ -84,7 +91,7 @@ $color-dark-gray: #313131!default;
 */
 
 $color-black: #000000!default;
-}
+
 
 @mixin dynamic-color-scheme() {
   $color-main: #2274a5!default;
@@ -118,8 +125,4 @@ $color-black: #000000!default;
 
 @if ($dynamic-colors == true) {
   @include dynamic-color-scheme();
-}
-
-@else {
-  @include predefined-color-scheme();
 }
