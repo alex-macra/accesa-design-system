@@ -1,4 +1,11 @@
-//Loaders mixin
+/**
+ * Test
+ * @structure Bouncing loader
+ * @section Loaders
+ * @markup
+ *  <div class="acc-bouncing-loader"> 
+ *  </div>
+*/
 
 @mixin bouncing-loader() {
 	@include flexbox();
@@ -43,13 +50,21 @@ $innerCirclePos: ($circleDiam - $innerCircleDiam)/2;
 $rotatingCirclePosLeft: ($circleDiam - $innerCircleDiam)/2 - $rotatingCircleDiam;
 $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
 
+/**
+ * Test
+ * @structure Spinner
+ * @section Loaders
+ * @markup
+ *  <div class="acc-spinner"> 
+ *  </div>
+*/
 
 @mixin spinner() {
 	background-color: #888;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px rgba(0,0,0,.3) inset;
 	height: $circleDiam;
-  left: 50%;
+  	left: 50%;
 	//margin: -$circleDiam/2;
 	position: relative;
 	user-select: none;

@@ -1,8 +1,8 @@
 # ACCESA DESIGN SYSTEM
 
-Starter pack for web-based projects. Styleguide. Design system.
+Starter pack, style guide, pattern library and a new way of collaborative thinking
 
-Current version: 0.9.-Beta
+Current version: 0.9.94-beta
 
 Upcoming version: 1.0.0-RC1
 
@@ -28,14 +28,10 @@ In order to customize, select the tools / components to import in your project, 
   * Implemented a SASS-based UI starter pack.
   * Created a dynamic styleguide generator
   * Imported the styleguide design in figma
-
-### Improvements to come
-  * Finish the guidelines section
-  * Provide easy integration with Javascript frameworks or components.
-  * Create a {minimal classes} version. Right now, when using BEM, we use longer names, to be as easy as possible to understand how the SCSS classes and mixins / variables / functions are working.
-  * Export and sync the figma design with sketch
-
+  * Integrated with reactjs.
+  
 ### Going forward
+  * Finish the guidelines section
   * Implement experimental components or features (grid systems, such as masonry layout or CSS4 grid layout).
   * Impprove Custom font support.
 
