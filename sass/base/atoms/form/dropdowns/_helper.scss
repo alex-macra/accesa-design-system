@@ -2,14 +2,14 @@
 
 .#{$prefix}form {
 
-  select {
+  .#{$prefix}is-select {
     @include select(block);
   }
 }
 
 .#{$prefix}form-inline {
   
-  select {
+  .#{$prefix}is-select {
     @include select();
   }
 }

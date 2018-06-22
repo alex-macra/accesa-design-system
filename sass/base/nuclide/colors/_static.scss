@@ -4,7 +4,7 @@
   * @section Theme Colors
 */
 
-$color-main: #426BB3;
+$color-main: #2274a5!default;
 
 /**
  * Lighter primary color variable
@@ -12,74 +12,82 @@ $color-main: #426BB3;
  * @section Theme Colors
 */
 
-$color-lighter-main: #2274a5;
+$color-lighter-main: rgb(59, 147, 219)!default;
+
+/**
+ * Darken primary color variable
+ * @color Darken primary color variable
+ * @section Theme Colors
+*/
+
+$color-darker-main: #426BB3!default;
 
 /**
 * @color Default secondary color variable
 * @section Theme Colors
 */
 
-$color-secondary: #3e5d6f;
+$color-secondary: #3e5d6f!default;
 
 /**
 * @color Secondary dark color variable
 * @section Theme Colors
 */
 
-$color-secondary-dark: #3e5d6f;
+$color-secondary-dark: #3e5d6f!default;
 
 /**
 * @color Default alternate color variable
 * @section Theme Colors
 */
 
-$color-success: #00b069;
+$color-success: #00b069!default;
 
 /**
 * @color Default red color variable
  * @section Theme Colors
 */
 
-$color-error: #e90d00;
+$color-error: #e90d00!default;
 
 /**
 * @color Default white variable.
 * @section Grayscale
 */
 
-$color-white: #ffffff;
+$color-white: #ffffff!default;
 
 /**
 * @color Default whitesmoke variable
 * @section Grayscale
 */
 
-$color-white-smoke: #efefef;
+$color-white-smoke: #efefef!default;
 
 /**
 * @color Default light gray color variable
 * @section Grayscale
 */
 
-$color-light-gray: #cccccc;
+$color-light-gray: #cccccc!default;
 
 /**
 * @color Default gray color variable
 * @section Grayscale
 */
 
-$color-gray: #646464;
+$color-gray: #646464!default;
 
 /**
 * @color Default dark gray color variable
 * @section Grayscale
 */
 
-$color-dark-gray: #313131;
+$color-dark-gray: #313131!default;
 
 /**
 * @color Default black variable
 * @section Grayscale
 */
 
-$color-black: #000000;
+$color-black: #000000!default;

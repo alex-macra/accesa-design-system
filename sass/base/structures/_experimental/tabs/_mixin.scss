@@ -8,7 +8,7 @@
  * @structure Default tabs
  * @section Tabs
  * @markup
- *  <ul class="zppm-tabs" role="tablist">
+ *  <ul class="acc-tabs" role="tablist">
  *   <li>
  *    <input type="radio" name="tabs" id="tab1" checked />
  *    <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Description</label>
@@ -101,13 +101,6 @@
 		}
 	}
 }
-
-/**
- * Tabs structure.
- * @structure Tab filled
- * @section Tabs
-
- */
 
 @mixin tabs-filled() {
 

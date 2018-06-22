@@ -10,7 +10,7 @@
  * @markup
  *  <div class="acc-form-inline">
  *   <label for="select">label</label>
- *   <select id="select">
+ *   <select class="acc-is-select">
  *    <option value="Option 1">option 1</option>
  *    <option value="Option 2">option 2</option>
  *    <option value="Option 3">option 3</option>
@@ -18,7 +18,7 @@
  *  </div>
 */
 
-$temp-color: #4a4a4a;
+$var: null; 
 
 /**
  * @atom Block select
@@ -28,7 +28,7 @@ $temp-color: #4a4a4a;
  * @markup
  *  <div class="acc-form">
  *   <label for="select">label</label>
- *   <select id="select">
+ *   <select class="acc-is-select">
  *    <option value="Option 1">option 1</option>
  *    <option value="Option 2">option 2</option>
  *    <option value="Option 3">option 3</option>

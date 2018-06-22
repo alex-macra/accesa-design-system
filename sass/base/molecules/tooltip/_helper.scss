@@ -2,7 +2,7 @@
 
 .#{$prefix}info-icon {
 	@include text-size(16, 30);
-	background: $color-main;
+	background: $color-light-gray;
 	border-radius: 50%;
 	color: $color-white;
 	display: inline-block;
@@ -13,19 +13,19 @@
 	width: 30px;
 
 	&.top-right { 
-		@include tooltip(top-right, $color-lighter-main); 
+		@include tooltip(top-right, $color-gray); 
 	}
 
 	&.top-left { 
-		@include tooltip(top-left, $color-lighter-main); 
+		@include tooltip(top-left, $color-gray); 
 	}
 
 	&.bottom-right { 
-		@include tooltip(bottom-right, $color-lighter-main); 
+		@include tooltip(bottom-right, $color-gray); 
 	}
 
 	&.bottom-left {
-		@include tooltip(bottom-left, $color-lighter-main); 
+		@include tooltip(bottom-left, $color-gray); 
 	}
 }
 

@@ -5,7 +5,7 @@
   @include form-legend(block);
   @include form-legend-color();
 
-  input {
+  .#{$prefix}is-input {
     @include form-input(block);
   }
 }
@@ -15,14 +15,14 @@
   @include form-legend(inline-block);
   @include form-legend-color();
 
-  input {
+  .#{$prefix}is-input {
     @include form-input();
   }
 }
 
 .#{$prefix}form {
 
-  textarea {
+  .#{$prefix}is-textarea {
     @include form-textarea(block);
   }
 }

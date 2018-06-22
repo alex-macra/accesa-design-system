@@ -1,13 +1,13 @@
 /* --- BEGIN TOGGLE-ELEMENTS.CSS --- */
 
-.#{$prefix}checkbox {
+.#{$prefix}is-checkbox {
   
   @include default-control-settings();
   @include legend-color();
   @include checkbox();
 }
 
-.#{$prefix}radio {
+.#{$prefix}is-radio {
 
   @include default-control-settings();
   @include legend-color();

@@ -1,8 +1,6 @@
 /* --- BEGIN BLOCKQUOTE.CSS --- */
 
-blockquote,
-q {
-  
+.#{$prefix}is-quote { 
   @include blockquote();
   @include text-size(18);
 }

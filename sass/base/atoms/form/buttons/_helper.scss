@@ -1,25 +1,17 @@
 /* --- BEGIN BUTTONS.CSS --- */
-  button {
-  
-    @include button-defaults();
-    @include button($default-button-color);
-  
-    @include text-size(14, 24);
-  
-    @include button-styles();
-    @include button-sizes();
-    @include button-alignments();
-    @include button-icon();
-  }
-  
   .#{$prefix}is-button {
   
     @include button-defaults();
     @include button($default-button-color);
-  
-    @include text-size(14, 26);
-  
+    
+    @include button-styles();
+    @include button-sizes();
+    @include button-alignments();
+    @include button-icon();
+
     @include button-lookalike();
+
+    @include text-size(14, 24);
   }
 
 /* --- END BUTTONS.CSS --- */

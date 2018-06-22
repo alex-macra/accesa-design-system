@@ -6,11 +6,10 @@
  * @atom Code
  * @section Typography > Content markup tags
  * @markup
- *  todo
+ *  todo pre.code
  */
 
-pre.code {
-  
+ .#{$prefix}is-code {
   @include code-styling();
 }
 
