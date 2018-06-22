@@ -71,7 +71,7 @@ $temp-color: #4a4a4a;
  * @description
  *  todo
  * @markup
- *  <label class="acc-checkbox">
+ *  <label class="acc-is-checkbox">
  *   <input id="check2" type="checkbox" onchange="console.log('changed');">
  *   <span></span>
  *   Checkbox
@@ -98,12 +98,12 @@ $temp-color: #4a4a4a;
  * @description
  *  todo
  * @markup
- *  <label class="acc-radio">
+ *  <label class="acc-is-radio">
  *   <input id="check3" type="radio" name="unique" onchange="console.log('changed');">
  *   <span></span>
  *   Radio button
  *  </label><br/><br/>
-  *  <label class="acc-radio">
+  *  <label class="acc-is-radio">
  *   <input id="check4" type="radio" name="unique" onchange="console.log('changed');">
  *   <span></span>
  *   Radio button

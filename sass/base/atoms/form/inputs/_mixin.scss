@@ -14,7 +14,7 @@
  * @markup
  *  <div class="acc-form">
  *   <label>Text Input</label>
- *   <input type="text" value="hello">
+ *   <input class="acc-is-input" type="text" value="hello">
  *  </div>
 */
 
@@ -29,7 +29,7 @@ $temp-color: #4a4a4a;
  * @markup
  *  <div class="acc-form-inline">
  *   <label>Text Input</label>
- *   <input type="text" value="hello">
+ *   <input class="acc-is-input" type="text" value="hello">
  *  </div>
 */
 
@@ -76,7 +76,7 @@ $temp-color: #4a4a4a;
  *  Default styling for textarea
  * @markup
  *  <div class="acc-form">
- *   <textarea name="message" rows="10" cols="30">test</textarea>
+ *   <textarea class="acc-is-textarea" name="message" rows="10" cols="30">test</textarea>
  *  </div>
 */
 
@@ -92,6 +92,10 @@ $temp-color: #4a4a4a;
   color: $temp-color;
   display: $display;
 }
+
+//NOTE//
+//Improve in upcoming versions. Avoid element styling
+//
 
 @mixin form-legend($display: inline-block) {
 

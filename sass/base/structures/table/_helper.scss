@@ -1,11 +1,11 @@
 /* --- BEGIN TABLE.CSS --- */
 
-.default-table {
+.#{$prefix}default-table {
   @include table-default-design();
   @include table-typography();
 }
 
-.minimal-table {
+.#{$prefix}minimal-table {
   @include table-minimal-design();
   @include table-typography();
 }

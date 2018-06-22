@@ -1,6 +1,6 @@
 /* --- BEGIN MODAL.CSS --- */
 
-.modal {
+.#{$prefix}modal {
   @include modal();
 }
 
