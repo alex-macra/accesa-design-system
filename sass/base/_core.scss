@@ -1,10 +1,9 @@
 // CORE
 
-@import 'config';
-
 @import 'reset';
 @import 'set';
 
+@import 'nuclide/config';
 @import 'nuclide/colors/index';
 @import 'nuclide/index';
 @import 'atoms/index';

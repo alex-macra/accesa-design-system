@@ -91,38 +91,3 @@ $color-dark-gray: #313131!default;
 */
 
 $color-black: #000000!default;
-
-
-@mixin dynamic-color-scheme() {
-  $color-main: #2274a5!default;
-
-  $color-primary: $color-main;
-  $color-dark-main: darken($color-primary, 10%)!default;
-  $color-lighter-main: lighten($color-primary, 90%)!default;
-  
-  $color-gray: grayscale($color-primary)!default;
-  $color-dark-gray: darken($color-gray, 20%)!default;
-  $color-light-gray: lighten($color-gray, 20%)!default;
-  
-  //NOTE//
-  //Improve in upcoming versions:
-  //
-  $color-red: #e90d00!default;
-  $color-error: darken(mix(lighten($color-primary, 90%), $color-red), 20%)!default;
-  $color-success: adjust-color($color-primary, -90, 60, -90)!default;
-  
-  $color-secondary: mix(darken($color-primary, 10%), $color-gray)!default;
-  $color-secondary-dark: darken($color-secondary, 20%)!default;
-  
-  $color-white: lighten($color-primary, 100%)!default;
-  
-  //NOTE//
-  //Improve in upcoming versions:
-  //
-  $color-white-smoke: #efefef!default;
-  $color-black: darken($color-primary, 100%)!default;
-}
-
-@if ($dynamic-colors == true) {
-  @include dynamic-color-scheme();
-}

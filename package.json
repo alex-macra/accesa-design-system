@@ -17,7 +17,7 @@
   "author": "alex macra",
   "license": "OSL-3.0",
   "devDependencies": {
-    "node-sass": "^4.8.3",
+    "node-sass": "3.4.2",
     "nucleus-styleguide": "^1.1.1",
     "opn": "^5.3.0",
     "uglifycss": "0.0.29"
