@@ -1,14 +1,48 @@
 # ACCESA DESIGN SYSTEM
 
-Starter pack, style guide, pattern library and a new way of collaborative thinking
-
 Current version: 0.9.94-beta
 
 Upcoming version: 1.0.0-RC1
 
+## What is it?
+
+Accesa design system is a component-based, multi-purpose web tool.
+
+### First component: the starter pack.
+The starter package creates a really fast enviroment, with little to no build configuration.
+Provides a large variety styled interface components, written in SASS, and also provides the building blocks for creating new ones.
+
+#### Can we integrated it with an existing application?
+Sure thing, but more important, since it's a *starter*, the main focus was to provide an easy and fast experience when starting up a new project.
+
+Going forward, **react integration** is the "cherry on top of the cake" for our package. Just install the component and see how in a matter of minutes, you will have an app created and ready to go. 
+One last surprise for the react app, is that we provide just a little more content than a basic "hello world!".
+
+### Second component: the styleguide.
+By integrating [nucleus](https://github.com/holidaypirates/nucleus) within our SASS-based starter pack, you can export every existing element, component, or SASS function, in a styleguide. It goes without saying that the new components can be easily integrated by following the same instructions for the existing ones.
+
+#### How can I generate or updated the styleguide.
+
+```
+npm run styleguide
+```
+And that's it. Run it, there is a large variety of elements already integrated in the styleguide. Everything that we have created so far is also reflected in the styleguide.
+
+### Third component: guidelines and patterns.
+
+Guidelines and the ever-chaging pattern library.
+When exploring the styleguide, you can also see a link in the menu named *guidelines*. 
+What's in there? Just some HTML5 and CSS best practices and things we have learned over the year and consider useful for every developer that want to work on web applications.
+
+### But is it useful for me?
+
+For single individual it can serve as a centralised (in a world of rapid decentralization) place where it can learn or improve in the ever-changing area of frond-end development and web design.
+
+For teams it provides a new way of collaborative thinking.
+
 ### Projects linked with the design system
-* [Accesa React Start](https://github.com/alex-macra/react) - react starter pack, very easy to integrate
-* [Accesa Base Design](https://github.com/alex-macra/design) - core design files for the example components
+* [Accesa React Start](https://github.com/alex-macra/react) - react starter pack
+* (Accesa Base Design) - soon - core design files for our existing components
 
 ## Getting Started
 
@@ -53,13 +87,7 @@ npm run css:build
 
 Watching the SASS files
 ```
-npm run css:watch
-```
-
-To lint the CSS / SASS files
-```
-npm run css:lint
-npm run sass:lint
+npm run css
 ```
 
 To generate the styleguide

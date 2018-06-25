@@ -7,6 +7,8 @@
     @include button-styles();
     @include button-sizes();
     @include button-alignments();
+    
+    @include button-icon-wrap();
     @include button-icon();
 
     @include button-lookalike();
