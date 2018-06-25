@@ -60,6 +60,7 @@ In order to customize, select the tools / components to import in your project, 
 
 ### Happy to announce that we have:
   * Implemented a SASS-based UI starter pack.
+  * Custom font support (fontawesome).
   * Created a dynamic styleguide generator
   * Imported the styleguide design in figma
   * Integrated with reactjs.
@@ -67,7 +68,7 @@ In order to customize, select the tools / components to import in your project, 
 ### Going forward
   * Finish the guidelines section
   * Implement experimental components or features (grid systems, such as masonry layout or CSS4 grid layout).
-  * Impprove Custom font support.
+  * Impprove Custom font support (integrate maybe google fonts?).
 
 ## Ok, I want to use it
 
