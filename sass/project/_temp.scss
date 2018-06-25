@@ -56,11 +56,17 @@
   }
 }
 
+.SG-header .SG-logo {
+  margin-top: 2px;
+}
+
 .SG-logo .SG-logo__icon {
-  background: url('https://www.accesa.eu/wp-content/uploads/2016/04/accesa_logo_bg.png');
-  height: 40px;
-  background-size: 100% auto;
-  width: 84px;
+  background: url('~/../../styleguide/static/img/logo_temp.png');
+  height: 62px;
+  background-size: auto 100%;
+  width: 85px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .SG-logo .SG-logo__icon::before {
