@@ -1,12 +1,12 @@
 {
   "name": "accesa-design-system",
-  "version": "0.9.96-beta",
+  "version": "0.9.97-beta",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
     "css:build": "node-sass -r sass sass/main.scss -o css --trace",
-    "css:build-minified": "uglifycss css/main.css > css/main.min.css",
-    "css:watch": "npm run css:build && npm run css:build -- -w",
+    "css:build-min": "uglifycss css/main.css > css/main.min.css",
+    "css": "npm run css:build && npm run css:build -- -w",
     "styleguide": "nucleus --config styleguide-config.json",
     "postinstall": "node ./postinstall.js"
   },
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "bluebird": "^3.5.1",
+    "font-awesome": "^4.7.0",
     "inquirer": "^6.0.0"
   }
 }
