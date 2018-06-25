@@ -30,13 +30,13 @@ And that's it. Run it, there is a large variety of elements already integrated i
 
 ### Third component: guidelines and patterns.
 
-Now this should be easier to explain, guidelines and the ever-chaging pattern library.
+Guidelines and the ever-chaging pattern library.
 When exploring the styleguide, you can also see a link in the menu named *guidelines*. 
-What's in there? Just some HTML5 and CSS best practices and things we have learned over the year and consider usefull for every developer that want to work on web applications.
+What's in there? Just some HTML5 and CSS best practices and things we have learned over the year and consider useful for every developer that want to work on web applications.
 
 ### But is it useful for me?
 
-For single individual it can serve as a centralised (in a world with rapid decentralization) place where it can learn, improve in the ever-changing area of frond-end development and web design.
+For single individual it can serve as a centralised (in a world of rapid decentralization) place where it can learn or improve in the ever-changing area of frond-end development and web design.
 
 For teams it provides a new way of collaborative thinking.
 
