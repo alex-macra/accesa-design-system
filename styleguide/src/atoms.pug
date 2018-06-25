@@ -26,7 +26,7 @@ block content
 
     .SG-row
       .SG-gr-6
-        .SG-h3 Table of content
+        .SG-h3 Navigation
       .SG-gr-6
         .SG-h3 What are Atoms?
 
@@ -35,9 +35,11 @@ block content
         +toc(styles.Atoms)
       .SG-gr-6
         .SG-p.
-          Atoms are the very basic elements of the stylesheet. Imagine every single-class element or selector rules as an atom. Examples could be buttons, links, headlines, inputs.
+          Atoms are the very basic elements. Imagine every single-class element or selector rule as an atom.
         .SG-p.
-          As a rule only nested atoms within atoms are accepted (and try to keep it as a single level). Example is the 'button' atom containing an icon atom.
+          As a rule only one nested atom within atom is accepted. The more large and complex the atom becomes, we should consider either breaking it apart, or create a molecule from it.
+        .SG-p.
+          Examples of atoms include basic buttons, links, headlines or inputs.  
 
   if styles.Atoms
     +section-second-level(styles.Atoms)

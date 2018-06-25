@@ -120,30 +120,18 @@ $default-button-color: $color-gray !default;
 	}
 }
 
-
 /**
- * @atom Buttons with icons
+ * @molecule Buttons with icons
  * @section Form > Buttons
  * @description
- *  Buttons containing icons. Either with a separator or without.
+ *  Buttons containing icons. With a separator.
  * @markup
  *   <button type="button" class="acc-is-button error icon"><i class="fa fa-times"></i>Error</button>
  *   <button type="button" class="acc-is-button proceed icon"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="acc-is-button primary icon"><i class="fa fa-icon-circle"></i>Info</button><br/>
- *   <button type="button" class="acc-is-button error"><i class="fa fa-times"></i>Error</button>
- *   <button type="button" class="acc-is-button proceed"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="acc-is-button primary"><i class="fa fa-icon-circle"></i>Info</button>
+ *   <button type="button" class="acc-is-button primary icon"><i class="fa fa-icon-circle"></i>Info</button>
 */
 
-
-@mixin button-icon() {
-
-	&:not(.icon) {
-		> i {
-			position: relative;
-			right: 5px;
-		}
-	}
+@mixin button-icon-wrap() {
 
 	&.icon {
 		padding-left: 4em;
@@ -172,6 +160,27 @@ $default-button-color: $color-gray !default;
 		&:hover,
 		&:focus {
 			box-shadow: none;
+		}
+	}
+}
+
+/**
+ * @molecule Buttons with icons
+ * @section Form > Buttons
+ * @description
+ *  Buttons containing icons. Without a separator.
+ * @markup
+ *   <button type="button" class="acc-is-button error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="acc-is-button proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="acc-is-button primary"><i class="fa fa-icon-circle"></i>Info</button>
+*/
+
+@mixin button-icon() {
+
+	&:not(.icon) {
+		> i {
+			position: relative;
+			right: 5px;
 		}
 	}
 }
