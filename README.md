@@ -10,23 +10,23 @@ Accesa design system is a component-based, multi-purpose web tool.
 
 ### First component: the starter pack.
 The starter package creates a really fast enviroment, with little to no build configuration.
-Provides a large variety styled interface components, written in SASS, and also the building blocks for creating new ones.
+Provides a large variety styled interface components, written in SASS, and also provides the building blocks for creating new ones.
 
 #### Can we integrated it with an existing application?
 Sure thing, but more important, since it's a *starter*, the main focus was to provide an easy and fast experience when starting up a new project.
 
-Going forward, **react integration** is the "cherry on top of the cake" for our package.Just install the component and see how in a matter of minutes, you will have an app created and ready to go. 
+Going forward, **react integration** is the "cherry on top of the cake" for our package. Just install the component and see how in a matter of minutes, you will have an app created and ready to go. 
 One last surprise for the react app, is that we provide just a little more content than a basic "hello world!".
 
 ### Second component: the styleguide.
-By integrating nucleus within our SASS-based starter pack, you can export every existing element, component, or SASS function, in a styleguide. It goes without saying that the new components can be easily integrated by following the same instructions for the existing ones.
+By integrating [nucleus](https://github.com/holidaypirates/nucleus) within our SASS-based starter pack, you can export every existing element, component, or SASS function, in a styleguide. It goes without saying that the new components can be easily integrated by following the same instructions for the existing ones.
 
 #### How can I generate or updated the styleguide.
 
 ```
 npm run styleguide
 ```
-And that's it. Run it, there is a large variety of elements already integrated in the styleguide. Everything that we have created so far, is also reflected in the styleguide.
+And that's it. Run it, there is a large variety of elements already integrated in the styleguide. Everything that we have created so far is also reflected in the styleguide.
 
 ### Third component: guidelines and patterns.
 
