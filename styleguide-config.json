@@ -1,12 +1,12 @@
 {
-    "title": "ACCESA DESIGN SYSTEMS",
+    "title": "accesa design system styleguide",
     "files": [
         "sass/**/*.scss"
     ],
     "target": "styleguide/build",
     "css": "../../css/main.css",
     "namespace": "page",
-    "verbose": 3,
+    "verbose": 0,
     "counterCSS": false,
     "template": "styleguide/src",
     "staticLipsum": false,

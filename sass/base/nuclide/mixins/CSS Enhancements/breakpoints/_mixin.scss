@@ -1,5 +1,8 @@
 /**
- * Very similar with a pixels based breakpoint mixin, but we use instead em's because it's the only unit that performes consistently across all major browsers
+ * Breaking points specifically targeting either small screen smartphones,
+ * or all the way up to big desktop screens.
+ * Instead of a pixel approach  we use em's because it's the only unit that
+ * performes consistently across all major browsers.
  *
  * @mixin
  * @section CSS Enhancements

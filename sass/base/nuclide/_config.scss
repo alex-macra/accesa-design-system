@@ -1,5 +1,3 @@
-// Config
-
 /**
  * Set a general prefix throughout the entire app using the $prefix variable.
  * The default namespaces is 'accesa' -> 'acc-'. Want to disable it? Set it to null.
@@ -18,16 +16,3 @@ $prefix: 'acc-';
 */
  
 $border-radius: 0;
-
-///**
-// * By changing the parameter from false to true, or viceversa you can enable or disable dynamic color generator. It's an experimental feature, so use it with caution!
-// *
-// * @nuclide Dynamic color option
-// * @section Config
-//*/
-//$dynamic-colors: true!default;
-
-//NOTE//
-//Implement in upcoming versions:
-//
-//$minimal-classes: false;
