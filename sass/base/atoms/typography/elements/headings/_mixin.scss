@@ -1,8 +1,5 @@
 $color-heading: $color-dark-gray;
-$font-heading: 'Lato', sans-serif;
-
 $color-headings: $color-heading;
-$font-headings: $font-heading;
 
 /**
  * Headlines which visually separate and introduce content.
@@ -19,8 +16,7 @@ $font-headings: $font-heading;
 */
 
 @mixin heading-defaults() {
-    
+    @extend %heading-font;
     margin-bottom: 15px;
-    font-family: $font-headings;
     color: $color-headings;
 }

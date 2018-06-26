@@ -10,7 +10,7 @@
   position: relative;
 
   label {
-    font-family: sans-serif;
+    @extend %paragraph-font;
     font-weight: bold;
     font-size: 13px;
     color: #ddd;
@@ -25,7 +25,7 @@
   }
 
   code {
-    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    @extend %code-font;
     display: block;
     margin: 0 0 0 5px;
     padding: 15px 16px 14px;
@@ -59,7 +59,6 @@
   }
 
   &.css {
-
     border: $color-lighter-main;
     background: darken($color-darker-main, 25%);
     code {
