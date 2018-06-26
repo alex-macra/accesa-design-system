@@ -4,7 +4,10 @@
         "sass/**/*.scss"
     ],
     "target": "styleguide/build",
-    "css": "../../css/main.css",
+    "css": [
+        "../../css/main.css",
+        "../../styleguide/style/css/custom.css"
+    ],
     "namespace": "page",
     "verbose": 0,
     "counterCSS": false,
