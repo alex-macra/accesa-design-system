@@ -37,15 +37,18 @@ $var: null;
 */
 
 @mixin select($display: inline-block) {
+  $select-bg-color: $default-select-color-background;
+  $select-border-color: $default-select-color-border;
+  $select-text-color: $default-select-color-text;
 
   @include text-size(16);
   padding: 0 10px;
   display: $display;
   min-width: 100px;
-  background: $color-white;
-  border: 1px solid $color-light-gray;
+  background: $select-bg-color;
+  border: 1px solid $select-border-color;
   border-radius: $border-radius;
-  color: $color-secondary;
+  color: $default-select-color-text;
   height: 38px;
   margin-bottom: 10px;
   outline: none;

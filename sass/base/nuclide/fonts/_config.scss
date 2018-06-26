@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+%heading-font {
+  @include open-sans ();
+}
+
+%paragraph-font {
+  @include open-sans ();
+}
+
+%code-font {
+  font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+%awesome-font {
+  font: normal normal normal 14px/1 FontAwesome;
+}

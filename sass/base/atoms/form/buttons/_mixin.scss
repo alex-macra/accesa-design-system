@@ -1,14 +1,6 @@
-//NOTE//
-//Improve in upcoming versions.
-//
+@mixin button($button-color: $default-button-color-background) {
+	@extend %heading-font;
 
-$buttons-font: 'Open-Sans', sans-serif;
-$button-font: $buttons-font;
-$default-button-color: $color-gray !default;
-
-@mixin button($button-color: $default-button-color) {
-
-	font-family: $button-font;
 	background-color: $button-color;
 	box-shadow: 0 2px 0 darken($button-color, 5%);
 	cursor: pointer;
@@ -25,11 +17,12 @@ $default-button-color: $color-gray !default;
 }
 
 @mixin button-defaults() {
+	$btn-text-color: $default-button-color-text;
 	
 	@include no-select();
 	border: 0;
 	border-radius: $border-radius;
-	color: $color-white;
+	color: $btn-text-color;
 	display: inline-block;
 	font-weight: 200;
 	margin: 0 1% 2% 0;
@@ -44,7 +37,7 @@ $default-button-color: $color-gray !default;
 	text-transform: uppercase;
 
 	&:hover, &:focus {
-		color: $color-white;
+		color: $btn-text-color;
 		outline: none;
 	}
 }

@@ -3,7 +3,7 @@
 .#{$prefix}button {
   
   @include button-defaults();
-  @include button($default-button-color);
+  @include button($default-button-color-background);
   
   @include button-styles();
   @include button-sizes();

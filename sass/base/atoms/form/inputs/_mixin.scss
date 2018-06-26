@@ -1,10 +1,13 @@
-// Inputs / Textareas / Labels
-
 //todo disabled inputs. hover active states
 //add colored option for inputs to change borders
 //NOTE//
 //Improve in upcoming versions. THIS IS NOT FINISHED
 //
+
+$input-bg-color: $default-input-color-background;
+$input-border-color: $default-input-color-border;
+$input-text-color: $default-input-color-text;
+
 
 /**
  * @molecule Block inputs
@@ -18,8 +21,7 @@
  *  </div>
 */
 
-$placeholder-color: #999;
-$temp-color: #4a4a4a;
+$var: null; 
 
 /**
  * @molecule Inline inputs
@@ -39,13 +41,14 @@ $temp-color: #4a4a4a;
   &[type=password],
   &[type=email],
   &[type=number] { 
-    font: inherit;
+    @extend %paragraph-font;
     @include text-size(16, 22);
-    background: $color-white;
-    border: 1px solid $color-light-gray;
+    
+    background: $input-bg-color;
+    border: 1px solid $input-border-color;
     border-radius: $border-radius;
-    color: $temp-color;
-    height: 38px; //???
+    color: $input-text-color;
+    height: 38px;
     margin-bottom: 10px;
     outline: none;
     padding-left: 15px;
@@ -53,19 +56,19 @@ $temp-color: #4a4a4a;
   }
 
   &::-webkit-input-placeholder {
-    color: $placeholder-color;
+    color: $input-text-color;
   }
 
   &:-moz-placeholder {
-    color: $placeholder-color;
+    color: $input-text-color;
   }
 
   &::-moz-placeholder {
-    color: $placeholder-color;
+    color: $input-text-color;
   }
 
   &:-ms-input-placeholder {
-    color: $placeholder-color;
+    color: $input-text-color;
   }
 }
 
@@ -81,15 +84,17 @@ $temp-color: #4a4a4a;
 */
 
 @mixin form-textarea($display: inline-block) {
-
-  font: inherit;
+  @extend %paragraph-font;
+  
   @include text-size(16,22);
   @include box-sizing();
+
+  background-color: $input-bg-color;
   padding: 15px;
-  border: 1px solid $color-light-gray;
+  border: 1px solid $input-border-color;
   border-radius: $border-radius;
   margin-bottom: 10px;
-  color: $temp-color;
+  color: $input-text-color;
   display: $display;
 }
 
@@ -108,13 +113,13 @@ $temp-color: #4a4a4a;
   }
 }
 
-@mixin form-legend-color($text-color: $temp-color) {
+@mixin form-legend-color() {
   
   span {
-    color: $text-color;
+    color: $input-text-color;
   }
 
   label {
-    color: $text-color;
+    color: $input-text-color;
   }
 }
