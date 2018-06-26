@@ -2,7 +2,7 @@
 
 <img align="center" alt="accesa design system logo" src="https://cdn.rawgit.com/alex-macra/accesa-design-system/dev/styleguide/img/logo.png" width="100">
 
-Current version: 0.9.94-beta
+Current version: 0.9.98-beta
 
 Upcoming version: 1.0.0-RC1
 
