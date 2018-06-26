@@ -1,9 +1,5 @@
-//NOTE//
-//Test everything / improve in upcoming versions
-//
-
 /**
- * Center horizontally text
+ * Basic text centering horizontally.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -17,7 +13,7 @@
 }
 
 /**
- * Basic horizontal centering of an HTML element
+ * Basic horizontal centering of an HTML element.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -31,7 +27,7 @@
 }
 
 /**
- * Basic horizontal centering of multiple HTML elements in a row
+ * Basic horizontal centering of multiple HTML elements in a row.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -45,7 +41,7 @@
 }
 
 /**
- * Center vertically of an element or component, but knowing it's height.
+ * Center vertically an element or component, by specifiying it's height.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -67,7 +63,7 @@
 }
 
 /**
- * Center vertically of of a component without knowing it's height.
+ * Center vertically an element or component without knowing it's height.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -87,7 +83,7 @@
 }
 
 /**
- * Center both vertically and horizontally of of a component with knowing it's height
+ * Center both vertically and horizontally of an element by specifying with and height.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -114,7 +110,7 @@
 
 
 /**
- * Center both vertically and horizontally of of a component without knowing it's height
+ * Center both vertically and horizontally a component without knowing it's height.
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -135,7 +131,7 @@
 }
 
 /**
- * Center vertically of of a component without knowing it's height (using flexbox).
+ * Center vertically of a component without knowing it's height, and by using flexbox. (Experimental)
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning
@@ -151,7 +147,7 @@
 }
 
 /**
- * Center both vertically and horizontally of of a component without knowing it's height (using grid).
+ * Center both vertically and horizontally of a component without knowing it's height and by using grid. (Experimental)
  *
  * @mixin
  * @section CSS Enhancements > CSS Positioning

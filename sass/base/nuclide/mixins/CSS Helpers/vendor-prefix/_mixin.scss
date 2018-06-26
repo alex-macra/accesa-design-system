@@ -1,5 +1,7 @@
 /**
- * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
+ * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. 
+ * Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
+ * Alternative to this could be PostCSS.
  *
  * @mixin
  * @section CSS Helpers

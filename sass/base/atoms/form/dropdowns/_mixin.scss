@@ -6,7 +6,7 @@
  * @molecule Inline select
  * @section Form > Dropdowns
  * @description
- *  todo
+ *  Form wrapper that contains the select and the label side by side.
  * @markup
  *  <div class="acc-form-inline">
  *   <label for="select">label</label>
@@ -24,7 +24,7 @@ $var: null;
  * @molecule Block select
  * @section Form > Dropdowns
  * @description
- *  todo
+ *  Form wrapper that contains the select and the label one after the other, functioning as block elements.
  * @markup
  *  <div class="acc-form">
  *   <label for="select">label</label>
