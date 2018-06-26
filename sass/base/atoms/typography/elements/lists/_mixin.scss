@@ -1,7 +1,3 @@
-//NOTE//
-//Test / improve in upcoming versions
-//
-
 @mixin reset-list() {
 
   ol,
@@ -12,7 +8,8 @@
 }
 
 /**
- * Generic list style.
+ * Overwriting the default bullet list and providing a design more easy to 
+ * style and scale.
  *
  * @atom Default Lists
  * @section Typography > Content markup tags
@@ -45,7 +42,7 @@
 }
 
 /**
- * Square list style.
+ * Following the previous concept, we have created a square style.
  *
  * @atom Square Lists
  * @section Typography > Content markup tags
@@ -69,7 +66,7 @@
 }
 
 /**
- * Dash list style.
+ * Scaling the default list, we have created a dash list style.
  *
  * @atom Dash Lists
  * @section Typography > Content markup tags
@@ -95,7 +92,7 @@
 }
 
 /**
- * Ordered list style.
+ * Similar concept as the previous list designs, targeting the ordered lists.
  *
  * @atom Ordered Lists
  * @section Typography > Content markup tags

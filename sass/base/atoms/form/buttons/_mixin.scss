@@ -1,5 +1,5 @@
 //NOTE//
-//Improve in upcoming versions. THIS IS NOT FINISHED
+//Improve in upcoming versions.
 //
 
 $buttons-font: 'Open-Sans', sans-serif;
@@ -55,13 +55,13 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing different color schemes.
  * @markup
- *   <button type="button" class="acc-is-button primary">primary button</button>
- *   <button type="button" class="acc-is-button secondary">secondary button</button>
- *   <button type="button" class="acc-is-button error">error</button>
- *   <button type="button" class="acc-is-button go">proceed</button>
- *   <button type="button" class="acc-is-button">greyed (default button)</button>
- *   <button type="button" class="acc-is-button" disabled>disabled button</button>
- *   <button type="button" class="cancel acc-is-button">transparent button</button>
+ *   <button type="button" class="acc-button primary">primary button</button>
+ *   <button type="button" class="acc-button secondary">secondary button</button>
+ *   <button type="button" class="acc-button error">error</button>
+ *   <button type="button" class="acc-button go">proceed</button>
+ *   <button type="button" class="acc-button">greyed (default button)</button>
+ *   <button type="button" class="acc-button" disabled>disabled button</button>
+ *   <button type="button" class="cancel acc-button">transparent button</button>
 */
 
 @mixin button-styles() {
@@ -126,9 +126,9 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing icons. With a separator.
  * @markup
- *   <button type="button" class="acc-is-button error icon"><i class="fa fa-times"></i>Error</button>
- *   <button type="button" class="acc-is-button proceed icon"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="acc-is-button primary icon"><i class="fa fa-icon-circle"></i>Info</button>
+ *   <button type="button" class="acc-button error icon"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="acc-button proceed icon"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="acc-button primary icon"><i class="fa fa-icon-circle"></i>Info</button>
 */
 
 @mixin button-icon-wrap() {
@@ -170,9 +170,9 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing icons. Without a separator.
  * @markup
- *   <button type="button" class="acc-is-button error"><i class="fa fa-times"></i>Error</button>
- *   <button type="button" class="acc-is-button proceed"><i class="fa fa-check"></i>Success</button>
- *   <button type="button" class="acc-is-button primary"><i class="fa fa-icon-circle"></i>Info</button>
+ *   <button type="button" class="acc-button error"><i class="fa fa-times"></i>Error</button>
+ *   <button type="button" class="acc-button proceed"><i class="fa fa-check"></i>Success</button>
+ *   <button type="button" class="acc-button primary"><i class="fa fa-icon-circle"></i>Info</button>
 */
 
 @mixin button-icon() {
@@ -191,12 +191,12 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing different alingments.
  * @markup
- *   <button type="button" class="acc-is-button bottom small secondary">small button</button>
- *   <button type="button" class="acc-is-button bottom secondary">normal button</button>
- *   <button type="button" class="acc-is-button large secondary">large button</button><br/>
- *   <button type="button" class="acc-is-button large primary">large button</button>
- *   <button type="button" class="acc-is-button top primary">normal button</button>
- *   <button type="button" class="acc-is-button top small primary">small button</button>
+ *   <button type="button" class="acc-button bottom small secondary">small button</button>
+ *   <button type="button" class="acc-button bottom secondary">normal button</button>
+ *   <button type="button" class="acc-button large secondary">large button</button><br/>
+ *   <button type="button" class="acc-button large primary">large button</button>
+ *   <button type="button" class="acc-button top primary">normal button</button>
+ *   <button type="button" class="acc-button top small primary">small button</button>
 */
 
 @mixin button-alignments() {
@@ -216,11 +216,11 @@ $default-button-color: $color-gray !default;
  * @description
  *  Buttons containing different sizes.
  * @markup
- *   <button type="button" class="acc-is-button smallest">smallest button</button>
- *   <button type="button" class="acc-is-button small">small button</button>
- *   <button type="button" class="acc-is-button">normal button</button>
- *   <button type="button" class="acc-is-button medium">medium button</button> 
- *   <button type="button" class="acc-is-button large">large button</button>
+ *   <button type="button" class="acc-button smallest">smallest button</button>
+ *   <button type="button" class="acc-button small">small button</button>
+ *   <button type="button" class="acc-button">normal button</button>
+ *   <button type="button" class="acc-button medium">medium button</button> 
+ *   <button type="button" class="acc-button large">large button</button>
 */
 
 @mixin button-sizes() {
@@ -249,10 +249,10 @@ $default-button-color: $color-gray !default;
 }
 
 /**
- * @atom Elements that will look like a button
+ * @atom Unsemantic buttons
  * @section Form > Buttons
  * @description
- *  Buttons containing different color schemes.
+ *  Elements that are styled as a button. Examples include links, spans or input elements.
  * @markup
  *   <input type="button" value="input button" class="acc-is-button">
  *   <a class="acc-is-button">link button</a>
@@ -264,5 +264,9 @@ $default-button-color: $color-gray !default;
 
 	&:hover {
 		text-decoration: none;
+	}
+
+	&.large {
+		@include text-size(14, 36);
 	}
 }
