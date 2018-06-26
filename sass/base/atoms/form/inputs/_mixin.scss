@@ -10,7 +10,7 @@
  * @molecule Block inputs
  * @section Form > Input
  * @description
- *  Default styling for inputs
+ *  Default styling for inputs, wrapped in a form div.
  * @markup
  *  <div class="acc-form">
  *   <label>Text Input</label>
@@ -25,7 +25,7 @@ $temp-color: #4a4a4a;
  * @molecule Inline inputs
  * @section Form > Input
  * @description
- *  Inline input example
+ *  Alternate input example, having the wrapper of the form function as an inline-block.
  * @markup
  *  <div class="acc-form-inline">
  *   <label>Text Input</label>
