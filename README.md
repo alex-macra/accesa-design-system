@@ -17,7 +17,7 @@ Provides a large variety styled interface components, written in SASS, and also 
 #### Can we integrated it with an existing application?
 Sure thing, but more important, since it's a *starter*, the main focus was to provide an easy and fast experience when starting up a new project.
 
-Going forward, **react integration** is the "cherry on top of the cake" for our package. Just install the component and see how in a matter of minutes, you will have an app created and ready to go. 
+Going forward, **react integration** is our out-of-the-box feature. Just install the component and see how in a matter of minutes, you will have an app created and ready to go. 
 One last surprise for the react app, is that we provide just a little more content than a basic "hello world!".
 
 ### Second component: the styleguide.
