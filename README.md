@@ -1,6 +1,6 @@
 # ACCESA DESIGN SYSTEM
 
-![img](https://cdn.rawgit.com/alex-macra/accesa-design-system/dev/styleguide/img/logo.png | width=300)
+<img src="https://cdn.rawgit.com/alex-macra/accesa-design-system/dev/styleguide/img/logo.png" width="400">
 
 Current version: 0.9.94-beta
 
