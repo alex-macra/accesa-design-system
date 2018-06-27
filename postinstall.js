@@ -11,7 +11,8 @@ var exec = require('child_process').exec,
 function helperFunction() {
 
   console.log("\n");
-  console.log(`\u001b[96m\u001b[1mThank for installing ${packageJsonRead.name} version ${packageJsonRead.version}!\u001b[96m\u001b[1m`);
+  //console.log(`\u001b[96m\u001b[1mThank for installing ${packageJsonRead.name} version ${packageJsonRead.version}!\u001b[96m\u001b[1m`);
+  console.log(`Thank for installing ${packageJsonRead.name} version ${packageJsonRead.version}!`);
   console.log("\n");
   console.log(`                                                                                                                              
     ##    ####   ####  ######  ####    ##      #####  ######  ####  #  ####  #    #     ####  #   #  ####  ##### ###### #    # 
@@ -52,16 +53,16 @@ function helperFunction() {
 
       if (answers.design === true) {
         console.log("\n");
-        console.log(`\u001b[96m\u001b[1mDownloading the design files...\u001b[96m\u001b[1m`);
+        console.log(`Downloading the design files...`);
 
         child = exec('git clone https://github.com/alex-macra/design',
           function (error, stderr) {
             if (error === null) {
-              console.log(`\u001b[96m\u001b[1mDesign files were downloaded with success.\u001b[96m\u001b[1m`);
+              console.log(`Design files were downloaded with success.`);
               console.log("\n");
 
               if (answers.yes === true) {
-                console.log(`\u001b[96m\u001b[1mPlease wait for the react starter to install...\u001b[96m\u001b[1m`);
+                console.log(`Please wait for the react starter to install...`);
               }
             }
 
@@ -74,17 +75,17 @@ function helperFunction() {
       if (answers.yes === true) {
         if (answers.design === false) {
           console.log("\n");
-          console.log(`\u001b[96m\u001b[1mDownloading react starter pack...\u001b[96m\u001b[1m`);
+          console.log(`Downloading react starter pack...`);
         }
 
         child = exec('git clone https://github.com/alex-macra/react',
           function (error, stderr) {
             if (error === null) {
-              console.log(`\u001b[96m\u001b[1mReact starter pack has been downloaded with success.\u001b[96m\u001b[1m`);
-              console.log(`\u001b[96m\u001b[1mNext step, Installing the react dependencies. This can take a while on a slow speed internet.\u001b[96m\u001b[1m`);
+              console.log(`React starter pack has been downloaded with success.`);
+              console.log(`Next step, Installing the react dependencies. This can take a while on a slow speed internet.`);
 
               if (answers.design === false) {
-                console.log(`\u001b[96m\u001b[1mPlease wait...\u001b[96m\u001b[1m`);
+                console.log(`Please wait...`);
               }
               console.log("\n");
             }
@@ -92,7 +93,7 @@ function helperFunction() {
             exec('cd react && npm install',
               function (error, stderr) {
                 if (error == null) {
-                  console.log(`\u001b[96m\u001b[1mReact starter pack was installed with success.\u001b[96m\u001b[1m`);
+                  console.log(`React starter pack was installed with success.`);
                 }
 
                 inquirer
@@ -101,7 +102,7 @@ function helperFunction() {
 
                     if (answers.yes === true) {
                       if (error == null) {
-                        console.log(`\u001b[96m\u001b[1mStarting up the local server...\u001b[96m\u001b[1m`);
+                        console.log(`Starting up the local server...`);
                       }
 
                       exec('cd react && npm run start',
@@ -112,16 +113,16 @@ function helperFunction() {
                         });
 
                       if (error == null) {
-                        console.log(`\u001b[96m\u001b[1mPlease wait a couple of seconds...\u001b[96m\u001b[1m`);
+                        console.log(`Please wait a couple of seconds...`);
                         setTimeout(function () {
                           opn('http://localhost:8888/');
-                          console.log(`\u001b[96m\u001b[1mAnd we are done!\u001b[96m\u001b[1m`);
+                          console.log(`And we are done!`);
                         }, 8000);
                       }
 
                     }
                     if (answers.yes === false) {
-                      console.log(`\u001b[96m\u001b[1mThat's it. Happy coding!\u001b[96m\u001b[1m`);
+                      console.log(`That's it. Happy coding!`);
                     }
                   })
 
@@ -136,7 +137,7 @@ function helperFunction() {
           });
       }
       if (answers.yes === false) {
-        console.log(`\u001b[96m\u001b[1mThat's it. Happy coding!\u001b[96m\u001b[1m`);
+        console.log(`That's it. Happy coding!`);
       }
     })
 }

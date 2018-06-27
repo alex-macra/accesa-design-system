@@ -1,13 +1,14 @@
 {
   "name": "accesa-design-system",
-  "version": "0.9.98.1-beta",
+  "version": "0.9.98.2-beta",
   "description": "starter package for web-based projects",
   "main": "index.js",
   "scripts": {
     "css:build": "node-sass -r sass sass/main.scss -o css --trace",
     "css:build-min": "uglifycss css/main.css > css/main.min.css",
     "css": "npm run css:build && npm run css:build -- -w",
-    "styleguide": "nucleus --config styleguide-config.json",
+    "styleguide": "node ./styleguide.js",
+    "styleguide:build": "nucleus --config styleguide-config.json",
     "postinstall": "node ./postinstall.js"
   },
   "repository": {
