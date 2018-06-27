@@ -1,26 +1,25 @@
 /* --- BEGIN BUTTONS.CSS --- */
 
 .#{$prefix}button {
+    @include button-defaults();
+    @include button($default-button-color-background);
+    
+    @include button-styles();
+    @include button-sizes();
+    @include button-alignments();
+    
+    @include button-icon-wrap();
+    @include button-icon();
   
-  @include button-defaults();
-  @include button($default-button-color-background);
-  
-  @include button-styles();
-  @include button-sizes();
-  @include button-alignments();
-  
-  @include button-icon-wrap();
-  @include button-icon();
-
-  @include text-size(14, 24);
+    @include text-size(14, 24);  
 }
 
-  .#{$prefix}is-button {
-    @extend .#{$prefix}button;
+.#{$prefix}is-button {
+  @extend .#{$prefix}button;
 
-    @include button-lookalike();
+  @include button-lookalike();
 
-    @include text-size(14, 26);
-  }
+  @include text-size(14, 26);
+}
 
 /* --- END BUTTONS.CSS --- */
