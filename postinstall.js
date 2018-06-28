@@ -78,7 +78,7 @@ function helperFunction() {
           console.log(`Downloading react starter pack...`);
         }
 
-        child = exec('cd .. && git clone https://github.com/alex-macra/react',
+        child = exec('git clone https://github.com/alex-macra/react',
           function (error, stderr) {
             if (error === null) {
               console.log(`React starter pack has been downloaded with success.`);
