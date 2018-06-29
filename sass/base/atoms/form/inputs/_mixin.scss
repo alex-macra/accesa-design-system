@@ -17,7 +17,7 @@ $input-text-color: $default-input-color-text;
  * @markup
  *  <div class="acc-form">
  *   <label>Text Input</label>
- *   <input class="acc-is-input" type="text" value="hello">
+ *   <input class="acc-input" type="text" value="hello">
  *  </div>
 */
 
@@ -31,7 +31,7 @@ $var: null;
  * @markup
  *  <div class="acc-form-inline">
  *   <label>Text Input</label>
- *   <input class="acc-is-input" type="text" value="hello">
+ *   <input class="acc-input" type="text" value="hello">
  *  </div>
 */
 
@@ -79,7 +79,7 @@ $var: null;
  *  Default styling for textarea
  * @markup
  *  <div class="acc-form">
- *   <textarea class="acc-is-textarea" name="message" rows="10" cols="30">test</textarea>
+ *   <textarea class="acc-textarea" name="message" rows="10" cols="30">test</textarea>
  *  </div>
 */
 

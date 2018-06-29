@@ -9,33 +9,45 @@
   h1 {
     text-align: center;
   }
-  
+}
+
+#app {
   * {
-    @extend %heading-font;
+    @extend %paragraph-font; 
   }
 }
 
-.acc-default-form {
+.acc-default-container {
+  position: relative;
   max-width: 1580px;
   margin: 25px auto;
-  min-height: 50vh;
+  min-height: 80vh;
   box-shadow: 0 1px 1px $color-light-gray;
+  padding: 2em 2.5em;
 
   h1 {
     text-align: center;
   }
 
-  * {
-    @extend %heading-font;
+  .acc-form-inline {
+    margin: 0 10px;
+
+    label {
+      min-width: 200px;
+    }
   }
 }
 
-.acc-main-nav {
-  
-  * {
-    @extend %heading-font;
-  }
+.flexible {
+  @include flexbox();
+  @include flex-direction(column);
 
+  .acc-bottom-align {
+    margin-top: auto;
+  }
+}
+
+.acc-main-nav { 
   @include flexbox();
   background-color: $color-main;
   height: 72px;
@@ -94,6 +106,20 @@
     right: 0;
     width: 100%;
   }
+}
+
+.acc-inline-wrap {
+  > * {
+    display: inline-block; //add to helper
+  }
+}
+
+.back {
+  position: absolute;
+  right: 2.5em;
+  top: 1em;
+  min-width: 0;
+  font-weight: bolder!important;
 }
 
 .acc-main-nav.sticky + *:nth-child(2) {
