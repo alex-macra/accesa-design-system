@@ -1,6 +1,42 @@
 // temporary stuff, experimental...
 
 /* --- BEGIN TEMP.CSS --- */
+.acc-inline-wrap { //add to helper
+  > * {
+    display: inline-block;
+  }
+}
+
+.back {
+  position: absolute;
+  right: 2.5em;
+  top: 1em;
+  min-width: 0;
+  font-weight: bolder!important;
+}
+
+.flexible {
+  @include flexbox();
+  @include flex-direction(column);
+
+  .acc-bottom-align {
+    margin-top: auto;
+  }
+  
+  &.centered {
+    align-items: center;
+  }
+
+  .acc-center-align {
+    @include flexbox();
+    margin: auto;
+
+    .cancel {
+      min-width: 200px;
+    }
+  }
+}
+
 .todo {     
      
       .block-with-text {
