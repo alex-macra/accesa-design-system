@@ -42,7 +42,6 @@ $var: null;
   &[type=email],
   &[type=number] { 
     @extend %paragraph-font;
-    @include text-size(16, 22);
     
     background: $input-bg-color;
     border: 1px solid $input-border-color;
@@ -85,8 +84,6 @@ $var: null;
 
 @mixin form-textarea($display: inline-block) {
   @extend %paragraph-font;
-  
-  @include text-size(16,22);
   @include box-sizing();
 
   background-color: $input-bg-color;
@@ -110,7 +107,8 @@ $var: null;
 
   label {
     display: $display;  
-  }
+    @include text-size(16); 
+    }
 }
 
 @mixin form-legend-color() {

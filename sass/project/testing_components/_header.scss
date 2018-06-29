@@ -1,0 +1,71 @@
+/* --- BEGIN PROJECT-HEADER.CSS --- */
+
+.acc-main-header { 
+  @include flexbox();
+  background-color: $color-main;
+  height: 72px;
+  color: $color-white;
+  box-shadow: 4px 3px 5px $color-light-gray;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-light-gray;
+    }
+  }
+
+  .acc-logo {
+    @include flex(0 0 15%);
+    @include flexbox();
+     
+    > a {
+      @include flex-align-self(center);
+      padding: 0 15px;
+      text-transform: uppercase;
+      @include text-size(17);
+    }
+  }
+
+  .acc-main-nav {
+    @include flex(0 0 85%);
+
+    ul {
+      display: inline-flex;
+
+        li {
+        @include flex-align-self(center);
+        display: inline-block;
+        padding: 0 15px;
+
+        a {
+          text-transform: uppercase;
+          @include text-size(17);
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    &.to-right {
+      display: inline-flex;
+      @include flex-justify-content(flex-end);
+      align-self: center;
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10009;
+
+    &*:nth-child(2) {
+      margin-top: 100px;
+    }
+  }
+}
+
+/* --- BEGIN PROJECT-HEADER.CSS --- */
