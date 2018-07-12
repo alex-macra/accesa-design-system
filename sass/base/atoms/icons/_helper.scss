@@ -1,5 +1,6 @@
 
 $fa-font-path: "~node_modules/font-awesome/fonts";
+@import url("../../node_modules/font-awesome/css/font-awesome.min.css");
 
 .#{$prefix}icon {
   display: inline-block;

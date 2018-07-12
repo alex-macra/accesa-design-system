@@ -1,6 +1,6 @@
 /* --- BEGIN BUTTONS.CSS --- */
 
-.#{$prefix}button {
+  .#{$prefix}button {
     @include button-defaults();
     @include button($default-button-color-background);
     

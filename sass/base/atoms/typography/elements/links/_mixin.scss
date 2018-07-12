@@ -15,7 +15,7 @@
   text-decoration: none;
   color: $color-black;
 
-  &[href] {
+  //&[href] {
     @include transition(color .3s ease);
     color: $color-black;
     text-decoration: underline;
@@ -24,7 +24,7 @@
       @include opacity(0.9);
       color: #666;
     }
-  }
+ // }
 
   &:hover {
     text-decoration: underline;
