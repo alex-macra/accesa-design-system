@@ -75,18 +75,40 @@
     padding: 20px;
   }
 
-  .modal-header,
-  .modal-footer {
-    padding: 20px 20px;
-  }
-
   .modal-header {
+    position: relative;
+    padding: 20px 55px 20px 20px;
     border-bottom: $color-light-gray solid 1px;
+
+    >label {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 29px;
+      border: 1px solid $color-gray;
+      color:  $color-gray;
+      height: 30px;
+      line-height: 1;
+      width: 30px;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+      min-width: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 0;
+
+      &:hover {
+        border-color: $color-black;
+        color: $color-black;
+      }
+    }
   }
 
   .modal-footer {
     border-top: $color-light-gray solid 1px;
-    text-align: right
+    text-align: right;
+    padding: 20px 20px;
   }
 
 }
