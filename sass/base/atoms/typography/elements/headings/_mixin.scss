@@ -16,7 +16,7 @@ $color-headings: $color-heading;
 */
 
 @mixin heading-defaults() {
-    @extend %heading-font;
+    //@extend %heading-font;
     margin-bottom: 15px;
     color: $color-headings;
 }

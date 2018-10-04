@@ -11,15 +11,15 @@
     @include button-icon-wrap();
     @include button-icon();
   
-    @include text-size(14, 24);  
+    //@include text-size(14, 24);  
 }
 
 .#{$prefix}is-button {
-  @extend .#{$prefix}button;
+  //@extend .#{$prefix}button;
 
   @include button-lookalike();
 
-  @include text-size(14, 26);
+  //@include text-size(14, 26);
 }
 
 /* --- END BUTTONS.CSS --- */

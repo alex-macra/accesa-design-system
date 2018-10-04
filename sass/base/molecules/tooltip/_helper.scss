@@ -1,7 +1,7 @@
 /* --- BEGIN TOOL-TIPS.CSS --- */
 
 .#{$prefix}info-icon {
-	@include text-size(16, 30);
+	//@include text-size(16, 30);
 	background: $color-light-gray;
 	border-radius: 50%;
 	color: $color-white;

@@ -2,7 +2,7 @@
 
 .#{$prefix}is-quote { 
   @include blockquote();
-  @include text-size(18);
+  //@include text-size(18);
 }
 
 /* --- END BLOCKQUOTE.CSS --- */

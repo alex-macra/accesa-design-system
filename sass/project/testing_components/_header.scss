@@ -24,7 +24,7 @@
       //@include flex-align-self(center);
       padding: 0 15px;
       text-transform: uppercase;
-      @include text-size(17);
+      //@include text-size(17);
     }
   }
 
@@ -41,7 +41,7 @@
 
         a {
           text-transform: uppercase;
-          @include text-size(17);
+          //@include text-size(17);
           letter-spacing: 1px;
         }
       }

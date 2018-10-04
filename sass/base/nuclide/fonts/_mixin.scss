@@ -1,9 +1,0 @@
-@mixin lato ( $weight : 400) {
-  font-family: Lato, sans-serif;
-  font-weight: $weight;
-}
-
-@mixin open-sans ($weight : 400) {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: $weight;
-}

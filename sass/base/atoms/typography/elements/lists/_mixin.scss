@@ -10,7 +10,7 @@
 @mixin default-list() {
 
   li {
-    @include text-size(18,30);
+    //@include text-size(18,30);
     position: relative;
     padding-left: 1.75rem;
 
@@ -54,7 +54,7 @@
 @mixin ordered-list() {
 
   > li {
-    @include text-size(18,30);
+    //@include text-size(18,30);
     position: relative;
     counter-increment: item;
 

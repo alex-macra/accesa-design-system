@@ -14,7 +14,7 @@ $input-text-color: $default-input-color-text;
   &[type=password],
   &[type=email],
   &[type=number] {
-    @extend %paragraph-font;
+    //@extend %paragraph-font;
 
     background: $input-bg-color;
     border: 1px solid $input-border-color;
@@ -45,7 +45,7 @@ $input-text-color: $default-input-color-text;
 }
 
 @mixin form-textarea($display: inline-block) {
-  @extend %paragraph-font;
+  //@extend %paragraph-font;
   //@include box-sizing();
 
   background-color: $input-bg-color;
@@ -69,7 +69,7 @@ $input-text-color: $default-input-color-text;
 
   label {
     display: $display;
-    @include text-size(16);
+    //@include text-size(16);
     }
 }
 

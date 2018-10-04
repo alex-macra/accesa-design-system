@@ -7,7 +7,7 @@
   $select-border-color: $default-select-color-border;
   $select-text-color: $default-select-color-text;
 
-  @include text-size(16);
+  //@include text-size(16);
   padding: 0 10px;
   display: $display;
   min-width: 100px;
