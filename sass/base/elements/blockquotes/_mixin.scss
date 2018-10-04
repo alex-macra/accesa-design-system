@@ -1,0 +1,37 @@
+$color-blockquote: $color-dark-gray;
+$color-blockquotes: $color-blockquote;
+$temp-color: #4a4a4a;
+
+@mixin blockquote() {
+    //@extend %paragraph-font;
+
+    color: $temp-color;
+    border-left: 10px solid $color-light-gray;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D";
+
+    &:before {
+        //@include text-size(80,1);
+        color: $color-light-gray;
+        content: open-quote;
+        margin-right: 0.15em;
+        vertical-align: -0.4em;
+        position: relative;
+        top: 7px;
+    }
+
+    &:after {
+        //@include text-size(80,1);
+        color: $color-light-gray;
+        content: close-quote;
+        margin-left: 0.15em;
+        vertical-align: -0.4em;
+        position: relative;
+        top: 9px;
+    }
+
+    p {
+        display: inline;
+    }
+}

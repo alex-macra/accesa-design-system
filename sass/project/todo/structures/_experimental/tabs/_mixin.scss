@@ -1,0 +1,159 @@
+// Tabs
+
+//todo - improve
+//known issue - maybe find an alternative for position absolute or find a way to clear the container area
+
+@mixin tabs() {
+	.#{$prefix}tabs {
+		@include float-clear();
+		height: 100vh;
+		min-height: 500px;
+		width: 650px;
+		list-style: none;
+		position: relative;
+		margin: 80px 0 0 10px;
+		text-align: left;
+
+		> li {
+			float: left;
+			display: block;
+			position: static;
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+
+			> label {
+				display: block;
+				padding: 14px 21px;
+				border-radius: $border-radius;
+				font-size: 20px;
+				font-weight: normal;
+				text-transform: uppercase;
+				cursor: pointer;
+				position: relative;
+				background: $color-white;
+				top: 4px;
+				////@include transition(all 0.2s ease-in-out);
+
+				&:hover {
+					background: darken($color-white, 10);
+				}
+			}
+
+			> input[type="radio"] {
+				position: absolute;
+				top: 0;
+				left: -9999px;
+			}
+
+
+		>[id^="tab"]:checked + label {
+			top: 0;
+			padding-top: 17px;
+			border: 1px solid #ccc;
+			border-bottom: 0;
+			z-index: 10;
+		}
+
+		>[id^="tab"]:checked ~ [id^="tab-content"] {
+			display: block;
+		}
+
+		}
+
+		.tab-content{
+			z-index: 2;
+			display: none;
+			overflow: hidden;
+			width: 100%;
+			font-size: 17px;
+			line-height: 25px;
+			padding: 25px;
+			position: absolute;
+			top: 61px;
+			left: 0;
+			border: 1px solid #ccc;
+		}
+	}
+}
+
+@mixin tabs-filled() {
+
+	.#{$prefix}tabs-filled {
+		height: 100vh;
+		min-height: 500px;
+		width: 650px;
+		float: none;
+		list-style: none;
+		position: relative;
+		margin: 80px 0 0 10px;
+		text-align: left;
+
+		li {
+			float: left;
+			display: block;
+			position: static;
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		input[type="radio"] {
+			position: absolute;
+			top: 0;
+			left: -9999px;
+		}
+
+		label {
+			display: block;
+			padding: 14px 21px;
+			border-radius: $border-radius;
+			font-size: 20px;
+			font-weight: normal;
+			text-transform: uppercase;
+			background: $color-main;
+			color: $color-white;
+			cursor: pointer;
+			position: relative;
+			top: 4px;
+			////@include transition(all 0.2s ease-in-out);
+
+			&:hover {
+				background: darken($color-main, 10);
+			}
+		}
+
+		.tab-content{
+			z-index: 2;
+			display: none;
+			overflow: hidden;
+			width: 100%;
+			font-size: 17px;
+			line-height: 25px;
+			padding: 25px;
+			position: absolute;
+			color: $color-white;
+			top: 53px;
+			left: 0;
+			background: $color-lighter-main;
+
+			* {
+				color: $color-white;
+			}
+		}
+
+		[id^="tab"]:checked + label {
+			top: 0;
+			padding-top: 17px;
+			background: $color-lighter-main;
+		}
+
+		[id^="tab"]:checked ~ [id^="tab-content"] {
+			display: block;
+		}
+	}
+}

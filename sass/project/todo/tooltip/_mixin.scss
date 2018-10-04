@@ -1,0 +1,125 @@
+@mixin tooltip($direction: top-left, $bg-color: #000, $title: false) {
+	position: relative;
+
+	&:before, &:after {
+		opacity: 0;
+		pointer-events: none;
+		z-index: 98;
+	}
+
+	&:before {
+		background-color: $bg-color;
+		border-radius: $border-radius;
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+		content: attr(data-tooltip);
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 18px;
+		color: $color-white;
+		padding: 10px 15px;
+		position: absolute;
+		text-align: left;
+		white-space: normal;
+		width: 220px;
+		//@if lightness($bg-color) < 50% { // dynamically determine light or dark color based on $bg-color --GOOD IDEA TO USE IN ALL PROJECT
+		//	color: $white;
+		//} @else {
+	//		color: $black;
+	//	}
+	}
+	&:after {
+		content: '';
+	}
+
+	&:hover {
+		&:before, &:after {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	$triangle-size: 6px; // = height of triangle, width is 2x
+
+	@if $direction == 'top-left' or $direction == 'top-right' {
+		&:before {
+			//@include transform(translateY(-100%));
+			 bottom: auto;
+			top: -($triangle-size + 3px);
+		}
+
+		&:after {
+			@include triangle(down, $triangle-size, $bg-color);
+			 bottom: auto;
+			top: -($triangle-size + 3px);
+		}
+	}
+	@else if $direction == 'bottom-right' or $direction == 'bottom-left' {
+		&:before {
+			//@include transform(translateY(100%));
+			bottom: -($triangle-size + 3px);
+			 top: auto;
+		}
+
+		&:after {
+			@include triangle(up, $triangle-size, $bg-color);
+			bottom: -($triangle-size + 3px);
+			top: auto;
+		}
+	}
+
+	@if $direction == 'top-right' or $direction == 'bottom-right' {
+		&:before, &:after {
+			left: 50%;
+			margin-left: -$triangle-size;
+			right: auto;
+		}
+
+		&:before {
+			margin-left: -$triangle-size * 3;
+		 }
+	}
+
+	@else if $direction == 'top-left' or $direction == 'bottom-left' {
+		&:before, &:after {
+			left: auto;
+			margin-right: -$triangle-size;
+			right: 50%;
+		}
+
+		&:before {
+			margin-right: -$triangle-size * 3;
+		 }
+	}
+}
+
+@mixin triangle($direction, $size: 8px, $color: #222){
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	width: 0;
+	@if ($direction == 'up'){
+		border-bottom: $size solid $color;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: none;
+	}
+	@else if ($direction == 'down'){
+		border-bottom: none;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+	}
+	@else if ($direction == 'left'){
+		border-bottom: $size solid transparent;
+		border-left: none;
+		border-right: $size solid $color;
+		border-top: $size solid transparent;
+	}
+	@else if ($direction == 'right'){
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+		border-right: none;
+		border-top: $size solid transparent;
+	}
+}

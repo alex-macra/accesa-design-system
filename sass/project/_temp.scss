@@ -16,8 +16,8 @@
 }
 
 .flexible {
-  @include flexbox();
-  @include flex-direction(column);
+  ////@include flexbox();
+  ////@include flex-direction(column);
 
   .acc-bottom-align {
     margin-top: auto;
@@ -28,7 +28,7 @@
   }
 
   .acc-center-align {
-    @include flexbox();
+    ////@include flexbox();
     margin: auto;
 
     .cancel {

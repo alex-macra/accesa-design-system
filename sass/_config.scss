@@ -1,0 +1,12 @@
+/**
+ * Set a general prefix throughout the entire app using the $prefix variable.
+ * The default namespaces is 'accesa' -> 'acc-'. Want to disable it? Set it to null.
+*/
+
+$prefix: 'acc-';
+
+/**
+ * Set a global border radius that will automatically update throught the entire stylesheet.
+*/
+
+$border-radius: 0;

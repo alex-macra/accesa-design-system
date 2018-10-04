@@ -1,0 +1,19 @@
+/* --- BEGIN HEADINGS.CSS --- */
+
+//NOTE//
+//Improve in upcoming versions. Maybe come up with an option to automatically set font sizes on all headings at once
+//
+
+//$base-font-size: 18;
+//$heading-scale: 6; // amount of px headings grow from h6 to h1
+
+//@for $i from 1 through 6 {
+  //h#{$i} {
+//    font-size: $base-font-size + $heading-scale * (6 - $i);
+  //  //@include text-size($base-font-size + $heading-scale * ($heading-scale - $i));
+
+    //font-size: $base-font-size + $heading-scale) * $heading-scale * ($heading-scale - $i);
+  //}/
+//}
+
+/* --- END HEADINGS.CSS --- */

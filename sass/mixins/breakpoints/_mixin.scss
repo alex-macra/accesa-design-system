@@ -1,0 +1,36 @@
+@mixin for-size($size) {
+
+	@if $size == phone-only {
+		@media (max-width: 37.4375em) {
+			@content;
+		}
+	}
+
+  @else if $size == tablet-portrait-up {
+		@media (min-width: 37.4376em) {
+			@content;
+		}
+	}
+
+  @else if $size == tablet-landscape-up {
+		@media (min-width: 56.25em) {
+			@content;
+		}
+	}
+
+  @else if $size == desktop-up {
+		@media (min-width: 75em) {
+			@content;
+		}
+	}
+
+  @else if $size == big-desktop-up {
+		@media (min-width: 112.5em) {
+			@content;
+		}
+	}
+}
+
+//NOTE//
+//Test more, maybe improve the responsiveness, maybe make it fluid?
+//

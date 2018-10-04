@@ -1,29 +1,22 @@
 /*  CONTENTS
- 
+
   BASE
   Reset................Globally-impacting file that resets browser inherited stylesheet.
   Set..................Globally-impacting file that sets default stylesheet values to certain elements.
- 
+
   NUCLIDES
   Config...............Globally-available variables and config settings.
   Colors...............Globally-available variables for creating a theme based stylesheet.
   Mixins...............Useful mixins (Enhancements and helper mixins).
- 
+
   ATOMS
   Form.................Buttons, inputs, dropdowns. Form elements in general.
   Icons................todo.
   Typography...........Contains basic stylesheet for typographic elements such as paragraphs and headings.
- 
+
   MOLECULES //todo
   STRUCTURES (COMPONENTS)*/
 
 //@import url("../../node_modules/font-awesome/css/font-awesome.min.css");
 
 //BASE
-@import 'base/core';
-
-//Optional
-@import 'project/_index';
-
-//temporary
-@import 'project/temp';

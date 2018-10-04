@@ -1,0 +1,85 @@
+//todo disabled inputs. hover active states
+//add colored option for inputs to change borders
+//NOTE//
+//Improve in upcoming versions. THIS IS NOT FINISHED
+//
+
+$input-bg-color: $default-input-color-background;
+$input-border-color: $default-input-color-border;
+$input-text-color: $default-input-color-text;
+
+@mixin form-input($display: inline-block) {
+
+  &[type=text],
+  &[type=password],
+  &[type=email],
+  &[type=number] {
+    //@extend %paragraph-font;
+
+    background: $input-bg-color;
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+    color: $input-text-color;
+    height: 38px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 15px;
+    display: $display;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+
+  &:-moz-placeholder {
+    color: $input-text-color;
+  }
+
+  &::-moz-placeholder {
+    color: $input-text-color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+}
+
+@mixin form-textarea($display: inline-block) {
+  //@extend %paragraph-font;
+  //@include box-sizing();
+
+  background-color: $input-bg-color;
+  padding: 15px;
+  border: 1px solid $input-border-color;
+  border-radius: $border-radius;
+  margin-bottom: 10px;
+  color: $input-text-color;
+  display: $display;
+}
+
+//NOTE//
+//Improve in upcoming versions. Avoid element styling
+//
+
+@mixin form-legend($display: inline-block) {
+
+  span {
+    display: $display;
+  }
+
+  label {
+    display: $display;
+    //@include text-size(16);
+    }
+}
+
+@mixin form-legend-color() {
+
+  span {
+    color: $input-text-color;
+  }
+
+  label {
+    color: $input-text-color;
+  }
+}
