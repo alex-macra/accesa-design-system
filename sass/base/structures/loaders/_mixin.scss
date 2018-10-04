@@ -1,13 +1,3 @@
-/**
- * needs documentation
- * @structure Bouncing loader
- * @section Loaders
- * @markup
- *  <div class="acc-bouncing-loader">
- *     <div></div><div></div><div></div>
- *  </div>
-*/
-
 @mixin bouncing-loader() {
 	@include flexbox();
 	@include flex-justify-content(center);
@@ -56,7 +46,7 @@ $rotatingCirclePosTop: $circleDiam/2 - $rotatingCircleDiam/2;
  * @structure Spinner
  * @section Loaders
  * @markup
- *  <div class="acc-spinner"> 
+ *  <div class="acc-spinner">
  *  </div>
 */
 

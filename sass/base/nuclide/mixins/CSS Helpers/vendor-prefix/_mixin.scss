@@ -1,16 +1,3 @@
-/**
- * Browser vendors sometimes add prefixes to experimental or nonstandard CSS properties. 
- * Useful function to avoid writing all the vendor prefixes for various mixins or CSS styles.
- * Alternative to this could be PostCSS.
- *
- * @mixin
- * @section CSS Helpers
- * @param $property css property (eg box-sizing);
- * @param $value value of it's property (eg border-box);
- * @example
- *  @include vendor-prefix(box-sizing, border-box);
-*/
- 
 @mixin vendor-prefix($property, $value) {
 	-webkit-#{$property}: #{$value};
 	-khtml-#{$property}: #{$value};

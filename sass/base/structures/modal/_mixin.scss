@@ -1,29 +1,3 @@
-/**
- * Default modal design. Make sure to add the markup right before the </body> tag ends.
- * @structure Modal
- * @section Modal
- * @markup
- *  <div class="acc-modal"> 
- *   Check it
- *   <input class="modal-open" id="modal-one" type="checkbox">
- *   <div class="modal-wrap" aria-hidden="true" role="dialog">
- *    <label class="modal-overlay" for="modal-one"></label>
- *    <div class="modal-dialog">
- *     <div class="modal-header"> 
- *      <h2>Modal in CSS?</h2>
- *       <label class="is-button cancel" for="modal-one" aria-hidden="true">×</label>
- *     </div>
- *     <div class="modal-body">
- *      <p>One modal example here</p>
- *     </div>
- *     <div class="modal-footer">
- *      <label class="is-button primary" for="modal-one">okay</label>
- *     </div>      
- *    </div>
- *   </div>
- *  </div>
-*/
-
 //revise in beta
 
 @mixin modal() {

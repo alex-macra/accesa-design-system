@@ -1,30 +1,8 @@
-/**
- * Set the Lato font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include lato();
- *  @include lato(300);
- */
 @mixin lato ( $weight : 400) {
   font-family: Lato, sans-serif;
   font-weight: $weight;
 }
 
-/**
- * Set the "Open Sans" font face with an optional font weight.
- *
- * @mixin
- * @section Fonts
- * @param $weight
- *  The font weight to be used.
- * @example
- *  @include open-sans();
- *  @include open-sans(300);
- */
 @mixin open-sans ($weight : 400) {
   font-family: 'Open Sans', sans-serif;
   font-weight: $weight;

@@ -1,16 +1,3 @@
-/**
- * Breaking points specifically targeting either small screen smartphones,
- * or all the way up to big desktop screens.
- * Instead of a pixel approach  we use em's because it's the only unit that
- * performes consistently across all major browsers.
- *
- * @mixin
- * @section CSS Enhancements
- * @param $size accepts 'phone-only', 'tablet-portrait-up', 'tablet-landscape-up', 'desktop-up', 'big-desktop-up'
- * @example
- *  @include for-size(phone-only);
-*/
-
 @mixin for-size($size) {
 
 	@if $size == phone-only {

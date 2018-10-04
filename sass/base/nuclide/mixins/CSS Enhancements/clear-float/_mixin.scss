@@ -1,14 +1,5 @@
-/**
- * Clear child elments by fixing thee zero-height container problem.
- *
- * @mixin
- * @section CSS Enhancements
- * @example
- *  @include float-clear()
-*/
- 
 @mixin float-clear() {
-	
+
 	*zoom: 1;
 
 	&::before,

@@ -2,33 +2,11 @@
 
 @include default-bold-content();
 
-/**
- * Generic paragraph style for medium to long blocks of text. This element is using the @{lipsum} substitution to generate two blocks of text.
- *
- * @atom Paragraph
- * @section Typography > Content markup tags
- * @markup
- *  <p>
- *    @{lipsum:2:paragraphs}
- *  </p>
-*/
-
 p {
 
   @include inline-content-default();
   @include text-size(18);
 }
-
-/**
- * Basic styles to decorate text. Just use normal semantic markup. 
- *
- * @atom Basic text style
- * @section Typography > Content markup tags
- * @markup
- *  <strong>Bold text</strong><br/>
- *  <em>Italic text</em><br/>
- *  <u>Underline</u>
-*/
 
 p span {
 

@@ -1,54 +1,17 @@
-/**
- * Basic text centering horizontally.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-horizontally-text()
-*/
-
 @mixin center-horizontally-text() {
-	
+
 	text-align: center;
 }
-
-/**
- * Basic horizontal centering of an HTML element.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-horizontally()
-*/
 
 @mixin center-horizontally() {
 
 	margin: 0 auto;
 }
 
-/**
- * Basic horizontal centering of multiple HTML elements in a row.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-horizontally-multiple-rows-block()
-*/
-
 @mixin center-horizontally-multiple-rows-block() {
 
 	display: inline-block;
 }
-
-/**
- * Center vertically an element or component, by specifiying it's height.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @param $height pixel or percentage based height.
- * @example 
- *  @include center-vertically-known-height-block(300px)
-*/
 
 @mixin center-vertically-known-height-block($height) {
 
@@ -62,15 +25,6 @@
 	}
 }
 
-/**
- * Center vertically an element or component without knowing it's height.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-vertically-unknown-height-block() 
-*/
-
 @mixin center-vertically-unknown-height-block() {
 
 	position: relative;
@@ -82,19 +36,8 @@
 	}
 }
 
-/**
- * Center both vertically and horizontally of an element by specifying with and height.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @param $width
- * @param $height
- * @example 
- *  @include center-vertically-unknown-height-block() 
-*/
-
 @mixin center-horizontally-vertically-known-height-grid($height, $width) {
-	
+
 	position: relative;
 
 	> div {
@@ -108,16 +51,6 @@
 	}
 }
 
-
-/**
- * Center both vertically and horizontally a component without knowing it's height.
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-vertically-unknown-height-block() 
-*/
-
 @mixin center-horizontally-vertically-unknown-height() {
 
 	position: relative;
@@ -130,30 +63,12 @@
 	}
 }
 
-/**
- * Center vertically of a component without knowing it's height, and by using flexbox. (Experimental)
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-vertically-unknown-height-block() 
-*/
-
 @mixin center-vertically-unknown-height-flex() {
 
 	@include flexbox();
 	@include flex-justify-content(center);
 	@include flex-direction(column);
 }
-
-/**
- * Center both vertically and horizontally of a component without knowing it's height and by using grid. (Experimental)
- *
- * @mixin
- * @section CSS Enhancements > CSS Positioning
- * @example 
- *  @include center-vertically-unknown-height-block() 
-*/
 
 @mixin center-horizontally-vertically-unknown-height-grid() {
 

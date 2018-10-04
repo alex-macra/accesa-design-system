@@ -1,17 +1,3 @@
-/**
- * @molecule Toolip molecule
- * @section Tooltip
- * @description
- *  Created using an icon, headings level 5 and a little bit of geomerty.
- * @markup
- *  <div class="tooltip">
- *      <h5>upper right tooltip example <i class="acc-info-icon top-right" data-tooltip="this is tooltip">i</i></h5>
- *      <h5>upper left tooltip example <i class="acc-info-icon top-left" data-tooltip="this is tooltip">i</i></h5>
- *      <h5>bottom right tooltip example <i class="acc-info-icon bottom-right" data-tooltip="this is tooltip">i</i></h5>
- *      <h5>bottom left tooltip example <i class="acc-info-icon bottom-left" data-tooltip="this is tooltip">i</i></h5>
- *  </div>
-*/
-
 @mixin tooltip($direction: top-left, $bg-color: #000, $title: false) {
 	position: relative;
 
@@ -41,8 +27,8 @@
 	//		color: $black;
 	//	}
 	}
-	&:after { 
-		content: ''; 
+	&:after {
+		content: '';
 	}
 
 	&:hover {
@@ -57,7 +43,7 @@
 	@if $direction == 'top-left' or $direction == 'top-right' {
 		&:before {
 			@include transform(translateY(-100%));
-			 bottom: auto; 
+			 bottom: auto;
 			top: -($triangle-size + 3px);
 		}
 
@@ -71,12 +57,12 @@
 		&:before {
 			@include transform(translateY(100%));
 			bottom: -($triangle-size + 3px);
-			 top: auto; 
+			 top: auto;
 		}
 
 		&:after {
 			@include triangle(up, $triangle-size, $bg-color);
-			bottom: -($triangle-size + 3px); 
+			bottom: -($triangle-size + 3px);
 			top: auto;
 		}
 	}
@@ -84,23 +70,23 @@
 	@if $direction == 'top-right' or $direction == 'bottom-right' {
 		&:before, &:after {
 			left: 50%;
-			margin-left: -$triangle-size; 
+			margin-left: -$triangle-size;
 			right: auto;
 		}
 
-		&:before { 
+		&:before {
 			margin-left: -$triangle-size * 3;
 		 }
 	}
 
 	@else if $direction == 'top-left' or $direction == 'bottom-left' {
-		&:before, &:after { 
+		&:before, &:after {
 			left: auto;
 			margin-right: -$triangle-size;
 			right: 50%;
 		}
 
-		&:before { 
+		&:before {
 			margin-right: -$triangle-size * 3;
 		 }
 	}
@@ -110,7 +96,7 @@
 	content: '';
 	display: block;
 	height: 0;
-	position: absolute; 
+	position: absolute;
 	width: 0;
 	@if ($direction == 'up'){
 		border-bottom: $size solid $color;

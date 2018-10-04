@@ -1,39 +1,7 @@
 /* --- BEGIN CODE.CSS --- */
-/**
- * Generic blockquote style for medium to long blocks of text. This element
- * is using the @{lipsum} substitution to generate two blocks of text.
- *
- * @atom Code > Default
- * @section Typography > Content markup tags
- * @markup
- *  <pre class="acc-is-code">
- *   <label>default</label>
- *   <code>
- *   this is code
- *   </code>
- *  </pre>
- */
 
  .#{$prefix}is-code {
   @include code-styling();
 }
-
-/**
- * Code style for CSS.
- *
- * @atom Code > Styled
- * @section Typography > Content markup tags
- * @markup
- *  <pre class="acc-is-code css">
- *   <label>default</label>
- *   <code>
- *    .test {
- *      display: none;
- *    }
- *   </code>
- *  </pre>
- */
-
- $default: null;
 
 /* --- END CODE.CSS --- */

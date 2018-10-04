@@ -40,7 +40,7 @@ $temp-color: #4a4a4a;
   }
 
   @media screen and (min-width: 768px) {
-    
+
     &:hover input + span {
       box-shadow: 0 2px 4px rgba(#000, .15);
     }
@@ -65,19 +65,6 @@ $temp-color: #4a4a4a;
   }
 }
 
-/**
- * @molecule Checkbox
- * @section Form > Checkboxes
- * @description
- *  Default checkbox styling.
- * @markup
- *  <label class="acc-is-checkbox">
- *   <input id="check2" type="checkbox" onchange="console.log('changed');">
- *   <span></span>
- *   Checkbox
- *  </label>
-*/
-
 @mixin checkbox() {
 
   input + span {
@@ -91,24 +78,6 @@ $temp-color: #4a4a4a;
     }
   }
 }
-
-/**
- * @molecule Radio
- * @section Form > Checkboxes
- * @description
- *  Default radion buttons styling.
- * @markup
- *  <label class="acc-is-radio">
- *   <input id="check3" type="radio" name="unique" onchange="console.log('changed');">
- *   <span></span>
- *   Radio button
- *  </label><br/><br/>
-  *  <label class="acc-is-radio">
- *   <input id="check4" type="radio" name="unique" onchange="console.log('changed');">
- *   <span></span>
- *   Radio button
- *  </label>
-*/
 
 @mixin radio() {
 

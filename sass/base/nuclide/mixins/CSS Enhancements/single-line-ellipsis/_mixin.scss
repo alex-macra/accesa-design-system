@@ -1,16 +1,5 @@
-/**
- * Truncate text, adding an ellipsis at the end of the first row.
- *
- * @mixin
- * @section CSS Enhancements
- * @param $width default with is set to 100%. Use either a percentage or a pixel based size
- * @example
- *  @include single-line-ellipsis();
- *  @include single-line-ellipsis(300px);
-*/
-
 @mixin single-line-ellipsis($width: 100%) {
-  
+
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

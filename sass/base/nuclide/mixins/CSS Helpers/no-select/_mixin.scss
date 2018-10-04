@@ -1,12 +1,3 @@
-/**
- * Controls whether the user can select text in a specific section or HTML element. 
- *
- * @mixin
- * @section CSS Helpers
- * @example
- *  @include no-select();
-*/
-
 @mixin no-select() {
   -webkit-user-select: none;
   -moz-user-select: none;

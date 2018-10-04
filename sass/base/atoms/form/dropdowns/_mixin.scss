@@ -2,40 +2,6 @@
 //Improve in upcoming versions. THIS IS NOT FINISHED
 //
 
-/**
- * @molecule Inline select
- * @section Form > Dropdowns
- * @description
- *  Form wrapper that contains the select and the label side by side.
- * @markup
- *  <div class="acc-form-inline">
- *   <label for="select">label</label>
- *   <select class="acc-is-select">
- *    <option value="Option 1">option 1</option>
- *    <option value="Option 2">option 2</option>
- *    <option value="Option 3">option 3</option>
- *   </select>
- *  </div>
-*/
-
-$var: null; 
-
-/**
- * @molecule Block select
- * @section Form > Dropdowns
- * @description
- *  Form wrapper that contains the select and the label one after the other, functioning as block elements.
- * @markup
- *  <div class="acc-form">
- *   <label for="select">label</label>
- *   <select class="acc-is-select">
- *    <option value="Option 1">option 1</option>
- *    <option value="Option 2">option 2</option>
- *    <option value="Option 3">option 3</option>
- *   </select>
- *  </div>
-*/
-
 @mixin select($display: inline-block) {
   $select-bg-color: $default-select-color-background;
   $select-border-color: $default-select-color-border;

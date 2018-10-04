@@ -1,14 +1,3 @@
-/**
- * Hide area by either removing the element from the normal flow of the page, or by leaving it in the page, but keeping it hidden. 
- *
- * @mixin
- * @section CSS Enhancements
- * @param $visually this variable enables hiding certain HTML element / section, without removing it from the normal flow of the page.
- * @example
- *  @include hide();
- *  @include hide($visually); 
-*/
-
 @mixin hide($visually: null) {
 
 	@if ($visually) {
@@ -27,17 +16,6 @@
 		display: none;
 	}
 }
-
-/**
- * Force display of element, making sure that the element is visible.
- *
- * @mixin
- * @section CSS Enhancements
- * @param $visually
- * @example
- *  @include show($visually); 
- *  @include show(); 
-*/
 
 @mixin show($visually: null) {
 

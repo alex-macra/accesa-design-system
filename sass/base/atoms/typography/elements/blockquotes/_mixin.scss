@@ -2,18 +2,6 @@ $color-blockquote: $color-dark-gray;
 $color-blockquotes: $color-blockquote;
 $temp-color: #4a4a4a;
 
-/**
- * Generic blockquote style for medium to long blocks of text. This element
- * is using the @{lipsum} substitution to generate two blocks of text.
- *
- * @atom Blockquote
- * @section Typography > Content markup tags
- * @markup
- *  <blockquote class="acc-is-quote">
- *    @{lipsum:2:paragraphs}
- *  </blockquote>
- */
-
 @mixin blockquote() {
     @extend %paragraph-font;
 
@@ -23,7 +11,7 @@ $temp-color: #4a4a4a;
     padding: 0.5em 10px;
     quotes: "\201C""\201D";
 
-    &:before {     
+    &:before {
         @include text-size(80,1);
         color: $color-light-gray;
         content: open-quote;
@@ -33,7 +21,7 @@ $temp-color: #4a4a4a;
         top: 7px;
     }
 
-    &:after { 
+    &:after {
         @include text-size(80,1);
         color: $color-light-gray;
         content: close-quote;

@@ -1,15 +1,5 @@
-/**
- * Solution for various scenarios when an image is not loaded yet or at all.
- *
- * @mixin
- * @section CSS Enhancements
- * @param $image-height define a default image
- * @example
- *  @include broken-image(30px)
-*/
-
 @mixin broken-image($image-height: 50px) {
-	
+
 	display: block;
 	height: auto;
 	line-height: 2;
