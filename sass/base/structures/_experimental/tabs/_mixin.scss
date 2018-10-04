@@ -35,7 +35,7 @@
 				position: relative;
 				background: $color-white;
 				top: 4px;
-				//@include transition(all 0.2s ease-in-out);
+				////@include transition(all 0.2s ease-in-out);
 
 				&:hover {
 					background: darken($color-white, 10);
@@ -120,7 +120,7 @@
 			cursor: pointer;
 			position: relative;
 			top: 4px;
-			//@include transition(all 0.2s ease-in-out);
+			////@include transition(all 0.2s ease-in-out);
 
 			&:hover {
 				background: darken($color-main, 10);

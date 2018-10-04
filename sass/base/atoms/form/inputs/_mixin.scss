@@ -46,7 +46,7 @@ $input-text-color: $default-input-color-text;
 
 @mixin form-textarea($display: inline-block) {
   @extend %paragraph-font;
-  @include box-sizing();
+  //@include box-sizing();
 
   background-color: $input-bg-color;
   padding: 15px;

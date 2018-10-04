@@ -5,12 +5,12 @@
   text-decoration: none;
   color: $color-black;
 
-    @include transition(color .3s ease);
+    //@include transition(color .3s ease);
     color: $color-black;
     text-decoration: underline;
 
     &:hover {
-      @include opacity(0.9);
+      //opacity(0.9);
       color: #666;
     }
 

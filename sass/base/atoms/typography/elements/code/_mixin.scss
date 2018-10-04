@@ -1,5 +1,5 @@
 @mixin code-styling() {
-  @include flexbox();
+  ////@include flexbox();
   background: $color-dark-gray;
   white-space: pre;
   word-wrap: break-word;

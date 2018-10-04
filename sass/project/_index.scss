@@ -29,7 +29,7 @@
 }
 
 .acc-form-container {
-  @include flexbox();
+  ////@include flexbox();
   flex: 1;
   flex-direction: column;
   margin: 30px auto;

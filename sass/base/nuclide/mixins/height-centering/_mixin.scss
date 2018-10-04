@@ -65,9 +65,9 @@
 
 @mixin center-vertically-unknown-height-flex() {
 
-	@include flexbox();
-	@include flex-justify-content(center);
-	@include flex-direction(column);
+	////@include flexbox();
+	////@include flex-justify-content(center);
+	////@include flex-direction(column);
 }
 
 @mixin center-horizontally-vertically-unknown-height-grid() {

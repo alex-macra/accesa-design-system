@@ -18,9 +18,7 @@
 
 @mixin button-defaults() {
 	$btn-text-color: $default-button-color-text;
-
-	@include no-select();
-	border: 0;
+	border: 0; //no select
 	border-radius: $border-radius;
 	color: $btn-text-color;
 	display: inline-block;
@@ -75,7 +73,7 @@
 		@include button ($color-light-gray);
 		cursor: not-allowed;
 		color: #b2b2b2;
-		@include opacity(.95);
+		//opacity .95
 
 		&:hover,
 		&:active,
@@ -88,7 +86,7 @@
 		@include button ($color-light-gray);
 		cursor: not-allowed;
 		color: #b2b2b2;
-		@include opacity(.95);
+		//opacity .95
 
 		&:hover,
 		&:active,

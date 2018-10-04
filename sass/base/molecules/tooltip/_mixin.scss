@@ -42,7 +42,7 @@
 
 	@if $direction == 'top-left' or $direction == 'top-right' {
 		&:before {
-			@include transform(translateY(-100%));
+			//@include transform(translateY(-100%));
 			 bottom: auto;
 			top: -($triangle-size + 3px);
 		}
@@ -55,7 +55,7 @@
 	}
 	@else if $direction == 'bottom-right' or $direction == 'bottom-left' {
 		&:before {
-			@include transform(translateY(100%));
+			//@include transform(translateY(100%));
 			bottom: -($triangle-size + 3px);
 			 top: auto;
 		}

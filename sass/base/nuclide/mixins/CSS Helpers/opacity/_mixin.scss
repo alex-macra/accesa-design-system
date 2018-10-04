@@ -1,6 +1,0 @@
-@mixin opacity($argument) {
-	$argument-ie: ($argument * 100);
-	@include vendor-prefix('opacity', $argument);
-	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + $argument-ie + ')';
-	filter: alpha(opacity=$argument-ie);
-}

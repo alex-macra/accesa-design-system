@@ -1,7 +1,7 @@
 /* --- BEGIN PROJECT-HEADER.CSS --- */
 
 .acc-main-header { 
-  @include flexbox();
+  ////@include flexbox();
   background-color: $color-main;
   height: 72px;
   color: $color-white;
@@ -17,11 +17,11 @@
   }
 
   .acc-logo {
-    @include flex(0 0 15%);
-    @include flexbox();
+    //@include flex(0 0 15%);
+    ////@include flexbox();
      
     > a {
-      @include flex-align-self(center);
+      //@include flex-align-self(center);
       padding: 0 15px;
       text-transform: uppercase;
       @include text-size(17);
@@ -29,13 +29,13 @@
   }
 
   .acc-main-nav {
-    @include flex(0 0 85%);
+    //@include flex(0 0 85%);
 
     ul {
       display: inline-flex;
 
         li {
-        @include flex-align-self(center);
+        //@include flex-align-self(center);
         display: inline-block;
         padding: 0 15px;
 
@@ -49,7 +49,7 @@
 
     &.to-right {
       display: inline-flex;
-      @include flex-justify-content(flex-end);
+      ////@include flex-justify-content(flex-end);
       align-self: center;
     }
   }
